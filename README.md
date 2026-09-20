@@ -14,6 +14,11 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Caminho do Mestre de Runas** – 168 nós, 4 tiers, com pré-requisitos de pontos por tier.
 - **Compartilhamento** – a build inteira é codificada na URL (`#b=…`); basta copiar o link.
   Também salva builds no navegador (localStorage).
+- **Galeria da comunidade** – aba *Galeria*: “Publicar” abre uma issue pré-preenchida no GitHub
+  com o código da build; a galeria lê as issues abertas pela API pública (sem servidor) e permite
+  abrir qualquer build direto no planner. Curtidas/comentários acontecem na própria issue.
+- **Runas de gatilho** – seta rotacionável no hexágono; valida a skill *Alvo* (direção da seta) e a
+  skill de *Ativação* (lado oposto) pelas tags exigidas no texto da runa.
 - **DPS (estimativa)** – classifica cada stat parseado (increase / amplification / more-less / flat),
   respeitando tags da skill e ignorando condicionais, e mostra o DPS estimado por skill do tabuleiro
   (arma média × %base + flat) × (1+inc) × (1+amp) × more, incluindo nós do Mestre de Runas.
@@ -57,8 +62,7 @@ npm run data:scrape # (requer acesso ao site) enriquece com páginas de detalhe
 ```
 
 ## Roadmap
-- Runas de gatilho (Trigger) com direção de ativação no tabuleiro.
-- Galeria pública de builds (backend).
+- Cores dos slots do Rune Cast (Vermelho/Verde/Azul/Branco) e Essências de Cor.
 - Refinar glossário PT (nomes de itens únicos e autoridades).
 
 Projeto de fãs, não afiliado à LINE Games / Needs Games.
