@@ -1,0 +1,27 @@
+![](https://undecember.thein.ru/image/runes/LinkSkill/Icon_LinkSkill_FastCast_01.png)
+Quick Cast
+Min. rarity:
+Normal
+How to get:
+DropShop
+To buy in:
+Act 1Act 6-10Act 11-12
+Spell
+Can be linked with Skills that satisfy SpellCannot be linked with Skills that satisfy Shout, Attack Enhance, Defense Enhance, Toggle, Movement, TrapApplies to Minions when linked to Summon Skill
+Rune Level 1
+Resource Cost Increase 20%
++12% Cast Speed
+Rune Level 45
+Resource Cost Increase 20%
++41.2% Cast Speed
+Rune Grade
++4% Cast Speed
++12% Cast Speed
++16% Cast Speed7% Cast Speed Amplification
+Awakening
+Source
++\[5-10\]% Cast Speed
+Origin
+-\[10-5\]% Resource Cost
+Verity
++\[1.7-2.5\]% Cast Speed per 1 Blue Link Rune on linked Skill Rune

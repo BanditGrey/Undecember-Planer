@@ -11,9 +11,9 @@ const LABEL = /^(Min\. rarity|How to get|To buy in|Weapon|Type|Tier|Requires|Run
 
 // Site markup often concatenates stat lines; split on boundaries like "…Chance+100%…", "…300%Cold…", "…3Triggers…", "…Effect5% DMG…".
 const splitStat = (s) => s
-  .replace(/(?<=[a-z%)\]\d])(?=[+\-]\d|[+\-]\[)/g, '\n')
+  .replace(/(?<=[a-z%)])(?=[+\-]\d|[+\-]\[)/g, '\n').replace(/(?<=\])(?=\+\d|\+\[|-\d+(?!\]))/g, (m, o, str) => /^-\[/.test(str.slice(o)) ? '' : '\n').replace(/(?<=\d)(?=\+\d|\+\[)/g, '\n')
   .replace(/(?<=[a-z\]%])(?=\[)/g, '\n')
-  .replace(/(?<=%|\d|\])(?=[A-Z][a-z])/g, '\n')
+  .replace(/(?<=%|\d|\])(?=[A-Z][a-z])/g, '\n').replace(/(?<=[a-z\)])(?=Cannot link|Gain )/g, '\n')
   .replace(/(?<=[a-z\)])(?=\d+(?:\.\d+)?%? [A-Z])/g, '\n')
   .replace(/(?<= Element)(?=[A-Z])/g, '\n')
   .split('\n').map(x => x.trim()).filter(Boolean);
@@ -29,9 +29,9 @@ export function parseRune(lines, meta) {
   const tagStart = Math.max(L.findIndex(l => /^Weapon:/i.test(l)), L.findIndex(l => /^To buy in:/i.test(l)), L.findIndex(l => /^How to get:/i.test(l)));
   const lvl1 = L.findIndex(l => /^Rune Level 1$/i.test(l));
   const mid = L.slice(tagStart + 1, lvl1 > 0 ? lvl1 : undefined).filter(l => !/^(Act|Drop|Shop|Synthesis|Guild|Unique Dungeon|Normal|Magic|Rare)/.test(l) && !LABEL.test(l));
-  const description = mid.filter(l => l.length > 40 || /[.,]/.test(l)).pop() || '';
-  const tags = mid.filter(l => l !== description && l !== weaponLine && l.length < 30 && !/[.:]/.test(l) && !weapons.includes(l));
-  const linkRules = mid.filter(l => /linked|Applies to|Only one/i.test(l) && l !== description);
+  const description = mid.filter(l => (l.length > 40 || /[.,]/.test(l)) && !/linked|Applies to|Only one/i.test(l)).pop() || '';
+  const tags = mid.filter(l => l !== description && l !== weaponLine && l.length < 30 && !/[.:]/.test(l) && !/linked|Applies to|Only one/i.test(l) && !weapons.includes(l));
+  const linkRules = mid.filter(l => /linked|Applies to|Only one/i.test(l)).flatMap(l => l.split(/(?=Cannot be linked|Can be linked|Only one |Applies to )/)).map(x => x.trim()).filter(Boolean);
   const levelBlock = (n) => between(L, new RegExp(`^Rune Level ${n}$`, 'i'), [/^Rune Level/i, /^Rune Grade$/i, /^Awakening$/i]).flatMap(splitStat);
   const grades = between(L, /^Rune Grade$/i, [/^Awakening$/i]);
   const awaken = between(L, /^Awakening$/i, [/^\s*$/, NAV_END]);

@@ -1,0 +1,27 @@
+![](https://undecember.thein.ru/image/runes/LinkSkill/Icon_LinkSkill_AddProjcount_01.png)
+Multishot
+Min. rarity:
+Normal
+How to get:
+DropShop
+To buy in:
+Act 1Act 6-10Act 11-12
+Projectile
+Can be linked with Skills that satisfy ProjectileCannot be linked with Skills that satisfy Totem, Movement, Cannot Multishot, TrapOnly one Multishot can be linked at onceApplies to Minions when linked to Summon Skill
+Rune Level 1
+Resource Cost Increase 20%
++2 Projectile Count15% Projectile DMG Dampening
+Rune Level 45
+Resource Cost Increase 20%
++2 Projectile Count4.5% Projectile DMG Amplification
+Rune Grade
++20% Projectile DMG
++40% Projectile DMG
++2 Projectile Count+50% Projectile DMG
+Awakening
+Source
+\[3.5-5\]% Projectile DMG DampeningGain Powerful Multishot effect for 1 s upon using Skill (Cooldown: 3 s)Powerful Multishot effectProjectile Count +2 for the duration
+Origin
+-\[10-5\]% Resource Cost
+Verity
+2% DMG Amplification if linked Skill Rune has 6 Green Link Runes\[0.3-0.5\]% Projectile DMG Amplification per 1 Projectile tag Link Rune on linked Skill Rune

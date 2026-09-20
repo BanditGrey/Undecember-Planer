@@ -1,0 +1,34 @@
+![](https://undecember.thein.ru/image/runes/Skill/Icon_Skill_FrostWave_01.png)
+Frost Wave
+Min. rarity:
+Normal
+How to get:
+DropShop
+To buy in:
+Act 1Act 6-10Act 11-12
+Weapon:
+SwordAxeBluntStaff
+Attack
+Melee
+Area of Effect
+Strike
+Cold
+Shadow
+Emits Cold energy in front of the caster to deal damage to enemies
+Rune Level 1
+Mana Cost 3Triggers Immediately
+Cold ElementArea of Effect 650Cold DMG 300%Cold DMG +90+50% Chill Chance+100% DMG against enemies affected by Cold Status Effect20% DMG Amplification against enemies affected by Cold Status Effect10% DMG Amplification against enemies that are not affected by Cold Status Effect
+Rune Level 45
+Mana Cost 10.2Triggers Immediately
+Cold ElementArea of Effect 650Cold DMG 554%Cold DMG +1362+50% Chill Chance+100% DMG against enemies affected by Cold Status Effect20% DMG Amplification against enemies affected by Cold Status Effect10% DMG Amplification against enemies that are not affected by Cold Status Effect
+Rune Grade
++15% Chill Effect5% DMG Amplification against enemies affected by Cold Status Effect2.5% DMG Amplification against enemies that are not affected by Cold Status Effect
++30% Chill Effect15% DMG Amplification against enemies affected by Cold Status Effect7.5% DMG Amplification against enemies that are not affected by Cold Status Effect+30% Area of Effect
++45% Chill Effect30% DMG Amplification against enemies affected by Cold Status Effect15% DMG Amplification against enemies that are not affected by Cold Status Effect+60% Area of Effect
+Awakening
+Source
+\[12-17\]% DMG Amplification against enemies affected by Cold Status Effect\[8-12\]% DMG Amplification against enemies that are not affected by Cold Status Effect
+Origin
++2 Strike Range Count+\[10-40\]% Area DMG+\[10-20\]% Area of Effect
+Verity
++\[15-30\]% Chill Chance+\[15-30\] Freeze Rate against Chilled EnemiesGain Sharpness for 3 s upon inflicting a Cold Status Effect(+50% Critical Rate, +25% Critical DMG)

@@ -1,0 +1,33 @@
+![](https://undecember.thein.ru/image/runes/Skill/Icon_Skill_FireBall_01.png)
+Fire Ball
+Min. rarity:
+Normal
+How to get:
+DropShop
+To buy in:
+Act 1Act 6-10Act 11-12
+Weapon:
+All weapons
+Spell
+Area of Effect
+Strike
+Fire
+Projectile
+Fires a fire ball that explodes on hit to deal fire damage
+Rune Level 1
+Mana Cost 5Triggers Immediately
+Fire ElementFire Ball Count 1Projectile Speed 1000Explosion Range 220Fire DMG 234%Fire DMG +35+20% Burn Chance15% Burn DMG Amplification+100% DMG against Burning enemies
+Rune Level 45
+Mana Cost 15.2Triggers Immediately
+Fire ElementFire Ball Count 1Projectile Speed 1000Explosion Range 220Fire DMG 564%Fire DMG +974+20% Burn Chance15% Burn DMG Amplification+100% DMG against Burning enemies
+Rune Grade
+15% DMG Amplification against Burning enemies+2 Projectile Count
+20% DMG Amplification against Burning enemies+2 Projectile Count+15% Area of Effect
+30% DMG Amplification against Burning enemies+2 Projectile Count+30% Area of Effect
+Awakening
+Source
+\[13-15\]% Element DMG Amplification
+Origin
+\[75-100\]% Burn DMG Amplification50% Status Effect Duration Dampening
+Verity
+Gain Quick Cast Link Rune Effect+\[26.6-31\]% Cast SpeedCannot link Quick Cast Link Rune

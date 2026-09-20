@@ -1,0 +1,686 @@
+{
+ "AdditionalFireDMG": {
+  "slug": "AdditionalFireDMG",
+  "name": "Additional Fire DMG",
+  "icons": [
+   "icons/runes/LinkSkill/Icon_LinkSkill_FireDmg_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12",
+   "Fire",
+   "Can be linked with Skills that satisfy FireApplies to Minions when linked to Summon Skill"
+  ],
+  "weapons": [],
+  "tags": [
+   "Fire"
+  ],
+  "description": "",
+  "linkRules": [
+   "Can be linked with Skills that satisfy Fire",
+   "Applies to Minions when linked to Summon Skill"
+  ],
+  "level1": [
+   "Resource Cost Increase 20%",
+   "+23-37 Fire DMG"
+  ],
+  "level45": [
+   "Resource Cost Increase 20%",
+   "+152-262 Fire DMG"
+  ],
+  "gradeBonuses": [
+   [
+    "+10-30 Fire DMG"
+   ],
+   [
+    "+40-80 Fire DMG"
+   ],
+   [
+    "+50-100 Fire DMG5% Fire DMG Amplification"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "+[35-50]-[55-80] Fire DMG"
+   ],
+   "Origin": [
+    "[0.5-0.9]% Fire DMG Amplification per 1 Red Link Rune on linked Skill Rune"
+   ],
+   "Verity": [
+    "+[55-80]% Fire DMG"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/AdditionalFireDMG/",
+  "scrapedAt": "2026-09-20"
+ },
+ "AreaEffect": {
+  "slug": "AreaEffect",
+  "name": "Area Effect",
+  "icons": [
+   "icons/runes/LinkSkill/Icon_LinkSkill_AOE_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12",
+   "Strike",
+   "DoT",
+   "Area of Effect",
+   "Can be linked with Skills that satisfy Area of EffectCan be linked with Skills that satisfy any one of Strike, DoTCannot be linked with Skills that satisfy TrapApplies to Minions when linked to Summon Skill"
+  ],
+  "weapons": [],
+  "tags": [
+   "Strike",
+   "DoT",
+   "Area of Effect"
+  ],
+  "description": "",
+  "linkRules": [
+   "Can be linked with Skills that satisfy Area of Effect",
+   "Can be linked with Skills that satisfy any one of Strike, DoT",
+   "Cannot be linked with Skills that satisfy Trap",
+   "Applies to Minions when linked to Summon Skill"
+  ],
+  "level1": [
+   "Resource Cost Increase 15%",
+   "+20% Area of Effect",
+   "+10% DMG"
+  ],
+  "level45": [
+   "Resource Cost Increase 15%",
+   "+68% Area of Effect",
+   "+61.9% DMG"
+  ],
+  "gradeBonuses": [
+   [
+    "+10% Area of Effect"
+   ],
+   [
+    "+20% Area of Effect",
+    "+20% DMG"
+   ],
+   [
+    "+30% Area of Effect",
+    "+40% DMG"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "-[10-5]% Resource Cost"
+   ],
+   "Origin": [
+    "[3.5-5]% Area of Effect Amplification"
+   ],
+   "Verity": [
+    "[2.1-3]% Area DMG Amplification"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/AreaEffect/",
+  "scrapedAt": "2026-09-20"
+ },
+ "FireBall": {
+  "slug": "FireBall",
+  "name": "Fire Ball",
+  "icons": [
+   "icons/runes/Skill/Icon_Skill_FireBall_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12"
+  ],
+  "weapons": [
+   "All weapons"
+  ],
+  "tags": [
+   "Spell",
+   "Area of Effect",
+   "Strike",
+   "Fire",
+   "Projectile"
+  ],
+  "description": "Fires a fire ball that explodes on hit to deal fire damage",
+  "linkRules": [],
+  "level1": [
+   "Mana Cost 5",
+   "Triggers Immediately",
+   "Fire Element",
+   "Fire Ball Count 1",
+   "Projectile Speed 1000",
+   "Explosion Range 220",
+   "Fire DMG 234%",
+   "Fire DMG +35",
+   "+20% Burn Chance",
+   "15% Burn DMG Amplification",
+   "+100% DMG against Burning enemies"
+  ],
+  "level45": [
+   "Mana Cost 15.2",
+   "Triggers Immediately",
+   "Fire Element",
+   "Fire Ball Count 1",
+   "Projectile Speed 1000",
+   "Explosion Range 220",
+   "Fire DMG 564%",
+   "Fire DMG +974",
+   "+20% Burn Chance",
+   "15% Burn DMG Amplification",
+   "+100% DMG against Burning enemies"
+  ],
+  "gradeBonuses": [
+   [
+    "15% DMG Amplification against Burning enemies",
+    "+2 Projectile Count"
+   ],
+   [
+    "20% DMG Amplification against Burning enemies",
+    "+2 Projectile Count",
+    "+15% Area of Effect"
+   ],
+   [
+    "30% DMG Amplification against Burning enemies",
+    "+2 Projectile Count",
+    "+30% Area of Effect"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "[13-15]% Element DMG Amplification"
+   ],
+   "Origin": [
+    "[75-100]% Burn DMG Amplification",
+    "50% Status Effect Duration Dampening"
+   ],
+   "Verity": [
+    "Gain Quick Cast Link Rune Effect",
+    "+[26.6-31]% Cast Speed",
+    "Cannot link Quick Cast Link Rune"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/FireBall/",
+  "scrapedAt": "2026-09-20"
+ },
+ "FrostWave": {
+  "slug": "FrostWave",
+  "name": "Frost Wave",
+  "icons": [
+   "icons/runes/Skill/Icon_Skill_FrostWave_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12"
+  ],
+  "weapons": [
+   "Sword",
+   "Axe",
+   "Blunt",
+   "Staff"
+  ],
+  "tags": [
+   "Attack",
+   "Melee",
+   "Area of Effect",
+   "Strike",
+   "Cold",
+   "Shadow"
+  ],
+  "description": "Emits Cold energy in front of the caster to deal damage to enemies",
+  "linkRules": [],
+  "level1": [
+   "Mana Cost 3",
+   "Triggers Immediately",
+   "Cold Element",
+   "Area of Effect 650",
+   "Cold DMG 300%",
+   "Cold DMG +90",
+   "+50% Chill Chance",
+   "+100% DMG against enemies affected by Cold Status Effect",
+   "20% DMG Amplification against enemies affected by Cold Status Effect",
+   "10% DMG Amplification against enemies that are not affected by Cold Status Effect"
+  ],
+  "level45": [
+   "Mana Cost 10.2",
+   "Triggers Immediately",
+   "Cold Element",
+   "Area of Effect 650",
+   "Cold DMG 554%",
+   "Cold DMG +1362",
+   "+50% Chill Chance",
+   "+100% DMG against enemies affected by Cold Status Effect",
+   "20% DMG Amplification against enemies affected by Cold Status Effect",
+   "10% DMG Amplification against enemies that are not affected by Cold Status Effect"
+  ],
+  "gradeBonuses": [
+   [
+    "+15% Chill Effect",
+    "5% DMG Amplification against enemies affected by Cold Status Effect",
+    "2.5% DMG Amplification against enemies that are not affected by Cold Status Effect"
+   ],
+   [
+    "+30% Chill Effect",
+    "15% DMG Amplification against enemies affected by Cold Status Effect",
+    "7.5% DMG Amplification against enemies that are not affected by Cold Status Effect",
+    "+30% Area of Effect"
+   ],
+   [
+    "+45% Chill Effect",
+    "30% DMG Amplification against enemies affected by Cold Status Effect",
+    "15% DMG Amplification against enemies that are not affected by Cold Status Effect",
+    "+60% Area of Effect"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "[12-17]% DMG Amplification against enemies affected by Cold Status Effect",
+    "[8-12]% DMG Amplification against enemies that are not affected by Cold Status Effect"
+   ],
+   "Origin": [
+    "+2 Strike Range Count",
+    "+[10-40]% Area DMG+[10-20]% Area of Effect"
+   ],
+   "Verity": [
+    "+[15-30]% Chill Chance",
+    "+[15-30] Freeze Rate against Chilled Enemies",
+    "Gain Sharpness for 3 s upon inflicting a Cold Status Effect(+50% Critical Rate, +25% Critical DMG)"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/FrostWave/",
+  "scrapedAt": "2026-09-20"
+ },
+ "Multishot": {
+  "slug": "Multishot",
+  "name": "Multishot",
+  "icons": [
+   "icons/runes/LinkSkill/Icon_LinkSkill_AddProjcount_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12",
+   "Projectile",
+   "Can be linked with Skills that satisfy ProjectileCannot be linked with Skills that satisfy Totem, Movement, Cannot Multishot, TrapOnly one Multishot can be linked at onceApplies to Minions when linked to Summon Skill"
+  ],
+  "weapons": [],
+  "tags": [
+   "Projectile"
+  ],
+  "description": "",
+  "linkRules": [
+   "Can be linked with Skills that satisfy Projectile",
+   "Cannot be linked with Skills that satisfy Totem, Movement, Cannot Multishot, Trap",
+   "Only one Multishot can be linked at once",
+   "Applies to Minions when linked to Summon Skill"
+  ],
+  "level1": [
+   "Resource Cost Increase 20%",
+   "+2 Projectile Count",
+   "15% Projectile DMG Dampening"
+  ],
+  "level45": [
+   "Resource Cost Increase 20%",
+   "+2 Projectile Count",
+   "4.5% Projectile DMG Amplification"
+  ],
+  "gradeBonuses": [
+   [
+    "+20% Projectile DMG"
+   ],
+   [
+    "+40% Projectile DMG"
+   ],
+   [
+    "+2 Projectile Count",
+    "+50% Projectile DMG"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "[3.5-5]% Projectile DMG Dampening",
+    "Gain Powerful Multishot effect for 1 s upon using Skill (Cooldown: 3 s)Powerful Multishot effectProjectile Count +2 for the duration"
+   ],
+   "Origin": [
+    "-[10-5]% Resource Cost"
+   ],
+   "Verity": [
+    "2% DMG Amplification if linked Skill Rune has 6 Green Link Runes",
+    "[0.3-0.5]% Projectile DMG Amplification per 1 Projectile tag Link Rune on linked Skill Rune"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/Multishot/",
+  "scrapedAt": "2026-09-20"
+ },
+ "QuickCast": {
+  "slug": "QuickCast",
+  "name": "Quick Cast",
+  "icons": [
+   "icons/runes/LinkSkill/Icon_LinkSkill_FastCast_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12",
+   "Spell",
+   "Can be linked with Skills that satisfy SpellCannot be linked with Skills that satisfy Shout, Attack Enhance, Defense Enhance, Toggle, Movement, TrapApplies to Minions when linked to Summon Skill"
+  ],
+  "weapons": [],
+  "tags": [
+   "Spell"
+  ],
+  "description": "",
+  "linkRules": [
+   "Can be linked with Skills that satisfy Spell",
+   "Cannot be linked with Skills that satisfy Shout, Attack Enhance, Defense Enhance, Toggle, Movement, Trap",
+   "Applies to Minions when linked to Summon Skill"
+  ],
+  "level1": [
+   "Resource Cost Increase 20%",
+   "+12% Cast Speed"
+  ],
+  "level45": [
+   "Resource Cost Increase 20%",
+   "+41.2% Cast Speed"
+  ],
+  "gradeBonuses": [
+   [
+    "+4% Cast Speed"
+   ],
+   [
+    "+12% Cast Speed"
+   ],
+   [
+    "+16% Cast Speed",
+    "7% Cast Speed Amplification"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "+[5-10]% Cast Speed"
+   ],
+   "Origin": [
+    "-[10-5]% Resource Cost"
+   ],
+   "Verity": [
+    "+[1.7-2.5]% Cast Speed per 1 Blue Link Rune on linked Skill Rune"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/QuickCast/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RainOfArrows": {
+  "slug": "RainOfArrows",
+  "name": "Rain of Arrows",
+  "icons": [
+   "icons/runes/Skill/Icon_Skill_RainofArrows_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12"
+  ],
+  "weapons": [
+   "Bow"
+  ],
+  "tags": [
+   "Attack",
+   "Area of Effect",
+   "Strike",
+   "Physical",
+   "Projectile"
+  ],
+  "description": "Temporarily calls down a Rain of Arrows to deal DMG to enemies. Rain of Arrows duration is affected by Attack Speed",
+  "linkRules": [],
+  "level1": [
+   "Mana Cost 15",
+   "Cooldown 25 s",
+   "Physical Element",
+   "+1 Max Use CountProjectile Count 20",
+   "Explosion Range 150",
+   "Physical DMG 183%",
+   "Physical DMG +405% DMG Dampening when hitting the same target repeatedly80% chance to inflict Disturb effect on hitApplied as Vulnerable effectDisturb Duration 1 s",
+   "15% Movement Speed Dampening",
+   "15% Attack Speed Dampening",
+   "15% Cast Speed Dampening"
+  ],
+  "level45": [
+   "Mana Cost 100",
+   "Cooldown 25 s",
+   "Physical Element",
+   "+1 Max Use CountProjectile Count 20",
+   "Explosion Range 150",
+   "Physical DMG 460%",
+   "Physical DMG +2835% DMG Dampening when hitting the same target repeatedly80% chance to inflict Disturb effect on hitApplied as Vulnerable effectDisturb Duration 1 s",
+   "15% Movement Speed Dampening",
+   "15% Attack Speed Dampening",
+   "15% Cast Speed Dampening"
+  ],
+  "gradeBonuses": [
+   [
+    "+1 Projectile Count"
+   ],
+   [
+    "+2 Projectile Count",
+    "+10 Explosion Range"
+   ],
+   [
+    "+3 Projectile Count",
+    "+30 Explosion Range"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "+[1-2] Max Use Count",
+    "+[15-30]% Skill Rune Cooldown Recovery Speed"
+   ],
+   "Origin": [
+    "+10 Projectile Count",
+    "[10-15]% Projectile DMG Dampening"
+   ],
+   "Verity": [
+    "Gain Area Effect Link Rune Effect",
+    "-[40-30]% Projectile Duration",
+    "+[42-50]% Area of Effect",
+    "+[46-61]% Area DMGCannot link Area Effect Link Rune"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/RainOfArrows/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SummonBurstingRuneKnight": {
+  "slug": "SummonBurstingRuneKnight",
+  "name": "Summon Bursting Rune Knight",
+  "icons": [
+   "icons/runes/Skill/Icon_Skill_FireGolem_01.png",
+   "icons/runes/Skill/Icon_Skill_FireAbyssalKnight_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12"
+  ],
+  "weapons": [
+   "All weapons"
+  ],
+  "tags": [
+   "Spell",
+   "Minion",
+   "Rune Knight"
+  ],
+  "description": "Bursting Rune Knight has the Strike, Area of Effect, Fire, Melee tags.Summons a Rune Knight of Fire that periodically breathes Fire and enhances nearby Abysslings.The Rune Knight periodically absorbs an Abyssling during Melody High Tone and additional fusion occurs when an Abyssling of an identical element is absorbed.An Abyss Knight is summoned upon fusing 3 times.Has a maintenance cost upon summoning",
+  "linkRules": [],
+  "level1": [
+   "Mana Cost 50",
+   "Cooldown 40 s",
+   "Fire Element",
+   "Summon Level 1",
+   "Summon Count 1",
+   "Max Summon Count 1",
+   "Basic Attack DMG 85% (Spell, Melee, Fire, Strike, Area of Effect)Earth Blow DMG 160% (Spell, Melee, Fire, Strike, Area of Effect)Flamethrower DMG 65% (Spell, Melee, Fire, Strike, Area of Effect)",
+   "+0.5% Rune Knight HPPeriodically grants Knight's Authority to Abyssling",
+   "+25.2% Abyssling DMG"
+  ],
+  "level45": [
+   "Mana Cost 152",
+   "Cooldown 40 s",
+   "Fire Element",
+   "Summon Level 95",
+   "Summon Count 1",
+   "Max Summon Count 1",
+   "Basic Attack DMG 139% (Spell, Melee, Fire, Strike, Area of Effect)Earth Blow DMG 269% (Spell, Melee, Fire, Strike, Area of Effect)Flamethrower DMG 119% (Spell, Melee, Fire, Strike, Area of Effect)",
+   "+56.8% Rune Knight HPPeriodically grants Knight's Authority to Abyssling",
+   "+69.2% Abyssling DMG"
+  ],
+  "gradeBonuses": [
+   [
+    "+30% Rune Knight HP+50% Rune Knight DMG"
+   ],
+   [
+    "+75% Rune Knight HP+100% Rune Knight DMG"
+   ],
+   [
+    "+125% Rune Knight HP+150% Rune Knight DMG"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "+[25-50]% Minion Area of Effect",
+    "+[50-80]% Rune Knight DMGEnlargement"
+   ],
+   "Origin": [
+    "+[30-50]% Rune Knight's Authority Effect"
+   ],
+   "Verity": [
+    "25% Minion DMG Dampening",
+    "[16.4-19]% DMG Taken by Minions DecreaseAdd +[20-30]% Minion Armor effect to Knight's Authority"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/SummonBurstingRuneKnight/",
+  "scrapedAt": "2026-09-20"
+ },
+ "Whirlwind": {
+  "slug": "Whirlwind",
+  "name": "Whirlwind",
+  "icons": [
+   "icons/runes/Skill/Icon_Skill_Whirlwind_01.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "acts": [
+   "Act 1",
+   "Act 6-10",
+   "Act 11-12"
+  ],
+  "weapons": [
+   "Dagger",
+   "Sword",
+   "Axe",
+   "Blunt",
+   "Staff"
+  ],
+  "tags": [
+   "Attack",
+   "Melee",
+   "Channel",
+   "Strike",
+   "Physical"
+  ],
+  "description": "Spins toward the control direction while Channeling, dealing damage to all enemies in the path",
+  "linkRules": [],
+  "level1": [
+   "Mana Cost 3",
+   "Triggers Immediately",
+   "Physical Element",
+   "No equipped weapon rangePhysical DMG 220%",
+   "Physical DMG +62",
+   "+10% Weapon Range",
+   "35% Movement Speed Dampening",
+   "30% Trigger Skill DMG Dampening"
+  ],
+  "level45": [
+   "Mana Cost 16.6",
+   "Triggers Immediately",
+   "Physical Element",
+   "No equipped weapon rangePhysical DMG 660%",
+   "Physical DMG +563",
+   "+10% Weapon Range",
+   "35% Movement Speed Dampening",
+   "30% Trigger Skill DMG Dampening"
+  ],
+  "gradeBonuses": [
+   [
+    "+30% Weapon Range",
+    "30% Movement Speed Dampening",
+    "+50% Melee DMG"
+   ],
+   [
+    "+60% Weapon Range",
+    "25% Movement Speed Dampening",
+    "+100% Melee DMG"
+   ],
+   [
+    "+90% Weapon Range",
+    "15% Movement Speed Dampening",
+    "+200% Melee DMG3% Attack Speed Amplification"
+   ]
+  ],
+  "awakening": {
+   "Source": [
+    "[15-20]% Resource Cost Dampening"
+   ],
+   "Origin": [
+    "+[2-12]% Armor Penetration",
+    "[10-15]% DMG Taken Dampening while Channeling"
+   ],
+   "Verity": [
+    "+[50-80]% DMG Multiplier",
+    "+[10-15]% DMG when Channeling (Max Stacks: 10)"
+   ]
+  },
+  "source": "https://undecember.thein.ru/en/runes/Whirlwind/",
+  "scrapedAt": "2026-09-20"
+ }
+}
