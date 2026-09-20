@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { runes, runestones, runeBySlug, runestoneBySlug, tags } from '../data';
-import { analyzeBoard, cells, CENTER, COLOR_HEX, GRADE_HEX, GRADE_NAMES, dirAngle, hexPos, runeColor, triggerSpec, DIRS, step } from '../lib/rules';
+import { analyzeBoard, AWAKEN_HEX, AWAKEN_KEYS, cells, CENTER, COLOR_HEX, GRADE_HEX, GRADE_NAMES, dirAngle, hexPos, runeColor, triggerSpec, DIRS, step } from '../lib/rules';
 import type { SlotColor } from '../types';
 const SLOT_CYCLE: (SlotColor | null | undefined)[] = [undefined, 'R', 'G', 'B', 'W', null];
 import type { Build } from '../types';
@@ -34,10 +34,10 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
       for (const l of g.links) if (l.rune.color) slots[l.dir] = l.rune.color; board[g.cell] = { ...board[g.cell], slots: slots as any }; }
     set({ ...build, board });
   };
-  const update = (cell: string, patch: Partial<{ rune?: string; runestone?: string; dir?: number; slots?: (SlotColor | null | undefined)[]; grade?: 0 | 1 | 2 | 3 }>) => {
+  const update = (cell: string, patch: Partial<{ rune?: string; runestone?: string; dir?: number; slots?: (SlotColor | null | undefined)[]; grade?: 0 | 1 | 2 | 3; awaken?: 'Source' | 'Origin' | 'Verity' }>) => {
     const board = { ...build.board, [cell]: { ...build.board[cell], ...patch } };
     if (!board[cell].rune && !board[cell].runestone) delete board[cell];
-    else { if (board[cell].dir === undefined || board[cell].dir === 0) delete board[cell].dir; if (!board[cell].slots) delete board[cell].slots; if (!board[cell].grade) delete board[cell].grade; }
+    else { if (board[cell].dir === undefined || board[cell].dir === 0) delete board[cell].dir; if (!board[cell].slots) delete board[cell].slots; if (!board[cell].grade) delete board[cell].grade; if (!board[cell].awaken) delete board[cell].awaken; }
     set({ ...build, board });
   };
   const W = HEX * Math.sqrt(3) * 7 + 8, H = HEX * 1.5 * 6 + HEX * 2 + 8;
@@ -70,18 +70,19 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
               {r?.type === 'Skill' && DIRS.map((_, d) => { const sc = c.slots?.[d]; const ang = dirAngle(d) * Math.PI / 180; const has = !!step(k, d);
                 return has ? <button key={d} className={'slot' + (sc === null ? ' closed' : sc ? '' : ' unset')} title={t('slots') + ' ' + (d + 1)} style={{ left: `calc(50% + ${Math.cos(ang) * 40}% - 5px)`, top: `calc(50% + ${Math.sin(ang) * 40}% - 5px)`, background: sc ? COLOR_HEX[sc] : undefined }} onClick={e => { e.stopPropagation(); cycleSlot(k, d); }} /> : null; })}
               {r && <button className="grade" title={t('grade') + ': ' + GRADE_NAMES[c.grade ?? 0]} style={{ borderColor: GRADE_HEX[c.grade ?? 0], color: GRADE_HEX[c.grade ?? 0] }} onClick={e => { e.stopPropagation(); update(k, { grade: (((c.grade ?? 0) + 1) % 4) as 0 | 1 | 2 | 3 }); }}>{['N', 'M', 'R', 'L'][c.grade ?? 0]}</button>}
+              {r && Object.keys(r.awakening).length > 0 && <button className="awaken" title={t('awaken') + ': ' + (c.awaken ?? '—')} style={{ color: c.awaken ? AWAKEN_HEX[c.awaken] : '#666', borderColor: c.awaken ? AWAKEN_HEX[c.awaken] : '#444' }} onClick={e => { e.stopPropagation(); const i = c.awaken ? AWAKEN_KEYS.indexOf(c.awaken) : -1; update(k, { awaken: i + 1 >= AWAKEN_KEYS.length ? undefined : AWAKEN_KEYS[i + 1] }); }}>{c.awaken ? c.awaken[0] : '☆'}</button>}
               {isTrig && <span className="arrow" style={{ transform: `rotate(${dirAngle(c.dir ?? 0)}deg)` }}>➜</span>}
               {isTrig && <button className="rot" title={t('rotate')} onClick={e => { e.stopPropagation(); update(k, { dir: ((c.dir ?? 0) + 1) % 6 }); }}>↻</button>}</div></div>;
-          return r ? <Tip key={k} content={<><RuneTip r={r} level={level} bonus={bonus} grade={c.grade} />{s && <RunestoneTip s={s} />}</>}>{inner}</Tip> : <div key={k} style={{ display: 'contents' }}>{inner}</div>;
+          return r ? <Tip key={k} content={<><RuneTip r={r} level={level} bonus={bonus} grade={c.grade} awaken={c.awaken} />{s && <RunestoneTip s={s} />}</>}>{inner}</Tip> : <div key={k} style={{ display: 'contents' }}>{inner}</div>;
         })}
       </div></div>
       <div className="groups">
         {groups.map(g => <div key={g.cell} className="group">
-          <div className="gh"><Tip content={<RuneTip r={g.skill} level={level} bonus={bonus} grade={g.grade} />}><img src={g.skill.icons[0]} alt="" /></Tip><b style={{ color: runeColor(g.skill) }}>{g.skill.name}</b>{!!g.grade && <span className="pill" style={{ borderColor: GRADE_HEX[g.grade], color: GRADE_HEX[g.grade] }}>{GRADE_NAMES[g.grade]}</span>} <span className="tags">{g.skill.tags.map(x => <i key={x}>#{tr(x)}</i>)}</span>
+          <div className="gh"><Tip content={<RuneTip r={g.skill} level={level} bonus={bonus} grade={g.grade} awaken={g.awaken} />}><img src={g.skill.icons[0]} alt="" /></Tip><b style={{ color: runeColor(g.skill) }}>{g.skill.name}</b>{!!g.grade && <span className="pill" style={{ borderColor: GRADE_HEX[g.grade], color: GRADE_HEX[g.grade] }}>{GRADE_NAMES[g.grade]}</span>}{g.awaken && <span className="pill" style={{ borderColor: AWAKEN_HEX[g.awaken], color: AWAKEN_HEX[g.awaken] }}>{g.awaken}</span>} <span className="tags">{g.skill.tags.map(x => <i key={x}>#{tr(x)}</i>)}</span>
             {g.runestone && <em className="muted"> · {runestoneBySlug.get(g.runestone)?.name}</em>}</div>
           {g.skill.description && <p className="muted desc">{gd(g.skill.slug, g.skill.description)}</p>}
           {g.links.length === 0 && <p className="muted">{t('noLinks')}</p>}
-          {g.links.map(l => <div key={l.cell} className={l.check.ok ? 'ok' : 'bad'}><Tip content={<RuneTip r={l.rune} level={level} bonus={bonus} grade={l.grade} />}><img src={l.rune.icons[0]} alt="" /></Tip> {l.rune.color && <i className="dot" style={{ background: COLOR_HEX[l.rune.color] }} />}{l.rune.name} — <small>{l.check.key ? t(l.check.key, { tags: l.check.tags ?? '' }) : tr(l.check.reason)}</small></div>)}
+          {g.links.map(l => <div key={l.cell} className={l.check.ok ? 'ok' : 'bad'}><Tip content={<RuneTip r={l.rune} level={level} bonus={bonus} grade={l.grade} awaken={l.awaken} />}><img src={l.rune.icons[0]} alt="" /></Tip> {l.rune.color && <i className="dot" style={{ background: COLOR_HEX[l.rune.color] }} />}{l.rune.name} — <small>{l.check.key ? t(l.check.key, { tags: l.check.tags ?? '' }) : tr(l.check.reason)}</small></div>)}
         </div>)}
         {triggers.map(x => <div key={x.cell} className={'group ' + (x.ok ? 'trig-ok' : 'trig-bad')}>
           <div className="gh"><Tip content={<RuneTip r={x.rune} level={level} bonus={bonus} />}><img src={x.rune.icons[0]} alt="" /></Tip><b style={{ color: '#7bd1e6' }}>{x.rune.name}</b> <span className="tags"><i>#Trigger</i></span></div>

@@ -9,7 +9,7 @@ export interface Authority { slug: string; slot: string; god: string; name: stri
 export type EquipSlot = 'Weapons' | 'Offhand' | 'Helmet' | 'Pauldrons' | 'Armor' | 'Gloves' | 'Shoes' | 'Belt' | 'Necklace' | 'Ring1' | 'Ring2';
 
 /** Skill rune link slots: index = hex direction 0..5; undefined = slot closed. Colours come from Rune Birth/Color/Candor essences. */
-export interface Cell { rune?: string; runestone?: string; dir?: number /* trigger rune arrow direction 0..5 (index into hex DIRS) */; slots?: (SlotColor | null | undefined)[]; grade?: 0 | 1 | 2 | 3 /* Normal, Magic, Rare, Legendary */ }
+export interface Cell { rune?: string; runestone?: string; dir?: number /* trigger rune arrow direction 0..5 (index into hex DIRS) */; slots?: (SlotColor | null | undefined)[]; grade?: 0 | 1 | 2 | 3 /* Normal, Magic, Rare, Legendary */; awaken?: 'Source' | 'Origin' | 'Verity' }
 
 export interface Build {
   v: 1;

@@ -23,6 +23,10 @@ export interface LinkCheck { ok: boolean; shared: string[]; reason: string; key?
 export const GRADE_NAMES = ['Normal', 'Magic', 'Rare', 'Legendary'] as const;
 export const GRADE_HEX = ['#8a8fa3', '#4a8ef0', '#e6c93f', '#e2562f'];
 /** Extra stat lines granted by the rune grade (Magic/Rare/Legendary). */
+export const AWAKEN_KEYS = ['Source', 'Origin', 'Verity'] as const;
+export const AWAKEN_HEX: Record<string, string> = { Source: '#7bd1e6', Origin: '#c98cf0', Verity: '#f0b35a' };
+/** Stat lines from the selected awakening (ranges like [50-80]% are averaged by the DPS module). */
+export const awakenLines = (r: Rune, k?: string) => (k ? r.awakening[k] ?? [] : []);
 export const gradeLines = (r: Rune, grade?: number) => (grade ? r.gradeBonuses[grade - 1] ?? [] : []);
 export const COLOR_HEX: Record<SlotColor, string> = { R: '#e04b4b', G: '#4fc35a', B: '#4a8ef0', W: '#f2f2f2' };
 export const COLOR_NAME: Record<SlotColor, string> = { R: 'Red', G: 'Green', B: 'Blue', W: 'White' };
@@ -68,7 +72,7 @@ export function triggerSpec(r: Rune): TriggerSpec | null {
 export interface TriggerGroup { cell: string; rune: Rune; dir: number; spec: TriggerSpec; activation?: { cell: string; rune: Rune; ok: boolean }; target?: { cell: string; rune: Rune; ok: boolean }; ok: boolean }
 const matchTags = (r: Rune, tags: string[]) => tags.some(t => r.tags.includes(t) || (t === 'Enhance' && r.tags.some(x => /Enhance/.test(x))));
 
-export interface SkillGroup { cell: string; skill: Rune; links: { cell: string; rune: Rune; check: LinkCheck; dir: number; slot?: SlotColor | null; grade?: number }[]; runestone?: string; grade?: number; slots?: (SlotColor | null | undefined)[] }
+export interface SkillGroup { cell: string; skill: Rune; links: { cell: string; rune: Rune; check: LinkCheck; dir: number; slot?: SlotColor | null; grade?: number; awaken?: string }[]; runestone?: string; grade?: number; awaken?: string; slots?: (SlotColor | null | undefined)[] }
 export function analyzeBoard(b: Build): { groups: SkillGroup[]; orphans: { cell: string; rune: Rune }[]; triggers: TriggerGroup[] } {
   const groups: SkillGroup[] = []; const orphans: { cell: string; rune: Rune }[] = []; const linked = new Set<string>(); const triggers: TriggerGroup[] = [];
   for (const [cell, c] of Object.entries(b.board)) {
@@ -83,8 +87,8 @@ export function analyzeBoard(b: Build): { groups: SkillGroup[]; orphans: { cell:
   }
   for (const [cell, c] of Object.entries(b.board)) {
     const rune = c.rune && runeBySlug.get(c.rune); if (!rune || rune.type !== 'Skill') continue;
-    const g: SkillGroup = { cell, skill: rune, links: [], runestone: c.runestone, slots: c.slots, grade: c.grade };
-    DIRS.forEach((_, d) => { const n = step(cell, d); if (!n) return; const lr = b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); if (lr && lr.type === 'Link' && !triggerSpec(lr)) { const slot = c.slots?.[d]; const tagCheck = checkLink(lr, rune); const check = tagCheck.ok ? (checkSlot(slot, lr) ?? tagCheck) : tagCheck; g.links.push({ cell: n, rune: lr, check, dir: d, slot, grade: b.board[n].grade }); linked.add(n); } });
+    const g: SkillGroup = { cell, skill: rune, links: [], runestone: c.runestone, slots: c.slots, grade: c.grade, awaken: c.awaken };
+    DIRS.forEach((_, d) => { const n = step(cell, d); if (!n) return; const lr = b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); if (lr && lr.type === 'Link' && !triggerSpec(lr)) { const slot = c.slots?.[d]; const tagCheck = checkLink(lr, rune); const check = tagCheck.ok ? (checkSlot(slot, lr) ?? tagCheck) : tagCheck; g.links.push({ cell: n, rune: lr, check, dir: d, slot, grade: b.board[n].grade, awaken: b.board[n].awaken }); linked.add(n); } });
     // "Only one X can be linked at once" + the game never allows the same link rune twice on a skill
     const seen = new Set<string>(); for (const l of g.links) { if (seen.has(l.rune.slug) && l.check.ok) l.check = { ok: false, shared: [], reason: `Only one ${l.rune.name} can be linked at once` }; seen.add(l.rune.slug); }
     if (g.links.length > 6) g.links = g.links.slice(0, 6);
