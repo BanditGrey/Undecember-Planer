@@ -103,3 +103,6 @@ a.btn{display:inline-block;padding:4px 10px;border:1px solid #3a3124;border-radi
 .hex .grade{position:absolute;right:6%;top:8%;width:16px;height:16px;border-radius:3px;border:1px solid;background:#000c;font-size:10px;font-weight:700;line-height:14px;padding:0;cursor:pointer;z-index:3;opacity:.85}
 .hex .grade:hover{opacity:1;transform:scale(1.15)}
 .ud-grade.on{background:#2a2416;border-left:2px solid var(--gold);padding-left:6px}.ud-grade.off{opacity:.45}
+
+button.help{width:22px;height:22px;border-radius:50%;padding:0;font-weight:700;margin-left:6px;vertical-align:middle}
+.helpbox{background:#15120e;border:1px solid var(--gold2);border-radius:6px;padding:10px 14px;margin:8px 0;font-size:13px}.helpbox ul{margin:6px 0;padding-left:18px}.helpbox li{margin:3px 0}

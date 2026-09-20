@@ -17,6 +17,11 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Galeria da comunidade** – aba *Galeria*: “Publicar” abre uma issue pré-preenchida no GitHub
   com o código da build; a galeria lê as issues abertas pela API pública (sem servidor) e permite
   abrir qualquer build direto no planner. Curtidas/comentários acontecem na própria issue.
+- **Cores e slots** – cada runa tem sua cor (Vermelha/Verde/Azul, extraída do filtro “Rune stat” da fonte).
+  Nas skills você define a cor de cada um dos 6 slots (R/G/B/Branco/fechado) e o planner valida
+  cor + tags como no jogo; botão “Ajustar slots às link runes” preenche automaticamente. Painel “?”
+  explica Essências de Nascimento/Cor/Vínculo/Candor/Hexa.
+- **Grau da runa** – N/M/R/L em cada runa do tabuleiro; os bônus de grau entram no tooltip e no DPS.
 - **Runas de gatilho** – seta rotacionável no hexágono; valida a skill *Alvo* (direção da seta) e a
   skill de *Ativação* (lado oposto) pelas tags exigidas no texto da runa.
 - **DPS (estimativa)** – classifica cada stat parseado (increase / amplification / more-less / flat),
@@ -62,7 +67,8 @@ npm run data:scrape # (requer acesso ao site) enriquece com páginas de detalhe
 ```
 
 ## Roadmap
-- Cores dos slots do Rune Cast (Vermelho/Verde/Azul/Branco) e Essências de Cor.
+- Awakening (Source/Origin/Verity) selecionável por runa.
+- Comparar duas builds lado a lado.
 - Refinar glossário PT (nomes de itens únicos e autoridades).
 
 Projeto de fãs, não afiliado à LINE Games / Needs Games.

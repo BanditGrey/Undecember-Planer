@@ -12,6 +12,7 @@ const HEX = 44; // px, hex "size" (center to corner)
 
 export function Board({ build, set }: { build: Build; set: (b: Build) => void }) {
   const [pick, setPick] = useState<{ cell: string; kind: 'rune' | 'runestone' } | null>(null);
+  const [help, setHelp] = useState(false);
   const { t, g: tr, gd } = useT();
   const level = build.runeLevel ?? 45; const bonus = build.runeLevelBonus ?? 0;
   const setLevel = (v: number) => set({ ...build, runeLevel: v }); const setBonus = (v: number) => set({ ...build, runeLevelBonus: v });
@@ -43,9 +44,14 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
 
   return (
     <section className="panel">
-      <div className="row between"><h2>Rune Cast <small className="muted">{t('boardHint')}</small></h2>
+      <div className="row between"><h2>Rune Cast <small className="muted">{t('boardHint')}</small> <button className="help" onClick={() => setHelp(h => !h)} title={t('helpTitle')}>?</button></h2>
         <label className="muted" title={t('runeLevelTip')}>{t('runeLevel')} <input type="number" min={1} max={50} value={level} onChange={e => setLevel(Math.min(50, Math.max(1, +e.target.value || 1)))} style={{ width: 60 }} />
           <button onClick={autoSlots} title={t('slotHint')} style={{ marginLeft: 8 }}>{t('autoSlots')}</button><span title={t('bonusTip')}> {t('bonus')} +<input type="number" min={0} max={20} value={bonus} onChange={e => setBonus(Math.max(0, +e.target.value || 0))} style={{ width: 50 }} /></span></label></div>
+      {help && <div className="helpbox">
+        <b>{t('helpTitle')}</b>
+        <ul>{(['help1', 'help2', 'help3', 'help4', 'help5', 'help6'] as const).map(k => <li key={k}>{t(k)}</li>)}</ul>
+        <small className="muted">{t('helpSrc')} <a href="https://guide.floor.line.games/UD/en_US/detail/1166916580580800893" target="_blank" rel="noreferrer">guide.floor.line.games</a></small>
+      </div>}
       <div className="hexwrap"><div className="hexboard" style={{ width: W, height: H }}>
         <svg className="hexlinks" width={W} height={H}>
           {groups.flatMap(g => g.links.map(l => { const a = hexPos(g.cell), b = hexPos(l.cell); return <line key={g.cell + l.cell} x1={a.x * HEX + W / 2} y1={a.y * HEX + H / 2} x2={b.x * HEX + W / 2} y2={b.y * HEX + H / 2} stroke={l.check.ok ? '#c9a24a' : '#e05252'} strokeWidth={3} opacity={.8} />; }))}
