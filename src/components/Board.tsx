@@ -9,7 +9,8 @@ const HEX = 44; // px, hex "size" (center to corner)
 
 export function Board({ build, set }: { build: Build; set: (b: Build) => void }) {
   const [pick, setPick] = useState<{ cell: string; kind: 'rune' | 'runestone' } | null>(null);
-  const [level, setLevel] = useState<1 | 45>(45);
+  const level = build.runeLevel ?? 45; const bonus = build.runeLevelBonus ?? 0;
+  const setLevel = (v: number) => set({ ...build, runeLevel: v }); const setBonus = (v: number) => set({ ...build, runeLevelBonus: v });
   const { groups, orphans } = analyzeBoard(build);
   const badCells = new Set(groups.flatMap(g => g.links.filter(l => !l.check.ok).map(l => l.cell)));
   const orphanCells = new Set(orphans.map(o => o.cell));
@@ -25,7 +26,8 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
   return (
     <section className="panel">
       <div className="row between"><h2>Rune Cast <small className="muted">clique: runa · clique direito: runestone · passe o mouse para o tooltip</small></h2>
-        <label className="muted">Stats nível <select value={level} onChange={e => setLevel(+e.target.value as 1 | 45)}><option value={1}>1</option><option value={45}>45</option></select></label></div>
+        <label className="muted" title="Cap base 45; Rune Candor Essence: +1 a cada 5 sucessos, máx. +5">Nível da runa <input type="number" min={1} max={50} value={level} onChange={e => setLevel(Math.min(50, Math.max(1, +e.target.value || 1)))} style={{ width: 60 }} />
+          <span title="+X Skill Rune Level de equipamentos / Improved Technique"> bônus +<input type="number" min={0} max={20} value={bonus} onChange={e => setBonus(Math.max(0, +e.target.value || 0))} style={{ width: 50 }} /></span></label></div>
       <div className="hexwrap"><div className="hexboard" style={{ width: W, height: H }}>
         <svg className="hexlinks" width={W} height={H}>
           {groups.flatMap(g => g.links.map(l => { const a = hexPos(g.cell), b = hexPos(l.cell); return <line key={g.cell + l.cell} x1={a.x * HEX + W / 2} y1={a.y * HEX + H / 2} x2={b.x * HEX + W / 2} y2={b.y * HEX + H / 2} stroke={l.check.ok ? '#c9a24a' : '#e05252'} strokeWidth={3} opacity={.8} />; }))}
@@ -38,22 +40,22 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
           const inner = <div className={cls} style={style} onClick={() => setPick({ cell: k, kind: 'rune' })} onContextMenu={e => { e.preventDefault(); setPick({ cell: k, kind: 'runestone' }); }}>
             <div className="hex-in">{r ? <img src={r.icons[0]} alt={r.name} /> : k === CENTER ? <span className="ba">⚔</span> : <span className="lock">🔒</span>}
               {s && <img className="stone" src={s.icon} alt={s.name} />}</div></div>;
-          return r ? <Tip key={k} content={<><RuneTip r={r} level={level} />{s && <RunestoneTip s={s} />}</>}>{inner}</Tip> : <div key={k} style={{ display: 'contents' }}>{inner}</div>;
+          return r ? <Tip key={k} content={<><RuneTip r={r} level={level} bonus={bonus} />{s && <RunestoneTip s={s} />}</>}>{inner}</Tip> : <div key={k} style={{ display: 'contents' }}>{inner}</div>;
         })}
       </div></div>
       <div className="groups">
         {groups.map(g => <div key={g.cell} className="group">
-          <div className="gh"><Tip content={<RuneTip r={g.skill} level={level} />}><img src={g.skill.icons[0]} alt="" /></Tip><b style={{ color: runeColor(g.skill) }}>{g.skill.name}</b> <span className="tags">{g.skill.tags.map(t => <i key={t}>#{t}</i>)}</span>
+          <div className="gh"><Tip content={<RuneTip r={g.skill} level={level} bonus={bonus} />}><img src={g.skill.icons[0]} alt="" /></Tip><b style={{ color: runeColor(g.skill) }}>{g.skill.name}</b> <span className="tags">{g.skill.tags.map(t => <i key={t}>#{t}</i>)}</span>
             {g.runestone && <em className="muted"> · {runestoneBySlug.get(g.runestone)?.name}</em>}</div>
           {g.skill.description && <p className="muted desc">{g.skill.description}</p>}
           {g.links.length === 0 && <p className="muted">Nenhuma link rune adjacente.</p>}
-          {g.links.map(l => <div key={l.cell} className={l.check.ok ? 'ok' : 'bad'}><Tip content={<RuneTip r={l.rune} level={level} />}><img src={l.rune.icons[0]} alt="" /></Tip> {l.rune.name} — <small>{l.check.reason}</small></div>)}
+          {g.links.map(l => <div key={l.cell} className={l.check.ok ? 'ok' : 'bad'}><Tip content={<RuneTip r={l.rune} level={level} bonus={bonus} />}><img src={l.rune.icons[0]} alt="" /></Tip> {l.rune.name} — <small>{l.check.reason}</small></div>)}
         </div>)}
         {orphans.length > 0 && <div className="group warn"><b>Link runes sem skill adjacente:</b> {orphans.map(o => o.rune.name).join(', ')}</div>}
         {groups.length === 0 && <p className="muted">Adicione skill runes ao tabuleiro. Link runes nos 6 hexágonos vizinhos são vinculadas à skill.</p>}
       </div>
       {pick && pick.kind === 'rune' && <Picker title="Selecionar runa" allowClear onClose={() => setPick(null)}
-        items={runes.map(r => ({ slug: r.slug, name: r.name, icon: r.icons[0], sub: r.type === 'Skill' ? 'Skill Rune' : 'Link Rune', tags: r.tags, tip: <RuneTip r={r} level={level} /> }))}
+        items={runes.map(r => ({ slug: r.slug, name: r.name, icon: r.icons[0], sub: r.type === 'Skill' ? 'Skill Rune' : 'Link Rune', tags: r.tags, tip: <RuneTip r={r} level={level} bonus={bonus} /> }))}
         filters={[{ label: 'Tipo', options: ['Skill Rune', 'Link Rune'], match: (i, v) => i.sub === v }, { label: 'Tag', options: tags, match: (i, v) => !!i.tags?.includes(v) }]}
         onPick={s => { update(pick.cell, { rune: s ?? undefined }); setPick(null); }} />}
       {pick && pick.kind === 'runestone' && <Picker title="Selecionar runestone" allowClear onClose={() => setPick(null)}

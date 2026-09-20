@@ -17,6 +17,8 @@ export interface Build {
   board: Record<string, Cell>; // key "q,r" (axial hex coordinates)
   equipment: Partial<Record<EquipSlot, { unique?: string; authority?: string }>>;
   runemaster: Record<string, number>; // node id -> points
+  runeLevel?: number; // 1..50 (45 base + up to 5 from Rune Candor)
+  runeLevelBonus?: number; // +X skill rune level from gear
 }
 
 

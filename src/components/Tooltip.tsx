@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import type { Rune, Runestone, Unique, Authority } from '../types';
 import { ELEMENT_COLORS, runeColor } from '../lib/rules';
+import { BASE_MAX_LEVEL, statsAtLevel } from '../lib/level';
 
 /** Wraps children; shows an in-game-style tooltip on hover (positioned to stay on screen). */
 export function Tip({ content, children, className }: { content: ReactNode; children: ReactNode; className?: string }) {
@@ -18,14 +19,14 @@ export function Tip({ content, children, className }: { content: ReactNode; chil
 const Tags = ({ tags }: { tags: string[] }) => <div className="ud-tags">{tags.map(t => <span key={t} style={{ color: ELEMENT_COLORS[t] || '#d9d9e3' }}>#{t}</span>)}</div>;
 const Lines = ({ lines, cls }: { lines: string[]; cls?: string }) => <>{lines.map((l, i) => <div key={i} className={cls}>{l}</div>)}</>;
 
-export function RuneTip({ r, level = 45 }: { r: Rune; level?: 1 | 45 }) {
-  const stats = level === 45 ? r.level45 : r.level1; const c = runeColor(r);
+export function RuneTip({ r, level = BASE_MAX_LEVEL, bonus = 0 }: { r: Rune; level?: number; bonus?: number }) {
+  const eff = level + bonus; const { lines: stats, estimated } = statsAtLevel(r.level1, r.level45, eff); const c = runeColor(r);
   return <div className="ud-card">
     <div className="ud-head" style={{ borderColor: c }}><img src={r.icons[0]} alt="" /><div><div className="ud-name" style={{ color: c }}>{r.name}</div><div className="ud-sub">{r.type === 'Skill' ? 'Skill Rune' : 'Link Rune'}{r.rarity ? ` · ${r.rarity}` : ''}</div></div></div>
     <Tags tags={r.tags} />
     {r.description && <p className="ud-desc">{r.description}</p>}
     {r.linkRules.length > 0 && <div className="ud-sec"><Lines lines={r.linkRules} cls="ud-rule" /></div>}
-    {stats.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Rune Level {level}</div><Lines lines={stats} cls="ud-stat" /></div>}
+    {stats.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Rune Level {level}{bonus ? ` (+${bonus})` : ''}{estimated && <span className="ud-est" title="Interpolado entre Lv1 e Lv45 do banco"> ≈</span>}</div><Lines lines={stats} cls="ud-stat" /></div>}
     {r.gradeBonuses.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Rune Grade</div>{r.gradeBonuses.map((g, i) => <div key={i} className="ud-grade"><b>{['Magic', 'Rare', 'Legendary'][i] ?? `+${i + 1}`}</b><Lines lines={g} /></div>)}</div>}
     {Object.keys(r.awakening).length > 0 && <div className="ud-sec"><div className="ud-sec-t">Awakening</div>{Object.entries(r.awakening).map(([k, v]) => <div key={k} className="ud-grade"><b className="ud-aw">{k}</b><Lines lines={v} /></div>)}</div>}
     {r.weapons.length > 0 && <div className="ud-foot">Weapon: {r.weapons.join(', ')}</div>}
