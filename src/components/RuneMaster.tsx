@@ -8,15 +8,15 @@ const CAT_ICON: Record<string, string> = { Attack: '⚔', Spell: '✦', DoT: '�
 const catIcon = (c: string) => Object.entries(CAT_ICON).find(([k]) => c.toLowerCase().includes(k.toLowerCase()))?.[1] ?? '✧';
 
 function NodeTip({ n, v, locked, need }: { n: RuneMasterNode; v: number; locked: boolean; need: number }) {
-  const { t } = useT();
+  const { t, g } = useT();
   return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#c9a24a' }}><div><div className="ud-name" style={{ color: '#c9a24a' }}>{n.category} · Tier {n.tier}</div><div className="ud-sub">{t('rmUnlock', { lv: n.unlockLevel, max: n.maxPoints })}</div></div></div>
-    <div className="ud-sec"><div className="ud-stat">{n.effect.replace(/\b0\b/, t('perPoint'))}</div></div>
+    <div className="ud-sec"><div className="ud-stat">{g(n.effect).replace(/\b0\b/, t('perPoint'))}</div></div>
     <div className="ud-foot">{v}/{n.maxPoints} {t('points')}{n.prereqPointsPrevTier > 0 && <> · {t('rmReq', { n: n.prereqPointsPrevTier, t: n.tier - 1 })}{locked && <span style={{ color: '#e05252' }}> ({t('rmMissing', { n: need })})</span>}</>}</div></div>;
 }
 
 export function RuneMaster({ build, set }: { build: Build; set: (b: Build) => void }) {
   const [cat, setCat] = useState('');
-  const { t } = useT();
+  const { t, g } = useT();
   const cats = useMemo(() => [...new Set(runemaster.map(n => n.category))], []);
   const pts = build.runemaster; const total = Object.values(pts).reduce((a, b) => a + b, 0);
   const tierPts = (c: string, t: number) => runemaster.filter(n => n.category === c && n.tier === t).reduce((a, n) => a + (pts[n.id] || 0), 0);
@@ -43,7 +43,7 @@ export function RuneMaster({ build, set }: { build: Build; set: (b: Build) => vo
                     onClick={() => !locked && v < n.maxPoints && change(n.id, v + 1)} onContextMenu={e => { e.preventDefault(); if (v > 0) change(n.id, v - 1); }}>
                     <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" className="orb-ring" strokeDasharray={`${(v / n.maxPoints) * 107} 107`} /></svg>
                     <span className="orb-v">{v}<small>/{n.maxPoints}</small></span>
-                    <div className="orb-eff">{n.effect}</div></div></Tip>; })}</div></div>; })}
+                    <div className="orb-eff">{g(n.effect)}</div></div></Tip>; })}</div></div>; })}
         </div></div>)}
       <p className="muted" style={{ marginTop: 8 }}>{t('rmHint')}</p>
     </section>

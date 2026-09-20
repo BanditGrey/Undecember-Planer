@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
+import { pt } from './glossary';
 
 export type Lang = 'pt' | 'en';
 const dict = {
@@ -18,7 +19,7 @@ const dict = {
     itemsTitle: 'Itens', essences: 'Essências', potions: 'Poções', coins: 'Moedas', materials: 'Materiais', itemsEmpty: 'Sem dados ainda — a carga do banco preenche esta seção.',
     tipMissing: 'Detalhes ainda não importados', tipEst: 'Interpolado entre Lv1 e Lv45 do banco', weapon: 'Arma', source: 'Fonte', unlockAt: 'Desbloqueia',
     dpsTitle: 'Estimativa de dano', dpsHint: 'Estimativa simplificada a partir dos stats do banco (nível selecionado) e dos modificadores dos link runes / Mestre de Runas. Não substitui o cálculo do jogo.', dpsSkill: 'Skill', dpsBase: 'DMG base da runa', dpsFlat: 'DMG fixo', dpsMore: 'Multiplicadores (link runes)', dpsInc: 'Aumentos (%)', dpsAmp: 'Amplificação (%)', dpsResult: 'DMG por uso (estimado)', dpsCost: 'Custo de mana', dpsNoSkill: 'Coloque uma skill rune no tabuleiro para ver a estimativa.',
-    weaponDmg: 'DMG da arma (média)', charStat: 'Bônus do personagem (%)',
+    weaponDmg: 'DMG da arma (média)', charStat: 'Bônus do personagem (%)', origText: 'Texto original (EN)', origTip: 'Mostrar stats e regras no inglês original em vez do glossário PT',
   },
   en: {
     appSub: 'Build Planner', buildName: 'Build name', author: 'Author', share: 'Share link', save: 'Save', newBuild: 'New', copied: 'Link copied!', saved: 'Build saved locally.',
@@ -36,16 +37,20 @@ const dict = {
     itemsTitle: 'Items', essences: 'Essences', potions: 'Potions', coins: 'Coins', materials: 'Materials', itemsEmpty: 'No data yet — the database refresh fills this section.',
     tipMissing: 'Details not imported yet', tipEst: 'Interpolated between Lv1 and Lv45 from the database', weapon: 'Weapon', source: 'Source', unlockAt: 'Unlocks',
     dpsTitle: 'Damage estimate', dpsHint: 'Simplified estimate from the database stats (selected level) plus link rune / Rune Master modifiers. Not a replacement for the in-game calculation.', dpsSkill: 'Skill', dpsBase: 'Rune base DMG', dpsFlat: 'Flat DMG', dpsMore: 'Multipliers (link runes)', dpsInc: 'Increases (%)', dpsAmp: 'Amplification (%)', dpsResult: 'DMG per use (estimated)', dpsCost: 'Mana cost', dpsNoSkill: 'Place a skill rune on the board to see the estimate.',
-    weaponDmg: 'Weapon DMG (average)', charStat: 'Character bonus (%)',
+    weaponDmg: 'Weapon DMG (average)', charStat: 'Character bonus (%)', origText: 'Original text (EN)', origTip: 'Show stats and rules in original English instead of the PT glossary',
   },
 } as const;
 export type Key = keyof typeof dict.pt;
 
-const Ctx = createContext<{ lang: Lang; setLang: (l: Lang) => void; t: (k: Key, vars?: Record<string, string | number>) => string }>(null!);
+const Ctx = createContext<{ lang: Lang; setLang: (l: Lang) => void; t: (k: Key, vars?: Record<string, string | number>) => string; g: (line: string) => string; showOriginal: boolean; setShowOriginal: (v: boolean) => void }>(null!);
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>(() => (localStorage.getItem('lang') as Lang) || (navigator.language.startsWith('pt') ? 'pt' : 'en'));
   const setLang = (l: Lang) => { localStorage.setItem('lang', l); setLangState(l); document.documentElement.lang = l === 'pt' ? 'pt-BR' : 'en'; };
   const t = (k: Key, vars: Record<string, string | number> = {}) => (dict[lang][k] as string).replace(/\{(\w+)\}/g, (_, v) => String(vars[v] ?? ''));
-  return <Ctx.Provider value={{ lang, setLang, t }}>{children}</Ctx.Provider>;
+  const [showOriginal, setShowOriginalState] = useState(localStorage.getItem('showOriginal') === '1');
+  const setShowOriginal = (v: boolean) => { localStorage.setItem('showOriginal', v ? '1' : '0'); setShowOriginalState(v); };
+  /** Game-text translator: PT glossary when lang is pt (unless the user asked for original text). */
+  const g = (line: string) => (lang === 'pt' && !showOriginal ? pt(line) : line);
+  return <Ctx.Provider value={{ lang, setLang, t, g, showOriginal, setShowOriginal }}>{children}</Ctx.Provider>;
 }
 export const useT = () => useContext(Ctx);

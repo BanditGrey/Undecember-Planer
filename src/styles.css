@@ -80,3 +80,4 @@ nav{display:flex;gap:4px;border-bottom:1px solid var(--gold2);margin-bottom:12px
 .ing{display:inline-flex;align-items:center;gap:2px;font-size:11px}.ing img{width:22px;height:22px;object-fit:contain;background:#000;border:1px solid var(--line)}
 .lang{margin-left:auto;display:flex;gap:2px}.lang button{padding:4px 8px;font-size:11px;font-family:'Cinzel',serif}.lang button.on{color:var(--gold);border-color:var(--gold)}
 .dps table{width:100%;border-collapse:collapse;font-size:12.5px}.dps td{padding:3px 4px;border-bottom:1px solid #221d16}.dps td:last-child{text-align:right;font-variant-numeric:tabular-nums}.dps tr.total td{border-top:1px solid var(--gold2);color:var(--gold);font-size:14px}
+.orig{font-size:11px;margin-left:8px;display:flex;align-items:center;gap:4px}

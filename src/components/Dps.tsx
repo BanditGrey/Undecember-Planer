@@ -6,7 +6,7 @@ import type { Build } from '../types';
 
 const fmt = (n: number) => n.toLocaleString(undefined, { maximumFractionDigits: 0 });
 export function Dps({ build }: { build: Build }) {
-  const { t } = useT();
+  const { t, g } = useT();
   const [weaponAvg, setW] = useState(300); const [charInc, setC] = useState(0);
   const res = estimateAll(build, { weaponAvg, charIncPct: charInc });
   return <section className="panel">
@@ -25,7 +25,7 @@ export function Dps({ build }: { build: Build }) {
         {r.manaCost != null && <tr><td>{t('dpsCost')}</td><td>{r.manaCost}</td></tr>}
         <tr className="total"><td>{t('dpsResult')}</td><td><b>{fmt(r.damage)}</b></td></tr>
       </tbody></table>
-      {r.mods.length > 0 && <details><summary>{r.mods.length} mods</summary><ul className="affix">{r.mods.map((m, i) => <li key={i}><b>{m.source}</b>: {m.line} <em className="muted">({m.kind})</em></li>)}</ul></details>}
+      {r.mods.length > 0 && <details><summary>{r.mods.length} mods</summary><ul className="affix">{r.mods.map((m, i) => <li key={i}><b>{m.source}</b>: {g(m.line)} <em className="muted">({m.kind})</em></li>)}</ul></details>}
     </div>)}</div>
   </section>;
 }

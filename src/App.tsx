@@ -16,7 +16,7 @@ export default function App() {
   const [tab, setTab] = useState<Tab>('board');
   const [saved, setSaved] = useState(savedBuilds);
   const [msg, setMsg] = useState('');
-  const { t, lang, setLang } = useT();
+  const { t, lang, setLang, showOriginal, setShowOriginal } = useT();
   useEffect(() => { history.replaceState(null, '', shareUrl(build)); }, [build]);
   useEffect(() => { const h = () => { const b = buildFromLocation(); if (b) setBuild(b); }; addEventListener('hashchange', h); return () => removeEventListener('hashchange', h); }, []);
   const flash = (m: string) => { setMsg(m); setTimeout(() => setMsg(''), 2500); };
@@ -35,7 +35,7 @@ export default function App() {
           <button onClick={save}>{t('save')}</button>
           <button onClick={() => setBuild(emptyBuild())}>{t('newBuild')}</button>
           {msg && <span className="flash">{msg}</span>}
-          <span className="lang"><button className={lang === 'pt' ? 'on' : ''} onClick={() => setLang('pt')}>PT</button><button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button></span>
+          <span className="lang"><button className={lang === 'pt' ? 'on' : ''} onClick={() => setLang('pt')}>PT</button><button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>{lang === 'pt' && <label className="muted orig" title={t('origTip')}><input type="checkbox" checked={showOriginal} onChange={e => setShowOriginal(e.target.checked)} /> {t('origText')}</label>}</span>
         </div>
         <nav>{([['board', t('tabBoard')], ['equip', t('tabEquip')], ['rm', t('tabRM')], ['dps', t('tabDps')], ['items', t('tabItems')], ['builds', t('tabBuilds')]] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
       </header>

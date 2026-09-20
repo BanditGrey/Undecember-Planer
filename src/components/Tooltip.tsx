@@ -17,20 +17,20 @@ export function Tip({ content, children, className }: { content: ReactNode; chil
   </div>;
 }
 
-const Tags = ({ tags }: { tags: string[] }) => <div className="ud-tags">{tags.map(t => <span key={t} style={{ color: ELEMENT_COLORS[t] || '#d9d9e3' }}>#{t}</span>)}</div>;
-const Lines = ({ lines, cls }: { lines: string[]; cls?: string }) => <>{lines.map((l, i) => <div key={i} className={cls}>{l}</div>)}</>;
+const Tags = ({ tags }: { tags: string[] }) => { const { g } = useT(); return <div className="ud-tags">{tags.map(t => <span key={t} style={{ color: ELEMENT_COLORS[t] || '#d9d9e3' }}>#{g(t)}</span>)}</div>; };
+const Lines = ({ lines, cls }: { lines: string[]; cls?: string }) => { const { g } = useT(); return <>{lines.map((l, i) => <div key={i} className={cls}>{g(l)}</div>)}</>; };
 
 export function RuneTip({ r, level = BASE_MAX_LEVEL, bonus = 0 }: { r: Rune; level?: number; bonus?: number }) {
-  const eff = level + bonus; const { lines: stats, estimated } = statsAtLevel(r.level1, r.level45, eff); const c = runeColor(r); const { t } = useT();
+  const eff = level + bonus; const { lines: stats, estimated } = statsAtLevel(r.level1, r.level45, eff); const c = runeColor(r); const { t, g } = useT();
   return <div className="ud-card">
     <div className="ud-head" style={{ borderColor: c }}><img src={r.icons[0]} alt="" /><div><div className="ud-name" style={{ color: c }}>{r.name}</div><div className="ud-sub">{r.type === 'Skill' ? 'Skill Rune' : 'Link Rune'}{r.rarity ? ` · ${r.rarity}` : ''}</div></div></div>
     <Tags tags={r.tags} />
-    {r.description && <p className="ud-desc">{r.description}</p>}
+    {r.description && <p className="ud-desc">{g(r.description)}</p>}
     {r.linkRules.length > 0 && <div className="ud-sec"><Lines lines={r.linkRules} cls="ud-rule" /></div>}
     {stats.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Rune Level {level}{bonus ? ` (+${bonus})` : ''}{estimated && <span className="ud-est" title={t('tipEst')}> ≈</span>}</div><Lines lines={stats} cls="ud-stat" /></div>}
     {r.gradeBonuses.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Rune Grade</div>{r.gradeBonuses.map((g, i) => <div key={i} className="ud-grade"><b>{['Magic', 'Rare', 'Legendary'][i] ?? `+${i + 1}`}</b><Lines lines={g} /></div>)}</div>}
     {Object.keys(r.awakening).length > 0 && <div className="ud-sec"><div className="ud-sec-t">Awakening</div>{Object.entries(r.awakening).map(([k, v]) => <div key={k} className="ud-grade"><b className="ud-aw">{k}</b><Lines lines={v} /></div>)}</div>}
-    {r.weapons.length > 0 && <div className="ud-foot">{t('weapon')}: {r.weapons.join(', ')}</div>}
+    {r.weapons.length > 0 && <div className="ud-foot">{t('weapon')}: {r.weapons.map(g).join(', ')}</div>}
     {(r.howToGet.length > 0 || r.acts.length > 0) && <div className="ud-foot">{t('source')}: <span className="ud-src">{r.howToGet.join(' ')}</span> {r.acts.join(' ')}</div>}
     {stats.length === 0 && <div className="ud-foot ud-missing">{t('tipMissing')}</div>}
   </div>;
@@ -44,7 +44,7 @@ export function RunestoneTip({ s }: { s: Runestone }) {
 
 export function UniqueTip({ u }: { u: Unique }) {
   return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#e2562f' }}><img src={u.icon} alt="" /><div><div className="ud-name" style={{ color: '#e2562f' }}>{u.name}</div><div className="ud-sub">Unique {u.type} · Tier {u.tier}</div></div></div>
-    {u.requires.length > 0 && <div className="ud-foot">{u.requires.join(' · ')}</div>}
+    {u.requires.length > 0 && <div className="ud-foot">{u.requires.map(useT().g).join(' · ')}</div>}
     {u.baseStats.length > 0 && <div className="ud-sec"><Lines lines={u.baseStats} /></div>}
     {u.affixes.length > 0 && <div className="ud-sec"><Lines lines={u.affixes} cls="ud-stat" /></div>}
     </div>;
