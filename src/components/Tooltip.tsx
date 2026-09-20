@@ -43,15 +43,17 @@ export function RunestoneTip({ s }: { s: Runestone }) {
 }
 
 export function UniqueTip({ u }: { u: Unique }) {
-  return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#e2562f' }}><img src={u.icon} alt="" /><div><div className="ud-name" style={{ color: '#e2562f' }}>{u.name}</div><div className="ud-sub">Unique {u.type} · Tier {u.tier}</div></div></div>
-    {u.requires.length > 0 && <div className="ud-foot">{u.requires.map(useT().g).join(' · ')}</div>}
+  const { g } = useT();
+  return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#e2562f' }}><img src={u.icon} alt="" /><div><div className="ud-name" style={{ color: '#e2562f' }}>{u.name}</div><div className="ud-sub">{g('Unique')} {g(u.type)} · Tier {u.tier}</div></div></div>
+    {u.requires.length > 0 && <div className="ud-foot">{u.requires.map(g).join(' · ')}</div>}
     {u.baseStats.length > 0 && <div className="ud-sec"><Lines lines={u.baseStats} /></div>}
     {u.affixes.length > 0 && <div className="ud-sec"><Lines lines={u.affixes} cls="ud-stat" /></div>}
     </div>;
 }
 
 export function AuthorityTip({ a }: { a: Authority }) {
-  return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#c9a24a' }}><div><div className="ud-name" style={{ color: '#c9a24a' }}>⚜ {a.name}</div><div className="ud-sub">Authority of the Gods · {a.slot}</div></div></div>
+  const { t, g } = useT();
+  return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#c9a24a' }}><div><div className="ud-name" style={{ color: '#c9a24a' }}>⚜ {a.name}</div><div className="ud-sub">{t('authTitle')} · {g(a.slot)}</div></div></div>
     {a.unique.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Unique Option</div><Lines lines={a.unique} cls="ud-stat" /></div>}
     {a.prefix.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Prefix Options</div><Lines lines={a.prefix} /></div>}
     {a.suffix.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Suffix Options</div><Lines lines={a.suffix} /></div>}

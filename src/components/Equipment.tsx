@@ -42,9 +42,9 @@ export function Equipment({ build, set }: { build: Build; set: (b: Build) => voi
           {equipped.length === 0 && <p className="muted">{t('equipEmpty')}</p>}
           {equipped.map(({ s, e }) => { const u = e.unique ? uniqueBySlug.get(e.unique) : undefined; const a = e.authority ? authorityBySlug.get(e.authority) : undefined;
             return <div key={s.id} className="eq-row"><div className="eq-label">{label(s.id)}</div>
-              {u && <div className="eq-uname">{u.name} <small className="muted">{u.type} · T{u.tier}</small></div>}
+              {u && <div className="eq-uname">{u.name} <small className="muted">{g(u.type)} · T{u.tier}</small></div>}
               {u && u.affixes.length > 0 && <ul className="affix">{u.affixes.map((x, i) => <li key={i}>{g(x)}</li>)}</ul>}
-              {a && <div className="eq-aname">⚜ {a.god} <small className="muted">({a.slot})</small>{a.unique.length > 0 && <ul className="affix">{a.unique.map((x, i) => <li key={i}>{g(x)}</li>)}</ul>}</div>}
+              {a && <div className="eq-aname">⚜ {a.god} <small className="muted">({g(a.slot)})</small>{a.unique.length > 0 && <ul className="affix">{a.unique.map((x, i) => <li key={i}>{g(x)}</li>)}</ul>}</div>}
               <div className="row"><button onClick={() => setPick({ slot: s.id, kind: 'unique' })}>{t('item')}</button><button onClick={() => setPick({ slot: s.id, kind: 'authority' })}>{t('authority')}</button>
                 <button className="danger" onClick={() => { const eq = { ...build.equipment }; delete eq[s.id]; set({ ...build, equipment: eq }); }}>✕</button></div></div>; })}
         </div>
