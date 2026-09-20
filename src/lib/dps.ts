@@ -1,4 +1,4 @@
-import { runeBySlug, nodeById } from '../data';
+import { zodiacNodeById, runeBySlug, nodeById, uniqueBySlug } from '../data';
 import { statsAtLevel } from './level';
 import { analyzeBoard, awakenLines, gradeLines, type SkillGroup } from './rules';
 import type { Build, Rune } from '../types';
@@ -44,6 +44,15 @@ export function estimate(build: Build, g: SkillGroup, input: DpsInput): DpsResul
   for (const line of awakenLines(g.skill, g.awaken)) { const m = classify(line, `${g.skill.name} (${g.awaken})`, { tags: g.skill.tags }); if (m) mods.push(m); }
   for (const l of g.links) { if (!l.check.ok) continue; const ls = [...statsAtLevel(l.rune.level1, l.rune.level45, level).lines, ...gradeLines(l.rune, l.grade), ...awakenLines(l.rune, l.awaken)]; for (const line of ls) { const m = classify(line, l.rune.name, { tags: g.skill.tags }); if (m) mods.push(m); } }
   for (const [id, pts] of Object.entries(build.runemaster)) { const n = nodeById.get(id); if (!n || !pts) continue; const eff = n.effect.replace(/\b0(?=%)/, String(pts)).replace(/(?<=by )0\b/, String(pts)); if (/upon Attack|attacking/i.test(eff) && !g.skill.tags.includes('Attack')) continue; if (/Spell/i.test(eff) && !g.skill.tags.includes('Spell')) continue; const m = classify(eff.replace(/ upon.*$|by /i, ' '), `Rune Master: ${n.category} T${n.tier}`, { tags: g.skill.tags }); if (m) mods.push(m); }
+  // Zodiac specialization nodes: unconditional damage lines; named effects ([Sharpness] (+50% Critical Rate, ...)) expose their bracketed stats.
+  const wType = uniqueBySlug.get(build.equipment.Weapons?.unique ?? '')?.type ?? ''; const twoH = /Two-Handed|Bow$|Staff|Bowgun|Magic Bow/.test(wType); const dual = false;
+  const weaponOk = (l: string) => /2-handed/i.test(l) ? twoH : /1-handed/i.test(l) ? (!!wType && !twoH) : /Dual Wield/i.test(l) ? dual : true;
+  for (const id of build.zodiac ?? []) { const z = zodiacNodeById.get(id); if (!z) continue;
+    for (const e of z.node.effects) { const named = e.match(/^\[(.+?)\]\s*(.*)$/); const body = named ? named[2] : e; const src = `Zodiac: ${z.spec.name}${named ? ` [${named[1]}]` : ''}`;
+      const parts = body.match(/\(([^)]*)\)/) ? body.match(/\(([^)]*)\)/)![1].split(/,|;/) : (named ? [] : body.split(/;/));
+      for (const raw of parts) { const l = raw.trim().replace(/^DMG upon Attack \+(\d+%)$/, '+$1 DMG upon Attack').replace(/^DMG upon Spell \+(\d+%)$/, '+$1 DMG upon Spell').replace(/^Amplifies DMG by (\d+%)/, '$1 DMG Amplification');
+        if (/upon Attack|attacking/i.test(l) && !g.skill.tags.includes('Attack')) continue; if (/upon Spell/i.test(l) && !g.skill.tags.includes('Spell')) continue; if (!weaponOk(l)) continue;
+        const m = classify(l.replace(/ upon (Attack|Spell)$/i, '').replace(/ Increase$/i, '').replace(/ when (2-handed|1-handed) weapon is equipped$| when Dual Wielding$/i, ''), src, { tags: g.skill.tags }); if (m) mods.push(m); } } }
   const incTotal = mods.filter(m => m.kind === 'inc').reduce((a, m) => a + m.value, 0) + input.charIncPct;
   const ampTotal = mods.filter(m => m.kind === 'amp').reduce((a, m) => a + m.value, 0);
   const moreProduct = mods.filter(m => m.kind === 'more').reduce((a, m) => a * (1 + m.value / 100), 1) * mods.filter(m => m.kind === 'less').reduce((a, m) => a * (1 - m.value / 100), 1);
