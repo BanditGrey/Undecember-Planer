@@ -24,6 +24,7 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Grau e Despertar** – N/M/R/L e ☆ Source/Origin/Verity em cada runa do tabuleiro; ambos entram no tooltip e no DPS.
 - **Runas de gatilho** – seta rotacionável no hexágono; valida a skill *Alvo* (direção da seta) e a
   skill de *Ativação* (lado oposto) pelas tags exigidas no texto da runa.
+- **Personagem & checagem** – nível/FOR/DES/INT da build; avisa únicos com requisito não atendido, nós do Mestre de Runas acima do nível e autoridades do mesmo deus repetidas.
 - **Comparar** – build atual (A) vs. build salva ou link colado (B): skills, DPS por skill com Δ%, equipamento e nós do Mestre de Runas diferentes.
 - **DPS (estimativa)** – classifica cada stat parseado (increase / amplification / more-less / flat),
   respeitando tags da skill e ignorando condicionais, e mostra o DPS estimado por skill do tabuleiro

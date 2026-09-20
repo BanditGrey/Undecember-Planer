@@ -5,6 +5,7 @@ import { RuneMaster } from './components/RuneMaster';
 import { Items } from './components/Items';
 import { Gallery } from './components/Gallery';
 import { Compare } from './components/Compare';
+import { Character } from './components/Character';
 import { runes, runestones, uniques, runemaster, authority } from './data';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
 import { emptyBuild, type Build } from './types';
@@ -42,6 +43,7 @@ export default function App() {
         <nav>{([['board', t('tabBoard')], ['equip', t('tabEquip')], ['rm', t('tabRM')], ['dps', t('tabDps')], ['items', t('tabItems')], ['builds', t('tabBuilds')], ['gallery', t('tabGallery')], ['compare', t('tabCompare')]] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
       </header>
       <main>
+        {(tab === 'board' || tab === 'equip' || tab === 'rm') && <Character build={build} set={setBuild} />}
         {tab === 'board' && <Board build={build} set={setBuild} />}
         {tab === 'equip' && <Equipment build={build} set={setBuild} />}
         {tab === 'rm' && <RuneMaster build={build} set={setBuild} />}
