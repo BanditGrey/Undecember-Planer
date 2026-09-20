@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { authority, uniqueBySlug, uniques, authorityBySlug } from '../data';
 import type { Build, EquipSlot } from '../types';
 import { Picker } from './Picker';
+import { AuthorityTip, Tip, UniqueTip } from './Tooltip';
 
 const SLOTS: { id: EquipSlot; label: string; types: string[]; authSlot: string[] }[] = [
   { id: 'Weapons', label: 'Arma', types: ['dagger', 'sword', 'axe', 'mace', 'staff', 'bow', 'wand', 'sceptre', 'magicbow', 'twohand_sword', 'twohand_axe', 'twohand_mace'], authSlot: ['Weapons'] },
@@ -28,18 +29,18 @@ export function Equipment({ build, set }: { build: Build; set: (b: Build) => voi
         {SLOTS.map(s => { const e = build.equipment[s.id] || {}; const u = e.unique ? uniqueBySlug.get(e.unique) : undefined; const a = e.authority ? authorityBySlug.get(e.authority) : undefined;
           return <div key={s.id} className="eq-slot">
             <div className="eq-label">{s.label}</div>
-            <button className="eq-item" onClick={() => setPick({ slot: s.id, kind: 'unique' })}>{u ? <><img src={u.icon} alt="" /><span>{u.name}<small>{u.type} · T{u.tier}</small></span></> : <span className="muted">Único…</span>}</button>
-            {u && u.affixes.length > 0 && <ul className="affix">{u.affixes.map((x, i) => <li key={i}>{x}</li>)}</ul>}
-            <button className="eq-auth" onClick={() => setPick({ slot: s.id, kind: 'authority' })}>{a ? <span>⚜ {a.god} <small>({a.slot})</small></span> : <span className="muted">Autoridade…</span>}</button>
-            {a && a.unique.length > 0 && <ul className="affix">{a.unique.map((x, i) => <li key={i}>{x}</li>)}</ul>}
+            {u ? <Tip content={<UniqueTip u={u} />}><button className="eq-item unique" onClick={() => setPick({ slot: s.id, kind: 'unique' })}><img src={u.icon} alt="" /><span>{u.name}<small>{u.type} · Tier {u.tier}</small></span></button></Tip>
+               : <button className="eq-item" onClick={() => setPick({ slot: s.id, kind: 'unique' })}><span className="muted">Único…</span></button>}
+            {a ? <Tip content={<AuthorityTip a={a} />}><button className="eq-auth" onClick={() => setPick({ slot: s.id, kind: 'authority' })}><span>⚜ {a.god} <small>({a.slot})</small></span></button></Tip>
+               : <button className="eq-auth" onClick={() => setPick({ slot: s.id, kind: 'authority' })}><span className="muted">Autoridade…</span></button>}
           </div>; })}
       </div>
       {pick && def && pick.kind === 'unique' && <Picker title={`Único — ${def.label}`} allowClear onClose={() => setPick(null)}
-        items={uniques.filter(u => def.types.includes(u.typeKey)).map(u => ({ slug: u.slug, name: u.name, icon: u.icon, sub: `${u.type} · Tier ${u.tier}`, tags: [u.type] }))}
+        items={uniques.filter(u => def.types.includes(u.typeKey)).map(u => ({ slug: u.slug, name: u.name, icon: u.icon, sub: `${u.type} · Tier ${u.tier}`, tags: [u.type], tip: <UniqueTip u={u} /> }))}
         filters={[{ label: 'Tipo', options: [...new Set(uniques.filter(u => def.types.includes(u.typeKey)).map(u => u.type))], match: (i, v) => i.tags?.[0] === v }]}
         onPick={s => { upd(pick.slot, { unique: s ?? undefined }); setPick(null); }} />}
       {pick && def && pick.kind === 'authority' && <Picker title={`Autoridade — ${def.label}`} allowClear onClose={() => setPick(null)}
-        items={authority.filter(a => def.authSlot.includes(a.slot)).map(a => ({ slug: a.slug, name: `${a.god}`, sub: a.slot }))}
+        items={authority.filter(a => def.authSlot.includes(a.slot)).map(a => ({ slug: a.slug, name: `${a.god}`, sub: a.slot, tip: <AuthorityTip a={a} /> }))}
         onPick={s => { upd(pick.slot, { authority: s ?? undefined }); setPick(null); }} />}
     </section>
   );

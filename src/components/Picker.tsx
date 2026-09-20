@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type ReactNode } from 'react';
+import { Tip } from './Tooltip';
 
-export interface PickItem { slug: string; name: string; icon?: string; sub?: string; tags?: string[] }
+export interface PickItem { slug: string; name: string; icon?: string; sub?: string; tags?: string[]; tip?: ReactNode }
 interface Props { title: string; items: PickItem[]; filters?: { label: string; options: string[]; match: (i: PickItem, v: string) => boolean }[]; onPick: (slug: string | null) => void; onClose: () => void; allowClear?: boolean }
 
 export function Picker({ title, items, filters = [], onPick, onClose, allowClear }: Props) {
@@ -19,8 +20,9 @@ export function Picker({ title, items, filters = [], onPick, onClose, allowClear
           {allowClear && <button className="danger" onClick={() => onPick(null)}>Remover</button>}
         </div>
         <div className="pick-grid">
-          {list.map(i => <button key={i.slug} className="pick" onClick={() => onPick(i.slug)} title={i.tags?.join(', ')}>
-            {i.icon && <img src={i.icon} alt="" loading="lazy" />}<span><b>{i.name}</b>{i.sub && <small>{i.sub}</small>}</span></button>)}
+          {list.map(i => { const b = <button key={i.slug} className="pick" onClick={() => onPick(i.slug)}>
+            {i.icon && <img src={i.icon} alt="" loading="lazy" />}<span><b>{i.name}</b>{i.sub && <small>{i.sub}</small>}</span></button>;
+            return i.tip ? <Tip key={i.slug} content={i.tip}>{b}</Tip> : b; })}
           {list.length === 0 && <p className="muted">Nada encontrado.</p>}
         </div>
       </div>

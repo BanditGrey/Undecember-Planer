@@ -14,12 +14,10 @@ export interface Build {
   author: string;
   stat: 'STR' | 'DEX' | 'INT' | 'HYBRID';
   notes: string;
-  board: Record<string, Cell>; // key "r,c"
+  board: Record<string, Cell>; // key "q,r" (axial hex coordinates)
   equipment: Partial<Record<EquipSlot, { unique?: string; authority?: string }>>;
   runemaster: Record<string, number>; // node id -> points
 }
 
-export const BOARD_SIZE = 7;
-export const CENTER = `${Math.floor(BOARD_SIZE / 2)},${Math.floor(BOARD_SIZE / 2)}`;
 
 export const emptyBuild = (): Build => ({ v: 1, name: 'Nova build', author: '', stat: 'HYBRID', notes: '', board: {}, equipment: {}, runemaster: {} });
