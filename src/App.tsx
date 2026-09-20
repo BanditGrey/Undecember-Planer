@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import { Board } from './components/Board';
 import { Equipment } from './components/Equipment';
 import { RuneMaster } from './components/RuneMaster';
+import { Items } from './components/Items';
 import { runes, runestones, uniques, runemaster, authority } from './data';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
 import { emptyBuild, type Build } from './types';
 
-type Tab = 'board' | 'equip' | 'rm' | 'builds';
+type Tab = 'board' | 'equip' | 'rm' | 'items' | 'builds';
 
 export default function App() {
   const [build, setBuild] = useState<Build>(() => buildFromLocation() || emptyBuild());
@@ -32,12 +33,13 @@ export default function App() {
           <button onClick={() => setBuild(emptyBuild())}>Nova</button>
           {msg && <span className="flash">{msg}</span>}
         </div>
-        <nav>{([['board', 'Rune Cast'], ['equip', 'Equipamento'], ['rm', 'Mestre de Runas'], ['builds', 'Builds salvas']] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
+        <nav>{([['board', 'Rune Cast'], ['equip', 'Equipamento'], ['rm', 'Mestre de Runas'], ['items', 'Itens'], ['builds', 'Builds salvas']] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
       </header>
       <main>
         {tab === 'board' && <Board build={build} set={setBuild} />}
         {tab === 'equip' && <Equipment build={build} set={setBuild} />}
         {tab === 'rm' && <RuneMaster build={build} set={setBuild} />}
+        {tab === 'items' && <Items />}
         {tab === 'builds' && <section className="panel"><h2>Builds salvas neste navegador</h2>
           {saved.length === 0 && <p className="muted">Nenhuma. Use "Salvar" para guardar a build atual; use "Compartilhar link" para enviá-la à comunidade.</p>}
           {saved.map(b => <div key={b.name} className="saved"><b>{b.name}</b> <small className="muted">{b.author} · {b.stat} · {Object.keys(b.board).length} células</small>
