@@ -1,6 +1,6 @@
 import { runeBySlug, nodeById } from '../data';
 import { statsAtLevel } from './level';
-import { analyzeBoard, type SkillGroup } from './rules';
+import { analyzeBoard, gradeLines, type SkillGroup } from './rules';
 import type { Build, Rune } from '../types';
 
 export interface DpsInput { weaponAvg: number; charIncPct: number }
@@ -40,7 +40,8 @@ export function estimate(build: Build, g: SkillGroup, input: DpsInput): DpsResul
   const flat = flatLine ? avgRange(flatLine.replace(/^.*DMG \+/, '').replace(/^\+/, '')) : 0;
   const manaLine = stats.find(l => /Mana Cost/.test(l)); const cdLine = stats.find(l => /^Cooldown/.test(l));
   const mods: Mod[] = [];
-  for (const l of g.links) { if (!l.check.ok) continue; const ls = statsAtLevel(l.rune.level1, l.rune.level45, level).lines; for (const line of ls) { const m = classify(line, l.rune.name, { tags: g.skill.tags }); if (m) mods.push(m); } }
+  for (const line of gradeLines(g.skill, g.grade)) { const m = classify(line, `${g.skill.name} (grade)`, { tags: g.skill.tags }); if (m) mods.push(m); }
+  for (const l of g.links) { if (!l.check.ok) continue; const ls = [...statsAtLevel(l.rune.level1, l.rune.level45, level).lines, ...gradeLines(l.rune, l.grade)]; for (const line of ls) { const m = classify(line, l.rune.name, { tags: g.skill.tags }); if (m) mods.push(m); } }
   for (const [id, pts] of Object.entries(build.runemaster)) { const n = nodeById.get(id); if (!n || !pts) continue; const eff = n.effect.replace(/\b0(?=%)/, String(pts)).replace(/(?<=by )0\b/, String(pts)); if (/upon Attack|attacking/i.test(eff) && !g.skill.tags.includes('Attack')) continue; if (/Spell/i.test(eff) && !g.skill.tags.includes('Spell')) continue; const m = classify(eff.replace(/ upon.*$|by /i, ' '), `Rune Master: ${n.category} T${n.tier}`, { tags: g.skill.tags }); if (m) mods.push(m); }
   const incTotal = mods.filter(m => m.kind === 'inc').reduce((a, m) => a + m.value, 0) + input.charIncPct;
   const ampTotal = mods.filter(m => m.kind === 'amp').reduce((a, m) => a + m.value, 0);

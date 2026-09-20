@@ -99,3 +99,7 @@ a.btn{display:inline-block;padding:4px 10px;border:1px solid #3a3124;border-radi
 .hex .slot:hover{transform:scale(1.4)}
 .hex.link .hex-in::after{content:'';position:absolute;left:6%;top:8%;width:9px;height:9px;border-radius:50%;background:var(--rc);box-shadow:0 0 3px #000}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:middle;border:1px solid #000}
+
+.hex .grade{position:absolute;right:6%;top:8%;width:16px;height:16px;border-radius:3px;border:1px solid;background:#000c;font-size:10px;font-weight:700;line-height:14px;padding:0;cursor:pointer;z-index:3;opacity:.85}
+.hex .grade:hover{opacity:1;transform:scale(1.15)}
+.ud-grade.on{background:#2a2416;border-left:2px solid var(--gold);padding-left:6px}.ud-grade.off{opacity:.45}
