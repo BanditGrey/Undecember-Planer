@@ -918,7 +918,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases the Level of the Skill Rune equipped in the activated slotRune level +[2-4]"
+   "Increases the Level of the Skill Rune equipped in the activated slot",
+   "Rune level +[2-4]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/RuneGrowthUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -932,7 +933,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Decreases Resource Cost when using a Skill Rune equipped in the activated slotResource Cost of Skill that cost resources +[-2--4]"
+   "Decreases Resource Cost when using a Skill Rune equipped in the activated slot",
+   "Resource Cost of Skill that cost resources +[-2--4]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ResourceCostUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -946,7 +948,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Hit Rate when using a Skill Rune equipped in the activated slotHit Rate +% [50-100]"
+   "Increases Hit Rate when using a Skill Rune equipped in the activated slot",
+   "Hit Rate +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HitRateUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -960,7 +963,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases DMG dealt to Bosses when using a Skill Rune equipped in the activated slotDMG against Bosses +% [65-130]"
+   "Increases DMG dealt to Bosses when using a Skill Rune equipped in the activated slot",
+   "DMG against Bosses +% [65-130]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/BossDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -974,7 +978,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases DMG when using a Skill Rune equipped in the activated slotDMG +% [50-100]"
+   "Increases DMG when using a Skill Rune equipped in the activated slot",
+   "DMG +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -988,7 +993,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Amplifies DMG when using a Skill Rune equipped in the activated slotDMG % Amplification [3-6]"
+   "Amplifies DMG when using a Skill Rune equipped in the activated slot",
+   "DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1002,7 +1008,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Critical Rate when using a Skill Rune equipped in the activated slotCritical Rate +% [50-100]"
+   "Increases Critical Rate when using a Skill Rune equipped in the activated slot",
+   "Critical Rate +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalRateUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1016,7 +1023,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Critical DMG when using a Skill Rune equipped in the activated slotCritical DMG +% [25-50]"
+   "Increases Critical DMG when using a Skill Rune equipped in the activated slot",
+   "Critical DMG +% [25-50]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1030,7 +1038,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Recovery HP on Kill when using a Skill Rune equipped in the activated slotHP on Kill +[30-60]"
+   "Recovery HP on Kill when using a Skill Rune equipped in the activated slot",
+   "HP on Kill +[30-60]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HPRecoveryUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1044,7 +1053,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Minion DMG against enemies when using a Skill Rune equipped in the activated slotMinion DMG % Amplification [3-6]"
+   "Increases Minion DMG against enemies when using a Skill Rune equipped in the activated slot",
+   "Minion DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1058,7 +1068,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Sentry DMG against enemies when using a Skill Rune equipped in the activated slotSentry DMG % Amplification [3-6]"
+   "Increases Sentry DMG against enemies when using a Skill Rune equipped in the activated slot",
+   "Sentry DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1072,7 +1083,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Minion DMG at Full Minion HP when using a Skill Rune equipped in the activated slotMinion DMG at Full Minion HP +% [70-140]"
+   "Increases Minion DMG at Full Minion HP when using a Skill Rune equipped in the activated slot",
+   "Minion DMG at Full Minion HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGAtFullMinionHPUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1086,7 +1098,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Sentry DMG at Full Sentry HP when using a Skill Rune equipped in the activated slotSentry DMG at Full Minion HP +% [70-140]"
+   "Increases Sentry DMG at Full Sentry HP when using a Skill Rune equipped in the activated slot",
+   "Sentry DMG at Full Minion HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGAtFullSentryHPUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1100,7 +1113,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases DMG at Full HP when using a Skill Rune equipped in the activated slotDMG at Full HP +% [70-140]"
+   "Increases DMG at Full HP when using a Skill Rune equipped in the activated slot",
+   "DMG at Full HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAtFullHPUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1114,7 +1128,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases DMG Penetration when using a Skill Rune equipped in the activated slotDMG Penetration +% [15-30]"
+   "Increases DMG Penetration when using a Skill Rune equipped in the activated slot",
+   "DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGPenetrationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1128,7 +1143,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Minion DMG Penetration when using a Skill Rune equipped in the activated slotMinion DMG Penetration +% [15-30]"
+   "Increases Minion DMG Penetration when using a Skill Rune equipped in the activated slot",
+   "Minion DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGPenetrationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1142,7 +1158,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Sentry DMG Penetration when using a Skill Rune equipped in the activated slotSentry DMG Penetration +% [15-30]"
+   "Increases Sentry DMG Penetration when using a Skill Rune equipped in the activated slot",
+   "Sentry DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGPenetrationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1156,7 +1173,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Attack Seal Effect for the Skill Rune equipped in the activated slotAttack Aura and Seal Effect +% [13-25]"
+   "Increases Attack Seal Effect for the Skill Rune equipped in the activated slot",
+   "Attack Aura and Seal Effect +% [13-25]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackSealEffectUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1170,7 +1188,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Defense Seal Effect for the Skill Rune equipped in the activated slotDefense Aura and Seal Effect +% [13-25]"
+   "Increases Defense Seal Effect for the Skill Rune equipped in the activated slot",
+   "Defense Aura and Seal Effect +% [13-25]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenseSealEffectUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1184,7 +1203,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Double Maximized DMG upon using a Skill Rune equipped in the activated slotDouble Maximized DMG +% [15-30]"
+   "Increases Double Maximized DMG upon using a Skill Rune equipped in the activated slot",
+   "Double Maximized DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DoubleMaximizedDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1198,7 +1218,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Minion Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slotDouble Maximized Minion DMG +% [15-30]"
+   "Increases Minion Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot",
+   "Double Maximized Minion DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDoubleMaximizedUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1212,7 +1233,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Increases Sentry Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slotDouble Maximized Sentry DMG +% [15-30]"
+   "Increases Sentry Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot",
+   "Double Maximized Sentry DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDoubleMaximizedUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1226,7 +1248,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Amplifies Status Effect DMG when using a Skill Rune equipped in the activated slotStatus Effect DMG % Amplification [3-6]"
+   "Amplifies Status Effect DMG when using a Skill Rune equipped in the activated slot",
+   "Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/StatusEffectDMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1240,7 +1263,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Amplifies Minion Status Effect DMG against enemies when using a Skill Rune equipped in the activated slotMinion Status Effect DMG % Amplification [3-6]"
+   "Amplifies Minion Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot",
+   "Minion Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionStatusEffectDMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
@@ -1254,7 +1278,8 @@
   ],
   "rarity": "Unique",
   "effect": [
-   "Amplifies Sentry Status Effect DMG against enemies when using a Skill Rune equipped in the activated slotSentry Status Effect DMG % Amplification [3-6]"
+   "Amplifies Sentry Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot",
+   "Sentry Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryStatusEffectDMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
