@@ -30,6 +30,6 @@ export function Gallery({ build, open }: { build: Build; open: (b: Build) => voi
         <small className="muted">{e.avatar && <img className="avatar" src={e.avatar} alt="" />} {e.author} · {new Date(e.createdAt).toLocaleDateString()} · 👍 {e.reactions} · 💬 {e.comments}</small>
         <div className="row"><button onClick={() => open(e.build)}>{t('open')}</button><a className="btn" href={e.url} target="_blank" rel="noreferrer">GitHub</a></div>
       </div>; })}</div>
-    <p className="muted small">{t('galleryFoot')} <a href={`https://github.com/${REPO}/issues?q=label%3Abuild`} target="_blank" rel="noreferrer">github.com/{REPO}</a></p>
+    <p className="muted small">{t('galleryFoot')} <a href={`https://github.com/${REPO}/issues?q=is%3Aissue+%5BBuild%5D+in%3Atitle`} target="_blank" rel="noreferrer">github.com/{REPO}</a></p>
   </section>;
 }
