@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
-import { pt } from './glossary';
+import { pt, ptDescription } from './glossary';
 
 export type Lang = 'pt' | 'en';
 const dict = {
@@ -42,7 +42,7 @@ const dict = {
 } as const;
 export type Key = keyof typeof dict.pt;
 
-const Ctx = createContext<{ lang: Lang; setLang: (l: Lang) => void; t: (k: Key, vars?: Record<string, string | number>) => string; g: (line: string) => string; showOriginal: boolean; setShowOriginal: (v: boolean) => void }>(null!);
+const Ctx = createContext<{ lang: Lang; setLang: (l: Lang) => void; t: (k: Key, vars?: Record<string, string | number>) => string; g: (line: string) => string; gd: (slug: string, text: string) => string; showOriginal: boolean; setShowOriginal: (v: boolean) => void }>(null!);
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>(() => (localStorage.getItem('lang') as Lang) || (navigator.language.startsWith('pt') ? 'pt' : 'en'));
   const setLang = (l: Lang) => { localStorage.setItem('lang', l); setLangState(l); document.documentElement.lang = l === 'pt' ? 'pt-BR' : 'en'; };
@@ -50,7 +50,8 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [showOriginal, setShowOriginalState] = useState(localStorage.getItem('showOriginal') === '1');
   const setShowOriginal = (v: boolean) => { localStorage.setItem('showOriginal', v ? '1' : '0'); setShowOriginalState(v); };
   /** Game-text translator: PT glossary when lang is pt (unless the user asked for original text). */
+  const gd = (slug: string, text: string) => (lang === 'pt' && !showOriginal ? ptDescription(slug, text) : text);
   const g = (line: string) => (lang === 'pt' && !showOriginal ? pt(line) : line);
-  return <Ctx.Provider value={{ lang, setLang, t, g, showOriginal, setShowOriginal }}>{children}</Ctx.Provider>;
+  return <Ctx.Provider value={{ lang, setLang, t, g, gd, showOriginal, setShowOriginal }}>{children}</Ctx.Provider>;
 }
 export const useT = () => useContext(Ctx);

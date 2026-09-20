@@ -21,11 +21,11 @@ const Tags = ({ tags }: { tags: string[] }) => { const { g } = useT(); return <d
 const Lines = ({ lines, cls }: { lines: string[]; cls?: string }) => { const { g } = useT(); return <>{lines.map((l, i) => <div key={i} className={cls}>{g(l)}</div>)}</>; };
 
 export function RuneTip({ r, level = BASE_MAX_LEVEL, bonus = 0 }: { r: Rune; level?: number; bonus?: number }) {
-  const eff = level + bonus; const { lines: stats, estimated } = statsAtLevel(r.level1, r.level45, eff); const c = runeColor(r); const { t, g } = useT();
+  const eff = level + bonus; const { lines: stats, estimated } = statsAtLevel(r.level1, r.level45, eff); const c = runeColor(r); const { t, g, gd } = useT();
   return <div className="ud-card">
     <div className="ud-head" style={{ borderColor: c }}><img src={r.icons[0]} alt="" /><div><div className="ud-name" style={{ color: c }}>{r.name}</div><div className="ud-sub">{r.type === 'Skill' ? 'Skill Rune' : 'Link Rune'}{r.rarity ? ` · ${r.rarity}` : ''}</div></div></div>
     <Tags tags={r.tags} />
-    {r.description && <p className="ud-desc">{g(r.description)}</p>}
+    {r.description && <p className="ud-desc">{gd(r.slug, r.description)}</p>}
     {r.linkRules.length > 0 && <div className="ud-sec"><Lines lines={r.linkRules} cls="ud-rule" /></div>}
     {stats.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Rune Level {level}{bonus ? ` (+${bonus})` : ''}{estimated && <span className="ud-est" title={t('tipEst')}> ≈</span>}</div><Lines lines={stats} cls="ud-stat" /></div>}
     {r.gradeBonuses.length > 0 && <div className="ud-sec"><div className="ud-sec-t">Rune Grade</div>{r.gradeBonuses.map((g, i) => <div key={i} className="ud-grade"><b>{['Magic', 'Rare', 'Legendary'][i] ?? `+${i + 1}`}</b><Lines lines={g} /></div>)}</div>}

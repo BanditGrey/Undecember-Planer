@@ -57,3 +57,18 @@ export function pt(line: string): string {
   let out = line; for (const [re, rep] of RE) out = out.replace(re, rep);
   out = out.replace(/\s{2,}/g, ' ').trim(); cache.set(line, out); return out;
 }
+
+// Hand-translated skill descriptions (data/i18n/pt/rune_descriptions.json)
+import descPt from '../../data/i18n/pt/rune_descriptions.json';
+const DESC: Record<string, string> = descPt as any;
+const GENERIC: [string, string][] = Object.entries((descPt as any)._generic as Record<string, string>)
+  .sort((a, b) => b[0].length - a[0].length);
+
+/** PT description for a rune: exact translation by slug, else generic sentence replacement, else original. */
+export function ptDescription(slug: string, text: string): string {
+  if (!text) return text;
+  if (DESC[slug]) return DESC[slug];
+  let out = text;
+  for (const [en, p] of GENERIC) out = out.split(en).join(p);
+  return out === text ? pt(text) : out.replace(/\s+/g, ' ').trim();
+}

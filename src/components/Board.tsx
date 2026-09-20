@@ -10,7 +10,7 @@ const HEX = 44; // px, hex "size" (center to corner)
 
 export function Board({ build, set }: { build: Build; set: (b: Build) => void }) {
   const [pick, setPick] = useState<{ cell: string; kind: 'rune' | 'runestone' } | null>(null);
-  const { t, g: tr } = useT();
+  const { t, g: tr, gd } = useT();
   const level = build.runeLevel ?? 45; const bonus = build.runeLevelBonus ?? 0;
   const setLevel = (v: number) => set({ ...build, runeLevel: v }); const setBonus = (v: number) => set({ ...build, runeLevelBonus: v });
   const { groups, orphans } = analyzeBoard(build);
@@ -49,7 +49,7 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
         {groups.map(g => <div key={g.cell} className="group">
           <div className="gh"><Tip content={<RuneTip r={g.skill} level={level} bonus={bonus} />}><img src={g.skill.icons[0]} alt="" /></Tip><b style={{ color: runeColor(g.skill) }}>{g.skill.name}</b> <span className="tags">{g.skill.tags.map(x => <i key={x}>#{tr(x)}</i>)}</span>
             {g.runestone && <em className="muted"> · {runestoneBySlug.get(g.runestone)?.name}</em>}</div>
-          {g.skill.description && <p className="muted desc">{tr(g.skill.description)}</p>}
+          {g.skill.description && <p className="muted desc">{gd(g.skill.slug, g.skill.description)}</p>}
           {g.links.length === 0 && <p className="muted">{t('noLinks')}</p>}
           {g.links.map(l => <div key={l.cell} className={l.check.ok ? 'ok' : 'bad'}><Tip content={<RuneTip r={l.rune} level={level} bonus={bonus} />}><img src={l.rune.icons[0]} alt="" /></Tip> {l.rune.name} — <small>{l.check.key ? t(l.check.key, { tags: l.check.tags ?? '' }) : tr(l.check.reason)}</small></div>)}
         </div>)}
