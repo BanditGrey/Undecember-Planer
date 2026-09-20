@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import type { Rune, Runestone, Unique, Authority } from '../types';
-import { ELEMENT_COLORS, runeColor } from '../lib/rules';
+import { COLOR_HEX, COLOR_NAME, ELEMENT_COLORS, runeColor } from '../lib/rules';
 import { BASE_MAX_LEVEL, statsAtLevel } from '../lib/level';
 import { useT } from '../lib/i18n';
 
@@ -23,7 +23,7 @@ const Lines = ({ lines, cls }: { lines: string[]; cls?: string }) => { const { g
 export function RuneTip({ r, level = BASE_MAX_LEVEL, bonus = 0 }: { r: Rune; level?: number; bonus?: number }) {
   const eff = level + bonus; const { lines: stats, estimated } = statsAtLevel(r.level1, r.level45, eff); const c = runeColor(r); const { t, g, gd } = useT();
   return <div className="ud-card">
-    <div className="ud-head" style={{ borderColor: c }}><img src={r.icons[0]} alt="" /><div><div className="ud-name" style={{ color: c }}>{r.name}</div><div className="ud-sub">{r.type === 'Skill' ? 'Skill Rune' : 'Link Rune'}{r.rarity ? ` · ${r.rarity}` : ''}</div></div></div>
+    <div className="ud-head" style={{ borderColor: c }}><img src={r.icons[0]} alt="" /><div><div className="ud-name" style={{ color: c }}>{r.name}</div><div className="ud-sub">{r.color && <i className="dot" style={{ background: COLOR_HEX[r.color] }} title={COLOR_NAME[r.color]} />}{r.type === 'Skill' ? 'Skill Rune' : 'Link Rune'}{r.color ? ` · ${g(COLOR_NAME[r.color])}` : ''}{r.rarity ? ` · ${r.rarity}` : ''}</div></div></div>
     <Tags tags={r.tags} />
     {r.description && <p className="ud-desc">{gd(r.slug, r.description)}</p>}
     {r.linkRules.length > 0 && <div className="ud-sec"><Lines lines={r.linkRules} cls="ud-rule" /></div>}

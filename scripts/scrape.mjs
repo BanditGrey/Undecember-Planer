@@ -50,7 +50,16 @@ async function section(name, urlPart, parse) {
   writeJson(dbFile, db); console.log('done', name, n);
 }
 
-if (want('runes')) await section('runes', 'runes', parseRune);
+if (want('runes')) {
+  await section('runes', 'runes', parseRune);
+  // Rune colour = "Rune stat" filter on the list page (Strength=Red, Agility=Green, Intellect=Blue).
+  const colors = readJson(path.join(DB, 'rune_colors.json'), {});
+  for (const [stat, c] of [['Strength', 'R'], ['Agility', 'G'], ['Intellect', 'B']]) {
+    const html = await fetchText(`${SITE}/en/runes/?stat=${stat}`, `list/runes_${stat}.html`); if (!html) continue;
+    for (const it of parseList(html, 'runes').items) colors[it.slug] = c;
+  }
+  writeJson(path.join(DB, 'rune_colors.json'), colors); console.log('done rune colours', Object.keys(colors).length);
+}
 if (want('runestones')) await section('runestones', 'runecast', parseRunestone);
 if (want('uniques')) await section('uniques', 'uniques', parseUnique);
 if (want('authority')) await section('authority', 'authority', parseAuthority);
