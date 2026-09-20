@@ -2,18 +2,21 @@ import { useMemo, useState } from 'react';
 import { runemaster } from '../data';
 import type { Build, RuneMasterNode } from '../types';
 import { Tip } from './Tooltip';
+import { useT } from '../lib/i18n';
 
 const CAT_ICON: Record<string, string> = { Attack: '⚔', Spell: '✦', DoT: '☠', Trap: '⚙', Minion: '☗', Sentry: '⌖', Totem: '♜', Shout: '♪', Seal: '◈', Movement: '➶', Stat: '▲', Resistance: '⛨', Penetration: '➤', Decrease: '▽', Potion: '⚗' };
 const catIcon = (c: string) => Object.entries(CAT_ICON).find(([k]) => c.toLowerCase().includes(k.toLowerCase()))?.[1] ?? '✧';
 
 function NodeTip({ n, v, locked, need }: { n: RuneMasterNode; v: number; locked: boolean; need: number }) {
-  return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#c9a24a' }}><div><div className="ud-name" style={{ color: '#c9a24a' }}>{n.category} · Tier {n.tier}</div><div className="ud-sub">Desbloqueia no nível {n.unlockLevel} · máx. {n.maxPoints} pontos</div></div></div>
-    <div className="ud-sec"><div className="ud-stat">{n.effect.replace(/\b0\b/, `[por ponto]`)}</div></div>
-    <div className="ud-foot">{v}/{n.maxPoints} pontos{n.prereqPointsPrevTier > 0 && <> · requer {n.prereqPointsPrevTier} pontos no Tier {n.tier - 1}{locked && <span style={{ color: '#e05252' }}> (faltam {need})</span>}</>}</div></div>;
+  const { t } = useT();
+  return <div className="ud-card"><div className="ud-head" style={{ borderColor: '#c9a24a' }}><div><div className="ud-name" style={{ color: '#c9a24a' }}>{n.category} · Tier {n.tier}</div><div className="ud-sub">{t('rmUnlock', { lv: n.unlockLevel, max: n.maxPoints })}</div></div></div>
+    <div className="ud-sec"><div className="ud-stat">{n.effect.replace(/\b0\b/, t('perPoint'))}</div></div>
+    <div className="ud-foot">{v}/{n.maxPoints} {t('points')}{n.prereqPointsPrevTier > 0 && <> · {t('rmReq', { n: n.prereqPointsPrevTier, t: n.tier - 1 })}{locked && <span style={{ color: '#e05252' }}> ({t('rmMissing', { n: need })})</span>}</>}</div></div>;
 }
 
 export function RuneMaster({ build, set }: { build: Build; set: (b: Build) => void }) {
   const [cat, setCat] = useState('');
+  const { t } = useT();
   const cats = useMemo(() => [...new Set(runemaster.map(n => n.category))], []);
   const pts = build.runemaster; const total = Object.values(pts).reduce((a, b) => a + b, 0);
   const tierPts = (c: string, t: number) => runemaster.filter(n => n.category === c && n.tier === t).reduce((a, n) => a + (pts[n.id] || 0), 0);
@@ -22,9 +25,9 @@ export function RuneMaster({ build, set }: { build: Build; set: (b: Build) => vo
   const shown = cat ? [cat] : cats;
   return (
     <section className="panel">
-      <div className="row between"><h2>Caminho do Mestre de Runas <small className="muted">{total} pontos distribuídos</small></h2>
-        <div className="row"><select value={cat} onChange={e => setCat(e.target.value)}><option value="">Todas as constelações</option>{cats.map(c => <option key={c}>{c} ({catPts(c)})</option>)}</select>
-          <button onClick={() => set({ ...build, runemaster: {} })}>Resetar</button></div></div>
+      <div className="row between"><h2>{t('rmTitle')} <small className="muted">{t('rmPts', { n: total })}</small></h2>
+        <div className="row"><select value={cat} onChange={e => setCat(e.target.value)}><option value="">{t('rmAll')}</option>{cats.map(c => <option key={c}>{c} ({catPts(c)})</option>)}</select>
+          <button onClick={() => set({ ...build, runemaster: {} })}>{t('reset')}</button></div></div>
       <div className="rm-cats">
         {cats.map(c => <button key={c} className={`rm-catbtn ${cat === c ? 'on' : ''} ${catPts(c) ? 'has' : ''}`} onClick={() => setCat(cat === c ? '' : c)}><span className="rm-ico">{catIcon(c)}</span>{c}{catPts(c) > 0 && <b>{catPts(c)}</b>}</button>)}
       </div>
@@ -42,7 +45,7 @@ export function RuneMaster({ build, set }: { build: Build; set: (b: Build) => vo
                     <span className="orb-v">{v}<small>/{n.maxPoints}</small></span>
                     <div className="orb-eff">{n.effect}</div></div></Tip>; })}</div></div>; })}
         </div></div>)}
-      <p className="muted" style={{ marginTop: 8 }}>Clique para adicionar ponto · clique direito para remover · tiers exigem pontos no tier anterior.</p>
+      <p className="muted" style={{ marginTop: 8 }}>{t('rmHint')}</p>
     </section>
   );
 }

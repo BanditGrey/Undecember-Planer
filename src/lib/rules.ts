@@ -16,7 +16,7 @@ export const hexPos = (k: string) => { const [q, r] = parse(k); return { x: Math
 // Tags that describe the skill's nature; link runes with these tags need the skill to share at least one.
 const GENERIC = new Set(['Duration', 'Area of Effect']);
 
-export interface LinkCheck { ok: boolean; shared: string[]; reason: string }
+export interface LinkCheck { ok: boolean; shared: string[]; reason: string; key?: 'linkNoTags' | 'linkVia' | 'linkMissing'; tags?: string }
 export function checkLink(link: Rune, skill: Rune): LinkCheck {
   // Exact rules from the database take precedence when available.
   for (const rule of link.linkRules) {
@@ -27,10 +27,10 @@ export function checkLink(link: Rune, skill: Rune): LinkCheck {
       const ok = (/any one of/i.test(rule) || need.length === 1) ? shared.length > 0 : shared.length === need.length; return { ok, shared, reason: rule }; }
   }
   const lt = link.tags.filter(t => !GENERIC.has(t));
-  if (lt.length === 0) return { ok: true, shared: [], reason: 'Link rune sem tags restritivas — aplica-se a qualquer skill.' };
+  if (lt.length === 0) return { ok: true, shared: [], reason: '', key: 'linkNoTags' };
   const shared = lt.filter(t => skill.tags.includes(t));
-  if (shared.length) return { ok: true, shared, reason: `Compatível via ${shared.join(', ')}` };
-  return { ok: false, shared, reason: `Skill não possui nenhuma das tags: ${lt.join(', ')}` };
+  if (shared.length) return { ok: true, shared, reason: '', key: 'linkVia', tags: shared.join(', ') };
+  return { ok: false, shared, reason: '', key: 'linkMissing', tags: lt.join(', ') };
 }
 
 export interface SkillGroup { cell: string; skill: Rune; links: { cell: string; rune: Rune; check: LinkCheck }[]; runestone?: string }
