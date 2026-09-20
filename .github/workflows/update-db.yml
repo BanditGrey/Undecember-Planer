@@ -25,6 +25,12 @@ jobs:
       - name: Scrape undecember.thein.ru into db/ and public/icons/
         run: node scripts/scrape.mjs
       - run: node scripts/build-data.mjs
+      - name: Upload raw html cache (for parser debugging)
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-cache
+          path: data/cache
+          retention-days: 7
       - name: Commit database
         run: |
           git config user.name github-actions
