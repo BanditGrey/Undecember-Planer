@@ -6,7 +6,9 @@ import { Items } from './components/Items';
 import { Gallery } from './components/Gallery';
 import { Compare } from './components/Compare';
 import { Character } from './components/Character';
-import { presetsBySeason } from './lib/presets';
+import { presetsBySeason, makePreset, slotSummary } from './lib/presets';
+import { estimateAll } from './lib/dps';
+import { runeBySlug } from './data';
 import { renderBuildCard } from './lib/card';
 import { Search } from './components/Search';
 import { runes, runestones, uniques, runemaster, authority } from './data';
@@ -71,10 +73,16 @@ export default function App() {
         {tab === 'gallery' && <Gallery build={build} open={b => { setBuild(b); setTab('board'); }} />}
         {tab === 'builds' && <section className="panel"><h2>{t('presetsTitle')} <small className="muted">{t('presetsHint')}</small></h2>
           {presetsBySeason().map(g => <div key={g.season.id} className="season"><h3>{g.season.name[lang]} {g.season.date && <small className="muted">{g.season.date}</small>}</h3>
-            <div className="gallery">{g.presets.map(p => <div key={p.id} className="gcard"><div className="gh"><b>{p.name[lang]}</b> <span className="pill">{p.stat}</span>{p.tier && <span className={`pill tier-${p.tier}`}>Tier {p.tier}</span>}</div>
+            <div className="gallery">{g.presets.map(p => { const end = makePreset(p, 'end', lang); const sl = slotSummary(end); const dps = estimateAll(end, { weaponAvg: 300, charIncPct: 0 }).sort((x, y) => y.damage - x.damage)[0];
+              return <div key={p.id} className="gcard"><div className="gh"><b>{p.name[lang]}</b> <span className="pill">{p.stat}</span>{p.tier && <span className={`pill tier-${p.tier}`}>Tier {p.tier}</span>}</div>
               <small className="muted">{p.desc[lang]}</small>
+              <div className="gh"><span className="slots-req" title={t('slotsReq')}>{(['R', 'G', 'B'] as const).filter(c => sl[c]).map(c => <span key={c} className={`dot ${c}`}>{sl[c]}</span>)}</span>
+                {dps && dps.damage > 0 && <small className="muted">≈ {Math.round(dps.damage).toLocaleString()} {t('dpsPerHit')}</small>}</div>
+              {p.priority && <div className="prio">{p.priority.map((sl2, i) => { const r = runeBySlug.get(sl2); return r ? <span key={sl2} className="chip" title={r.name}>{i + 1}. <img src={r.icons[0]} alt="" />{r.name}</span> : null; })}</div>}
               {p.author && <small className="muted">{t('by')} {p.author}{p.source && <> · <a href={p.source} target="_blank" rel="noreferrer">{t('source')}</a></>}</small>}
-              <div className="row"><button className="primary" onClick={() => { setBuild(p.make()); setTab('board'); }}>{t('open')}</button></div></div>)}</div></div>)}
+              <div className="row">{p.stages.includes('start') && <button onClick={() => { setBuild(makePreset(p, 'start', lang)); setTab('board'); }}>{t('stageStart')}</button>}
+                {p.stages.includes('end') && <button className="primary" onClick={() => { setBuild(makePreset(p, 'end', lang)); setTab('board'); }}>{t('stageEnd')}</button>}
+                {!p.stages.includes('end') && <button className="primary" onClick={() => { setBuild(makePreset(p, 'start', lang)); setTab('board'); }}>{t('open')}</button>}</div></div>; })}</div></div>)}
           <p className="muted"><small>{t('presetsDisclaimer')}</small></p>
         </section>}
         {tab === 'builds' && <section className="panel"><h2>{t('savedTitle')}</h2>

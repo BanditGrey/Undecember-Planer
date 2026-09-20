@@ -29,7 +29,8 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Tema claro/escuro** – botão ☀/☾ no cabeçalho.
 - **Builds prontas por temporada** – 11 builds da comunidade reconstruídas a partir de guias públicos (tier lists e guias do Nirtas, Reddit), agrupadas por temporada (S12 Farside, S11 The Forge, S10 New Age, S9 Abyss Gate) com tier, autor e link da fonte, mais 4 modelos iniciais genéricos. Todas passam pelas regras de link/cor/gatilho do planner.
   - Runas de link que o guia não cita explicitamente foram inferidas pelas tags do jogo (indicado nas notas de cada build).
-  - Runas ainda ausentes na base local (Frost Storm, Toxic Mist, Final Blade Sentry, Lightning Slash) só aparecem nas notas.
+  - Cada build tem estágio **Campanha** (runas normais, nível 20, links de campanha) e **Endgame** (skill lendária com awakening, links raros, nível 45+2, uniques do guia), lista de **prioridade** de runas, resumo das **cores de slot** necessárias na skill principal e uma estimativa de dano/hit calculada pelo módulo de DPS.
+  - Runas ainda ausentes na base (Frost Storm, Toxic Mist, Final Blade Sentry, Lightning Slash, Wrathful Blow, Divine Punishment) só aparecem nas notas: o undecember.thein.ru (fonte) ainda lista as mesmas 365 runas e não recebeu as adições de S9–S12, então um re-scrape não as traz.
 - **Conversão de elemento** – `Convert X DMG` altera o elemento efetivo da skill para validar os demais links (ex.: Extract Earth Energy em Lightning Arrow + Convert Physical Damage).
 - **Exportar PNG** – card 1200×675 da build (tabuleiro, skills, DPS, equipamento) para Discord/redes.
 - **Desfazer/refazer & atalhos** – Ctrl+Z/Y, Ctrl+S salva, teclas 1–8 trocam de aba.
