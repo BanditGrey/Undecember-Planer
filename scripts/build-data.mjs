@@ -69,6 +69,11 @@ const authority = SLOTS.flatMap(slot => GODS.map(god => { const slug = `${slot}$
 // ---- misc sections (only from db)
 const misc = {}; for (const s of ['essences', 'coins', 'potions', 'materials']) { const d = db(`${s}.json`); misc[s] = d ? Object.values(d).sort((a, b) => a.order - b.order).map(x => ({ slug: x.slug, name: x.name, icon: x.icons?.[0] ? icon(x.icons[0]) : null, rarity: x.rarity ?? null, howToGet: x.howToGet ?? [], useOn: x.useOn ?? [], description: x.description ?? '', props: x.props ?? [], recipes: x.recipes ?? [] })) : []; }
 
+// ---- zodiac specializations (hand-transcribed from official patch notes)
+const zodiacDb = db('zodiac.json');
+const zodiac = zodiacDb ? { sourceUrl: zodiacDb.sourceUrl, maxPoints: zodiacDb.maxPoints, routes: zodiacDb.routes.map(r => ({ id: r.id, name: r.name, focus: r.focus, tags: r.tags,
+  specs: r.specs.map(sp => ({ id: sp.id, tier: sp.tier, name: sp.name, nodes: sp.nodes.map(([kind, ...effects], i) => ({ id: `${sp.id}.${i}`, kind, effects })) })) })) } : { sourceUrl: '', maxPoints: {}, routes: [] };
+out('zodiac.json', zodiac);
 out('runes.json', runes); out('runestones.json', runestones); out('uniques.json', uniques); out('runemaster.json', runemaster); out('authority.json', authority); out('tags.json', Object.keys(tagMembers).sort()); out('misc.json', misc);
 const filled = (arr, k) => arr.filter(x => (Array.isArray(x[k]) ? x[k].length : x[k])).length;
-console.log({ runes: runes.length, runesWithDetails: filled(runes, 'level1'), runestones: runestones.length, uniques: uniques.length, uniquesWithAffixes: filled(uniques, 'affixes'), runemaster: runemaster.length, authority: authority.length, authorityWithOptions: filled(authority, 'unique'), runestonesWithEffect: filled(runestones, 'effect'), misc: Object.fromEntries(Object.entries(misc).map(([k, v]) => [k, v.length])) });
+console.log({ zodiacNodes: zodiac.routes.flatMap(r => r.specs.flatMap(s => s.nodes)).length, runes: runes.length, runesWithDetails: filled(runes, 'level1'), runestones: runestones.length, uniques: uniques.length, uniquesWithAffixes: filled(uniques, 'affixes'), runemaster: runemaster.length, authority: authority.length, authorityWithOptions: filled(authority, 'unique'), runestonesWithEffect: filled(runestones, 'effect'), misc: Object.fromEntries(Object.entries(misc).map(([k, v]) => [k, v.length])) });

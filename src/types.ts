@@ -20,6 +20,7 @@ export interface Build {
   board: Record<string, Cell>; // key "q,r" (axial hex coordinates)
   equipment: Partial<Record<EquipSlot, { unique?: string; authority?: string }>>;
   runemaster: Record<string, number>; // node id -> points
+  zodiac?: string[]; // activated specialization node ids ("Spec.index")
   runeLevel?: number; // 1..50 (45 base + up to 5 from Rune Candor)
   runeLevelBonus?: number; // +X skill rune level from gear
   char?: { level: number; str: number; dex: number; int: number }; // for requirement checks
@@ -27,3 +28,9 @@ export interface Build {
 
 
 export const emptyBuild = (): Build => ({ v: 1, name: 'Nova build', author: '', stat: 'HYBRID', notes: '', board: {}, equipment: {}, runemaster: {} });
+
+export type ZodiacKind = 'Moon' | 'Star' | 'Sun' | 'Cosmos';
+export interface ZodiacNode { id: string; kind: ZodiacKind; effects: string[] }
+export interface ZodiacSpec { id: string; tier: 1 | 2 | 3; name: string; nodes: ZodiacNode[] }
+export interface ZodiacRoute { id: string; name: { pt: string; en: string }; focus: 'STR' | 'DEX' | 'INT' | 'ANY'; tags: string[]; specs: ZodiacSpec[] }
+export interface ZodiacData { sourceUrl: string; maxPoints: Record<string, number>; routes: ZodiacRoute[] }

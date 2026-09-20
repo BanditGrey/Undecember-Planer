@@ -11,13 +11,14 @@ import { estimateAll } from './lib/dps';
 import { runeBySlug } from './data';
 import { renderBuildCard } from './lib/card';
 import { Search } from './components/Search';
-import { runes, runestones, uniques, runemaster, authority } from './data';
+import { runes, runestones, uniques, runemaster, authority, zodiacSpecs } from './data';
+import { Zodiac } from './components/Zodiac';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
 import { emptyBuild, type Build } from './types';
 import { useT } from './lib/i18n';
 import { Dps } from './components/Dps';
 
-type Tab = 'board' | 'equip' | 'rm' | 'dps' | 'items' | 'builds' | 'gallery' | 'compare';
+type Tab = 'board' | 'equip' | 'rm' | 'zodiac' | 'dps' | 'items' | 'builds' | 'gallery' | 'compare';
 
 export default function App() {
   const [build, setBuildRaw] = useState<Build>(() => buildFromLocation() || emptyBuild());
@@ -26,7 +27,7 @@ export default function App() {
   const setBuild = useCallback((next: Build | ((b: Build) => Build)) => { setBuildRaw(prev => { const n = typeof next === 'function' ? next(prev) : next; if (n === prev) return prev; hist.current.past = [...hist.current.past.slice(-49), prev]; hist.current.future = []; return n; }); }, []);
   const undo = useCallback(() => setBuildRaw(cur => { const p = hist.current.past.pop(); if (!p) return cur; hist.current.future.push(cur); return p; }), []);
   const redo = useCallback(() => setBuildRaw(cur => { const f = hist.current.future.pop(); if (!f) return cur; hist.current.past.push(cur); return f; }), []);
-  useEffect(() => { const h = (e: KeyboardEvent) => { const tag = (e.target as HTMLElement)?.tagName; if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return; if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setSearch(v => !v); } else if (e.key === 'Escape') { setSearch(false); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); e.shiftKey ? redo() : undo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') { e.preventDefault(); redo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); save(); } else if (!e.ctrlKey && !e.metaKey && !e.altKey && /^[1-8]$/.test(e.key)) { const tabs: Tab[] = ['board', 'equip', 'rm', 'dps', 'items', 'builds', 'gallery', 'compare']; setTab(tabs[+e.key - 1]); } }; addEventListener('keydown', h); return () => removeEventListener('keydown', h); });
+  useEffect(() => { const h = (e: KeyboardEvent) => { const tag = (e.target as HTMLElement)?.tagName; if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return; if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setSearch(v => !v); } else if (e.key === 'Escape') { setSearch(false); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); e.shiftKey ? redo() : undo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') { e.preventDefault(); redo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); save(); } else if (!e.ctrlKey && !e.metaKey && !e.altKey && /^[1-9]$/.test(e.key)) { const tabs: Tab[] = ['board', 'equip', 'rm', 'zodiac', 'dps', 'items', 'builds', 'gallery', 'compare']; setTab(tabs[+e.key - 1]); } }; addEventListener('keydown', h); return () => removeEventListener('keydown', h); });
   const [tab, setTab] = useState<Tab>('board');
   const [saved, setSaved] = useState(savedBuilds);
   const [msg, setMsg] = useState('');
@@ -60,13 +61,14 @@ export default function App() {
           {msg && <span className="flash">{msg}</span>}
           <span className="lang"><button className={lang === 'pt' ? 'on' : ''} onClick={() => setLang('pt')}>PT</button><button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>{lang === 'pt' && <label className="muted orig" title={t('origTip')}><input type="checkbox" checked={showOriginal} onChange={e => setShowOriginal(e.target.checked)} /> {t('origText')}</label>}</span>
         </div>
-        <nav>{([['board', t('tabBoard')], ['equip', t('tabEquip')], ['rm', t('tabRM')], ['dps', t('tabDps')], ['items', t('tabItems')], ['builds', t('tabBuilds')], ['gallery', t('tabGallery')], ['compare', t('tabCompare')]] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
+        <nav>{([['board', t('tabBoard')], ['equip', t('tabEquip')], ['rm', t('tabRM')], ['zodiac', t('tabZodiac')], ['dps', t('tabDps')], ['items', t('tabItems')], ['builds', t('tabBuilds')], ['gallery', t('tabGallery')], ['compare', t('tabCompare')]] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
       </header>
       <main>
-        {(tab === 'board' || tab === 'equip' || tab === 'rm') && <Character build={build} set={setBuild} />}
+        {(tab === 'board' || tab === 'equip' || tab === 'rm' || tab === 'zodiac') && <Character build={build} set={setBuild} />}
         {tab === 'board' && <Board build={build} set={setBuild} />}
         {tab === 'equip' && <Equipment build={build} set={setBuild} />}
         {tab === 'rm' && <RuneMaster build={build} set={setBuild} />}
+        {tab === 'zodiac' && <Zodiac build={build} set={setBuild} />}
         {tab === 'dps' && <Dps build={build} />}
         {tab === 'items' && <Items />}
         {tab === 'compare' && <Compare build={build} />}
@@ -92,7 +94,7 @@ export default function App() {
         </section>}
         <section className="panel"><h3>{t('notes')}</h3><textarea rows={3} value={build.notes} onChange={e => setBuild({ ...build, notes: e.target.value })} placeholder={t('notesPh')} /></section>
       </main>
-      <footer className="muted">{t('footer', { runes: runes.length, runestones: runestones.length, uniques: uniques.length, rm: runemaster.length, auth: authority.length })} <a href="https://undecember.thein.ru/en/" target="_blank" rel="noreferrer">undecember.thein.ru</a> {t('footer2')} · {t('shortcuts')}</footer>
+      <footer className="muted">{t('footer', { runes: runes.length, runestones: runestones.length, uniques: uniques.length, rm: runemaster.length, zod: zodiacSpecs.reduce((a, s) => a + s.nodes.length, 0), auth: authority.length })} <a href="https://undecember.thein.ru/en/" target="_blank" rel="noreferrer">undecember.thein.ru</a> {t('footer2')} · {t('shortcuts')}</footer>
     </div>
   );
 }

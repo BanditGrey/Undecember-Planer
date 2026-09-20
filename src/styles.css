@@ -130,3 +130,17 @@ img.mini{width:22px;height:22px;vertical-align:middle;border-radius:50%;backgrou
 .season{margin-top:14px}.season h3{margin:0 0 4px;font-size:15px;color:var(--accent,#e0b96a)}.pill.tier-S{background:#6b1f1f;color:#ffd7d7}.pill.tier-A{background:#5a4a12;color:#ffe9a8}.pill.tier-B{background:#1f3d5a;color:#cfe6ff}.gcard a{color:var(--accent,#e0b96a)}
 .slots-req .dot{display:inline-block;min-width:18px;height:18px;line-height:18px;text-align:center;border-radius:50%;font-size:11px;font-weight:700;color:#000;margin-right:3px}.dot.R{background:#e04b4b}.dot.G{background:#4fc35a}.dot.B{background:#4a8ef0}
 .prio{display:flex;flex-wrap:wrap;gap:4px}.prio .chip{font-size:11px;border:1px solid var(--line);border-radius:10px;padding:1px 6px;display:inline-flex;align-items:center;gap:3px}.prio .chip img{width:14px;height:14px;border-radius:50%;background:#000}
+
+/* ---- Zodiac */
+.zod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:12px}
+.zod-const{border:1px solid var(--line);border-radius:4px;background:radial-gradient(ellipse at 50% 50%,#141a2a 0,#0a0b10 70%);padding:8px 10px}
+.zod-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}.zod-head h4{margin:0;color:#cfd8ee;font-size:13px}
+.zod-pts{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:10px;padding:1px 8px}.zod-pts.full{color:var(--gold);border-color:var(--gold)}
+.zod-svg{width:100%;height:auto;display:block}
+.zod-svg line{stroke:#2b3350;stroke-width:1.5;stroke-dasharray:3 3}.zod-svg line.lit{stroke:#e8b64a;stroke-dasharray:none;filter:drop-shadow(0 0 3px #e8b64a)}
+.zn{cursor:pointer}.zn .halo{fill:transparent;transition:fill .15s}.zn:hover .halo{fill:#ffffff12}
+.zn .core{fill:#0d1020;stroke-width:1.5;transition:fill .15s}.zn text{text-anchor:middle;pointer-events:none;font-weight:700}
+.zn.on .core{fill:#e8b64a;stroke:#fff!important;filter:drop-shadow(0 0 6px #e8b64a)}.zn.Cosmos.on .core{fill:#c76bff;filter:drop-shadow(0 0 6px #c76bff)}.zn.Moon.on .core{fill:#9fb4d8}
+.zn.cap,.zn.prereq{opacity:.45;cursor:not-allowed}.zn.ok .core{stroke-dasharray:none}
+.zod-named{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 10px}.zod-named .chip{font-size:11px;border:1px solid #c76bff88;color:#d9b8ff;border-radius:10px;padding:1px 8px}
+.small{font-size:12px}
