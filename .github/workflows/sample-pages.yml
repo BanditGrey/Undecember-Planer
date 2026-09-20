@@ -1,15 +1,19 @@
 name: Sample pages
 on: { workflow_dispatch: {}, push: { paths: ['.sample-pages'] } }
+permissions: { contents: write }
 jobs:
   sample:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { ref: "${{ github.ref_name }}" }
       - name: Fetch sample pages
         run: |
-          mkdir -p sample
-          for u in runes/LightningStrike runes/Multishot runes/SealOfDefense uniques/StarChasersBow uniques/Insight authority/WeaponsAlyssa authority/RingLeo runecast/RuneGrowthUnique essences/MagicUpgradeEssence coins/ potions/ materials/; do
-            n=$(echo "$u" | tr '/' '_'); curl -sL "https://undecember.thein.ru/en/$u/" -o "sample/$n.html"; done
-          ls -la sample
-      - uses: actions/upload-artifact@v4
-        with: { name: sample-pages, path: sample }
+          mkdir -p data/samples
+          for u in $(cat .sample-pages); do
+            n=$(echo "$u" | tr '/' '_' | sed 's/_$//'); curl -sL "https://undecember.thein.ru/en/$u/" -o "data/samples/$n.html"; done
+          ls -la data/samples
+      - run: |
+          git config user.name github-actions; git config user.email github-actions@github.com
+          git add data/samples; git commit -m "chore: sample pages for parser debugging" || exit 0
+          git pull --rebase origin "${{ github.ref_name }}"; git push origin HEAD:"${{ github.ref_name }}"
