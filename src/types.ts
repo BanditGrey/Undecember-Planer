@@ -6,7 +6,7 @@ export interface Authority { slug: string; slot: string; god: string; name: stri
 
 export type EquipSlot = 'Weapons' | 'Offhand' | 'Helmet' | 'Pauldrons' | 'Armor' | 'Gloves' | 'Shoes' | 'Belt' | 'Necklace' | 'Ring1' | 'Ring2';
 
-export interface Cell { rune?: string; runestone?: string }
+export interface Cell { rune?: string; runestone?: string; dir?: number /* trigger rune arrow direction 0..5 (index into hex DIRS) */ }
 
 export interface Build {
   v: 1;

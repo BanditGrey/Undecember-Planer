@@ -81,3 +81,8 @@ nav{display:flex;gap:4px;border-bottom:1px solid var(--gold2);margin-bottom:12px
 .lang{margin-left:auto;display:flex;gap:2px}.lang button{padding:4px 8px;font-size:11px;font-family:'Cinzel',serif}.lang button.on{color:var(--gold);border-color:var(--gold)}
 .dps table{width:100%;border-collapse:collapse;font-size:12.5px}.dps td{padding:3px 4px;border-bottom:1px solid #221d16}.dps td:last-child{text-align:right;font-variant-numeric:tabular-nums}.dps tr.total td{border-top:1px solid var(--gold2);color:var(--gold);font-size:14px}
 .orig{font-size:11px;margin-left:8px;display:flex;align-items:center;gap:4px}
+
+.hex.trigger::before{background:#3a7f93}.hex .arrow{position:absolute;left:50%;top:50%;margin:-11px 0 0 -9px;font-size:18px;color:#7bd1e6;text-shadow:0 0 4px #000;pointer-events:none;transform-origin:9px 11px}
+.hex .rot{position:absolute;left:6%;bottom:8%;width:18px;height:18px;border-radius:50%;border:1px solid #7bd1e6;background:#000c;color:#7bd1e6;font-size:11px;line-height:16px;padding:0;cursor:pointer;display:none}
+.hex.trigger:hover .rot{display:block}
+.group.trig-ok{border-color:#3a7f93}.group.trig-bad{border-color:var(--bad)}

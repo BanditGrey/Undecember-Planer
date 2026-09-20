@@ -8,7 +8,10 @@ export const parse = (k: string) => k.split(',').map(Number) as [number, number]
 export const cells: string[] = [];
 for (let q = -RADIUS; q <= RADIUS; q++) for (let r = Math.max(-RADIUS, -q - RADIUS); r <= Math.min(RADIUS, -q + RADIUS); r++) cells.push(key(q, r));
 export const CENTER = key(0, 0);
-const DIRS: [number, number][] = [[1, 0], [1, -1], [0, -1], [-1, 0], [-1, 1], [0, 1]];
+export const DIRS: [number, number][] = [[1, 0], [1, -1], [0, -1], [-1, 0], [-1, 1], [0, 1]];
+export const step = (k: string, d: number) => { const [q, r] = parse(k); const [dq, dr] = DIRS[((d % 6) + 6) % 6]; const n = key(q + dq, r + dr); const [a, b] = parse(n); return Math.max(Math.abs(a), Math.abs(b), Math.abs(-a - b)) <= RADIUS ? n : null; };
+/** Angle (deg, screen coords) of direction d for pointy-top hexes. */
+export const dirAngle = (d: number) => [0, -60, -120, 180, 120, 60][((d % 6) + 6) % 6];
 export const neighbors = (k: string) => { const [q, r] = parse(k); return DIRS.map(([dq, dr]) => key(q + dq, r + dr)).filter(n => { const [a, b] = parse(n); return Math.max(Math.abs(a), Math.abs(b), Math.abs(-a - b)) <= RADIUS; }); };
 /** Pixel position (unit hex size = 1) for CSS layout. */
 export const hexPos = (k: string) => { const [q, r] = parse(k); return { x: Math.sqrt(3) * (q + r / 2), y: 1.5 * r }; };
@@ -38,20 +41,44 @@ export function checkLink(link: Rune, skill: Rune): LinkCheck {
   return { ok: false, shared, reason: '', key: 'linkMissing', tags: lt.join(', ') };
 }
 
+// ---- Trigger runes: "Must link an Activation (A, B) Skill and a Target (X) Skill in the arrow's direction."
+export interface TriggerSpec { activation: string[]; target: string[] }
+export function triggerSpec(r: Rune): TriggerSpec | null {
+  if (r.type !== 'Link') return null;
+  const d = r.description || '';
+  const m = d.match(/Activation \(([^)]+)\) Skill and a Target \(([^)]+)\) Skill/);
+  if (m) return { activation: m[1].split(',').map(x => x.trim()).map(x => x === 'Channeling' ? 'Channel' : x), target: m[2].split(',').map(x => x.trim()) };
+  const t = d.match(/Must link a Target (.+?) Skill in the arrow/);
+  if (t) return { activation: [], target: t[1].split(',').map(x => x.trim()) };
+  return null;
+}
+export interface TriggerGroup { cell: string; rune: Rune; dir: number; spec: TriggerSpec; activation?: { cell: string; rune: Rune; ok: boolean }; target?: { cell: string; rune: Rune; ok: boolean }; ok: boolean }
+const matchTags = (r: Rune, tags: string[]) => tags.some(t => r.tags.includes(t) || (t === 'Enhance' && r.tags.some(x => /Enhance/.test(x))));
+
 export interface SkillGroup { cell: string; skill: Rune; links: { cell: string; rune: Rune; check: LinkCheck }[]; runestone?: string }
-export function analyzeBoard(b: Build): { groups: SkillGroup[]; orphans: { cell: string; rune: Rune }[] } {
-  const groups: SkillGroup[] = []; const orphans: { cell: string; rune: Rune }[] = []; const linked = new Set<string>();
+export function analyzeBoard(b: Build): { groups: SkillGroup[]; orphans: { cell: string; rune: Rune }[]; triggers: TriggerGroup[] } {
+  const groups: SkillGroup[] = []; const orphans: { cell: string; rune: Rune }[] = []; const linked = new Set<string>(); const triggers: TriggerGroup[] = [];
+  for (const [cell, c] of Object.entries(b.board)) {
+    const rune = c.rune && runeBySlug.get(c.rune); const spec = rune && triggerSpec(rune); if (!rune || !spec) continue;
+    const dir = c.dir ?? 0; const tg: TriggerGroup = { cell, rune, dir, spec, ok: false }; linked.add(cell);
+    const tc = step(cell, dir); const tr = tc && b.board[tc]?.rune && runeBySlug.get(b.board[tc].rune!);
+    if (tc && tr && tr.type === 'Skill') tg.target = { cell: tc, rune: tr, ok: matchTags(tr, spec.target) };
+    const ac = step(cell, dir + 3); const ar = ac && b.board[ac]?.rune && runeBySlug.get(b.board[ac].rune!);
+    if (spec.activation.length && ac && ar && ar.type === 'Skill') tg.activation = { cell: ac, rune: ar, ok: matchTags(ar, spec.activation) };
+    tg.ok = !!tg.target?.ok && (spec.activation.length === 0 || !!tg.activation?.ok);
+    triggers.push(tg);
+  }
   for (const [cell, c] of Object.entries(b.board)) {
     const rune = c.rune && runeBySlug.get(c.rune); if (!rune || rune.type !== 'Skill') continue;
     const g: SkillGroup = { cell, skill: rune, links: [], runestone: c.runestone };
-    for (const n of neighbors(cell)) { const lr = b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); if (lr && lr.type === 'Link') { g.links.push({ cell: n, rune: lr, check: checkLink(lr, rune) }); linked.add(n); } }
+    for (const n of neighbors(cell)) { const lr = b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); if (lr && lr.type === 'Link' && !triggerSpec(lr)) { g.links.push({ cell: n, rune: lr, check: checkLink(lr, rune) }); linked.add(n); } }
     // "Only one X can be linked at once" + the game never allows the same link rune twice on a skill
     const seen = new Set<string>(); for (const l of g.links) { if (seen.has(l.rune.slug) && l.check.ok) l.check = { ok: false, shared: [], reason: `Only one ${l.rune.name} can be linked at once` }; seen.add(l.rune.slug); }
     if (g.links.length > 6) g.links = g.links.slice(0, 6);
     groups.push(g);
   }
   for (const [cell, c] of Object.entries(b.board)) { const r = c.rune && runeBySlug.get(c.rune); if (r && r.type === 'Link' && !linked.has(cell)) orphans.push({ cell, rune: r }); }
-  return { groups, orphans };
+  return { groups, orphans, triggers };
 }
 
 // ---- Element / tag colouring like the in-game rune frames.
