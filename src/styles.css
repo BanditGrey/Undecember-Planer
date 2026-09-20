@@ -86,3 +86,10 @@ nav{display:flex;gap:4px;border-bottom:1px solid var(--gold2);margin-bottom:12px
 .hex .rot{position:absolute;left:6%;bottom:8%;width:18px;height:18px;border-radius:50%;border:1px solid #7bd1e6;background:#000c;color:#7bd1e6;font-size:11px;line-height:16px;padding:0;cursor:pointer;display:none}
 .hex.trigger:hover .rot{display:block}
 .group.trig-ok{border-color:#3a7f93}.group.trig-bad{border-color:var(--bad)}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:10px}
+.gcard{background:#15120e;border:1px solid #3a3124;border-radius:6px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.gcard .gicons img{width:34px;height:34px;border:1px solid;border-radius:50%;background:#000;margin-right:4px}
+.gcard .avatar{width:16px;height:16px;border-radius:50%;vertical-align:middle}
+.pill{font-size:11px;border:1px solid var(--gold2);border-radius:10px;padding:0 6px;color:var(--gold)}
+a.btn{display:inline-block;padding:4px 10px;border:1px solid #3a3124;border-radius:4px;color:inherit;text-decoration:none;background:#221d17}a.btn.primary{border-color:var(--gold);color:var(--gold)}
