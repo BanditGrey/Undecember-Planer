@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Board } from './components/Board';
 import { Equipment } from './components/Equipment';
 import { RuneMaster } from './components/RuneMaster';
@@ -6,6 +6,7 @@ import { Items } from './components/Items';
 import { Gallery } from './components/Gallery';
 import { Compare } from './components/Compare';
 import { Character } from './components/Character';
+import { PRESETS } from './lib/presets';
 import { runes, runestones, uniques, runemaster, authority } from './data';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
 import { emptyBuild, type Build } from './types';
@@ -15,7 +16,13 @@ import { Dps } from './components/Dps';
 type Tab = 'board' | 'equip' | 'rm' | 'dps' | 'items' | 'builds' | 'gallery' | 'compare';
 
 export default function App() {
-  const [build, setBuild] = useState<Build>(() => buildFromLocation() || emptyBuild());
+  const [build, setBuildRaw] = useState<Build>(() => buildFromLocation() || emptyBuild());
+  // Undo / redo history (Ctrl+Z / Ctrl+Y or Ctrl+Shift+Z)
+  const hist = useRef<{ past: Build[]; future: Build[] }>({ past: [], future: [] });
+  const setBuild = useCallback((next: Build | ((b: Build) => Build)) => { setBuildRaw(prev => { const n = typeof next === 'function' ? next(prev) : next; if (n === prev) return prev; hist.current.past = [...hist.current.past.slice(-49), prev]; hist.current.future = []; return n; }); }, []);
+  const undo = useCallback(() => setBuildRaw(cur => { const p = hist.current.past.pop(); if (!p) return cur; hist.current.future.push(cur); return p; }), []);
+  const redo = useCallback(() => setBuildRaw(cur => { const f = hist.current.future.pop(); if (!f) return cur; hist.current.past.push(cur); return f; }), []);
+  useEffect(() => { const h = (e: KeyboardEvent) => { const tag = (e.target as HTMLElement)?.tagName; if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return; if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); e.shiftKey ? redo() : undo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') { e.preventDefault(); redo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); save(); } else if (!e.ctrlKey && !e.metaKey && !e.altKey && /^[1-8]$/.test(e.key)) { const tabs: Tab[] = ['board', 'equip', 'rm', 'dps', 'items', 'builds', 'gallery', 'compare']; setTab(tabs[+e.key - 1]); } }; addEventListener('keydown', h); return () => removeEventListener('keydown', h); });
   const [tab, setTab] = useState<Tab>('board');
   const [saved, setSaved] = useState(savedBuilds);
   const [msg, setMsg] = useState('');
@@ -37,6 +44,7 @@ export default function App() {
           <button className="primary" onClick={share}>{t('share')}</button>
           <button onClick={save}>{t('save')}</button>
           <button onClick={() => setBuild(emptyBuild())}>{t('newBuild')}</button>
+          <button onClick={undo} title="Ctrl+Z">↶</button><button onClick={redo} title="Ctrl+Y">↷</button>
           {msg && <span className="flash">{msg}</span>}
           <span className="lang"><button className={lang === 'pt' ? 'on' : ''} onClick={() => setLang('pt')}>PT</button><button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>{lang === 'pt' && <label className="muted orig" title={t('origTip')}><input type="checkbox" checked={showOriginal} onChange={e => setShowOriginal(e.target.checked)} /> {t('origText')}</label>}</span>
         </div>
@@ -51,6 +59,10 @@ export default function App() {
         {tab === 'items' && <Items />}
         {tab === 'compare' && <Compare build={build} />}
         {tab === 'gallery' && <Gallery build={build} open={b => { setBuild(b); setTab('board'); }} />}
+        {tab === 'builds' && <section className="panel"><h2>{t('presetsTitle')} <small className="muted">{t('presetsHint')}</small></h2>
+          <div className="gallery">{PRESETS.map(p => <div key={p.id} className="gcard"><div className="gh"><b>{p.name[lang]}</b> <span className="pill">{p.stat}</span></div><small className="muted">{p.desc[lang]}</small>
+            <div className="row"><button className="primary" onClick={() => { setBuild(p.make()); setTab('board'); }}>{t('open')}</button></div></div>)}</div>
+        </section>}
         {tab === 'builds' && <section className="panel"><h2>{t('savedTitle')}</h2>
           {saved.length === 0 && <p className="muted">{t('savedEmpty')}</p>}
           {saved.map(b => <div key={b.name} className="saved"><b>{b.name}</b> <small className="muted">{b.author} · {b.stat} · {Object.keys(b.board).length} {t('cells')}</small>
@@ -58,7 +70,7 @@ export default function App() {
         </section>}
         <section className="panel"><h3>{t('notes')}</h3><textarea rows={3} value={build.notes} onChange={e => setBuild({ ...build, notes: e.target.value })} placeholder={t('notesPh')} /></section>
       </main>
-      <footer className="muted">{t('footer', { runes: runes.length, runestones: runestones.length, uniques: uniques.length, rm: runemaster.length, auth: authority.length })} <a href="https://undecember.thein.ru/en/" target="_blank" rel="noreferrer">undecember.thein.ru</a> {t('footer2')}</footer>
+      <footer className="muted">{t('footer', { runes: runes.length, runestones: runestones.length, uniques: uniques.length, rm: runemaster.length, auth: authority.length })} <a href="https://undecember.thein.ru/en/" target="_blank" rel="noreferrer">undecember.thein.ru</a> {t('footer2')} · {t('shortcuts')}</footer>
     </div>
   );
 }
