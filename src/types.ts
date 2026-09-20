@@ -1,6 +1,6 @@
 export type RuneColor = 'R' | 'G' | 'B';
 export type SlotColor = RuneColor | 'W';
-export interface Rune { slug: string; name: string; type: 'Skill' | 'Link'; color: RuneColor | null; icons: string[]; tags: string[]; rarity: string | null; howToGet: string[]; acts: string[]; weapons: string[]; description: string; linkRules: string[]; level1: string[]; level45: string[]; gradeBonuses: string[][]; awakening: Record<string, string[]> }
+export interface Rune { slug: string; name: string; type: 'Skill' | 'Link'; color: RuneColor | null; icons: string[]; tags: string[]; rarity: string | null; howToGet: string[]; acts: string[]; weapons: string[]; description: string; linkRules: string[]; level1: string[]; level45: string[]; gradeBonuses: string[][]; awakening: Record<string, string[]>; unofficial?: boolean; maxLevel?: number; source?: string; sourceUrl?: string; placeholderIcon?: boolean }
 export interface Runestone { slug: string; name: string; rarity: 'Magic' | 'Rare' | 'Unique'; icon: string; effect: string[] }
 export interface Unique { slug: string; name: string; tier: number; typeKey: string; type: string; icon: string; requires: string[]; baseStats: string[]; affixes: string[] }
 export interface RuneMasterNode { id: string; category: string; tier: number; unlockLevel: number; maxPoints: number; prereqPointsPrevTier: number; effect: string }

@@ -1,0 +1,154 @@
+{
+  "_comment": "Runes added after undecember.thein.ru stopped updating (S8 Starwalker onwards). Hand-transcribed from the official LINE Games update notes (ud.floor.line.games). Runes whose numbers were never published (only described) are flagged unofficial=true and carry an empty level table; tags for those are inferred from the description.",
+  "runes": [
+    {
+      "slug": "FrostStorm", "name": "Frost Storm", "type": "Skill", "color": "G", "icon": "FrostStorm",
+      "tags": ["Attack", "Area of Effect", "Strike", "Cold", "Projectile", "Bow", "Shadow"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["Bow"],
+      "description": "Fires an arrow that explodes to create a Chilling Area. The Chilling Area deals DMG for a set amount of time. Cannot use Parallel Shot, Cannot Split, Cannot Chain",
+      "level1": ["Mana Cost 4", "Triggers Immediately", "Cold Element", "Projectile Count 1 (Max 5)", "Area of Effect of Chilling Area 150", "Chilling Area Duration 0.4 s", "Chilling Area Explosion Frequency 0.2 s", "Cold DMG +50", "Cold DMG 128%", "+1 Chill Rate", "8% DMG Dampening when hitting the same target repeatedly"],
+      "level45": ["Mana Cost 21", "Triggers Immediately", "Cold Element", "Projectile Count 1 (Max 5)", "Area of Effect of Chilling Area 150", "Chilling Area Duration 0.4 s", "Chilling Area Explosion Frequency 0.2 s", "Cold DMG +564", "Cold DMG 267%", "+45 Chill Rate", "8% DMG Dampening when hitting the same target repeatedly"],
+      "gradeBonuses": [["+30% Cold DMG"], ["+50% Cold DMG", "+1 Projectile Count"], ["+100% Cold DMG", "Chilling Area Duration +30%", "+2 Projectile Count"]],
+      "awakening": { "Source": ["Projectile Creation Range -200", "+[30-70]% Area of Effect"], "Origin": ["Change to Chilling Area Explosion Frequency 0.1 s", "Chilling Area Duration +[30-50]%"], "Verity": ["(not published in the update notes)"] },
+      "source": "May 14 2026 update (S11 The Forge)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1778202906899019119"
+    },
+    {
+      "slug": "AxeThrow", "name": "Axe Throw", "type": "Skill", "color": "R", "icon": "AxeThrow",
+      "tags": ["Attack", "Area of Effect", "Strike", "Fire", "Projectile"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["Axe"],
+      "description": "Throws a Fire Element axe to deal damage to enemies. The thrown axe varies depending on the equipped weapon type (1-handed: 3 piercing axes; Dual Wield: 1 axe fired twice that pierces all; 2-handed: 1 axe that explodes on hit). Cannot use Parallel Shot, Cannot Split, Cannot Chain",
+      "level1": ["Mana Cost 5", "Triggers Immediately", "Fire Element", "+15% Attack Critical Chance", "+90% Attack Critical DMG", "10% Attack Speed Amplification", "20% chance to inflict Rupture for 5 s on hit (Max Stacks: 5)", "Amplifies Axe Throw DMG dealt to the target by 2% per 1 Rupture stack on hit", "1-handed: Fire DMG +40, Fire DMG 300%, Projectile Count 3 (Max 7), Pierce Count 1, 10% DMG Dampening when hitting the same target repeatedly", "Dual Wielding: Fire DMG +38, Fire DMG 280%, Projectile Count fixed to 1 and fires twice, Pierces All", "2-handed: Fire DMG +50, Fire DMG 400%, Projectile Count fixed to 1 and explodes on hit, Explosion Range 200"],
+      "level45": ["Mana Cost 14.5", "Triggers Immediately", "Fire Element", "+15% Attack Critical Chance", "+90% Attack Critical DMG", "10% Attack Speed Amplification", "20% chance to inflict Rupture for 5 s on hit (Max Stacks: 5)", "Amplifies Axe Throw DMG dealt to the target by 2% per 1 Rupture stack on hit", "1-handed: Fire DMG +959, Fire DMG 768%, Projectile Count 3 (Max 7), Pierce Count 1, 10% DMG Dampening when hitting the same target repeatedly", "Dual Wielding: Fire DMG +947, Fire DMG 761%, Projectile Count fixed to 1 and fires twice, Pierces All", "2-handed: Fire DMG +1375, Fire DMG 1326%, Projectile Count fixed to 1 and explodes on hit, Explosion Range 200"],
+      "gradeBonuses": [["Rupture Effect +20%", "+10% Fire Penetration"], ["Rupture Effect +40%", "+20% Fire Penetration"], ["Rupture Effect +60%", "+45% Fire Penetration", "15% Projectile DMG Amplification"]],
+      "awakening": { "Source": ["Pierce Count +[1-2] when 1-handed weapon is equipped", "Projectile Speed +[60-100]% when Dual Wielding", "Area of Effect +[40-80]% when 2-handed weapon is equipped"], "Origin": ["Rupture Effect +[30-70]%"], "Verity": ["100% chance to gain Hellfire effect for 5 s on hit", "( Fire Penetration +10%, Increases Fire DMG by 10% )", "+[50-100]% Hellfire Effect"] },
+      "source": "May 14 2026 update (S11 The Forge)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1778202906899019119"
+    },
+    {
+      "slug": "ChargedShot", "name": "Charged Shot", "type": "Skill", "color": "G", "icon": "ChargedShot",
+      "tags": ["Attack", "Charge", "Strike", "Physical", "Projectile", "Bowgun", "Overheat"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["Bowgun"],
+      "description": "Charges energy at regular intervals and shoots a round to deal large DMG to a faraway enemy. Additional effects are granted based on charge stage. Cannot Multishot, Cannot Split, Cannot Chain",
+      "level1": ["Mana Cost 2", "Triggers Immediately", "17 Overheat Accumulation", "Physical Element", "+4 Max Stage", "Physical DMG +33", "Physical DMG 194%", "Pierces All", "+5% Projectile Size per stage", "+3% Projectile Speed per Stage", "+5% Projectile DMG per Stage", "2% Projectile Max Move Distance per Stage", "Projectile Count +1 per 3 stages", "20% Projectile DMG Amplification per 3 Stages"],
+      "level45": ["Mana Cost 8.3", "Triggers Immediately", "17 Overheat Accumulation", "Physical Element", "+4 Max Stage", "Physical DMG +755", "Physical DMG 1766%", "Pierces All", "+30% Projectile Size per stage", "+13% Projectile Speed per Stage", "+22.8% Projectile DMG per Stage", "8% Projectile Max Move Distance per Stage", "Projectile Count +1 per 3 stages", "20% Projectile DMG Amplification per 3 Stages"],
+      "gradeBonuses": [["+30% Projectile DMG"], ["+50% Projectile DMG", "+2 Max Stage"], ["+75% Projectile DMG", "10% Projectile DMG Amplification", "+2 Max Stage"]],
+      "awakening": { "Source": ["[6-12]% Projectile DMG Amplification"], "Origin": ["+3 Max Stage", "[6-14]% Projectile DMG Dampening"], "Verity": ["+[8-15]% Projectile Size per stage"] },
+      "source": "Sep 10 2026 update (S12 The Farside)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1788995577330018641"
+    },
+    {
+      "slug": "DivinePunishment", "name": "Divine Punishment", "type": "Skill", "color": "B", "icon": "DivinePunishment",
+      "tags": ["Spell", "Area of Effect", "Channel", "Strike", "Lightning", "Projectile"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["All weapons"],
+      "description": "Focuses energy to create a field of lightning, striking all hostile targets within it with Divine Punishment. Upon landing a critical hit, there is a chance for an additional enhanced Divine Punishment to trigger. Cannot Multishot, Cannot use Parallel Shot, Cannot Pierce, Cannot Split, Cannot Chain",
+      "level1": ["Mana Cost 5", "Triggers Immediately", "Lightning Element", "30% Movement Speed Dampening", "+10% Spell Critical Rate", "+30% Spell Critical DMG", "Lightning Field Range 400", "Triggers Divine Punishment on enemies within the Lightning Field", "Lightning DMG +21", "Lightning DMG 112%", "30% Trigger Skill DMG Dampening", "Upon a critical hit, 40% chance for an additional Enhanced Divine Punishment to trigger", "Enhanced Divine Punishment: +25% Strike DMG Multiplier, +8% Maximization Chance"],
+      "level45": ["Mana Cost 15.2", "Triggers Immediately", "Lightning Element", "30% Movement Speed Dampening", "+55% Spell Critical Rate", "+80% Spell Critical DMG", "Lightning Field Range 400", "Triggers Divine Punishment on enemies within the Lightning Field", "Lightning DMG +185", "Lightning DMG 1067%", "30% Trigger Skill DMG Dampening", "Upon a critical hit, 40% chance for an additional Enhanced Divine Punishment to trigger", "Enhanced Divine Punishment: +25% Strike DMG Multiplier, +8% Maximization Chance"],
+      "gradeBonuses": [[], ["+50% Area of Effect", "+30% Projectile DMG"], ["+80% Area of Effect", "+50% Projectile DMG", "15% Projectile DMG Amplification"]],
+      "awakening": { "Source": ["Does not generate Enhanced Divine Punishment", "+[50-65]% Strike DMG Multiplier", "+[5-13]% Maximization Chance"], "Origin": ["+[40-70]% Area of Effect", "+[15-34]% Projectile DMG"], "Verity": ["+[15-30]% Shock Chance", "+[10-22]% DMG against Shocked enemies"] },
+      "source": "Sep 10 2026 update (S12 The Farside)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1788995577330018641"
+    },
+    {
+      "slug": "WrathfulBlow", "name": "Wrathful Blow", "type": "Skill", "color": "B", "icon": "WrathfulBlow", "unofficial": true,
+      "tags": ["Spell", "Strike", "Physical", "Projectile"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["All weapons"],
+      "description": "Physical-element ranged Spell that releases a fist-shaped burst of wrathful energy forward when cast. (Numbers were not published in the update notes; tags inferred from the description.)",
+      "level1": [], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "Sep 4 2025 update (S9 Abyss Gate) / Director's Letter vol.18", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1756811515043003781"
+    },
+    {
+      "slug": "ToxicMist", "name": "Toxic Mist", "type": "Skill", "color": "B", "icon": "ToxicMist", "unofficial": true,
+      "tags": ["Spell", "Area of Effect", "Strike", "Poison", "Projectile"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["All weapons"],
+      "description": "Poison-element Spell that causes a toxic explosion on the target, generating multiple projectiles from the target's location. Also referred to as \"Poison Mist\" in runestone options. (Numbers were not published in the update notes; tags inferred from the description.)",
+      "level1": [], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "Sep 4 2025 update (S9 Abyss Gate) / Director's Letter vol.18", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1756811515043003781"
+    },
+    {
+      "slug": "LightningSlash", "name": "Lightning Slash", "type": "Skill", "color": "R", "icon": "LightningSlash", "unofficial": true,
+      "tags": ["Attack", "Melee", "Weapon Range", "Strike", "Lightning"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["Sword", "Two-Handed Sword"],
+      "description": "Slashes with lightning that chains damage between nearby enemies. Synergises with the Iai-jutsu link rune. (Numbers were not published in the update notes; tags inferred from the description.)",
+      "level1": [], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "May 8 2025 update (S8 Starwalker)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1746187599491003314"
+    },
+    {
+      "slug": "Flash", "name": "Flash", "type": "Skill", "color": "G", "icon": "Flash", "unofficial": true,
+      "tags": ["Attack", "Melee", "Strike", "Physical", "Movement"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": ["Dagger", "Sword"],
+      "description": "Dashes forward delivering rapid strikes to every enemy along the charging path. Synergises with the Iai-jutsu link rune. (Numbers were not published in the update notes; tags inferred from the description.)",
+      "level1": [], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "May 8 2025 update (S8 Starwalker)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1746187599491003314"
+    },
+    {
+      "slug": "IaiJutsu", "name": "Iai-jutsu", "type": "Link", "color": "R", "icon": "IaiJutsu", "unofficial": true,
+      "tags": ["Attack", "Melee", "Strike"],
+      "rarity": "Normal", "howToGet": ["Drop", "Shop"], "acts": [], "weapons": [],
+      "description": "",
+      "linkRules": ["Can be linked with Skills that satisfy Attack, Melee, Strike (must include all)", "Cannot be linked with Skills that satisfy Totem, Sentry, Minion, Toggle"],
+      "level1": ["Resource Cost Increase 15%", "Amplifies Attack DMG (values not published)"], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "May 8 2025 update (S8 Starwalker)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1746187599491003314"
+    },
+    {
+      "slug": "ChainOfPain", "name": "Chain of Pain", "type": "Link", "color": "B", "icon": "ChainOfPain", "unofficial": true,
+      "tags": ["Strike", "DoT"],
+      "rarity": "Rare", "howToGet": ["Synthesis"], "acts": [], "weapons": [],
+      "description": "",
+      "linkRules": ["Can be linked with Skills that satisfy any one of Strike, DoT", "Applies to Minions when linked to Summon Skill"],
+      "level1": ["Resource Cost Increase 20%", "DMG increases per status effect afflicting the target (values not published)"], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "Sep 4 2025 update (S9 Abyss Gate)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1756811515043003781"
+    },
+    {
+      "slug": "TranscendentManaStorm", "name": "Transcendent Mana Storm", "type": "Link", "color": "B", "icon": "TranscendentManaStorm", "unofficial": true,
+      "tags": ["Strike", "DoT"],
+      "rarity": "Unique", "howToGet": ["Wheel of Fate – Starlight Guardian"], "acts": [], "weapons": [],
+      "description": "Transcendent (unique) version of Mana Storm dropped by the hidden boss Starlight Guardian in the Wheel of Fate. Rune cannot be awakened.",
+      "linkRules": ["Can be linked with Skills that satisfy any one of Strike, DoT", "Applies to Minions when linked to Summon Skill"],
+      "level1": ["Resource Cost Increase 30%", "Strike DMG Amplification / DoT Amplification (values not published)"], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "Sep 4 2025 update (S9 Abyss Gate)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1756811515043003781"
+    },
+    {
+      "slug": "TranscendentHarmony", "name": "Transcendent Harmony", "type": "Link", "color": "B", "icon": "TranscendentHarmony", "maxLevel": 10,
+      "tags": ["Attack", "Spell"],
+      "rarity": "Unique", "howToGet": ["Wheel of Fate – Starlight Guardian"], "acts": [], "weapons": [],
+      "description": "Transcendent (unique) link rune. Levels 1–10. Rune cannot be awakened.",
+      "linkRules": ["Can be linked with Skills that satisfy any one of Attack, Spell", "Cannot be linked with Skills that satisfy Totem, Minion, Sentry, Toggle, Shout, Attack Enhance, Defense Enhance, Movement, Trap"],
+      "level1": ["Resource Cost Increase 20%", "When HP and Mana are 50% or more: 10% Resource Cost Amplification, 25.5% DMG Amplification, +12% Attack Speed, +12% Cast Speed", "When HP and Mana are under 50%: 20% Resource Cost Dampening, 25.5% DMG Amplification, +24% Attack Speed, +24% Cast Speed", "(Unique Effect) 5% DMG Amplification when percentage of HP is higher than or equal to Mana", "(Unique Effect) +1% HP Absorb on hit when percentage of HP is lower than Mana", "(Unique Effect) +1% Barrier Absorb on hit when percentage of Barrier is lower than Mana"],
+      "level45": ["Resource Cost Increase 20%", "When HP and Mana are 50% or more: 10% Resource Cost Amplification, 78.9% DMG Amplification, +14.9% Attack Speed, +14.9% Cast Speed", "When HP and Mana are under 50%: 20% Resource Cost Dampening, 39.4% DMG Amplification, +29.9% Attack Speed, +29.9% Cast Speed", "(Unique Effect) 5% DMG Amplification when percentage of HP is higher than or equal to Mana", "(Unique Effect) +1% HP Absorb on hit when percentage of HP is lower than Mana", "(Unique Effect) +1% Barrier Absorb on hit when percentage of Barrier is lower than Mana"],
+      "gradeBonuses": [], "awakening": {},
+      "source": "Jan 15 2026 update (S10 New Age)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1767163835156020769"
+    },
+    {
+      "slug": "TranscendentEnhanceEffect", "name": "Transcendent Enhance Effect", "type": "Link", "color": "B", "icon": "TranscendentEnhanceEffect", "maxLevel": 10,
+      "tags": ["Shout", "Attack Enhance", "Defense Enhance", "Rapid Seal"],
+      "rarity": "Unique", "howToGet": ["Wheel of Fate – Starlight Guardian"], "acts": [], "weapons": [],
+      "description": "Transcendent (unique) link rune. Levels 1–10. Rune cannot be awakened.",
+      "linkRules": ["Can be linked with Skills that satisfy any one of Shout, Attack Enhance, Defense Enhance, Rapid Seal"],
+      "level1": ["Resource Cost Increase 20%", "+22% Skill Rune Effect", "(Unique Effect) +20% Skill Rune Effect", "(Unique Effect) +15% Skill Rune Duration", "(Unique Effect) +15% Skill Rune Cooldown Recovery Speed", "(Unique Effect) -10% Resource Cost"],
+      "level45": ["Resource Cost Increase 20%", "+74.9% Skill Rune Effect", "(Unique Effect) +20% Skill Rune Effect", "(Unique Effect) +15% Skill Rune Duration", "(Unique Effect) +15% Skill Rune Cooldown Recovery Speed", "(Unique Effect) -10% Resource Cost"],
+      "gradeBonuses": [], "awakening": {},
+      "source": "Jan 15 2026 update (S10 New Age)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1767163835156020769"
+    },
+    {
+      "slug": "TranscendentImprovedTechnique", "name": "Transcendent Improved Technique", "type": "Link", "color": "B", "icon": "TranscendentImprovedTechnique", "maxLevel": 10,
+      "tags": ["Attack", "Spell"],
+      "rarity": "Unique", "howToGet": ["Wheel of Fate – Starlight Guardian"], "acts": [], "weapons": [],
+      "description": "Transcendent (unique) link rune. Levels 1–10. Rune cannot be awakened.",
+      "linkRules": ["Can be linked with Skills that satisfy any one of Attack, Spell"],
+      "level1": ["Resource Cost Increase 15%", "+2 Rune Level", "+4% Minion DMG per 4 Intelligence (Max: 360%)", "+4% Sentry DMG per 4 Dexterity (Max: 360%)", "+4% DMG for every 4 Strength (Max: 360%)", "(Unique Effect) +2 Rune Level", "(Unique Effect) +2 Minion Skill Rune Level", "(Unique Effect) +2 Sentry Skill Rune Level", "(Unique Effect) 3% Minion DMG Amplification per 50 Intelligence (Max: 36%)", "(Unique Effect) 3% Sentry DMG Amplification per 50 Dexterity (Max: 36%)", "(Unique Effect) 3% DMG Amplification for every 50 Strength (Max: 36%)"],
+      "level45": ["Resource Cost Increase 15%", "+3 Rune Level", "+6% Minion DMG per 4 Intelligence (Max: 360%)", "+6% Sentry DMG per 4 Dexterity (Max: 360%)", "+6% DMG for every 4 Strength (Max: 360%)", "(Unique Effect) +2 Rune Level", "(Unique Effect) +2 Minion Skill Rune Level", "(Unique Effect) +2 Sentry Skill Rune Level", "(Unique Effect) 3% Minion DMG Amplification per 50 Intelligence (Max: 36%)", "(Unique Effect) 3% Sentry DMG Amplification per 50 Dexterity (Max: 36%)", "(Unique Effect) 3% DMG Amplification for every 50 Strength (Max: 36%)"],
+      "gradeBonuses": [], "awakening": {},
+      "source": "Jan 15 2026 update (S10 New Age)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1767163835156020769"
+    },
+    {
+      "slug": "SpellActivationUponTranscendentSpellHit", "name": "Spell Activation upon Transcendent Spell Hit", "type": "Link", "color": "B", "icon": "SpellActivationUponTranscendentSpellHit", "unofficial": true,
+      "tags": ["Spell", "Strike"],
+      "rarity": "Unique", "howToGet": ["Wheel of Fate – Starlight Guardian"], "acts": [], "weapons": [],
+      "description": "Must link an Activation (Spell, Strike) Skill and a Target (Spell) Skill in the arrow's direction. Target Skill must be registered in a Skill slot to activate. Transcendent (unique) trigger rune; numbers not published. Rune cannot be awakening",
+      "linkRules": ["Target Skill cannot be linked if any of the Attack, Channeling, Totem, Sentry, Minion, Movement, Toggle, Trap tags exist."],
+      "level1": ["Resource Cost Increase 15%", "Trigger Chance 100%", "DMG / Resource Cost Dampening for Activated Skill (values not published)"], "level45": [], "gradeBonuses": [], "awakening": {},
+      "source": "May 8 2025 update (S8 Starwalker)", "sourceUrl": "https://ud.floor.line.games/us/bbsCmn/detail/1746187599491003314"
+    }
+  ],
+  "tagPatches": {
+    "_comment": "Sep 4 2025 update: link runes with the [Melee] tag gained the [Spell] tag so they can also be linked to spell skills. Rules are relaxed accordingly (Melee + Strike + (Attack or Spell)).",
+    "addSpellToMelee": ["Regeneration", "Tenacity", "Hunger", "IronWill", "Break", "MeleeDMGAmplification", "GripStrength", "FightingSpirit", "Enrage", "SoulPrayer", "GrandApproach", "Focus", "Impact"]
+  }
+}

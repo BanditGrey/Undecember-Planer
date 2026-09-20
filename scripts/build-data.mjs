@@ -24,6 +24,21 @@ const runes = runeRows.map(({ type, slug, name, ic }) => { const d = runesDb[slu
     rarity: d.rarity ?? null, howToGet: d.howToGet ?? [], acts: d.acts ?? [], weapons: d.weapons ?? [], description: d.description ?? '', linkRules: (d.linkRules ?? []).map(x => x.replace(/Удар/g, 'Strike')) /* source site leaks the Russian word for Strike */,
     level1: d.level1 ?? [], level45: d.level45 ?? [], gradeBonuses: d.gradeBonuses ?? [], awakening: d.awakening ?? {} }; });
 
+// ---- runes added after the source site stopped updating (hand-maintained overlay, see db/runes-extra.json)
+const extra = db('runes-extra.json') || { runes: [], tagPatches: {} };
+// Placeholder icons for runes whose art is not in the mirror (closest existing in-game icon).
+const PLACEHOLDER_ICON = { FrostStorm: 'Skill/Icon_Skill_FrostArrow_01.png', AxeThrow: 'Skill/Icon_Skill_RotateAxe_01.png', ChargedShot: 'Skill/Icon_Skill_LightningBulletShot_01.png', DivinePunishment: 'Skill/Icon_Skill_Judgmentoflight.png',
+  WrathfulBlow: 'Skill/Icon_Skill_LightningHit_01.png', ToxicMist: 'Skill/Icon_Skill_PoisonBurst_01.png', LightningSlash: 'Skill/Icon_Skill_FlickerSlash_01.png', Flash: 'Skill/Icon_Skill_VelocitySlash_01.png',
+  IaiJutsu: 'LinkSkill/Icon_LinkSkill_MeleeDmg_01.png', ChainOfPain: 'LinkSkill/Icon_LinkSkill_PersistentPain_01.png', TranscendentManaStorm: 'LinkSkill/Icon_LinkSkill_ManaBerserk_01.png', TranscendentHarmony: 'LinkSkill/Icon_LinkSkill_Harmony.png',
+  TranscendentEnhanceEffect: 'LinkSkill/Icon_LinkSkill_BuffAcceleration_01.png', TranscendentImprovedTechnique: 'LinkSkill/Icon_LinkSkill_RuneLevelUp_01.png', SpellActivationUponTranscendentSpellHit: 'LinkSkill/Icon_LinkSkill_OnCriHitSpell_01.png' };
+for (const e of extra.runes) { if (runes.some(r => r.slug === e.slug)) continue;
+  const ic = `icons/runes/${PLACEHOLDER_ICON[e.slug] || `${e.type}/Icon_${e.type === 'Link' ? 'LinkSkill' : 'Skill'}_${e.icon}_01.png`}`;
+  runes.push({ slug: e.slug, name: e.name, type: e.type, color: e.color, icons: [icon(ic)], tags: e.tags, rarity: e.rarity, howToGet: e.howToGet, acts: e.acts, weapons: e.weapons, description: e.description, linkRules: e.linkRules ?? [],
+    level1: e.level1, level45: e.level45, gradeBonuses: e.gradeBonuses, awakening: e.awakening, unofficial: !!e.unofficial, maxLevel: e.maxLevel, source: e.source, sourceUrl: e.sourceUrl, placeholderIcon: !!PLACEHOLDER_ICON[e.slug] }); }
+for (const slug of extra.tagPatches?.addSpellToMelee ?? []) { const r = runes.find(x => x.slug === slug); if (!r) continue; if (!r.tags.includes('Spell')) r.tags = [...r.tags, 'Spell'];
+  // "Melee, Attack, Strike (must include all)" -> "Melee, Strike, Attack/Spell (must include all)" (either Attack or Spell satisfies that slot)
+  r.linkRules = r.linkRules.map(x => /^Can be linked/.test(x) && /\bAttack\b/.test(x) && !/Spell/.test(x) ? x.replace(/\bAttack\b/, 'Attack/Spell') : x); }
+
 // ---- runestones
 const rsDb = db('runestones.json') || {};
 const rawRs = raw('runestones.txt').map(l => { const [rarity, slug, name, ic] = l.split('|'); return { rarity, slug, name, ic }; });

@@ -9,8 +9,9 @@ import { runeBySlug } from '../data';
 // Each community preset carries its source URL. Link runes are the ones named in the guide; when a
 // guide only names the main setup, the buff/utility skills follow the creator's standard pattern
 // (Marksman/Fighter's Wrath + Increase Duration + Time Acceleration, Seal of Critical Chance,
-// movement skill + Disarm). Skills that do not exist in the local database yet (Frost Storm, Toxic
-// Mist, Final Blade Sentry, Lightning Slash) are mentioned in notes only.
+// movement skill + Disarm). Runes added after the source site stopped updating live in
+// db/runes-extra.json (transcribed from the official patch notes); the ones without published numbers
+// (Toxic Mist, Wrathful Blow, Lightning Slash, Flash, Iai-jutsu, Chain of Pain) are flagged `unofficial`.
 // ---------------------------------------------------------------------------------------------
 
 type L = [string, RuneColor];
@@ -159,7 +160,7 @@ export const PRESETS: Preset[] = [
     name: { pt: 'Fan Blade Sentry', en: 'Fan Blade Sentry' },
     desc: { pt: 'Sentinela que se manteve tier S em todas as listas do Nirtas (S9→S12). Multi/Precise/Sturdy Sentry, Quick Installation, Life Imbued e Quick Attack; Sentry Expert como buff; Electric Sentry secundária para Shock.', en: 'Sentry that stayed S tier across all Nirtas lists (S9→S12). Multi/Precise/Sturdy Sentry, Quick Installation, Life Imbued and Quick Attack; Sentry Expert as buff; secondary Electric Sentry for Shock.' },
     priority: ['FanBladeSentry', 'MultiSentry', 'PreciseSentry', 'SentryExpert', 'QuickSentryInstallation', 'ElectricSentry'],
-    notes: { pt: 'Fonte: Nirtas – Build Tier List S10 New Age. Final Blade Sentry (nova) ainda não está na base local. Slots: 6🟢.', en: 'Source: Nirtas – Build Tier List S10 New Age. Final Blade Sentry (new) is not in the local database yet. Slots: 6🟢.' },
+    notes: { pt: 'Fonte: Nirtas – Build Tier List S10 New Age. Slots: 6🟢.', en: 'Source: Nirtas – Build Tier List S10 New Age. Slots: 6🟢.' },
     make: () => { const b = base('Fan Blade Sentry (S10)', 'DEX', 'Nirtas', [95, 100, 320, 100]);
       place(b.board, [0, 0], 'FanBladeSentry', [['MultiSentry', 'G'], ['PreciseSentry', 'G'], ['SturdySentry', 'G'], ['QuickSentryInstallation', 'G'], ['LifeImbuedSentry', 'G'], ['QuickAttack', 'G']]);
       place(b.board, C.NE, 'SentryExpert', []); place(b.board, C.E, 'BulwarkOfProtection', [['IncreaseDuration', 'G'], ['TimeAcceleration', 'B']]);

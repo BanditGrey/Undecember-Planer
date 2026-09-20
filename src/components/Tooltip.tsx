@@ -32,7 +32,9 @@ export function RuneTip({ r, level = BASE_MAX_LEVEL, bonus = 0, grade, awaken }:
     {Object.keys(r.awakening).length > 0 && <div className="ud-sec"><div className="ud-sec-t">Awakening</div>{Object.entries(r.awakening).map(([k, v]) => <div key={k} className={'ud-grade' + (awaken === k ? ' on' : awaken ? ' off' : '')}><b className="ud-aw">{k}</b><Lines lines={v} /></div>)}</div>}
     {r.weapons.length > 0 && <div className="ud-foot">{t('weapon')}: {r.weapons.map(g).join(', ')}</div>}
     {(r.howToGet.length > 0 || r.acts.length > 0) && <div className="ud-foot">{t('source')}: <span className="ud-src">{r.howToGet.join(' ')}</span> {r.acts.join(' ')}</div>}
-    {stats.length === 0 && <div className="ud-foot ud-missing">{t('tipMissing')}</div>}
+    {r.source && <div className="ud-foot">{t('patchNotes')}: <span className="ud-src">{r.source}</span>{r.placeholderIcon ? ` · ${t('tipPlaceholderIcon')}` : ''}</div>}
+    {r.unofficial && <div className="ud-foot ud-missing">{t('tipUnofficial')}</div>}
+    {stats.length === 0 && !r.unofficial && <div className="ud-foot ud-missing">{t('tipMissing')}</div>}
   </div>;
 }
 

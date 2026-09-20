@@ -45,7 +45,7 @@ export function checkLink(link: Rune, skill: Rune): LinkCheck {
     const m = rule.match(/Cannot be linked with Skills that satisfy (.+?)\.?$/i) || rule.match(/cannot be linked if any of the (.+?) tags exist/i) || rule.match(/Cannot be linked with (.+?) Skills$/i);
     if (m && split(m[1]).map(t => t === 'Channeling' ? 'Channel' : t).some(t => skill.tags.includes(t))) return { ok: false, shared: [], reason: rule };
     const c = rule.match(/Can be linked with Skills that satisfy (?:any one of )?(.+?)\.?$/i);
-    if (c) { const need = split(c[1]); const shared = need.filter(t => skill.tags.includes(t));
+    if (c) { const need = split(c[1]); const shared = need.filter(t => t.split('/').some(u => skill.tags.includes(u)));
       const all = /must include all/i.test(rule) || (!/any one/i.test(rule) && need.length > 1 && !/,/.test(c[1]));
       const ok = all ? shared.length === need.length : shared.length > 0;
       if (!ok) return { ok: false, shared, reason: rule }; verdict = { ok: true, shared, reason: rule }; }
