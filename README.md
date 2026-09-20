@@ -14,6 +14,14 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Caminho do Mestre de Runas** – 168 nós, 4 tiers, com pré-requisitos de pontos por tier.
 - **Compartilhamento** – a build inteira é codificada na URL (`#b=…`); basta copiar o link.
   Também salva builds no navegador (localStorage).
+- **DPS (estimativa)** – classifica cada stat parseado (increase / amplification / more-less / flat),
+  respeitando tags da skill e ignorando condicionais, e mostra o DPS estimado por skill do tabuleiro
+  (arma média × %base + flat) × (1+inc) × (1+amp) × more, incluindo nós do Mestre de Runas.
+- **Itens** – essências, moedas, poções e materiais (com receitas).
+- **PT / EN** – interface bilíngue (botão no topo). Em PT, os textos do jogo são traduzidos por um
+  glossário próprio (`src/lib/glossary.ts`) e as 221 descrições de skills foram traduzidas à mão
+  (`data/i18n/pt/rune_descriptions.json`). A opção “Texto original (EN)” mantém as strings do jogo
+  em inglês para conferir com o cliente/wiki.
 
 ## Banco de dados próprio
 O projeto **não depende do site fonte em tempo de execução**. Todos os dados e ícones ficam no repositório:
@@ -49,8 +57,8 @@ npm run data:scrape # (requer acesso ao site) enriquece com páginas de detalhe
 ```
 
 ## Roadmap
-- Calculadora de DPS a partir dos stats parseados.
+- Runas de gatilho (Trigger) com direção de ativação no tabuleiro.
 - Galeria pública de builds (backend).
-- Backend/galeria pública de builds.
+- Refinar glossário PT (nomes de itens únicos e autoridades).
 
 Projeto de fãs, não afiliado à LINE Games / Needs Games.
