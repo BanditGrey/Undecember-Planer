@@ -24,6 +24,9 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Grau e Despertar** – N/M/R/L e ☆ Source/Origin/Verity em cada runa do tabuleiro; ambos entram no tooltip e no DPS.
 - **Runas de gatilho** – seta rotacionável no hexágono; valida a skill *Alvo* (direção da seta) e a
   skill de *Ativação* (lado oposto) pelas tags exigidas no texto da runa.
+- **Busca global (Ctrl+K)** – runas, runestones, únicos, autoridades e nós do Mestre de Runas com tooltip.
+- **Link somente leitura** – `…#b=…&view=1` abre a build em modo de visualização (ótimo para postar); botão “Editar” para copiar e alterar.
+- **Tema claro/escuro** – botão ☀/☾ no cabeçalho.
 - **Builds iniciais** – 4 modelos (Whirlwind, Fire Ball, Spread Shot, Invocador) já válidos pelas regras.
 - **Exportar PNG** – card 1200×675 da build (tabuleiro, skills, DPS, equipamento) para Discord/redes.
 - **Desfazer/refazer & atalhos** – Ctrl+Z/Y, Ctrl+S salva, teclas 1–8 trocam de aba.
