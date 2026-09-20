@@ -29,7 +29,7 @@ export function parseRune(html, meta) {
 
 export function parseRunestone(html, meta) {
   const h = content(html); const mp = mainProps(h); const d = findOne(h, 'Elem_card_desc'); const props = findAll(h, 'Elem_card_props').flatMap(p => lines(p.inner));
-  const effect = [...(d ? [text(d.inner)] : []), ...props].filter(Boolean);
+  const effect = [...(d ? lines(d.inner).length ? lines(d.inner) : [text(d.inner)] : []), ...props].filter(Boolean);
   return { name: title(h) || meta.name, icons: icons(h), rarity: mp['Rarity']?.[0] ?? meta.rarity ?? null, effect };
 }
 

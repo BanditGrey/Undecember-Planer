@@ -16,20 +16,26 @@ const tagsOf = {}; for (const [t, slugs] of Object.entries(tagMembers)) for (con
 
 // ---- runes
 const runesDb = db('runes.json') || {};
-const runes = raw('runes_list.txt').map(l => { const [type, slug, name, ic] = l.split('|'); const d = runesDb[slug] || {};
+const rawRunes = raw('runes_list.txt').map(l => { const [type, slug, name, ic] = l.split('|'); return { type, slug, name, ic }; });
+const runeRows = Object.keys(runesDb).length ? Object.values(runesDb).sort((a, b) => a.order - b.order).map(d => { const r = rawRunes.find(x => x.slug === d.slug); return { type: r?.type ?? (d.icons[0]?.includes('/LinkSkill/') ? 'Link' : 'Skill'), slug: d.slug, name: d.name, ic: r?.ic ?? '' }; }) : rawRunes;
+const runes = runeRows.map(({ type, slug, name, ic }) => { const d = runesDb[slug] || {};
   return { slug, name, type, icons: (d.icons?.length ? d.icons : ic.split(',').map(i => `icons/runes/${type}/${i}.png`)).map(icon), tags: d.tags?.length ? d.tags : (tagsOf[slug] || []),
     rarity: d.rarity ?? null, howToGet: d.howToGet ?? [], acts: d.acts ?? [], weapons: d.weapons ?? [], description: d.description ?? '', linkRules: d.linkRules ?? [],
     level1: d.level1 ?? [], level45: d.level45 ?? [], gradeBonuses: d.gradeBonuses ?? [], awakening: d.awakening ?? {} }; });
 
 // ---- runestones
 const rsDb = db('runestones.json') || {};
-const runestones = raw('runestones.txt').map(l => { const [rarity, slug, name, ic] = l.split('|'); const d = rsDb[slug] || {};
-  return { slug, name, rarity, icon: icon(d.icons?.[0] || `icons/items/RuneCast/${ic}.png`), effect: d.effect ?? [] }; });
+const rawRs = raw('runestones.txt').map(l => { const [rarity, slug, name, ic] = l.split('|'); return { rarity, slug, name, ic }; });
+const rsRows = Object.keys(rsDb).length ? Object.values(rsDb).sort((a, b) => a.order - b.order).map(d => ({ rarity: d.rarity ?? rawRs.find(x => x.slug === d.slug)?.rarity ?? 'Magic', slug: d.slug, name: d.name, ic: '' })) : rawRs;
+const runestones = rsRows.map(({ rarity, slug, name, ic }) => { const d = rsDb[slug] || {};
+  return { slug, name, rarity, icon: icon(d.icons?.[0] || `icons/items/RuneCast/${ic}.png`), effect: (d.effect ?? []).flatMap(e => e.split(/(?<=[a-z\)])(?=Rune level|[+-]?\[|\+\d)/)).map(x => x.trim()).filter(Boolean) }; });
 
 // ---- uniques
 const TYPE_NAMES = { dagger:'Dagger', sword:'One-Handed Sword', axe:'One-Handed Axe', mace:'One-Handed Blunt', staff:'Staff', bow:'Bow', wand:'Wand', sceptre:'Scepter', magicbow:'Magic Bow', quiver:'Quiver', bowgun:'Bowgun', magazine:'Magazine', shield:'Shield', helmet:'Helmet', shoulder:'Pauldrons', bodyarmor:'Armor', gloves:'Gloves', boots:'Shoes', belt:'Belt', ring:'Ring', necklace:'Necklace', twohand_sword:'Two-Handed Sword', twohand_axe:'Two-Handed Axe', twohand_mace:'Two-Handed Blunt' };
 const uqDb = db('uniques.json') || {};
-const uniques = raw('uniques_list.txt').map(l => { const [tier, slug, name, ic] = l.split('|'); const d = uqDb[slug] || {};
+const rawUq = raw('uniques_list.txt').map(l => { const [tier, slug, name, ic] = l.split('|'); return { tier, slug, name, ic }; });
+const uqRows = Object.keys(uqDb).length ? Object.values(uqDb).sort((a, b) => a.order - b.order).map(d => ({ tier: d.tier, slug: d.slug, name: d.name, ic: (d.icons[0] || '').split('/').pop().replace(/\.png$/, '') })) : rawUq;
+const uniques = uqRows.map(({ tier, slug, name, ic }) => { const d = uqDb[slug] || {};
   const key = ic.replace(/^Icon_Equipment_/, '').replace(/(Dummy|[UT]\d+.*)$/, '').toLowerCase(); const type = TYPE_NAMES[key]; if (!type) throw new Error('unknown type ' + ic);
   return { slug, name, tier: +tier, typeKey: key, type: d.type || type, icon: icon(d.icons?.[0] || `icons/items/Equipment/${ic}.png`), requires: d.requires ?? [], baseStats: d.baseStats ?? [], affixes: d.affixes ?? [] }; });
 
