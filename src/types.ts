@@ -1,8 +1,8 @@
-export interface Rune { slug: string; name: string; type: 'Skill' | 'Link'; icons: string[]; tags: string[]; url: string }
-export interface Runestone { slug: string; name: string; rarity: 'Magic' | 'Rare' | 'Unique'; icon: string; url: string }
-export interface Unique { slug: string; name: string; tier: number; typeKey: string; type: string; icon: string; url: string }
+export interface Rune { slug: string; name: string; type: 'Skill' | 'Link'; icons: string[]; tags: string[]; rarity: string | null; howToGet: string[]; acts: string[]; weapons: string[]; description: string; linkRules: string[]; level1: string[]; level45: string[]; gradeBonuses: string[][]; awakening: Record<string, string[]> }
+export interface Runestone { slug: string; name: string; rarity: 'Magic' | 'Rare' | 'Unique'; icon: string; effect: string[] }
+export interface Unique { slug: string; name: string; tier: number; typeKey: string; type: string; icon: string; requires: string[]; baseStats: string[]; affixes: string[] }
 export interface RuneMasterNode { id: string; category: string; tier: number; unlockLevel: number; maxPoints: number; prereqPointsPrevTier: number; effect: string }
-export interface Authority { slug: string; slot: string; god: string; name: string; url: string }
+export interface Authority { slug: string; slot: string; god: string; name: string; unique: string[]; prefix: string[]; suffix: string[] }
 
 export type EquipSlot = 'Weapons' | 'Offhand' | 'Helmet' | 'Pauldrons' | 'Armor' | 'Gloves' | 'Shoes' | 'Belt' | 'Necklace' | 'Ring1' | 'Ring2';
 

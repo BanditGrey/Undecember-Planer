@@ -15,6 +15,15 @@ export interface LinkCheck { ok: boolean; shared: string[]; reason: string }
 /** Heuristic compatibility: a link rune applies to a skill when they share a non-generic tag
  *  (the site's exact "Can be linked with Skills that satisfy…" text is not in the dataset yet). */
 export function checkLink(link: Rune, skill: Rune): LinkCheck {
+  // Exact rules from the database take precedence when available.
+  for (const rule of link.linkRules) {
+    const m = rule.match(/Cannot be linked with Skills that satisfy (.+?)\.?$/i);
+    if (m && m[1].split(/,| or /).some(t => skill.tags.includes(t.trim()))) return { ok: false, shared: [], reason: rule };
+    const c = rule.match(/Can be linked with Skills that satisfy (?:any one of )?(.+?)\.?$/i);
+    if (c) { const need = c[1].split(/,| or /).map(t => t.trim()); const shared = need.filter(t => skill.tags.includes(t));
+      if (/any one of/i.test(rule) || need.length === 1) { if (shared.length) return { ok: true, shared, reason: rule }; return { ok: false, shared, reason: rule }; }
+      if (shared.length === need.length) return { ok: true, shared, reason: rule }; return { ok: false, shared, reason: rule }; }
+  }
   const lt = link.tags.filter(t => !GENERIC.has(t));
   if (lt.length === 0) return { ok: true, shared: [], reason: 'Link rune sem tags restritivas — aplica-se a qualquer skill.' };
   const shared = lt.filter(t => skill.tags.includes(t));

@@ -1,0 +1,25 @@
+name: Update database
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'   # weekly, Monday 06:00 UTC
+permissions:
+  contents: write
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - name: Scrape undecember.thein.ru into db/ and public/icons/
+        run: node scripts/scrape.mjs
+      - run: node scripts/build-data.mjs
+      - name: Commit database
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add db public/icons src/data
+          git diff --cached --quiet || git commit -m "chore(db): refresh database from source $(date -u +%F)"
+          git push

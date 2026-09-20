@@ -36,6 +36,8 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
         {groups.map(g => <div key={g.cell} className="group">
           <div className="gh"><img src={g.skill.icons[0]} alt="" /><b>{g.skill.name}</b> <span className="tags">{g.skill.tags.map(t => <i key={t}>{t}</i>)}</span>
             {g.runestone && <em className="muted"> · {runestoneBySlug.get(g.runestone)?.name}</em>}</div>
+          {g.skill.description && <p className="muted desc">{g.skill.description}</p>}
+          {g.skill.level45.length > 0 && <details><summary>Stats nível 1 / 45</summary><div className="lv"><ul>{g.skill.level1.map((x, i) => <li key={i}>{x}</li>)}</ul><ul>{g.skill.level45.map((x, i) => <li key={i}>{x}</li>)}</ul></div></details>}
           {g.links.length === 0 && <p className="muted">Nenhuma link rune adjacente.</p>}
           {g.links.map(l => <div key={l.cell} className={l.check.ok ? 'ok' : 'bad'}><img src={l.rune.icons[0]} alt="" /> {l.rune.name} — <small>{l.check.reason}</small></div>)}
         </div>)}

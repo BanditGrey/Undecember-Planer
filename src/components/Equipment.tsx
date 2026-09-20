@@ -29,7 +29,9 @@ export function Equipment({ build, set }: { build: Build; set: (b: Build) => voi
           return <div key={s.id} className="eq-slot">
             <div className="eq-label">{s.label}</div>
             <button className="eq-item" onClick={() => setPick({ slot: s.id, kind: 'unique' })}>{u ? <><img src={u.icon} alt="" /><span>{u.name}<small>{u.type} · T{u.tier}</small></span></> : <span className="muted">Único…</span>}</button>
+            {u && u.affixes.length > 0 && <ul className="affix">{u.affixes.map((x, i) => <li key={i}>{x}</li>)}</ul>}
             <button className="eq-auth" onClick={() => setPick({ slot: s.id, kind: 'authority' })}>{a ? <span>⚜ {a.god} <small>({a.slot})</small></span> : <span className="muted">Autoridade…</span>}</button>
+            {a && a.unique.length > 0 && <ul className="affix">{a.unique.map((x, i) => <li key={i}>{x}</li>)}</ul>}
           </div>; })}
       </div>
       {pick && def && pick.kind === 'unique' && <Picker title={`Único — ${def.label}`} allowClear onClose={() => setPick(null)}
