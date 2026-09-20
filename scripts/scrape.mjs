@@ -2,15 +2,10 @@
 // Builds the project's OWN database (db/) from undecember.thein.ru so the app never depends on the site being online.
 //   node scripts/scrape.mjs               # everything
 //   node scripts/scrape.mjs runes uniques # only some sections
-//   FORCE=1 node scripts/scrape.mjs       # ignore the html cache in data/cache
-//   OFFLINE=1 node scripts/scrape.mjs     # only re-parse cached html (no network)
-// Output:
-//   db/{runes,runestones,uniques,authority,runemaster,essences,coins,potions,materials}.json  – structured data
-//   public/icons/**                                                                            – mirrored images
-//   data/cache/**.html                                                                         – raw pages (re-parse without re-downloading)
+//   FORCE=1   ignore the html cache in data/cache     OFFLINE=1  only re-parse cached html (no network)
+// Output: db/{section}.json (structured) · public/icons/** (mirrored images) · data/cache/**.html (raw pages)
 import fs from 'node:fs'; import path from 'node:path';
-import { htmlToLines, mainOf, imgSrcs, links } from './lib/html.mjs';
-import { parseRune, parseRunestone, parseUnique, parseAuthority } from './lib/parsers.mjs';
+import { parseRune, parseRunestone, parseUnique, parseAuthority, parseItem, parseList } from './lib/parsers.mjs';
 
 const root = path.resolve(new URL('..', import.meta.url).pathname);
 const SITE = 'https://undecember.thein.ru';
@@ -20,57 +15,45 @@ const wanted = process.argv.slice(2); const want = (s) => wanted.length === 0 ||
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 const readJson = (f, d) => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : d;
 const writeJson = (f, d) => fs.writeFileSync(f, JSON.stringify(d, null, 1));
+const today = new Date().toISOString().slice(0, 10);
 
 async function fetchText(url, cacheRel) {
   const f = path.join(CACHE, cacheRel); if (!process.env.FORCE && fs.existsSync(f)) return fs.readFileSync(f, 'utf8');
-  if (process.env.OFFLINE) return null; // re-parse cache only
+  if (process.env.OFFLINE) return null;
   for (let attempt = 1; attempt <= 4; attempt++) {
     try { const r = await fetch(url, { headers: { 'user-agent': 'undecember-planer-db/1.0 (+github BanditGrey/Undecember-Planer)' } });
       if (r.status === 404) { console.warn('404', url); return null; } if (!r.ok) throw new Error('HTTP ' + r.status);
-      const t = await r.text(); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, t); await sleep(250); return t;
+      const t = await r.text(); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, t); await sleep(200); return t;
     } catch (e) { console.warn(`retry ${attempt} ${url}: ${e.message}`); await sleep(1500 * attempt); }
   }
   return null;
 }
 async function mirrorIcon(src) {
-  if (!src || process.env.OFFLINE) return src ? 'icons/' + new URL(src, SITE).pathname.replace(/^\/image\//, '') : null; const url = src.startsWith('http') ? src : SITE + src; const u = new URL(url); if (!u.pathname.startsWith('/image/')) return null;
+  if (!src) return null; const u = new URL(src, SITE); if (!u.pathname.startsWith('/image/')) return null;
   const rel = u.pathname.replace(/^\/image\//, ''); const f = path.join(ICONS, rel);
-  if (!fs.existsSync(f)) { try { const r = await fetch(url); if (r.ok) { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, Buffer.from(await r.arrayBuffer())); await sleep(80); } } catch (e) { console.warn('icon fail', url); return null; } }
+  if (!fs.existsSync(f) && !process.env.OFFLINE) { try { const r = await fetch(u.href); if (r.ok) { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, Buffer.from(await r.arrayBuffer())); await sleep(60); } } catch { console.warn('icon fail', u.href); } }
   return 'icons/' + rel;
 }
 
-/** Generic: paginate a list page collecting item hrefs matching /en/{section}/{Slug}/ */
-async function listSlugs(section) {
-  const out = []; let page = 1;
-  while (true) {
-    const html = await fetchText(`${SITE}/en/${section}/${page > 1 ? `?page=${page}` : ''}`, `list/${section}-${page}.html`); if (!html) break;
-    const hrefs = links(html, new RegExp(`^(?:${SITE})?/en/${section}/[^/?#]+/$`)).map(h => h.replace(/.*\/en\/[^/]+\//, '').replace(/\/$/, ''));
-    const fresh = hrefs.filter(h => !out.includes(h)); if (fresh.length === 0) break; out.push(...fresh);
-    if (!new RegExp(`page=${page + 1}\\b`).test(html)) break; page++;
-  }
-  return out;
-}
-
-async function detailSection(section, urlPart, parse, seedItems) {
-  const dbFile = path.join(DB, `${section}.json`); const db = readJson(dbFile, {});
-  let items = seedItems; if (!items) { const slugs = await listSlugs(urlPart); items = slugs.map(slug => ({ slug })); }
+async function section(name, urlPart, parse) {
+  const dbFile = path.join(DB, `${name}.json`); const db = readJson(dbFile, {});
+  const listHtml = await fetchText(`${SITE}/en/${urlPart}/`, `list/${urlPart}.html`); if (!listHtml) { console.warn('no list for', name); return; }
+  const { items, total } = parseList(listHtml, urlPart); console.log(name, 'list', items.length, '/', total);
   let n = 0;
   for (const it of items) {
     const html = await fetchText(`${SITE}/en/${urlPart}/${it.slug}/`, `${urlPart}/${it.slug}.html`); if (!html) continue;
-    const main = mainOf(html); const lines = htmlToLines(main);
-    const name = it.name || (html.match(/<title>[^-]*-\s*(.*?)\s*-\s*Undecember/)?.[1]) || it.slug;
-    const icons = []; for (const src of imgSrcs(main).filter(s => /\/image\/(runes|items)\//.test(s))) { const p = await mirrorIcon(src); if (p && !icons.includes(p)) icons.push(p); }
-    db[it.slug] = { ...it, name, icons, ...parse(lines, { ...it, name }), source: `${SITE}/en/${urlPart}/${it.slug}/`, scrapedAt: new Date().toISOString().slice(0, 10) };
-    if (++n % 20 === 0) { writeJson(dbFile, db); console.log(section, n, '/', items.length); }
+    const parsed = parse(html, it); const icons = []; for (const s of (parsed.icons?.length ? parsed.icons : [it.icon])) { const p = await mirrorIcon(s); if (p && !icons.includes(p)) icons.push(p); }
+    db[it.slug] = { slug: it.slug, order: n, ...parsed, icons, source: `${SITE}/en/${urlPart}/${it.slug}/`, scrapedAt: today };
+    if (++n % 50 === 0) { writeJson(dbFile, db); console.log(name, n, '/', items.length); }
   }
-  writeJson(dbFile, db); console.log('done', section, n);
+  for (const k of Object.keys(db)) if (!items.some(i => i.slug === k)) { console.log('removed upstream:', name, k); delete db[k]; }
+  writeJson(dbFile, db); console.log('done', name, n);
 }
 
-const seed = (f) => readJson(path.join(root, 'src/data', f), null);
-if (want('runes')) await detailSection('runes', 'runes', parseRune, seed('runes.json'));
-if (want('runestones')) await detailSection('runestones', 'runecast', parseRunestone, seed('runestones.json'));
-if (want('uniques')) await detailSection('uniques', 'uniques', parseUnique, seed('uniques.json'));
-if (want('authority')) await detailSection('authority', 'authority', parseAuthority, seed('authority.json'));
-for (const s of ['essences', 'coins', 'potions', 'materials']) if (want(s)) await detailSection(s, s, (lines) => ({ lines: lines.slice(0, 60) }), null);
+if (want('runes')) await section('runes', 'runes', parseRune);
+if (want('runestones')) await section('runestones', 'runecast', parseRunestone);
+if (want('uniques')) await section('uniques', 'uniques', parseUnique);
+if (want('authority')) await section('authority', 'authority', parseAuthority);
+for (const s of ['essences', 'coins', 'potions', 'materials']) if (want(s)) await section(s, s, parseItem);
 if (want('runemaster')) { fs.copyFileSync(path.join(root, 'src/data/runemaster.json'), path.join(DB, 'runemaster.json')); console.log('done runemaster'); }
 console.log('Database written to db/. Run `npm run data:build` to refresh the app bundle.');

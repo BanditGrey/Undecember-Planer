@@ -1,63 +1,67 @@
-// Text-structure parsers for undecember.thein.ru detail pages.
-// They work on the line array produced by htmlToLines(mainOf(html)), so they don't depend on CSS classes.
-const NAV_END = /^All (Runes|Runestones|Unique equipment|Authority)|^Back$/i;
-const between = (lines, startRe, endRes) => {
-  const i = lines.findIndex(l => startRe.test(l)); if (i < 0) return [];
-  const out = []; for (let j = i + 1; j < lines.length; j++) { if (endRes.some(r => r.test(lines[j]))) break; out.push(lines[j]); } return out;
-};
-const after = (lines, label) => { const i = lines.findIndex(l => l.toLowerCase().startsWith(label.toLowerCase())); if (i < 0) return null; const inline = lines[i].slice(label.length).trim(); return inline || lines[i + 1] || null; };
-const listAfter = (lines, label, stopRes) => { const i = lines.findIndex(l => l.toLowerCase().startsWith(label.toLowerCase())); if (i < 0) return []; const inline = lines[i].slice(label.length).trim(); const out = inline ? [inline] : []; for (let j = i + 1; j < lines.length; j++) { if (stopRes.some(r => r.test(lines[j]))) break; out.push(lines[j]); } return out; };
-const LABEL = /^(Min\. rarity|How to get|To buy in|Weapon|Type|Tier|Requires|Rune Level|Rune Grade|Awakening|Rarity|Unique Options|Prefix Options|Suffix Options|Level \d+ Stats)/i;
+// DOM-based parsers for undecember.thein.ru detail pages (see scripts/lib/dom.mjs).
+import { findAll, findOne, children, text, attr, imgs } from './dom.mjs';
 
-// Site markup often concatenates stat lines; split on boundaries like "…Chance+100%…", "…300%Cold…", "…3Triggers…", "…Effect5% DMG…".
-const splitStat = (s) => s
-  .replace(/(?<=[a-z%)])(?=[+\-]\d|[+\-]\[)/g, '\n').replace(/(?<=\])(?=\+\d|\+\[|-\d+(?!\]))/g, (m, o, str) => /^-\[/.test(str.slice(o)) ? '' : '\n').replace(/(?<=\d)(?=\+\d|\+\[)/g, '\n')
-  .replace(/(?<=[a-z\]%])(?=\[)/g, '\n')
-  .replace(/(?<=%|\d|\])(?=[A-Z][a-z])/g, '\n').replace(/(?<=[a-z\)])(?=Cannot link|Gain )/g, '\n')
-  .replace(/(?<=[a-z\)])(?=\d+(?:\.\d+)?%? [A-Z])/g, '\n')
-  .replace(/(?<= Element)(?=[A-Z])/g, '\n')
-  .split('\n').map(x => x.trim()).filter(Boolean);
+const content = (html) => { const i = html.indexOf('id="content"'); return i >= 0 ? html.slice(i) : html; };
+const mainProps = (html) => { const o = {}; for (const p of findAll(html, 'Elem_card_main_prop')) { const label = text(p.inner.match(/<p>(.*?)<\/p>/)?.[1] ?? '').replace(/:$/, ''); o[label] = children(p.inner).filter(c => c.tag === 'span').map(c => text(c.inner)); } return o; };
+const lines = (inner) => children(inner).filter(c => c.tag === 'span' || c.tag === 'div').map(c => text(c.inner)).filter(Boolean);
+const title = (html) => text(findOne(html, 'Elem_card_title')?.inner ?? '');
+const icons = (html) => [...new Set(imgs(findOne(html, 'Elem_card_main_image')?.inner ?? '').filter(s => /\/image\/(runes|items)\//.test(s)))];
 
-export function parseRune(lines, meta) {
-  const nameIdx = lines.findIndex(l => l === meta.name); const L = nameIdx >= 0 ? lines.slice(nameIdx) : lines;
-  const stop = [LABEL];
-  const rarity = after(L, 'Min. rarity:');
-  const howToGet = listAfter(L, 'How to get:', stop).flatMap(x => x.split(/(?<=[a-z])(?=[A-Z])/));
-  const acts = listAfter(L, 'To buy in:', stop).flatMap(x => x.split(/(?=Act)/)).map(x => x.trim()).filter(Boolean);
-  const weaponLine = after(L, 'Weapon:'); const weapons = weaponLine ? (/^All weapons/i.test(weaponLine) ? ['All weapons'] : weaponLine.split(/(?<=[a-z])(?=[A-Z])/)) : [];
-  // tags: lines between weapon/acts block and description – single/two-word capitalised lines; description = first long sentence
-  const tagStart = Math.max(L.findIndex(l => /^Weapon:/i.test(l)), L.findIndex(l => /^To buy in:/i.test(l)), L.findIndex(l => /^How to get:/i.test(l)));
-  const lvl1 = L.findIndex(l => /^Rune Level 1$/i.test(l));
-  const mid = L.slice(tagStart + 1, lvl1 > 0 ? lvl1 : undefined).filter(l => !/^(Act|Drop|Shop|Synthesis|Guild|Unique Dungeon|Normal|Magic|Rare)/.test(l) && !LABEL.test(l));
-  const description = mid.filter(l => (l.length > 40 || /[.,]/.test(l)) && !/linked|Applies to|Only one/i.test(l)).pop() || '';
-  const tags = mid.filter(l => l !== description && l !== weaponLine && l.length < 30 && !/[.:]/.test(l) && !/linked|Applies to|Only one/i.test(l) && !weapons.includes(l));
-  const linkRules = mid.filter(l => /linked|Applies to|Only one/i.test(l)).flatMap(l => l.split(/(?=Cannot be linked|Can be linked|Only one |Applies to )/)).map(x => x.trim()).filter(Boolean);
-  const levelBlock = (n) => between(L, new RegExp(`^Rune Level ${n}$`, 'i'), [/^Rune Level/i, /^Rune Grade$/i, /^Awakening$/i]).flatMap(splitStat);
-  const grades = between(L, /^Rune Grade$/i, [/^Awakening$/i]);
-  const awaken = between(L, /^Awakening$/i, [/^\s*$/, NAV_END]);
-  const aw = {}; let cur = null; for (const l of awaken) { if (/^(Source|Origin|Verity)$/.test(l)) { cur = l; aw[cur] = []; } else if (cur) aw[cur].push(...splitStat(l)); }
-  return { rarity, howToGet, acts, weapons, tags, description, linkRules, level1: levelBlock(1), level45: levelBlock(45), gradeBonuses: grades.map(splitStat), awakening: aw };
+export function parseRune(html, meta) {
+  const h = content(html); const mp = mainProps(h);
+  const tags = findAll(h, 'Elem_card_tags_item').map(t => text(t.inner));
+  const descBlock = findOne(h, 'Elem_card_desc'); const descLines = descBlock ? lines(descBlock.inner).length ? lines(descBlock.inner) : [text(descBlock.inner)] : [];
+  const linkRules = descLines.filter(l => /linked|Only one|Applies to/i.test(l)); const description = descLines.filter(l => !linkRules.includes(l)).join(' ');
+  const levels = {};
+  for (const col of findAll(h, 'Elem_card_tiles_col', 'div')) {
+    const lvl = text(findOne(col.inner, 'Elem_card_props_lvl')?.inner ?? '').match(/(\d+)/)?.[1]; if (!lvl) continue;
+    const res = findOne(col.inner, 'Elem_card_resource'); const props = findOne(col.inner, 'Elem_card_props');
+    levels[lvl] = { resource: res ? lines(res.inner) : [], stats: props ? lines(props.inner) : [] };
+  }
+  const grades = {}; const gcol = findOne(h, 'Elem_card_tiles_col2');
+  if (gcol) for (const g of findAll(gcol.inner, 'Elem_card_props')) grades[attr(g.open, 'rarity') || 'Grade'] = lines(g.inner);
+  const awakening = {};
+  for (const b of findAll(h, 'Elem_card_awakening_block', 'div')) { const t = text(findOne(b.inner, 'Elem_card_awakening_block_title')?.inner ?? ''); const ls = children(b.inner).filter(c => c.tag === 'span').map(c => text(c.inner)).filter(Boolean); if (t) awakening[t] = ls; }
+  const l1 = levels['1'] ?? { resource: [], stats: [] }, l45 = levels['45'] ?? { resource: [], stats: [] };
+  return { name: title(h) || meta.name, icons: icons(h), rarity: mp['Min. rarity']?.[0] ?? null, howToGet: mp['How to get'] ?? [], acts: mp['To buy in'] ?? [], weapons: mp['Weapon'] ?? [],
+    tags, description, linkRules, level1: [...l1.resource, ...l1.stats], level45: [...l45.resource, ...l45.stats], levels, gradeBonuses: ['Magic', 'Rare', 'Legendary'].filter(k => grades[k]).map(k => grades[k]), grades, awakening };
 }
 
-export function parseRunestone(lines, meta) {
-  const i = lines.findIndex(l => l === meta.name); const L = i >= 0 ? lines.slice(i + 1) : lines;
-  const rarity = after(L, 'Rarity:'); const effect = L.filter(l => !/^Rarity/i.test(l) && l !== rarity && l.length > 15 && !NAV_END.test(l));
-  return { rarity, effect };
+export function parseRunestone(html, meta) {
+  const h = content(html); const mp = mainProps(h); const d = findOne(h, 'Elem_card_desc'); const props = findAll(h, 'Elem_card_props').flatMap(p => lines(p.inner));
+  const effect = [...(d ? [text(d.inner)] : []), ...props].filter(Boolean);
+  return { name: title(h) || meta.name, icons: icons(h), rarity: mp['Rarity']?.[0] ?? meta.rarity ?? null, effect };
 }
 
-export function parseUnique(lines, meta) {
-  const i = lines.findIndex(l => l === meta.name); const L = i >= 0 ? lines.slice(i + 1) : lines;
-  const type = after(L, 'Type:'); const tier = after(L, 'Tier:');
-  const requires = L.filter(l => /^Requires/i.test(l));
-  const rest = L.filter(l => !/^(Type|Tier|Requires)/i.test(l) && !NAV_END.test(l) && l !== type && l !== tier);
-  const base = rest.filter(l => !/\[|\+|%/.test(l) && /\d/.test(l));
-  const affixes = rest.filter(l => /\[|\+|%|when|if|per|Gain|Cannot|Immune|against/i.test(l) && !base.includes(l));
-  return { type, tier: tier ? +tier : meta.tier, requires, baseStats: base, affixes, allLines: rest };
+export function parseUnique(html, meta) {
+  const h = content(html); const mp = mainProps(h);
+  const req = findAll(h, 'Elem_card_main_prop').find(p => /Requires/.test(p.inner));
+  const requires = req ? children(req.inner).filter(c => c.tag === 'span').map(c => text(c.inner.replace(/<i>/, ' '))) : [];
+  const groups = {}; for (const p of findAll(h, 'Elem_card_props', 'div')) { const k = attr(p.open, 'prop-type') || 'other'; groups[k] = findAll(p.inner, 'Elem_card_props_el').map(e => text(e.inner)); }
+  return { name: title(h) || meta.name, icons: icons(h), type: mp['Type']?.[0] ?? meta.type, tier: +(mp['Tier']?.[0] ?? meta.tier), requires, baseStats: groups.main ?? [], affixes: groups.options ?? [], other: groups.other ?? [] };
 }
 
-export function parseAuthority(lines, meta) {
-  const sec = (name) => between(lines, new RegExp(`^${name} Options?$`, 'i'), [/Options?$/i, NAV_END]).flatMap(splitStat);
-  return { unique: sec('Unique'), prefix: sec('Prefix'), suffix: sec('Suffix') };
+export function parseAuthority(html, meta) {
+  const h = content(html); const out = { unique: [], prefix: [], suffix: [] };
+  for (const sec of findAll(h, 'Elem_card_section', 'div')) {
+    const st = text(findOne(sec.inner, 'Elem_card_subtitle')?.inner ?? ''); const key = /Unique/.test(st) ? 'unique' : /Prefix/.test(st) ? 'prefix' : /Suffix/.test(st) ? 'suffix' : null; if (!key) continue;
+    for (const p of findAll(sec.inner, 'Elem_card_auth_prop', 'div')) { const t = text(findOne(p.inner, 'Elem_card_auth_prop_head_title')?.inner ?? ''); const v = text(findOne(p.inner, 'Elem_card_auth_prop_head_prc')?.inner ?? '').replace(/\[\s*/, '[').replace(/\s*\]/, ']'); out[key].push({ name: t, value: v, text: `${t}: ${v}` }); }
+  }
+  return { name: text(findOne(h, 'Elem_card_god_label')?.inner ?? '') || meta.name, unique: out.unique.map(x => x.text), prefix: out.prefix.map(x => x.text), suffix: out.suffix.map(x => x.text), options: out };
 }
 
-export function parseGenericList(lines) { return lines; }
+export function parseItem(html, meta) { // essences, coins, potions, materials
+  const h = content(html); const mp = mainProps(h); const d = findOne(h, 'Elem_card_desc');
+  const recipes = findAll(h, 'Elem_card_recipe', 'div').map(r => ({ title: text(findOne(r.inner, 'Elem_card_recipe_title')?.inner ?? ''), ingredients: findAll(r.inner, 'Elem_card_recipe_ing', 'a').map(a => ({ href: attr(a.open, 'href'), icon: imgs(a.inner)[0] ?? null, count: text(findOne(a.inner, 'Elem_image_count')?.inner ?? '').replace(/^x/, '') })) }));
+  const props = findAll(h, 'Elem_card_props').flatMap(p => lines(p.inner));
+  return { name: title(h) || meta.name, icons: icons(h), rarity: mp['Rarity']?.[0] ?? null, howToGet: mp['How to get'] ?? [], useOn: mp['Use on'] ?? [], description: d ? text(d.inner) : '', props, recipes };
+}
+
+/** Parses a list page: returns [{slug, name, icon}] and whether there is a next page. */
+export function parseList(html, section) {
+  const h = content(html); const items = [];
+  for (const li of findAll(h, 'content_list_item', 'li')) { const href = li.inner.match(/href="([^"]+)"/)?.[1] ?? ''; const slug = href.match(new RegExp(`/en/${section}/([^/?#]+)/`))?.[1]; if (!slug) continue;
+    items.push({ slug, name: text(findOne(li.inner, 'Elem_list_item_title')?.inner ?? ''), icon: imgs(li.inner)[0] ?? null, rarity: attr(findOne(li.inner, 'Elem_list_item_rarity')?.open ?? '', 'rarity') }); }
+  const total = +(text(findOne(h, 'content_list_count')?.inner ?? '').match(/(\d+)/)?.[1] ?? items.length);
+  return { items, total };
+}
