@@ -4,13 +4,14 @@ import { Equipment } from './components/Equipment';
 import { RuneMaster } from './components/RuneMaster';
 import { Items } from './components/Items';
 import { Gallery } from './components/Gallery';
+import { Compare } from './components/Compare';
 import { runes, runestones, uniques, runemaster, authority } from './data';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
 import { emptyBuild, type Build } from './types';
 import { useT } from './lib/i18n';
 import { Dps } from './components/Dps';
 
-type Tab = 'board' | 'equip' | 'rm' | 'dps' | 'items' | 'builds' | 'gallery';
+type Tab = 'board' | 'equip' | 'rm' | 'dps' | 'items' | 'builds' | 'gallery' | 'compare';
 
 export default function App() {
   const [build, setBuild] = useState<Build>(() => buildFromLocation() || emptyBuild());
@@ -38,7 +39,7 @@ export default function App() {
           {msg && <span className="flash">{msg}</span>}
           <span className="lang"><button className={lang === 'pt' ? 'on' : ''} onClick={() => setLang('pt')}>PT</button><button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>{lang === 'pt' && <label className="muted orig" title={t('origTip')}><input type="checkbox" checked={showOriginal} onChange={e => setShowOriginal(e.target.checked)} /> {t('origText')}</label>}</span>
         </div>
-        <nav>{([['board', t('tabBoard')], ['equip', t('tabEquip')], ['rm', t('tabRM')], ['dps', t('tabDps')], ['items', t('tabItems')], ['builds', t('tabBuilds')], ['gallery', t('tabGallery')]] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
+        <nav>{([['board', t('tabBoard')], ['equip', t('tabEquip')], ['rm', t('tabRM')], ['dps', t('tabDps')], ['items', t('tabItems')], ['builds', t('tabBuilds')], ['gallery', t('tabGallery')], ['compare', t('tabCompare')]] as [Tab, string][]).map(([t, l]) => <button key={t} className={tab === t ? 'on' : ''} onClick={() => setTab(t)}>{l}</button>)}</nav>
       </header>
       <main>
         {tab === 'board' && <Board build={build} set={setBuild} />}
@@ -46,6 +47,7 @@ export default function App() {
         {tab === 'rm' && <RuneMaster build={build} set={setBuild} />}
         {tab === 'dps' && <Dps build={build} />}
         {tab === 'items' && <Items />}
+        {tab === 'compare' && <Compare build={build} />}
         {tab === 'gallery' && <Gallery build={build} open={b => { setBuild(b); setTab('board'); }} />}
         {tab === 'builds' && <section className="panel"><h2>{t('savedTitle')}</h2>
           {saved.length === 0 && <p className="muted">{t('savedEmpty')}</p>}
