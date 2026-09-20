@@ -19,13 +19,18 @@ const GENERIC = new Set(['Duration', 'Area of Effect']);
 export interface LinkCheck { ok: boolean; shared: string[]; reason: string; key?: 'linkNoTags' | 'linkVia' | 'linkMissing'; tags?: string }
 export function checkLink(link: Rune, skill: Rune): LinkCheck {
   // Exact rules from the database take precedence when available.
+  const split = (x: string) => x.replace(/\s*\((must include all|any one)\)\s*/i, '').split(/,| or /).map(t => t.trim()).filter(Boolean);
+  let verdict: LinkCheck | null = null;
   for (const rule of link.linkRules) {
-    const m = rule.match(/Cannot be linked with Skills that satisfy (.+?)\.?$/i);
-    if (m && m[1].split(/,| or /).some(t => skill.tags.includes(t.trim()))) return { ok: false, shared: [], reason: rule };
+    const m = rule.match(/Cannot be linked with Skills that satisfy (.+?)\.?$/i) || rule.match(/cannot be linked if any of the (.+?) tags exist/i) || rule.match(/Cannot be linked with (.+?) Skills$/i);
+    if (m && split(m[1]).map(t => t === 'Channeling' ? 'Channel' : t).some(t => skill.tags.includes(t))) return { ok: false, shared: [], reason: rule };
     const c = rule.match(/Can be linked with Skills that satisfy (?:any one of )?(.+?)\.?$/i);
-    if (c) { const need = c[1].split(/,| or /).map(t => t.trim()); const shared = need.filter(t => skill.tags.includes(t));
-      const ok = (/any one of/i.test(rule) || need.length === 1) ? shared.length > 0 : shared.length === need.length; return { ok, shared, reason: rule }; }
+    if (c) { const need = split(c[1]); const shared = need.filter(t => skill.tags.includes(t));
+      const all = /must include all/i.test(rule) || (!/any one/i.test(rule) && need.length > 1 && !/,/.test(c[1]));
+      const ok = all ? shared.length === need.length : shared.length > 0;
+      if (!ok) return { ok: false, shared, reason: rule }; verdict = { ok: true, shared, reason: rule }; }
   }
+  if (verdict) return verdict;
   const lt = link.tags.filter(t => !GENERIC.has(t));
   if (lt.length === 0) return { ok: true, shared: [], reason: '', key: 'linkNoTags' };
   const shared = lt.filter(t => skill.tags.includes(t));
@@ -40,6 +45,9 @@ export function analyzeBoard(b: Build): { groups: SkillGroup[]; orphans: { cell:
     const rune = c.rune && runeBySlug.get(c.rune); if (!rune || rune.type !== 'Skill') continue;
     const g: SkillGroup = { cell, skill: rune, links: [], runestone: c.runestone };
     for (const n of neighbors(cell)) { const lr = b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); if (lr && lr.type === 'Link') { g.links.push({ cell: n, rune: lr, check: checkLink(lr, rune) }); linked.add(n); } }
+    // "Only one X can be linked at once" + the game never allows the same link rune twice on a skill
+    const seen = new Set<string>(); for (const l of g.links) { if (seen.has(l.rune.slug) && l.check.ok) l.check = { ok: false, shared: [], reason: `Only one ${l.rune.name} can be linked at once` }; seen.add(l.rune.slug); }
+    if (g.links.length > 6) g.links = g.links.slice(0, 6);
     groups.push(g);
   }
   for (const [cell, c] of Object.entries(b.board)) { const r = c.rune && runeBySlug.get(c.rune); if (r && r.type === 'Link' && !linked.has(cell)) orphans.push({ cell, rune: r }); }
