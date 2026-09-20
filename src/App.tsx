@@ -8,6 +8,7 @@ import { Compare } from './components/Compare';
 import { Character } from './components/Character';
 import { PRESETS } from './lib/presets';
 import { renderBuildCard } from './lib/card';
+import { Search } from './components/Search';
 import { runes, runestones, uniques, runemaster, authority } from './data';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
 import { emptyBuild, type Build } from './types';
@@ -23,20 +24,27 @@ export default function App() {
   const setBuild = useCallback((next: Build | ((b: Build) => Build)) => { setBuildRaw(prev => { const n = typeof next === 'function' ? next(prev) : next; if (n === prev) return prev; hist.current.past = [...hist.current.past.slice(-49), prev]; hist.current.future = []; return n; }); }, []);
   const undo = useCallback(() => setBuildRaw(cur => { const p = hist.current.past.pop(); if (!p) return cur; hist.current.future.push(cur); return p; }), []);
   const redo = useCallback(() => setBuildRaw(cur => { const f = hist.current.future.pop(); if (!f) return cur; hist.current.past.push(cur); return f; }), []);
-  useEffect(() => { const h = (e: KeyboardEvent) => { const tag = (e.target as HTMLElement)?.tagName; if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return; if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); e.shiftKey ? redo() : undo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') { e.preventDefault(); redo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); save(); } else if (!e.ctrlKey && !e.metaKey && !e.altKey && /^[1-8]$/.test(e.key)) { const tabs: Tab[] = ['board', 'equip', 'rm', 'dps', 'items', 'builds', 'gallery', 'compare']; setTab(tabs[+e.key - 1]); } }; addEventListener('keydown', h); return () => removeEventListener('keydown', h); });
+  useEffect(() => { const h = (e: KeyboardEvent) => { const tag = (e.target as HTMLElement)?.tagName; if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return; if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); setSearch(v => !v); } else if (e.key === 'Escape') { setSearch(false); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); e.shiftKey ? redo() : undo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') { e.preventDefault(); redo(); } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); save(); } else if (!e.ctrlKey && !e.metaKey && !e.altKey && /^[1-8]$/.test(e.key)) { const tabs: Tab[] = ['board', 'equip', 'rm', 'dps', 'items', 'builds', 'gallery', 'compare']; setTab(tabs[+e.key - 1]); } }; addEventListener('keydown', h); return () => removeEventListener('keydown', h); });
   const [tab, setTab] = useState<Tab>('board');
   const [saved, setSaved] = useState(savedBuilds);
   const [msg, setMsg] = useState('');
+  const [search, setSearch] = useState(false);
+  const [view, setView] = useState(() => /[?&#]view=1/.test(location.href));
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => (localStorage.getItem('theme') as any) || 'dark');
+  useEffect(() => { document.documentElement.dataset.theme = theme; localStorage.setItem('theme', theme); }, [theme]);
   const { t, lang, setLang, showOriginal, setShowOriginal } = useT();
   useEffect(() => { history.replaceState(null, '', shareUrl(build)); }, [build]);
   useEffect(() => { const h = () => { const b = buildFromLocation(); if (b) setBuild(b); }; addEventListener('hashchange', h); return () => removeEventListener('hashchange', h); }, []);
   const flash = (m: string) => { setMsg(m); setTimeout(() => setMsg(''), 2500); };
   const share = async () => { await navigator.clipboard.writeText(shareUrl(build)); flash(t('copied')); };
+  const shareView = async () => { await navigator.clipboard.writeText(shareUrl(build) + '&view=1'); flash(t('copied')); };
   const exportImg = async () => { flash('…'); const url = await renderBuildCard(build, { lang, url: shareUrl(build).slice(0, 60) + '…' }); const a = document.createElement('a'); a.href = url; a.download = `${(build.name || 'build').replace(/[^\w-]+/g, '_')}.png`; a.click(); flash(t('exported')); };
   const save = () => { saveBuild(build); setSaved(savedBuilds()); flash(t('saved')); };
 
   return (
-    <div className="app">
+    <div className={'app' + (view ? ' view' : '')}>
+      {search && <Search onClose={() => setSearch(false)} />}
+      {view && <div className="viewbar"><b>{build.name || 'Build'}</b> <span className="muted">{build.author ? `${t('by')} ${build.author} · ` : ''}{build.stat}</span><button className="primary" onClick={() => { setView(false); history.replaceState(null, '', shareUrl(build)); }}>{t('editBuild')}</button></div>}
       <header>
         <h1>UNDECEMBER <span>{t('appSub')}</span></h1>
         <div className="row">
@@ -46,7 +54,7 @@ export default function App() {
           <button className="primary" onClick={share}>{t('share')}</button>
           <button onClick={save}>{t('save')}</button>
           <button onClick={() => setBuild(emptyBuild())}>{t('newBuild')}</button>
-          <button onClick={exportImg} title={t('exportTip')}>🖼 PNG</button><button onClick={undo} title="Ctrl+Z">↶</button><button onClick={redo} title="Ctrl+Y">↷</button>
+          <button onClick={shareView} title={t('shareViewTip')}>{t('shareView')}</button><button onClick={exportImg} title={t('exportTip')}>🖼 PNG</button><button onClick={() => setSearch(true)} title="Ctrl+K">🔍</button><button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} title={t('theme')}>{theme === 'dark' ? '☀' : '☾'}</button><button onClick={undo} title="Ctrl+Z">↶</button><button onClick={redo} title="Ctrl+Y">↷</button>
           {msg && <span className="flash">{msg}</span>}
           <span className="lang"><button className={lang === 'pt' ? 'on' : ''} onClick={() => setLang('pt')}>PT</button><button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>{lang === 'pt' && <label className="muted orig" title={t('origTip')}><input type="checkbox" checked={showOriginal} onChange={e => setShowOriginal(e.target.checked)} /> {t('origText')}</label>}</span>
         </div>

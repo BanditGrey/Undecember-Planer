@@ -9,7 +9,7 @@ export function decodeBuild(code: string): Build | null {
   return null;
 }
 export function buildFromLocation(): Build | null {
-  const m = location.hash.match(/^#b=(.+)$/); return m ? decodeBuild(m[1]) : null;
+  const m = location.hash.match(/^#b=([A-Za-z0-9_-]+)/); return m ? decodeBuild(m[1]) : null;
 }
 export function shareUrl(b: Build): string { return `${location.origin}${location.pathname}#b=${encodeBuild(b)}`; }
 
