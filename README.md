@@ -21,7 +21,7 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
   Nas skills você define a cor de cada um dos 6 slots (R/G/B/Branco/fechado) e o planner valida
   cor + tags como no jogo; botão “Ajustar slots às link runes” preenche automaticamente. Painel “?”
   explica Essências de Nascimento/Cor/Vínculo/Candor/Hexa.
-- **Grau da runa** – N/M/R/L em cada runa do tabuleiro; os bônus de grau entram no tooltip e no DPS.
+- **Grau e Despertar** – N/M/R/L e ☆ Source/Origin/Verity em cada runa do tabuleiro; ambos entram no tooltip e no DPS.
 - **Runas de gatilho** – seta rotacionável no hexágono; valida a skill *Alvo* (direção da seta) e a
   skill de *Ativação* (lado oposto) pelas tags exigidas no texto da runa.
 - **DPS (estimativa)** – classifica cada stat parseado (increase / amplification / more-less / flat),
@@ -67,7 +67,6 @@ npm run data:scrape # (requer acesso ao site) enriquece com páginas de detalhe
 ```
 
 ## Roadmap
-- Awakening (Source/Origin/Verity) selecionável por runa.
 - Comparar duas builds lado a lado.
 - Refinar glossário PT (nomes de itens únicos e autoridades).
 
