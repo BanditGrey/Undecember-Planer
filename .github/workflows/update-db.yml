@@ -5,7 +5,6 @@ on:
     - cron: '0 6 * * 1'   # weekly, Monday 06:00 UTC
   push:
     paths:
-      - 'scripts/**'
       - '.db-refresh'      # touch this file to force a full refresh from any branch
 permissions:
   contents: write
@@ -22,15 +21,17 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - name: Scrape undecember.thein.ru into db/ and public/icons/
-        run: node scripts/scrape.mjs
-      - run: node scripts/build-data.mjs
-      - name: Upload raw html cache (for parser debugging)
-        uses: actions/upload-artifact@v4
+      - name: Restore html cache (weekly runs re-download; manual runs reuse)
+        uses: actions/cache@v4
         with:
-          name: html-cache
           path: data/cache
-          retention-days: 7
+          key: html-cache-${{ github.run_id }}
+          restore-keys: html-cache-
+      - name: Scrape undecember.thein.ru into db/ and public/icons/
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then rm -rf data/cache; fi
+          node scripts/scrape.mjs
+      - run: node scripts/build-data.mjs
       - name: Commit database
         run: |
           git config user.name github-actions
