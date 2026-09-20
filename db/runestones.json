@@ -1,1292 +1,1260 @@
 {
  "RuneGrowthMagicRunestone": {
   "slug": "RuneGrowthMagicRunestone",
+  "order": 0,
   "name": "Rune Growth Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddEquipRuneLevel.png",
-  "effect": [
-   "Increases the Level of the Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddEquipRuneLevel.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases the Level of the Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/RuneGrowthMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "ResourceCostMagicRunestone": {
   "slug": "ResourceCostMagicRunestone",
+  "order": 1,
   "name": "Resource Cost Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddResource.png",
-  "effect": [
-   "Decreases Resource Cost when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddResource.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Decreases Resource Cost when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ResourceCostMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "AreaOfEffectMagicRunestone": {
   "slug": "AreaOfEffectMagicRunestone",
+  "order": 2,
   "name": "Area of Effect Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAOE.png",
-  "effect": [
-   "Increases the Area of Effect of the Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAOE.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases the Area of Effect of the Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AreaOfEffectMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionAttackSpeedMagicRunestone": {
   "slug": "MinionAttackSpeedMagicRunestone",
+  "order": 3,
   "name": "Minion Attack Speed Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncMinionAtkSpd.png",
-  "effect": [
-   "Increases Minion Attack Speed against enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncMinionAtkSpd.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Minion Attack Speed against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionAttackSpeedMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryCriticalRateMagicRunestone": {
   "slug": "SentryCriticalRateMagicRunestone",
+  "order": 4,
   "name": "Sentry Critical Rate Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncCrossBowAllDmg.png",
-  "effect": [
-   "Increases Sentry Critical Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncCrossBowAllDmg.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Sentry Critical Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryCriticalRateMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "HPRecoveryMagicRunestone": {
   "slug": "HPRecoveryMagicRunestone",
+  "order": 5,
   "name": "HP Recovery Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddHPGainOnHit.png",
-  "effect": [
-   "Recovery HP on Kill when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddHPGainOnHit.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Recovery HP on Kill when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HPRecoveryMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGAmplificationMagicRunestone": {
   "slug": "DMGAmplificationMagicRunestone",
+  "order": 6,
   "name": "DMG Amplification Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastMorAllDmg.png",
-  "effect": [
-   "Amplifies DMG when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastMorAllDmg.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Amplifies DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAmplificationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "CriticalDMGMagicRunestone": {
   "slug": "CriticalDMGMagicRunestone",
+  "order": 7,
   "name": "Critical DMG Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddAllCritDmgRate.png",
-  "effect": [
-   "Increases Critical DMG when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddAllCritDmgRate.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalDMGMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionHitRateMagicRunestone": {
   "slug": "MinionHitRateMagicRunestone",
+  "order": 8,
   "name": "Minion Hit Rate Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllAccuracyToMinion.png",
-  "effect": [
-   "Increases Minion Hit Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllAccuracyToMinion.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Minion Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionHitRateMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryHitRateMagicRunestone": {
   "slug": "SentryHitRateMagicRunestone",
+  "order": 9,
   "name": "Sentry Hit Rate Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAccuracyToCrossBow.png",
-  "effect": [
-   "Increases Sentry Hit Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAccuracyToCrossBow.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Sentry Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryHitRateMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "AttackSpeedMagicRunestone": {
   "slug": "AttackSpeedMagicRunestone",
+  "order": 10,
   "name": "Attack Speed Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAtkSpd.png",
-  "effect": [
-   "Increases Attack Speed upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAtkSpd.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Attack Speed upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackSpeedMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "CastSpeedMagicRunestone": {
   "slug": "CastSpeedMagicRunestone",
+  "order": 11,
   "name": "Cast Speed Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncCastSpd.png",
-  "effect": [
-   "Increases Cast Speed upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncCastSpd.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Cast Speed upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CastSpeedMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "EliteDMGMagicRunestone": {
   "slug": "EliteDMGMagicRunestone",
+  "order": 12,
   "name": "Elite DMG Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDmgToEliteGrade.png",
-  "effect": [
-   "Increases DMG against Elites upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDmgToEliteGrade.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases DMG against Elites upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/EliteDMGMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "ArmorPenetrationMagicRunestone": {
   "slug": "ArmorPenetrationMagicRunestone",
+  "order": 13,
   "name": "Armor Penetration Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddArmourPenRate.png",
-  "effect": [
-   "Increases Armor Penetration upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddArmourPenRate.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Armor Penetration upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ArmorPenetrationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "ElementPenetrationMagicRunestone": {
   "slug": "ElementPenetrationMagicRunestone",
+  "order": 14,
   "name": "Element Penetration Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastElementalPenRate.png",
-  "effect": [
-   "Increases Element Penetration upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastElementalPenRate.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Element Penetration upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ElementPenetrationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryAttackSpeedMagicRunestone": {
   "slug": "SentryAttackSpeedMagicRunestone",
+  "order": 15,
   "name": "Sentry Attack Speed Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAtkSpdToCrossBow.png",
-  "effect": [
-   "Increases Sentry Attack Speed when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAtkSpdToCrossBow.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Sentry Attack Speed when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryAttackSpeedMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionCriticalRateMagicRunestone": {
   "slug": "MinionCriticalRateMagicRunestone",
+  "order": 16,
   "name": "Minion Critical Rate Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastCritDmgRateToMinion.png",
-  "effect": [
-   "Increases Minion Critical Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastCritDmgRateToMinion.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Minion Critical Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionCriticalRateMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGPenetrationMagicRunestone": {
   "slug": "MinionDMGPenetrationMagicRunestone",
+  "order": 17,
   "name": "Minion DMG Penetration Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToMinion.png",
-  "effect": [
-   "Increases Minion DMG Penetration when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToMinion.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Minion DMG Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGPenetrationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGPenetrationMagicRunestone": {
   "slug": "SentryDMGPenetrationMagicRunestone",
+  "order": 18,
   "name": "Sentry DMG Penetration Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToCrossBow.png",
-  "effect": [
-   "Increases Sentry DMG Penetration when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToCrossBow.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Sentry DMG Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGPenetrationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "AttackSealEffectMagicRunestone": {
   "slug": "AttackSealEffectMagicRunestone",
+  "order": 19,
   "name": "Attack Seal Effect Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncOffAuraEffect.png",
-  "effect": [
-   "Increases the Attack Seal Effect equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncOffAuraEffect.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases the Attack Seal Effect equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackSealEffectMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DefenseSealEffectMagicRunestone": {
   "slug": "DefenseSealEffectMagicRunestone",
+  "order": 20,
   "name": "Defense Seal Effect Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDefAuraEffect.png",
-  "effect": [
-   "Increases the Defense Seal Effect equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDefAuraEffect.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases the Defense Seal Effect equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenseSealEffectMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "EnchanceSkillRuneCooldownRecoverySpeedMagicRunestone": {
   "slug": "EnchanceSkillRuneCooldownRecoverySpeedMagicRunestone",
-  "name": "Enhance Skill Rune Cooldown Recovery Speed Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastRedCooltimeToBuffSkill.png",
-  "effect": [
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Enchance Skill Rune Cooldown Recovery Speed Magic Runestone",
-   "Decreases Enhance Skill Rune Cooldown Recovery Speed when using a Skill Rune equipped in the activated slot"
-  ],
+  "order": 21,
+  "name": "Enchance Skill Rune Cooldown Recovery Speed Magic Runestone",
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastRedCooltimeToBuffSkill.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Decreases Enhance Skill Rune Cooldown Recovery Speed when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/EnchanceSkillRuneCooldownRecoverySpeedMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGAgainstElitesMagicRunestone": {
   "slug": "MinionDMGAgainstElitesMagicRunestone",
+  "order": 22,
   "name": "Minion DMG against Elites Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDmgToEliteGradeToMinion.png",
-  "effect": [
-   "Increases Minion DMG against Elites when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDmgToEliteGradeToMinion.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Minion DMG against Elites when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGAgainstElitesMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGAgainstElitesMagicRunestone": {
   "slug": "SentryDMGAgainstElitesMagicRunestone",
+  "order": 23,
   "name": "Sentry DMG against Elites Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDmgToEliteGradeToCrossBow.png",
-  "effect": [
-   "Increases Sentry DMG against Elites when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDmgToEliteGradeToCrossBow.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Sentry DMG against Elites when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGAgainstElitesMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "AttackEnhanceSkillDurationMagicRunestone": {
   "slug": "AttackEnhanceSkillDurationMagicRunestone",
+  "order": 24,
   "name": "Attack Enhance Skill Duration Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_IncBuffDurationTimeToAttackBuffSkill.png",
-  "effect": [
-   "Increases Attack Enhance Skill Rune Duration upon using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_IncBuffDurationTimeToAttackBuffSkill.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Attack Enhance Skill Rune Duration upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackEnhanceSkillDurationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DefenceEnhanceSkillDurationMagicRunestone": {
   "slug": "DefenceEnhanceSkillDurationMagicRunestone",
+  "order": 25,
   "name": "Defence Enhance Skill Duration Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_IncBuffDurationTimeToDefenseBuffSkill.png",
-  "effect": [
-   "Increases Defense Enhance Skill Rune Duration upon using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_IncBuffDurationTimeToDefenseBuffSkill.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Defense Enhance Skill Rune Duration upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenceEnhanceSkillDurationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGStatusEffectChanceMagicRunestone": {
   "slug": "DMGStatusEffectChanceMagicRunestone",
+  "order": 26,
   "name": "DMG Status Effect Chance Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddDmgAbsProcRate.png",
-  "effect": [
-   "Increases DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddDmgAbsProcRate.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGStatusEffectChanceMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGStatusEffectChanceMagicRunestone": {
   "slug": "MinionDMGStatusEffectChanceMagicRunestone",
+  "order": 27,
   "name": "Minion DMG Status Effect Chance Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToCrossbow.png",
-  "effect": [
-   "Increases Minion DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToCrossbow.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Minion DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGStatusEffectChanceMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGStatusEffectChanceMagicRunestone": {
   "slug": "SentryDMGStatusEffectChanceMagicRunestone",
+  "order": 28,
   "name": "Sentry DMG Status Effect Chance Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToMinion.png",
-  "effect": [
-   "Increases Sentry DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToMinion.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Increases Sentry DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGStatusEffectChanceMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "StatusEffectDMGAmplificationMagicRunestone": {
   "slug": "StatusEffectDMGAmplificationMagicRunestone",
+  "order": 29,
   "name": "Status Effect DMG Amplification Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_MorDmgAbsDmg.png",
-  "effect": [
-   "Amplifies Status Effect DMG when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_MorDmgAbsDmg.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Amplifies Status Effect DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/StatusEffectDMGAmplificationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionStatusEffectDMGAmplificationMagicRunestone": {
   "slug": "MinionStatusEffectDMGAmplificationMagicRunestone",
+  "order": 30,
   "name": "Minion Status Effect DMG Amplification Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToMinion.png",
-  "effect": [
-   "Amplifies Minion Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToMinion.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Amplifies Minion Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionStatusEffectDMGAmplificationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryStatusEffectDMGAmplificationMagicRunestone": {
   "slug": "SentryStatusEffectDMGAmplificationMagicRunestone",
+  "order": 31,
   "name": "Sentry Status Effect DMG Amplification Magic Runestone",
-  "rarity": "Magic",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToCrossbow.png",
-  "effect": [
-   "Amplifies Sentry Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToCrossbow.png"
+  ],
+  "rarity": "Magic",
+  "effect": [
+   "Amplifies Sentry Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryStatusEffectDMGAmplificationMagicRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "HitRateRareRunestone": {
   "slug": "HitRateRareRunestone",
+  "order": 32,
   "name": "Hit Rate Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAccuracy.png",
-  "effect": [
-   "Increases Hit Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAccuracy.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HitRateRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "CriticalRateRareRunestone": {
   "slug": "CriticalRateRareRunestone",
+  "order": 33,
   "name": "Critical Rate Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllCritProc.png",
-  "effect": [
-   "Increases Critical Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllCritProc.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Critical Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalRateRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGRareRunestone": {
   "slug": "DMGRareRunestone",
+  "order": 34,
   "name": "DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmg.png",
-  "effect": [
-   "Increases DMG dealt to enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmg.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases DMG dealt to enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGRareRunestone": {
   "slug": "MinionDMGRareRunestone",
+  "order": 35,
   "name": "Minion DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncMinionAllDmg.png",
-  "effect": [
-   "Increases Minion DMG against enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncMinionAllDmg.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Minion DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGRareRunestone": {
   "slug": "SentryDMGRareRunestone",
+  "order": 36,
   "name": "Sentry DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncCrossBowAllDmg.png",
-  "effect": [
-   "Increases Sentry DMG against enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncCrossBowAllDmg.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Sentry DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "ManaRecoveryRareRunestone": {
   "slug": "ManaRecoveryRareRunestone",
+  "order": 37,
   "name": "Mana Recovery Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddMPGainOnHit.png",
-  "effect": [
-   "Increases Mana on Kill when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddMPGainOnHit.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Mana on Kill when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ManaRecoveryRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "BossDMGRareRunestone": {
   "slug": "BossDMGRareRunestone",
+  "order": 38,
   "name": "Boss DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgToBoss.png",
-  "effect": [
-   "Increases DMG dealt to Bosses when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgToBoss.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases DMG dealt to Bosses when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/BossDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "CriticalDMGRareRunestone": {
   "slug": "CriticalDMGRareRunestone",
+  "order": 39,
   "name": "Critical DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddAllCritDmgRate.png",
-  "effect": [
-   "Increases Critical DMG when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddAllCritDmgRate.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionCriticalDMGRareRunestone": {
   "slug": "MinionCriticalDMGRareRunestone",
+  "order": 40,
   "name": "Minion Critical DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastCritDmgRateToMinion.png",
-  "effect": [
-   "Increases Minion Critical DMG when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastCritDmgRateToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Minion Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionCriticalDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryCriticalDMGRareRunestone": {
   "slug": "SentryCriticalDMGRareRunestone",
+  "order": 41,
   "name": "Sentry Critical DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastCritDmgRateToCrossBow.png",
-  "effect": [
-   "Increases Sentry Critical DMG when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastCritDmgRateToCrossBow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Sentry Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryCriticalDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "AttackEnhanceEffectRareRunestone": {
   "slug": "AttackEnhanceEffectRareRunestone",
+  "order": 42,
   "name": "Attack Enhance Effect Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAttackBuffSkill.png",
-  "effect": [
-   "Increases Attack Enchance Skill Rune effect upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAttackBuffSkill.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Attack Enchance Skill Rune effect upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackEnhanceEffectRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DefenseEnhanceEffectRareRunestone": {
   "slug": "DefenseEnhanceEffectRareRunestone",
+  "order": 43,
   "name": "Defense Enhance Effect Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDefenseBuffSkill.png",
-  "effect": [
-   "Increases Defense Enhance Skill Rune effect upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDefenseBuffSkill.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Defense Enhance Skill Rune effect upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenseEnhanceEffectRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGAgainstNearEnemiesRareRunestone": {
   "slug": "DMGAgainstNearEnemiesRareRunestone",
+  "order": 44,
   "name": "DMG against near enemies Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDmgDistance400Below.png",
-  "effect": [
-   "Increases DMG against near enemies upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDmgDistance400Below.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases DMG against near enemies upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAgainstNearEnemiesRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGAgainstFarEnemiesRareRunestone": {
   "slug": "DMGAgainstFarEnemiesRareRunestone",
+  "order": 45,
   "name": "DMG against far enemies Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDmgDistance400Over.png",
-  "effect": [
-   "Increases DMG against far enemies upon using a Skill Rune equipped in the highlighted area"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDmgDistance400Over.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases DMG against far enemies upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAgainstFarEnemiesRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionHitRateRareRunestone": {
   "slug": "MinionHitRateRareRunestone",
+  "order": 46,
   "name": "Minion Hit Rate Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllAccuracyToMinion.png",
-  "effect": [
-   "Increases Minion Hit Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllAccuracyToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Minion Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionHitRateRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryHitRateRareRunestone": {
   "slug": "SentryHitRateRareRunestone",
+  "order": 47,
   "name": "Sentry Hit Rate Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAccuracyToCrossBow.png",
-  "effect": [
-   "Increases Sentry Hit Rate when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAccuracyToCrossBow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Sentry Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryHitRateRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGOnHitAgainstFarEnemiesRareRunestone": {
   "slug": "MinionDMGOnHitAgainstFarEnemiesRareRunestone",
+  "order": 48,
   "name": "Minion DMG on hit against far enemies Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenDistance400OverToMinion.png",
-  "effect": [
-   "Increases Minion DMG on hit against far enemies (400 or more) when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenDistance400OverToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Minion DMG on hit against far enemies (400 or more) when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGOnHitAgainstFarEnemiesRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGOnHitAgainstFarEnemiesRareRunestone": {
   "slug": "SentryDMGOnHitAgainstFarEnemiesRareRunestone",
+  "order": 49,
   "name": "Sentry DMG on hit against far enemies Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenDistance400OverToCrossBow.png",
-  "effect": [
-   "Increases Sentry DMG on hit against far enemies (400 or more) when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenDistance400OverToCrossBow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Sentry DMG on hit against far enemies (400 or more) when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGOnHitAgainstFarEnemiesRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DoubleMaximizedDMGChanceRareRunestone": {
   "slug": "DoubleMaximizedDMGChanceRareRunestone",
+  "order": 50,
   "name": "Double Maximized DMG Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastDoubleDamageProc.png",
-  "effect": [
-   "Deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastDoubleDamageProc.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DoubleMaximizedDMGChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDoubleMaximizedDMGChanceRareRunestone": {
   "slug": "MinionDoubleMaximizedDMGChanceRareRunestone",
+  "order": 51,
   "name": "Minion Double Maximized DMG Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastDoubleDamageProcToMinion.png",
-  "effect": [
-   "Minion deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastDoubleDamageProcToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Minion deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDoubleMaximizedDMGChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDoubleMaximizedDMGChanceRareRunestone": {
   "slug": "SentryDoubleMaximizedDMGChanceRareRunestone",
+  "order": 52,
   "name": "Sentry Double Maximized DMG Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastDoubleDamageProcToCrossBow.png",
-  "effect": [
-   "Sentry deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastDoubleDamageProcToCrossBow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Sentry deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDoubleMaximizedDMGChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "TripleMaximizedDMGChanceRareRunestone": {
   "slug": "TripleMaximizedDMGChanceRareRunestone",
+  "order": 53,
   "name": "Triple Maximized DMG Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastTrippleDamageProc.png",
-  "effect": [
-   "Deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastTrippleDamageProc.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/TripleMaximizedDMGChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionTripleMaximizedDMGChanceRareRunestone": {
   "slug": "MinionTripleMaximizedDMGChanceRareRunestone",
+  "order": 54,
   "name": "Minion Triple Maximized DMG Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastTrippleDamageProcToMinion.png",
-  "effect": [
-   "Minion deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastTrippleDamageProcToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Minion deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionTripleMaximizedDMGChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryTripleMaximizedDMGChanceRareRunestone": {
   "slug": "SentryTripleMaximizedDMGChanceRareRunestone",
+  "order": 55,
   "name": "Sentry Triple Maximized DMG Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastTrippleDamageProcToCrossBow.png",
-  "effect": [
-   "Sentry deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastTrippleDamageProcToCrossBow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Sentry deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryTripleMaximizedDMGChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "ElementPenetrationRareRunestone": {
   "slug": "ElementPenetrationRareRunestone",
+  "order": 56,
   "name": "Element Penetration Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddElePen.png",
-  "effect": [
-   "Increases Element Penetration upon using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddElePen.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Element Penetration upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ElementPenetrationRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryElementPenetrationRareRunestone": {
   "slug": "SentryElementPenetrationRareRunestone",
+  "order": 57,
   "name": "Sentry Element Penetration Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddElePenToCrossBow.png",
-  "effect": [
-   "Increases Sentry Element Penetration when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddElePenToCrossBow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Sentry Element Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryElementPenetrationRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionElementPenetrationRareRunestone": {
   "slug": "MinionElementPenetrationRareRunestone",
+  "order": 58,
   "name": "Minion Element Penetration Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddElePenToMinion.png",
-  "effect": [
-   "Increases Minion Element Penetration when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddElePenToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Minion Element Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionElementPenetrationRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGStatusEffectChanceRareRunestone": {
   "slug": "DMGStatusEffectChanceRareRunestone",
+  "order": 59,
   "name": "DMG Status Effect Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddDmgAbsProcRate.png",
-  "effect": [
-   "Increases DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddDmgAbsProcRate.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGStatusEffectChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGStatusEffectChanceRareRunestone": {
   "slug": "SentryDMGStatusEffectChanceRareRunestone",
+  "order": 60,
   "name": "Sentry DMG Status Effect Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToMinion.png",
-  "effect": [
-   "Increases Sentry DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Sentry DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGStatusEffectChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MiinionDMGStatusEffectChanceRareRunestone": {
   "slug": "MiinionDMGStatusEffectChanceRareRunestone",
-  "name": "Minion DMG Status Effect Chance Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToCrossbow.png",
-  "effect": [
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Miinion DMG Status Effect Chance Rare Runestone",
-   "Increases Minion DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
-  ],
+  "order": 61,
+  "name": "Miinion DMG Status Effect Chance Rare Runestone",
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_AddDmgAbsProcRateToCrossbow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Minion DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MiinionDMGStatusEffectChanceRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DoubleMaximizedDMGRareRunestone": {
   "slug": "DoubleMaximizedDMGRareRunestone",
+  "order": 62,
   "name": "Double Maximized DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_DoubleDMGApplyRate.png",
-  "effect": [
-   "Increases Double Maximized DMG upon using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_DoubleDMGApplyRate.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Double Maximized DMG upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DoubleMaximizedDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDoubleMaximizedDMGRareRunestone": {
   "slug": "MinionDoubleMaximizedDMGRareRunestone",
+  "order": 63,
   "name": "Minion Double Maximized DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToMinion.png",
-  "effect": [
-   "Increases Minion Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToMinion.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Minion Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDoubleMaximizedDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDoubleMaximizedDMGRareRunestone": {
   "slug": "SentryDoubleMaximizedDMGRareRunestone",
+  "order": 64,
   "name": "Sentry Double Maximized DMG Rare Runestone",
-  "rarity": "Rare",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToCrossbow.png",
-  "effect": [
-   "Increases Sentry Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToCrossbow.png"
+  ],
+  "rarity": "Rare",
+  "effect": [
+   "Increases Sentry Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDoubleMaximizedDMGRareRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "RuneGrowthUniqueRunestone": {
   "slug": "RuneGrowthUniqueRunestone",
+  "order": 65,
   "name": "Rune Growth Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddEquipRuneLevel.png",
-  "effect": [
-   "Increases the Level of the Skill Rune equipped in the activated slot",
-   "Rune level +[2-4]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddEquipRuneLevel.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases the Level of the Skill Rune equipped in the activated slotRune level +[2-4]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/RuneGrowthUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "ResourceCostUniqueRunestone": {
   "slug": "ResourceCostUniqueRunestone",
+  "order": 66,
   "name": "Resource Cost Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddResource.png",
-  "effect": [
-   "Decreases Resource Cost when using a Skill Rune equipped in the activated slot",
-   "Resource Cost of Skill that cost resources +[-2--4]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddResource.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Decreases Resource Cost when using a Skill Rune equipped in the activated slotResource Cost of Skill that cost resources +[-2--4]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ResourceCostUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "HitRateUniqueRunestone": {
   "slug": "HitRateUniqueRunestone",
+  "order": 67,
   "name": "Hit Rate Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAccuracy.png",
-  "effect": [
-   "Increases Hit Rate when using a Skill Rune equipped in the activated slot",
-   "Hit Rate +% [50-100]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAccuracy.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Hit Rate when using a Skill Rune equipped in the activated slotHit Rate +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HitRateUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "BossDMGUniqueRunestone": {
   "slug": "BossDMGUniqueRunestone",
+  "order": 68,
   "name": "Boss DMG Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgToBoss.png",
-  "effect": [
-   "Increases DMG dealt to Bosses when using a Skill Rune equipped in the activated slot",
-   "DMG against Bosses +% [65-130]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgToBoss.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases DMG dealt to Bosses when using a Skill Rune equipped in the activated slotDMG against Bosses +% [65-130]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/BossDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGUniqueRunestone": {
   "slug": "DMGUniqueRunestone",
+  "order": 69,
   "name": "DMG Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmg.png",
-  "effect": [
-   "Increases DMG when using a Skill Rune equipped in the activated slot"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmg.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases DMG when using a Skill Rune equipped in the activated slotDMG +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGAmplificationUniqueRunestone": {
   "slug": "DMGAmplificationUniqueRunestone",
+  "order": 70,
   "name": "DMG Amplification Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastMorAllDmg.png",
-  "effect": [
-   "Amplifies DMG when using a Skill Rune equipped in the activated slot",
-   "DMG % Amplification [3-6]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastMorAllDmg.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Amplifies DMG when using a Skill Rune equipped in the activated slotDMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "CriticalRateUniqueRunestone": {
   "slug": "CriticalRateUniqueRunestone",
+  "order": 71,
   "name": "Critical Rate Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllCritProc.png",
-  "effect": [
-   "Increases Critical Rate when using a Skill Rune equipped in the activated slot",
-   "Critical Rate +% [50-100]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllCritProc.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Critical Rate when using a Skill Rune equipped in the activated slotCritical Rate +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalRateUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "CriticalDMGUniqueRunestone": {
   "slug": "CriticalDMGUniqueRunestone",
+  "order": 72,
   "name": "Critical DMG Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddAllCritDmgRate.png",
-  "effect": [
-   "Increases Critical DMG when using a Skill Rune equipped in the activated slot",
-   "Critical DMG +% [25-50]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddAllCritDmgRate.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Critical DMG when using a Skill Rune equipped in the activated slotCritical DMG +% [25-50]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "HPRecoveryUniqueRunestone": {
   "slug": "HPRecoveryUniqueRunestone",
+  "order": 73,
   "name": "HP Recovery Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAddHPGainOnHit.png",
-  "effect": [
-   "Recovery HP on Kill when using a Skill Rune equipped in the activated slot",
-   "HP on Kill +[30-60]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAddHPGainOnHit.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Recovery HP on Kill when using a Skill Rune equipped in the activated slotHP on Kill +[30-60]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HPRecoveryUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGUniqueRunestone": {
   "slug": "MinionDMGUniqueRunestone",
+  "order": 74,
   "name": "Minion DMG Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncMinionAllDmg.png",
-  "effect": [
-   "Increases Minion DMG against enemies when using a Skill Rune equipped in the activated slot",
-   "Minion DMG % Amplification [3-6]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncMinionAllDmg.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Minion DMG against enemies when using a Skill Rune equipped in the activated slotMinion DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGUniqueRunestone": {
   "slug": "SentryDMGUniqueRunestone",
+  "order": 75,
   "name": "Sentry DMG Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncCrossBowAllDmg.png",
-  "effect": [
-   "Increases Sentry DMG against enemies when using a Skill Rune equipped in the activated slot",
-   "Sentry DMG % Amplification [3-6]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncCrossBowAllDmg.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Sentry DMG against enemies when using a Skill Rune equipped in the activated slotSentry DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGAtFullMinionHPUniqueRunestone": {
   "slug": "MinionDMGAtFullMinionHPUniqueRunestone",
+  "order": 76,
   "name": "Minion DMG at Full Minion HP Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenMaxHPToMinion.png",
-  "effect": [
-   "Increases Minion DMG at Full Minion HP when using a Skill Rune equipped in the activated slot",
-   "Minion DMG at Full Minion HP +% [70-140]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenMaxHPToMinion.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Minion DMG at Full Minion HP when using a Skill Rune equipped in the activated slotMinion DMG at Full Minion HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGAtFullMinionHPUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGAtFullSentryHPUniqueRunestone": {
   "slug": "SentryDMGAtFullSentryHPUniqueRunestone",
+  "order": 77,
   "name": "Sentry DMG at Full Sentry HP Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenMaxHPToCrossBow.png",
-  "effect": [
-   "Increases Sentry DMG at Full Sentry HP when using a Skill Rune equipped in the activated slot",
-   "Sentry DMG at Full Minion HP +% [70-140]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenMaxHPToCrossBow.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Sentry DMG at Full Sentry HP when using a Skill Rune equipped in the activated slotSentry DMG at Full Minion HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGAtFullSentryHPUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGAtFullHPUniqueRunestone": {
   "slug": "DMGAtFullHPUniqueRunestone",
+  "order": 78,
   "name": "DMG at Full HP Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenMaxHP.png",
-  "effect": [
-   "Increases DMG at Full HP when using a Skill Rune equipped in the activated slot",
-   "DMG at Full HP +% [70-140]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncAllDmgWhenMaxHP.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases DMG at Full HP when using a Skill Rune equipped in the activated slotDMG at Full HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAtFullHPUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DMGPenetrationUniqueRunestone": {
   "slug": "DMGPenetrationUniqueRunestone",
+  "order": 79,
   "name": "DMG Penetration Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRate.png",
-  "effect": [
-   "Increases DMG Penetration when using a Skill Rune equipped in the activated slot",
-   "DMG Penetration +% [15-30]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRate.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases DMG Penetration when using a Skill Rune equipped in the activated slotDMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGPenetrationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDMGPenetrationUniqueRunestone": {
   "slug": "MinionDMGPenetrationUniqueRunestone",
+  "order": 80,
   "name": "Minion DMG Penetration Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToMinion.png",
-  "effect": [
-   "Increases Minion DMG Penetration when using a Skill Rune equipped in the activated slot",
-   "Minion DMG Penetration +% [15-30]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToMinion.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Minion DMG Penetration when using a Skill Rune equipped in the activated slotMinion DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGPenetrationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDMGPenetrationUniqueRunestone": {
   "slug": "SentryDMGPenetrationUniqueRunestone",
+  "order": 81,
   "name": "Sentry DMG Penetration Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToCrossBow.png",
-  "effect": [
-   "Increases Sentry DMG Penetration when using a Skill Rune equipped in the activated slot",
-   "Sentry DMG Penetration +% [15-30]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastAllDmgPenRateToCrossBow.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Sentry DMG Penetration when using a Skill Rune equipped in the activated slotSentry DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGPenetrationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "AttackSealEffectUniqueRunestone": {
   "slug": "AttackSealEffectUniqueRunestone",
+  "order": 82,
   "name": "Attack Seal Effect Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncOffAuraEffect.png",
-  "effect": [
-   "Increases Attack Seal Effect for the Skill Rune equipped in the activated slot",
-   "Attack Aura and Seal Effect +% [13-25]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncOffAuraEffect.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Attack Seal Effect for the Skill Rune equipped in the activated slotAttack Aura and Seal Effect +% [13-25]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackSealEffectUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DefenseSealEffectUniqueRunestone": {
   "slug": "DefenseSealEffectUniqueRunestone",
+  "order": 83,
   "name": "Defense Seal Effect Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_RuneCastIncDefAuraEffect.png",
-  "effect": [
-   "Increases Defense Seal Effect for the Skill Rune equipped in the activated slot",
-   "Defense Aura and Seal Effect +% [13-25]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_RuneCastIncDefAuraEffect.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Defense Seal Effect for the Skill Rune equipped in the activated slotDefense Aura and Seal Effect +% [13-25]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenseSealEffectUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "DoubleMaximizedDMGUniqueRunestone": {
   "slug": "DoubleMaximizedDMGUniqueRunestone",
+  "order": 84,
   "name": "Double Maximized DMG Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_DoubleDMGApplyRate.png",
-  "effect": [
-   "Increases Double Maximized DMG upon using a Skill Rune equipped in the activated slot",
-   "Double Maximized DMG +% [15-30]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_DoubleDMGApplyRate.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Double Maximized DMG upon using a Skill Rune equipped in the activated slotDouble Maximized DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DoubleMaximizedDMGUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionDoubleMaximizedUniqueRunestone": {
   "slug": "MinionDoubleMaximizedUniqueRunestone",
+  "order": 85,
   "name": "Minion Double Maximized Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToMinion.png",
-  "effect": [
-   "Increases Minion Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot",
-   "Double Maximized Minion DMG +% [15-30]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToMinion.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Minion Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slotDouble Maximized Minion DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDoubleMaximizedUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryDoubleMaximizedUniqueRunestone": {
   "slug": "SentryDoubleMaximizedUniqueRunestone",
+  "order": 86,
   "name": "Sentry Double Maximized Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToCrossbow.png",
-  "effect": [
-   "Increases Sentry Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot",
-   "Double Maximized Sentry DMG +% [15-30]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_DoubleDMGApplyRateToCrossbow.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Increases Sentry Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slotDouble Maximized Sentry DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDoubleMaximizedUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "StatusEffectDMGAmplificationUniqueRunestone": {
   "slug": "StatusEffectDMGAmplificationUniqueRunestone",
+  "order": 87,
   "name": "Status Effect DMG Amplification Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_MorDmgAbsDmg.png",
-  "effect": [
-   "Amplifies Status Effect DMG when using a Skill Rune equipped in the activated slot",
-   "Status Effect DMG % Amplification [3-6]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_MorDmgAbsDmg.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Amplifies Status Effect DMG when using a Skill Rune equipped in the activated slotStatus Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/StatusEffectDMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "MinionStatusEffectDMGAmplificationUniqueRunestone": {
   "slug": "MinionStatusEffectDMGAmplificationUniqueRunestone",
+  "order": 88,
   "name": "Minion Status Effect DMG Amplification Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToMinion.png",
-  "effect": [
-   "Amplifies Minion Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot",
-   "Minion Status Effect DMG % Amplification [3-6]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToMinion.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Amplifies Minion Status Effect DMG against enemies when using a Skill Rune equipped in the activated slotMinion Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionStatusEffectDMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"
  },
  "SentryStatusEffectDMGAmplificationUniqueRunestone": {
   "slug": "SentryStatusEffectDMGAmplificationUniqueRunestone",
+  "order": 89,
   "name": "Sentry Status Effect DMG Amplification Unique Runestone",
-  "rarity": "Unique",
-  "icon": "https://undecember.thein.ru/image/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToCrossbow.png",
-  "effect": [
-   "Amplifies Sentry Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot",
-   "Sentry Status Effect DMG % Amplification [3-6]"
-  ],
   "icons": [
    "icons/items/RuneCast/Icon_Equipment_MorDmgAbsDmgToCrossbow.png"
+  ],
+  "rarity": "Unique",
+  "effect": [
+   "Amplifies Sentry Status Effect DMG against enemies when using a Skill Rune equipped in the activated slotSentry Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryStatusEffectDMGAmplificationUniqueRunestone/",
   "scrapedAt": "2026-09-20"

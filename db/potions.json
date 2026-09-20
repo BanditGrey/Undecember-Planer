@@ -1,2546 +1,1481 @@
 {
  "MinorHPPotion": {
   "slug": "MinorHPPotion",
+  "order": 0,
   "name": "Minor HP Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousHp01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Minor HP Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers HP",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 168",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers HPCooldown 10 sDuration 5 sTotal Recovery 168Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorHPPotion/",
   "scrapedAt": "2026-09-20"
  },
  "LesserHPPotion": {
   "slug": "LesserHPPotion",
+  "order": 1,
   "name": "Lesser HP Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousHp02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Lesser HP Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers HP",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 336",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers HPCooldown 10 sDuration 5 sTotal Recovery 336Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserHPPotion/",
   "scrapedAt": "2026-09-20"
  },
  "StandartHPPotion": {
   "slug": "StandartHPPotion",
+  "order": 2,
   "name": "Standart HP Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousHp03.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Standart HP Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers HP",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 504",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers HPCooldown 10 sDuration 5 sTotal Recovery 504Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartHPPotion/",
   "scrapedAt": "2026-09-20"
  },
  "GreaterHPPotion": {
   "slug": "GreaterHPPotion",
+  "order": 3,
   "name": "Greater HP Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousHp04.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Greater HP Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers HP",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 840",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers HPCooldown 10 sDuration 5 sTotal Recovery 840Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterHPPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MajorHPPotion": {
   "slug": "MajorHPPotion",
+  "order": 4,
   "name": "Major HP Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousHp05.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Major HP Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers HP",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 1440",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers HPCooldown 10 sDuration 5 sTotal Recovery 1440Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorHPPotion/",
   "scrapedAt": "2026-09-20"
  },
  "HighHPPotion": {
   "slug": "HighHPPotion",
+  "order": 5,
   "name": "High HP Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousHp06.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High HP Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers HP",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 2000",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers HPCooldown 10 sDuration 5 sTotal Recovery 2000Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighHPPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MinorHealingPotion": {
   "slug": "MinorHealingPotion",
+  "order": 6,
   "name": "Minor Healing Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyHp01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Minor Healing Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers HP",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 168",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers HPCooldown 60 sTotal Recovery 168Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorHealingPotion/",
   "scrapedAt": "2026-09-20"
  },
  "LesserHealingPotion": {
   "slug": "LesserHealingPotion",
+  "order": 7,
   "name": "Lesser Healing Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyHp02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Lesser Healing Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers HP",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 336",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers HPCooldown 60 sTotal Recovery 336Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserHealingPotion/",
   "scrapedAt": "2026-09-20"
  },
  "StandartHealingPotion": {
   "slug": "StandartHealingPotion",
+  "order": 8,
   "name": "Standart Healing Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyHp03.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Standart Healing Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers HP",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 504",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers HPCooldown 60 sTotal Recovery 504Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartHealingPotion/",
   "scrapedAt": "2026-09-20"
  },
  "GreaterHealingPotion": {
   "slug": "GreaterHealingPotion",
+  "order": 9,
   "name": "Greater Healing Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyHp04.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Greater Healing Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers HP",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 840",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers HPCooldown 60 sTotal Recovery 840Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterHealingPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MajorHealingPotion": {
   "slug": "MajorHealingPotion",
+  "order": 10,
   "name": "Major Healing Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyHp05.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Major Healing Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers HP",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 1440",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers HPCooldown 60 sTotal Recovery 1440Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorHealingPotion/",
   "scrapedAt": "2026-09-20"
  },
  "HighHealingPotion": {
   "slug": "HighHealingPotion",
+  "order": 11,
   "name": "High Healing Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyHp06.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Healing Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers HP",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 2000",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers HPCooldown 60 sTotal Recovery 2000Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighHealingPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MinorManaPotion": {
   "slug": "MinorManaPotion",
+  "order": 12,
   "name": "Minor Mana Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousMp01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Minor Mana Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers Mana",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 96",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers ManaCooldown 10 sDuration 5 sTotal Recovery 96Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorManaPotion/",
   "scrapedAt": "2026-09-20"
  },
  "LesserManaPotion": {
   "slug": "LesserManaPotion",
+  "order": 13,
   "name": "Lesser Mana Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousMp02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Lesser Mana Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers Mana",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 192",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers ManaCooldown 10 sDuration 5 sTotal Recovery 192Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserManaPotion/",
   "scrapedAt": "2026-09-20"
  },
  "StandartManaPotion": {
   "slug": "StandartManaPotion",
+  "order": 14,
   "name": "Standart Mana Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousMp03.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Standart Mana Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers Mana",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 288",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers ManaCooldown 10 sDuration 5 sTotal Recovery 288Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartManaPotion/",
   "scrapedAt": "2026-09-20"
  },
  "GreaterManaPotion": {
   "slug": "GreaterManaPotion",
+  "order": 15,
   "name": "Greater Mana Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousMp04.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Greater Mana Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers Mana",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 432",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers ManaCooldown 10 sDuration 5 sTotal Recovery 432Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterManaPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MajorManaPotion": {
   "slug": "MajorManaPotion",
+  "order": 16,
   "name": "Major Mana Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousMp05.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Major Mana Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers Mana",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 672",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers ManaCooldown 10 sDuration 5 sTotal Recovery 672Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorManaPotion/",
   "scrapedAt": "2026-09-20"
  },
  "HighManaPotion": {
   "slug": "HighManaPotion",
+  "order": 17,
   "name": "High Mana Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_ContinuousMp06.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Mana Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Continuously recovers Mana",
-   "Cooldown 10",
-   "s",
-   "Duration 5",
-   "s",
-   "Total Recovery 900",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Continuously recovers ManaCooldown 10 sDuration 5 sTotal Recovery 900Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighManaPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MinorConcentrationPotion": {
   "slug": "MinorConcentrationPotion",
+  "order": 18,
   "name": "Minor Concentration Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyMp01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Minor Concentration Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers Mana",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 96",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers ManaCooldown 60 sTotal Recovery 96Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorConcentrationPotion/",
   "scrapedAt": "2026-09-20"
  },
  "LesserConcentrationPotion": {
   "slug": "LesserConcentrationPotion",
+  "order": 19,
   "name": "Lesser Concentration Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyMp02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Lesser Concentration Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers Mana",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 192",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers ManaCooldown 60 sTotal Recovery 192Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserConcentrationPotion/",
   "scrapedAt": "2026-09-20"
  },
  "StandartConcentrationPotion": {
   "slug": "StandartConcentrationPotion",
+  "order": 20,
   "name": "Standart Concentration Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyMp03.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Standart Concentration Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers Mana",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 288",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers ManaCooldown 60 sTotal Recovery 288Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartConcentrationPotion/",
   "scrapedAt": "2026-09-20"
  },
  "GreaterConcentrationPotion": {
   "slug": "GreaterConcentrationPotion",
+  "order": 21,
   "name": "Greater Concentration Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyMp04.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Greater Concentration Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers Mana",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 432",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers ManaCooldown 60 sTotal Recovery 432Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterConcentrationPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MajorConcentrationPotion": {
   "slug": "MajorConcentrationPotion",
+  "order": 22,
   "name": "Major Concentration Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyMp05.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Major Concentration Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers Mana",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 672",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers ManaCooldown 60 sTotal Recovery 672Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorConcentrationPotion/",
   "scrapedAt": "2026-09-20"
  },
  "HighConcentrationPotion": {
   "slug": "HighConcentrationPotion",
+  "order": 23,
   "name": "High Concentration Potion",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_InstantlyMp06.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Concentration Potion",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Shop",
-   "Instantly recovers Mana",
-   "Cooldown 60",
-   "s",
-   "Total Recovery 900",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Shop"
   ],
+  "useOn": [],
+  "description": "Instantly recovers ManaCooldown 60 sTotal Recovery 900Cannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighConcentrationPotion/",
   "scrapedAt": "2026-09-20"
  },
  "MaxHPElixir": {
   "slug": "MaxHPElixir",
+  "order": 24,
   "name": "Max HP Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_MorMaxHP01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png"
+   "icons/items/Potion/Icon_Item_Potion_MorMaxHP01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Max HP Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Increases Max HP for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Max HP +10",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Max HP for the durationCooldown 120 sDuration 120 sMax HP +10%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/VitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/MaxHPElixir/",
   "scrapedAt": "2026-09-20"
  },
  "ArmorElixir": {
   "slug": "ArmorElixir",
+  "order": 25,
   "name": "Armor Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_AddArmour01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png"
+   "icons/items/Potion/Icon_Item_Potion_AddArmour01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Armor Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Increases Armor for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Armor +40",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Armor for the durationCooldown 120 sDuration 120 sArmor +40%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/VitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/ArmorElixir/",
   "scrapedAt": "2026-09-20"
  },
  "DodgeRateElixir": {
   "slug": "DodgeRateElixir",
+  "order": 26,
   "name": "Dodge Rate Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_AddEvasion01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png"
+   "icons/items/Potion/Icon_Item_Potion_AddEvasion01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Dodge Rate Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Increases Dodge Rate for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Dodge Rate +48",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Dodge Rate for the durationCooldown 120 sDuration 120 sDodge Rate +48%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/VitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/DodgeRateElixir/",
   "scrapedAt": "2026-09-20"
  },
  "BarrierElixir": {
   "slug": "BarrierElixir",
+  "order": 27,
   "name": "Barrier Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_MorMaxES01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png"
+   "icons/items/Potion/Icon_Item_Potion_MorMaxES01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Barrier Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Increases Max Barrier for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Max Barrier +28",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Max Barrier for the durationCooldown 120 sDuration 120 sMax Barrier +28%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/VitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/BarrierElixir/",
   "scrapedAt": "2026-09-20"
  },
  "ElementResistElixir": {
   "slug": "ElementResistElixir",
+  "order": 28,
   "name": "Element Resist Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_AddResistance01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png"
+   "icons/items/Potion/Icon_Item_Potion_AddResistance01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Element Resist Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Slightly increases Element Resist for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Element Resist +10",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Slightly increases Element Resist for the durationCooldown 120 sDuration 120 sElement Resist +10Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/VitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/ElementResistElixir/",
   "scrapedAt": "2026-09-20"
  },
  "DamageElixir": {
   "slug": "DamageElixir",
+  "order": 29,
   "name": "Damage Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_MorAllDmg01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark.png"
+   "icons/items/Potion/Icon_Item_Potion_MorAllDmg01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Damage Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Increases DMG for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "DMG +40",
-   "%",
-   "Minion DMG +40",
-   "%",
-   "Sentry Damage +40",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases DMG for the durationCooldown 120 sDuration 120 sDMG +40%Minion DMG +40%Sentry Damage +40%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/DarkPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/DamageElixir/",
   "scrapedAt": "2026-09-20"
  },
  "AttackSpeedAndCastSpeedElixir": {
   "slug": "AttackSpeedAndCastSpeedElixir",
+  "order": 30,
   "name": "Attack Speed and Cast Speed Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncAtkSpellSpd01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark.png"
+   "icons/items/Potion/Icon_Item_Potion_IncAtkSpellSpd01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Attack Speed and Cast Speed Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Increases Attack Speed and Cast Speed for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Attack Speed +8",
-   "%",
-   "Cast Speed +8",
-   "%",
-   "Minion Attack Speed +8",
-   "%",
-   "Minion Cast Speed +8",
-   "%",
-   "Sentry Attack Speed +8",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Attack Speed and Cast Speed for the durationCooldown 120 sDuration 120 sAttack Speed +8%Cast Speed +8%Minion Attack Speed +8%Minion Cast Speed +8%Sentry Attack Speed +8%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/DarkPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/AttackSpeedAndCastSpeedElixir/",
   "scrapedAt": "2026-09-20"
  },
  "MovementSpeedElixir": {
   "slug": "MovementSpeedElixir",
+  "order": 31,
   "name": "Movement Speed Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncMovSpd01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofEnergy.png"
+   "icons/items/Potion/Icon_Item_Potion_IncMovSpd01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Movement Speed Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Increases Movement Speed for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "20",
-   "% Movement Speed Increase",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Movement Speed for the durationCooldown 120 sDuration 120 s20% Movement Speed IncreaseCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/EnergyPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofEnergy.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/MovementSpeedElixir/",
   "scrapedAt": "2026-09-20"
  },
  "ChaosResistElixir": {
   "slug": "ChaosResistElixir",
+  "order": 32,
   "name": "Chaos Resist Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_ChaosResistance01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofEnergy.png"
+   "icons/items/Potion/Icon_Item_Potion_ChaosResistance01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Chaos Resist Elixir",
-   "Rarity:",
-   "Normal",
-   "How to get:",
-   "Alchemy",
-   "Slightly increases Chaos Resist for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Chaos Resist +20",
-   "Cannot be used in Тown",
-   "Alchemy ( 15",
-   "s. )",
-   "x1",
-   "x2",
-   "© 2022 thein.ru"
+  "rarity": "Normal",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Slightly increases Chaos Resist for the durationCooldown 120 sDuration 120 sChaos Resist +20Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 15 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/EmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/EnergyPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofEnergy.png",
+      "count": "2"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/ChaosResistElixir/",
   "scrapedAt": "2026-09-20"
  },
  "PhysicalStatusEffectImmunityElixir": {
   "slug": "PhysicalStatusEffectImmunityElixir",
+  "order": 33,
   "name": "Physical Status Effect Immunity Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_Abnormal_Bleed.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png"
+   "icons/items/Potion/Icon_Item_Potion_Abnormal_Bleed.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Physical Status Effect Immunity Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Instantly removes Bleed and Stun and becomes immune for the duration",
-   "Only used while Stunned when using Potion Settings",
-   "Cooldown 80",
-   "s",
-   "Duration 80",
-   "s",
-   "Instantly removes Bleed and Stun status effect",
-   "Immune Bleed",
-   "Immune Stun",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Instantly removes Bleed and Stun and becomes immune for the durationOnly used while Stunned when using Potion SettingsCooldown 80 sDuration 80 sInstantly removes Bleed and Stun status effectImmune BleedImmune StunCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/PurifiedSerum/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/PhysicalStatusEffectImmunityElixir/",
   "scrapedAt": "2026-09-20"
  },
  "FireStatusEffectImmunityElixir": {
   "slug": "FireStatusEffectImmunityElixir",
+  "order": 34,
   "name": "Fire Status Effect Immunity Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_Abnormal_Ignite.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png"
+   "icons/items/Potion/Icon_Item_Potion_Abnormal_Ignite.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Fire Status Effect Immunity Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Instantly removes Burn and Wound and becomes immune for the duration",
-   "Cooldown 80",
-   "s",
-   "Duration 80",
-   "s",
-   "Instantly removes Burn and Wound status effect",
-   "Immune Burn",
-   "Immune Wound",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Instantly removes Burn and Wound and becomes immune for the durationCooldown 80 sDuration 80 sInstantly removes Burn and Wound status effectImmune BurnImmune WoundCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/PurifiedSerum/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/FireStatusEffectImmunityElixir/",
   "scrapedAt": "2026-09-20"
  },
  "ColdStatusEffectImmunityElixir": {
   "slug": "ColdStatusEffectImmunityElixir",
+  "order": 35,
   "name": "Cold Status Effect Immunity Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_Abnormal_Chill.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png"
+   "icons/items/Potion/Icon_Item_Potion_Abnormal_Chill.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Cold Status Effect Immunity Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Instantly removes Chill and Freeze and becomes immune for the duration",
-   "Only used while Frozen when using Potion Settings",
-   "Cooldown 80",
-   "s",
-   "Duration 80",
-   "s",
-   "Instantly removes Chill and Freeze status effect",
-   "Immune Chill",
-   "Immune Freeze",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Instantly removes Chill and Freeze and becomes immune for the durationOnly used while Frozen when using Potion SettingsCooldown 80 sDuration 80 sInstantly removes Chill and Freeze status effectImmune ChillImmune FreezeCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/PurifiedSerum/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/ColdStatusEffectImmunityElixir/",
   "scrapedAt": "2026-09-20"
  },
  "LightningStatusEffectImmunityElixir": {
   "slug": "LightningStatusEffectImmunityElixir",
+  "order": 36,
   "name": "Lightning Status Effect Immunity Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_Abnormal_Shock.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png"
+   "icons/items/Potion/Icon_Item_Potion_Abnormal_Shock.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Lightning Status Effect Immunity Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Instantly removes Shock and Bind and becomes immune for the duration",
-   "Only used while Bound when using Potion Settings",
-   "Cooldown 80",
-   "s",
-   "Duration 80",
-   "s",
-   "Instantly removes Shock and Bind status effect",
-   "Immune Shock",
-   "Immune Bind",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Instantly removes Shock and Bind and becomes immune for the durationOnly used while Bound when using Potion SettingsCooldown 80 sDuration 80 sInstantly removes Shock and Bind status effectImmune ShockImmune BindCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/PurifiedSerum/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/LightningStatusEffectImmunityElixir/",
   "scrapedAt": "2026-09-20"
  },
  "PoisonStatusEffectImmunityElixir": {
   "slug": "PoisonStatusEffectImmunityElixir",
+  "order": 37,
   "name": "Poison Status Effect Immunity Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_Abnormal_Poison.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png"
+   "icons/items/Potion/Icon_Item_Potion_Abnormal_Poison.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Poison Status Effect Immunity Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Instantly removes Venom and Blind becomes immune for the duration",
-   "Cooldown 80",
-   "s",
-   "Duration 80",
-   "s",
-   "Instantly removes Venom and Blind status effect",
-   "Immune Venom",
-   "Immune Blind",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Instantly removes Venom and Blind becomes immune for the durationCooldown 80 sDuration 80 sInstantly removes Venom and Blind status effectImmune VenomImmune BlindCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/PurifiedSerum/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/PoisonStatusEffectImmunityElixir/",
   "scrapedAt": "2026-09-20"
  },
  "IncreaseItemDropRartyElixir": {
   "slug": "IncreaseItemDropRartyElixir",
+  "order": 38,
   "name": "Increase Item Drop Rarty Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncMagicChance01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png"
+   "icons/items/Potion/Icon_Item_Potion_IncMagicChance01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Increase Item Drop Rarty Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Increases Item Drop Rarity for the duration",
-   "Can be registered in the Pet Slot",
-   "Cooldown 300",
-   "s",
-   "Duration 300",
-   "s",
-   "Item Drop Rarity +25",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Item Drop Rarity for the durationCan be registered in the Pet SlotCooldown 300 sDuration 300 sItem Drop Rarity +25%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/MysticalPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseItemDropRartyElixir/",
   "scrapedAt": "2026-09-20"
  },
  "IncreaseElementDropChanceElixir": {
   "slug": "IncreaseElementDropChanceElixir",
+  "order": 39,
   "name": "Increase Element Drop Chance Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncRuneMaterial01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png"
+   "icons/items/Potion/Icon_Item_Potion_IncRuneMaterial01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Increase Element Drop Chance Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Increases Element Drop Chance for the duration",
-   "Can be registered in the Pet Slot",
-   "Cooldown 300",
-   "s",
-   "Duration 300",
-   "s",
-   "Rune Growth Material Drop Chance +10",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Element Drop Chance for the durationCan be registered in the Pet SlotCooldown 300 sDuration 300 sRune Growth Material Drop Chance +10%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/MysticalPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseElementDropChanceElixir/",
   "scrapedAt": "2026-09-20"
  },
  "IncreaseEssenceDropChanceElixir": {
   "slug": "IncreaseEssenceDropChanceElixir",
+  "order": 40,
   "name": "Increase Essence Drop Chance Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncEnchantMaterial01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png"
+   "icons/items/Potion/Icon_Item_Potion_IncEnchantMaterial01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Increase Essence Drop Chance Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Increases Essence Drop Chance for the duration",
-   "Can be registered in the Pet Slot",
-   "Cooldown 300",
-   "s",
-   "Duration 300",
-   "s",
-   "Essence Drop Chance +10",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Essence Drop Chance for the durationCan be registered in the Pet SlotCooldown 300 sDuration 300 sEssence Drop Chance +10%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/MysticalPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseEssenceDropChanceElixir/",
   "scrapedAt": "2026-09-20"
  },
  "IncreaseGoldGainChanceElixir": {
   "slug": "IncreaseGoldGainChanceElixir",
+  "order": 41,
   "name": "Increase Gold Gain Chance Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncGold01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png"
+   "icons/items/Potion/Icon_Item_Potion_IncGold01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Increase Gold Gain Chance Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Increases Gold Gain Chance for the duration",
-   "Can be registered in the Pet Slot",
-   "Cooldown 300",
-   "s",
-   "Duration 300",
-   "s",
-   "Gold Gain Chance +10",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Gold Gain Chance for the durationCan be registered in the Pet SlotCooldown 300 sDuration 300 sGold Gain Chance +10%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/MysticalPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseGoldGainChanceElixir/",
   "scrapedAt": "2026-09-20"
  },
  "IncreaseCharmDropChanceElixir": {
   "slug": "IncreaseCharmDropChanceElixir",
+  "order": 42,
   "name": "Increase Charm Drop Chance Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncCharm01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png"
+   "icons/items/Potion/Icon_Item_Potion_IncCharm01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Increase Charm Drop Chance Elixir",
-   "Rarity:",
-   "Magic",
-   "How to get:",
-   "Alchemy",
-   "Increases Charm Drop Chance for the duration",
-   "Can be registered in the Pet Slot",
-   "Cooldown 300",
-   "s",
-   "Duration 300",
-   "s",
-   "Charm Drop Chance +10",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 30",
-   "s. )",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Magic",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Charm Drop Chance for the durationCan be registered in the Pet SlotCooldown 300 sDuration 300 sCharm Drop Chance +10%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 30 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/materials/MysticalPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofMagic_01.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseCharmDropChanceElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighMaxHPElixir": {
   "slug": "HighMaxHPElixir",
+  "order": 43,
   "name": "High Max HP Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_MorMaxHP02.png",
-   "icons/items/Potion/Icon_Item_Potion_MorMaxHP01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png"
+   "icons/items/Potion/Icon_Item_Potion_MorMaxHP02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Max HP Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Amplifies Max HP for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "12",
-   "% HP Amplification",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Amplifies Max HP for the durationCooldown 120 sDuration 120 s12% HP AmplificationCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/MaxHPElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_MorMaxHP01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighVitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighMaxHPElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighArmorElixir": {
   "slug": "HighArmorElixir",
+  "order": 44,
   "name": "High Armor Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_AddArmour02.png",
-   "icons/items/Potion/Icon_Item_Potion_AddArmour01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png"
+   "icons/items/Potion/Icon_Item_Potion_AddArmour02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Armor Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Amplifies Armor for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "25",
-   "% Armor Amplification",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Amplifies Armor for the durationCooldown 120 sDuration 120 s25% Armor AmplificationCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/ArmorElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_AddArmour01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighVitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighArmorElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighDodgeRateElixir": {
   "slug": "HighDodgeRateElixir",
+  "order": 45,
   "name": "High Dodge Rate Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_AddEvasion02.png",
-   "icons/items/Potion/Icon_Item_Potion_AddEvasion01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png"
+   "icons/items/Potion/Icon_Item_Potion_AddEvasion02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Dodge Rate Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Amplifies Dodge Rate for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "25",
-   "% Dodge Rate Amplification",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Amplifies Dodge Rate for the durationCooldown 120 sDuration 120 s25% Dodge Rate AmplificationCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/DodgeRateElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_AddEvasion01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighVitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighDodgeRateElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighBarrierElixir": {
   "slug": "HighBarrierElixir",
+  "order": 46,
   "name": "High Barrier Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_MorMaxES02.png",
-   "icons/items/Potion/Icon_Item_Potion_MorMaxES01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png"
+   "icons/items/Potion/Icon_Item_Potion_MorMaxES02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Barrier Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Amplifies Max Barrier for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "12",
-   "% Barrier Amplification",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Amplifies Max Barrier for the durationCooldown 120 sDuration 120 s12% Barrier AmplificationCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/BarrierElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_MorMaxES01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighVitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighBarrierElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighElementResistElixir": {
   "slug": "HighElementResistElixir",
+  "order": 47,
   "name": "High Element Resist Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_AddResistance02.png",
-   "icons/items/Potion/Icon_Item_Potion_AddResistance01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png"
+   "icons/items/Potion/Icon_Item_Potion_AddResistance02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Element Resist Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Increases Element Resist for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Element Resist +28",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Element Resist for the durationCooldown 120 sDuration 120 sElement Resist +28Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/ElementResistElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_AddResistance01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighVitalityPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofVitality02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighElementResistElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighDamageElixir": {
   "slug": "HighDamageElixir",
+  "order": 48,
   "name": "High Damage Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_MorAllDmg02.png",
-   "icons/items/Potion/Icon_Item_Potion_MorAllDmg01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark02.png"
+   "icons/items/Potion/Icon_Item_Potion_MorAllDmg02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Damage Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Amplifies DMG for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "15",
-   "% DMG Amplification",
-   "15",
-   "% Minion DMG Amplification",
-   "Sentry DMG 15",
-   "Amplification",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Amplifies DMG for the durationCooldown 120 sDuration 120 s15% DMG Amplification15% Minion DMG AmplificationSentry DMG 15 AmplificationCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/DamageElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_MorAllDmg01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighDarkPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighDamageElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighAttackSpeedAndCastSpeedElixir": {
   "slug": "HighAttackSpeedAndCastSpeedElixir",
+  "order": 49,
   "name": "High Attack Speed and Cast Speed Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncAtkSpellSpd02.png",
-   "icons/items/Potion/Icon_Item_Potion_IncAtkSpellSpd01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark02.png"
+   "icons/items/Potion/Icon_Item_Potion_IncAtkSpellSpd02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Attack Speed and Cast Speed Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Amplifies Attack Speed and Cast Speed for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "14",
-   "% Attack Speed Amplification",
-   "14",
-   "% Cast Speed Amplification",
-   "14",
-   "% Minion Attack Speed Amplification",
-   "14",
-   "% Minion Cast Speed Amplification",
-   "14",
-   "% Sentry Attack Speed Amplification",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Amplifies Attack Speed and Cast Speed for the durationCooldown 120 sDuration 120 s14% Attack Speed Amplification14% Cast Speed Amplification14% Minion Attack Speed Amplification14% Minion Cast Speed Amplification14% Sentry Attack Speed AmplificationCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/AttackSpeedAndCastSpeedElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_IncAtkSpellSpd01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighDarkPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighAttackSpeedAndCastSpeedElixir/",
   "scrapedAt": "2026-09-20"
  },
  "HighChaosResistElixir": {
   "slug": "HighChaosResistElixir",
+  "order": 50,
   "name": "High Chaos Resist Elixir",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_ChaosResistance02.png",
-   "icons/items/Potion/Icon_Item_Potion_ChaosResistance01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark02.png"
+   "icons/items/Potion/Icon_Item_Potion_ChaosResistance02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "High Chaos Resist Elixir",
-   "Rarity:",
-   "Rare",
-   "How to get:",
-   "Alchemy",
-   "Increases Chaos Resist for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Chaos Resist +50",
-   "Cannot be used in Тown",
-   "Alchemy ( 1",
-   "m. 45",
-   "s. )",
-   "x3",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Chaos Resist for the durationCooldown 120 sDuration 120 sChaos Resist +50Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 1 m. 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/potions/ChaosResistElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_ChaosResistance01.png",
+      "count": "3"
+     },
+     {
+      "href": "/en/materials/HighDarkPowder/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_DustofDark02.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighChaosResistElixir/",
   "scrapedAt": "2026-09-20"
  },
  "BeastsBreath": {
   "slug": "BeastsBreath",
-  "name": "Beast&#x27;s Breath",
+  "order": 51,
+  "name": "Beast's Breath",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncMovSpd02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/Potion/Icon_Item_Potion_IncMovSpd01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png"
+   "icons/items/Potion/Icon_Item_Potion_IncMovSpd02.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Beast&#x27;s Breath",
-   "Rarity:",
-   "Unique",
-   "How to get:",
-   "Alchemy",
-   "Increases Movement Speed and Movement Speed does not fall below Base Value for the duration",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "20",
-   "% Movement Speed Increase",
-   "Movement Speed does not fall below Base Value",
-   "Cannot be used in Тown",
-   "Alchemy ( 45",
-   "s. )",
-   "x6",
-   "x2",
-   "x4",
-   "© 2022 thein.ru"
+  "rarity": "Unique",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Movement Speed and Movement Speed does not fall below Base Value for the durationCooldown 120 sDuration 120 s20% Movement Speed IncreaseMovement Speed does not fall below Base ValueCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "6"
+     },
+     {
+      "href": "/en/potions/MovementSpeedElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_IncMovSpd01.png",
+      "count": "2"
+     },
+     {
+      "href": "/en/materials/PurifiedSerum/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png",
+      "count": "4"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/BeastsBreath/",
   "scrapedAt": "2026-09-20"
  },
  "ExcavatorsSoul": {
   "slug": "ExcavatorsSoul",
-  "name": "Excavator&#x27;s Soul",
+  "order": 52,
+  "name": "Excavator's Soul",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_IncCharm_IncMagicChance01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/Potion/Icon_Item_Potion_IncCharm01.png",
-   "icons/items/Potion/Icon_Item_Potion_IncMagicChance01.png"
+   "icons/items/Potion/Icon_Item_Potion_IncCharm_IncMagicChance01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Excavator&#x27;s Soul",
-   "Rarity:",
-   "Unique",
-   "How to get:",
-   "Alchemy",
-   "Increases Charm Drop Chance and all Item Drop Rarity for the duration",
-   "Cooldown 300",
-   "s",
-   "Duration 300",
-   "s",
-   "Item Drop Rarity +25",
-   "%",
-   "Charm Drop Chance +10",
-   "%",
-   "Cannot be used in Тown",
-   "Alchemy ( 45",
-   "s. )",
-   "x6",
-   "x1",
-   "x1",
-   "© 2022 thein.ru"
+  "rarity": "Unique",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Charm Drop Chance and all Item Drop Rarity for the durationCooldown 300 sDuration 300 sItem Drop Rarity +25%Charm Drop Chance +10%Cannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "6"
+     },
+     {
+      "href": "/en/potions/IncreaseCharmDropChanceElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_IncCharm01.png",
+      "count": "1"
+     },
+     {
+      "href": "/en/potions/IncreaseItemDropRartyElixir/",
+      "icon": "/image/items/Potion/Icon_Item_Potion_IncMagicChance01.png",
+      "count": "1"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/ExcavatorsSoul/",
   "scrapedAt": "2026-09-20"
  },
  "FountainOfWisdom": {
   "slug": "FountainOfWisdom",
+  "order": 53,
   "name": "Fountain of Wisdom",
   "icons": [
-   "icons/items/Potion/Icon_Item_Potion_RuneMasterExp_01.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
-   "icons/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png"
+   "icons/items/Potion/Icon_Item_Potion_RuneMasterExp_01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Fountain of Wisdom",
-   "Rarity:",
-   "Unique",
-   "How to get:",
-   "Alchemy",
-   "Increases Rune Master EXP Gain Amount for the duration.",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Increases Rune Master EXP by +100",
-   "% on kill",
-   "Cannot be used in Тown",
-   "Alchemy ( 45",
-   "s. )",
-   "x10",
-   "x5",
-   "© 2022 thein.ru"
+  "rarity": "Unique",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "Increases Rune Master EXP Gain Amount for the duration.Cooldown 120 sDuration 120 sIncreases Rune Master EXP by +100% on killCannot be used in Тown",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Alchemy ( 45 s. )",
+    "ingredients": [
+     {
+      "href": "/en/materials/High-qualityEmptyBottle/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_EmptyBottle_02.png",
+      "count": "10"
+     },
+     {
+      "href": "/en/materials/PurifiedSerum/",
+      "icon": "/image/items/AlchemyMaterial/Icon_Item_AlchemyMaterial_RefineSerum.png",
+      "count": "5"
+     }
+    ]
+   }
   ],
   "source": "https://undecember.thein.ru/en/potions/FountainOfWisdom/",
   "scrapedAt": "2026-09-20"
  },
  "FountainOfClearWisdom": {
   "slug": "FountainOfClearWisdom",
+  "order": 54,
   "name": "Fountain of Clear Wisdom",
   "icons": [
    "icons/items/Potion/Icon_Item_Potion_BusnessModelRuneMasterExp_01.png"
   ],
-  "lines": [
-   "Undecember",
-   "$",
-   "РУ",
-   "EN",
-   "Runes Library",
-   "Authority of the gods",
-   "Unique equipment",
-   "The Path of the Rune master",
-   "Tags",
-   "Essences",
-   "Coins",
-   "Potions",
-   "Materials",
-   "Runestones",
-   "Say thanks",
-   "Donation",
-   "Alerts",
-   "All Runes",
-   "Fountain of Clear Wisdom",
-   "Rarity:",
-   "Legendary",
-   "How to get:",
-   "Paid Shop",
-   "Rapidly increases Rune Master EXP Gain Amount for the duration.",
-   "Cooldown 120",
-   "s",
-   "Duration 120",
-   "s",
-   "Increases Rune Master EXP by +200",
-   "% on kill",
-   "Cannot be used in Тown",
-   "© 2022 thein.ru"
+  "rarity": "Legendary",
+  "howToGet": [
+   "Paid Shop"
   ],
+  "useOn": [],
+  "description": "Rapidly increases Rune Master EXP Gain Amount for the duration.Cooldown 120 sDuration 120 sIncreases Rune Master EXP by +200% on killCannot be used in Тown",
+  "props": [],
+  "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/FountainOfClearWisdom/",
   "scrapedAt": "2026-09-20"
  }
