@@ -58,6 +58,15 @@ export function checkLink(link: Rune, skill: Rune): LinkCheck {
   return { ok: false, shared, reason: '', key: 'linkMissing', tags: lt.join(', ') };
 }
 
+// ---- Element conversion link runes: the linked skill counts as the target element for the other links.
+export const CONVERT: Record<string, string> = { ConvertPhysicalDamage: 'Physical', ConvertFireDMG: 'Fire', ConvertColdDMG: 'Cold', ConvertLightningDMG: 'Lightning', ConvertPoisonDMG: 'Poison' };
+const ELEMENTS = ['Physical', 'Fire', 'Cold', 'Lightning', 'Poison'];
+export function effectiveSkill(skill: Rune, links: (Rune | null | undefined)[]): Rune {
+  const conv = links.find(l => l && CONVERT[l.slug]); if (!conv) return skill;
+  const to = CONVERT[conv.slug]; if (skill.tags.includes(to)) return skill;
+  return { ...skill, tags: [...skill.tags.filter(t => !ELEMENTS.includes(t)), to] };
+}
+
 // ---- Trigger runes: "Must link an Activation (A, B) Skill and a Target (X) Skill in the arrow's direction."
 export interface TriggerSpec { activation: string[]; target: string[] }
 export function triggerSpec(r: Rune): TriggerSpec | null {
@@ -88,7 +97,10 @@ export function analyzeBoard(b: Build): { groups: SkillGroup[]; orphans: { cell:
   for (const [cell, c] of Object.entries(b.board)) {
     const rune = c.rune && runeBySlug.get(c.rune); if (!rune || rune.type !== 'Skill') continue;
     const g: SkillGroup = { cell, skill: rune, links: [], runestone: c.runestone, slots: c.slots, grade: c.grade, awaken: c.awaken };
-    DIRS.forEach((_, d) => { const n = step(cell, d); if (!n) return; const lr = b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); if (lr && lr.type === 'Link' && !triggerSpec(lr)) { const slot = c.slots?.[d]; const tagCheck = checkLink(lr, rune); const check = tagCheck.ok ? (checkSlot(slot, lr) ?? tagCheck) : tagCheck; g.links.push({ cell: n, rune: lr, check, dir: d, slot, grade: b.board[n].grade, awaken: b.board[n].awaken }); linked.add(n); } });
+    // "Convert X DMG" link runes change the skill's element: other links are checked against the converted tag set
+    // (e.g. Extract Earth Energy on Lightning Arrow + Convert Physical Damage is legal in-game).
+    const eff = effectiveSkill(rune, DIRS.map((_, d) => { const n = step(cell, d); const lr = n && b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); return lr && lr.type === 'Link' ? lr : null; }));
+    DIRS.forEach((_, d) => { const n = step(cell, d); if (!n) return; const lr = b.board[n]?.rune && runeBySlug.get(b.board[n].rune!); if (lr && lr.type === 'Link' && !triggerSpec(lr)) { const slot = c.slots?.[d]; const tagCheck = checkLink(lr, CONVERT[lr.slug] ? rune : eff); const check = tagCheck.ok ? (checkSlot(slot, lr) ?? tagCheck) : tagCheck; g.links.push({ cell: n, rune: lr, check, dir: d, slot, grade: b.board[n].grade, awaken: b.board[n].awaken }); linked.add(n); } });
     // "Only one X can be linked at once" + the game never allows the same link rune twice on a skill
     const seen = new Set<string>(); for (const l of g.links) { if (seen.has(l.rune.slug) && l.check.ok) l.check = { ok: false, shared: [], reason: `Only one ${l.rune.name} can be linked at once` }; seen.add(l.rune.slug); }
     if (g.links.length > 6) g.links = g.links.slice(0, 6);

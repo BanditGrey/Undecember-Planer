@@ -27505,7 +27505,7 @@
   ],
   "description": "Rune cannot be awakening",
   "linkRules": [
-   "Can be linked with Skills that satisfy Fire, Удар (must include all)",
+   "Can be linked with Skills that satisfy Fire, Strike (must include all)",
    "Applies to Minions when linked to Summon Skill"
   ],
   "level1": [
@@ -33749,7 +33749,7 @@
   ],
   "description": "Rune cannot be awakening",
   "linkRules": [
-   "Can be linked with Skills that satisfy Poison, Удар (must include all)",
+   "Can be linked with Skills that satisfy Poison, Strike (must include all)",
    "Applies to Minions when linked to Summon Skill"
   ],
   "level1": [
@@ -39129,7 +39129,7 @@
   ],
   "description": "Rune cannot be awakening",
   "linkRules": [
-   "Can be linked with Skills that satisfy Cold, Удар (must include all)",
+   "Can be linked with Skills that satisfy Cold, Strike (must include all)",
    "Applies to Minions when linked to Summon Skill"
   ],
   "level1": [
@@ -39236,7 +39236,7 @@
   ],
   "description": "Rune cannot be awakening",
   "linkRules": [
-   "Can be linked with Skills that satisfy Lightning, Удар (must include all)",
+   "Can be linked with Skills that satisfy Lightning, Strike (must include all)",
    "Applies to Minions when linked to Summon Skill"
   ],
   "level1": [

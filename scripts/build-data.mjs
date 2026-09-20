@@ -21,7 +21,7 @@ const rawRunes = raw('runes_list.txt').map(l => { const [type, slug, name, ic] =
 const runeRows = Object.keys(runesDb).length ? Object.values(runesDb).sort((a, b) => a.order - b.order).map(d => { const r = rawRunes.find(x => x.slug === d.slug); return { type: r?.type ?? (d.icons[0]?.includes('/LinkSkill/') ? 'Link' : 'Skill'), slug: d.slug, name: d.name, ic: r?.ic ?? '' }; }) : rawRunes;
 const runes = runeRows.map(({ type, slug, name, ic }) => { const d = runesDb[slug] || {};
   return { slug, name, type, color: runeColors[slug] ?? null, icons: (d.icons?.length ? d.icons : ic.split(',').map(i => `icons/runes/${type}/${i}.png`)).map(icon), tags: d.tags?.length ? d.tags : (tagsOf[slug] || []),
-    rarity: d.rarity ?? null, howToGet: d.howToGet ?? [], acts: d.acts ?? [], weapons: d.weapons ?? [], description: d.description ?? '', linkRules: d.linkRules ?? [],
+    rarity: d.rarity ?? null, howToGet: d.howToGet ?? [], acts: d.acts ?? [], weapons: d.weapons ?? [], description: d.description ?? '', linkRules: (d.linkRules ?? []).map(x => x.replace(/Удар/g, 'Strike')) /* source site leaks the Russian word for Strike */,
     level1: d.level1 ?? [], level45: d.level45 ?? [], gradeBonuses: d.gradeBonuses ?? [], awakening: d.awakening ?? {} }; });
 
 // ---- runestones

@@ -126,3 +126,5 @@ img.mini{width:22px;height:22px;vertical-align:middle;border-radius:50%;backgrou
 .app.view .hex{cursor:default;pointer-events:auto}.app.view .hex .hex-in{pointer-events:none}
 .viewbar{display:flex;align-items:center;gap:12px;background:var(--panel2);border-bottom:1px solid var(--line);padding:8px 16px;font-size:15px}.viewbar button{margin-left:auto}
 .modal.narrow{max-width:520px}.inline-tip .ud-card{position:static;max-width:none}
+
+.season{margin-top:14px}.season h3{margin:0 0 4px;font-size:15px;color:var(--accent,#e0b96a)}.pill.tier-S{background:#6b1f1f;color:#ffd7d7}.pill.tier-A{background:#5a4a12;color:#ffe9a8}.pill.tier-B{background:#1f3d5a;color:#cfe6ff}.gcard a{color:var(--accent,#e0b96a)}

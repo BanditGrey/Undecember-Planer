@@ -6,7 +6,7 @@ import { Items } from './components/Items';
 import { Gallery } from './components/Gallery';
 import { Compare } from './components/Compare';
 import { Character } from './components/Character';
-import { PRESETS } from './lib/presets';
+import { presetsBySeason } from './lib/presets';
 import { renderBuildCard } from './lib/card';
 import { Search } from './components/Search';
 import { runes, runestones, uniques, runemaster, authority } from './data';
@@ -70,8 +70,12 @@ export default function App() {
         {tab === 'compare' && <Compare build={build} />}
         {tab === 'gallery' && <Gallery build={build} open={b => { setBuild(b); setTab('board'); }} />}
         {tab === 'builds' && <section className="panel"><h2>{t('presetsTitle')} <small className="muted">{t('presetsHint')}</small></h2>
-          <div className="gallery">{PRESETS.map(p => <div key={p.id} className="gcard"><div className="gh"><b>{p.name[lang]}</b> <span className="pill">{p.stat}</span></div><small className="muted">{p.desc[lang]}</small>
-            <div className="row"><button className="primary" onClick={() => { setBuild(p.make()); setTab('board'); }}>{t('open')}</button></div></div>)}</div>
+          {presetsBySeason().map(g => <div key={g.season.id} className="season"><h3>{g.season.name[lang]} {g.season.date && <small className="muted">{g.season.date}</small>}</h3>
+            <div className="gallery">{g.presets.map(p => <div key={p.id} className="gcard"><div className="gh"><b>{p.name[lang]}</b> <span className="pill">{p.stat}</span>{p.tier && <span className={`pill tier-${p.tier}`}>Tier {p.tier}</span>}</div>
+              <small className="muted">{p.desc[lang]}</small>
+              {p.author && <small className="muted">{t('by')} {p.author}{p.source && <> · <a href={p.source} target="_blank" rel="noreferrer">{t('source')}</a></>}</small>}
+              <div className="row"><button className="primary" onClick={() => { setBuild(p.make()); setTab('board'); }}>{t('open')}</button></div></div>)}</div></div>)}
+          <p className="muted"><small>{t('presetsDisclaimer')}</small></p>
         </section>}
         {tab === 'builds' && <section className="panel"><h2>{t('savedTitle')}</h2>
           {saved.length === 0 && <p className="muted">{t('savedEmpty')}</p>}

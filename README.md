@@ -27,7 +27,10 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Busca global (Ctrl+K)** – runas, runestones, únicos, autoridades e nós do Mestre de Runas com tooltip.
 - **Link somente leitura** – `…#b=…&view=1` abre a build em modo de visualização (ótimo para postar); botão “Editar” para copiar e alterar.
 - **Tema claro/escuro** – botão ☀/☾ no cabeçalho.
-- **Builds iniciais** – 4 modelos (Whirlwind, Fire Ball, Spread Shot, Invocador) já válidos pelas regras.
+- **Builds prontas por temporada** – 11 builds da comunidade reconstruídas a partir de guias públicos (tier lists e guias do Nirtas, Reddit), agrupadas por temporada (S12 Farside, S11 The Forge, S10 New Age, S9 Abyss Gate) com tier, autor e link da fonte, mais 4 modelos iniciais genéricos. Todas passam pelas regras de link/cor/gatilho do planner.
+  - Runas de link que o guia não cita explicitamente foram inferidas pelas tags do jogo (indicado nas notas de cada build).
+  - Runas ainda ausentes na base local (Frost Storm, Toxic Mist, Final Blade Sentry, Lightning Slash) só aparecem nas notas.
+- **Conversão de elemento** – `Convert X DMG` altera o elemento efetivo da skill para validar os demais links (ex.: Extract Earth Energy em Lightning Arrow + Convert Physical Damage).
 - **Exportar PNG** – card 1200×675 da build (tabuleiro, skills, DPS, equipamento) para Discord/redes.
 - **Desfazer/refazer & atalhos** – Ctrl+Z/Y, Ctrl+S salva, teclas 1–8 trocam de aba.
 - **Personagem & checagem** – nível/FOR/DES/INT da build; avisa únicos com requisito não atendido, nós do Mestre de Runas acima do nível e autoridades do mesmo deus repetidas.
