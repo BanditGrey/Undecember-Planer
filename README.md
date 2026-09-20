@@ -5,9 +5,10 @@ Planejador de builds para **UNDECEMBER** (LINE Games) com dados reais capturados
 Site estático (Vite + React + TypeScript) para a comunidade montar e compartilhar builds por link.
 
 ## Funcionalidades
-- **Rune Cast** – tabuleiro 7×7: skill runes, link runes e runestones (clique direito). Link runes
-  ortogonalmente adjacentes são vinculadas à skill; validação de compatibilidade via tags
-  (Attack/Spell/Projectile/Minion/etc.). Células inválidas ficam em vermelho, links órfãos em laranja.
+- **Rune Cast** – tabuleiro hexagonal de 37 slots como no jogo: skill runes, link runes e runestones (clique direito).
+  Link runes nos 6 hexágonos vizinhos são vinculadas à skill e validadas pelas regras reais
+  ("Can be linked with Skills that satisfy…"). Tooltips no estilo do jogo com descrição, stats por nível
+  (1–50: 45 base + Rune Candor, + bônus de equipamento), Rune Grade e Awakening.
 - **Equipamento & Autoridade dos Deuses** – 11 slots com os 707 itens únicos (filtrados por tipo)
   e as 144 autoridades (12 slots × 12 deuses).
 - **Caminho do Mestre de Runas** – 168 nós, 4 tiers, com pré-requisitos de pontos por tier.
@@ -34,8 +35,9 @@ Pipeline:
 3. `.github/workflows/update-db.yml` – roda o scraper semanalmente (ou manualmente) e commita as mudanças do banco.
 4. `.github/workflows/deploy.yml` – publica o site no GitHub Pages a cada push em `main`.
 
-> O sandbox onde o projeto foi iniciado não consegue acessar o site (bloqueio TLS), então a **primeira** carga completa
-> do `db/` precisa ser feita na sua máquina ou pela Action: `npm install && npm run data:scrape && npm run data:build`.
+Estado atual do banco: **365 runas** (stats Lv1/45, grades, awakenings, regras de link), **90 runestones**, **707 únicos** (base + afixos),
+**144 autoridades** (opções unique/prefix/suffix), **168 nós** do Mestre de Runas, **124 essências, 55 poções, 12 moedas, 94 materiais**,
+e ~22 MB de ícones espelhados. Para forçar uma recarga: `date > .db-refresh && git push` ou rode o workflow manualmente.
 
 ## Desenvolvimento
 ```bash
@@ -47,8 +49,8 @@ npm run data:scrape # (requer acesso ao site) enriquece com páginas de detalhe
 ```
 
 ## Roadmap
-- Rodar a primeira carga completa do `db/` e revisar os parsers com dados reais.
-- Telas para essências, poções, moedas e materiais (já entram no `db/`).
+- Calculadora de DPS a partir dos stats parseados.
+- Galeria pública de builds (backend).
 - Backend/galeria pública de builds.
 
 Projeto de fãs, não afiliado à LINE Games / Needs Games.
