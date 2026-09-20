@@ -7,6 +7,7 @@ import { Gallery } from './components/Gallery';
 import { Compare } from './components/Compare';
 import { Character } from './components/Character';
 import { PRESETS } from './lib/presets';
+import { renderBuildCard } from './lib/card';
 import { runes, runestones, uniques, runemaster, authority } from './data';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
 import { emptyBuild, type Build } from './types';
@@ -31,6 +32,7 @@ export default function App() {
   useEffect(() => { const h = () => { const b = buildFromLocation(); if (b) setBuild(b); }; addEventListener('hashchange', h); return () => removeEventListener('hashchange', h); }, []);
   const flash = (m: string) => { setMsg(m); setTimeout(() => setMsg(''), 2500); };
   const share = async () => { await navigator.clipboard.writeText(shareUrl(build)); flash(t('copied')); };
+  const exportImg = async () => { flash('…'); const url = await renderBuildCard(build, { lang, url: shareUrl(build).slice(0, 60) + '…' }); const a = document.createElement('a'); a.href = url; a.download = `${(build.name || 'build').replace(/[^\w-]+/g, '_')}.png`; a.click(); flash(t('exported')); };
   const save = () => { saveBuild(build); setSaved(savedBuilds()); flash(t('saved')); };
 
   return (
@@ -44,7 +46,7 @@ export default function App() {
           <button className="primary" onClick={share}>{t('share')}</button>
           <button onClick={save}>{t('save')}</button>
           <button onClick={() => setBuild(emptyBuild())}>{t('newBuild')}</button>
-          <button onClick={undo} title="Ctrl+Z">↶</button><button onClick={redo} title="Ctrl+Y">↷</button>
+          <button onClick={exportImg} title={t('exportTip')}>🖼 PNG</button><button onClick={undo} title="Ctrl+Z">↶</button><button onClick={redo} title="Ctrl+Y">↷</button>
           {msg && <span className="flash">{msg}</span>}
           <span className="lang"><button className={lang === 'pt' ? 'on' : ''} onClick={() => setLang('pt')}>PT</button><button className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>EN</button>{lang === 'pt' && <label className="muted orig" title={t('origTip')}><input type="checkbox" checked={showOriginal} onChange={e => setShowOriginal(e.target.checked)} /> {t('origText')}</label>}</span>
         </div>

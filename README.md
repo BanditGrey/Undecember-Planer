@@ -24,6 +24,9 @@ Site estático (Vite + React + TypeScript) para a comunidade montar e compartilh
 - **Grau e Despertar** – N/M/R/L e ☆ Source/Origin/Verity em cada runa do tabuleiro; ambos entram no tooltip e no DPS.
 - **Runas de gatilho** – seta rotacionável no hexágono; valida a skill *Alvo* (direção da seta) e a
   skill de *Ativação* (lado oposto) pelas tags exigidas no texto da runa.
+- **Builds iniciais** – 4 modelos (Whirlwind, Fire Ball, Spread Shot, Invocador) já válidos pelas regras.
+- **Exportar PNG** – card 1200×675 da build (tabuleiro, skills, DPS, equipamento) para Discord/redes.
+- **Desfazer/refazer & atalhos** – Ctrl+Z/Y, Ctrl+S salva, teclas 1–8 trocam de aba.
 - **Personagem & checagem** – nível/FOR/DES/INT da build; avisa únicos com requisito não atendido, nós do Mestre de Runas acima do nível e autoridades do mesmo deus repetidas.
 - **Comparar** – build atual (A) vs. build salva ou link colado (B): skills, DPS por skill com Δ%, equipamento e nós do Mestre de Runas diferentes.
 - **DPS (estimativa)** – classifica cada stat parseado (increase / amplification / more-less / flat),
