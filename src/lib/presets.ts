@@ -45,12 +45,13 @@ const meleeUtility = (b: Build, seal = 'SealOfCriticalChance', move = 'LeapAttac
   place(b.board, C.NW, seal, []);
 };
 
-export type Season = 'S12' | 'S11' | 'S10' | 'S9' | 'GEN';
+export type Season = 'S12' | 'S11' | 'S10' | 'S9' | 'S7' | 'GEN';
 export const SEASONS: { id: Season; name: { pt: string; en: string }; date: string }[] = [
   { id: 'S12', name: { pt: 'Temporada 12 · Farside', en: 'Season 12 · Farside' }, date: '2026-09' },
   { id: 'S11', name: { pt: 'Temporada 11 · The Forge', en: 'Season 11 · The Forge' }, date: '2026-05' },
   { id: 'S10', name: { pt: 'Temporada 10 · New Age', en: 'Season 10 · New Age' }, date: '2026-01' },
   { id: 'S9', name: { pt: 'Temporada 9 · Abyss Gate', en: 'Season 9 · Abyss Gate' }, date: '2025-09' },
+  { id: 'S7', name: { pt: 'Temporada 7 · Trials of Power', en: 'Season 7 · Trials of Power' }, date: '2025-01' },
   { id: 'GEN', name: { pt: 'Geral · iniciantes', en: 'General · starters' }, date: '' },
 ];
 
@@ -211,6 +212,42 @@ export const PRESETS: Preset[] = [
     make: () => { const b = base('Crescent Slash (S9)', 'STR', 'Nirtas', [90, 320, 120, 60]);
       place(b.board, [0, 0], 'CrescentSlash', [['ExtractEarthEnergy', 'R'], ['AdditionalPhysicalDMG', 'R'], ['MeleeDMGAmplification', 'R'], ['ConcentratedWeaponRangeDMG', 'R'], ['FindWeakness', 'G'], ['WarriorsShadow', 'R']]);
       meleeUtility(b); endgame(b, '0,0', 'Source'); return b; } },
+
+  // ------------------------------------------------------------------ S7 Trials of Power (Jan 2025) – Pocket Gamer "best builds" (top ladder players)
+  { id: 's7-lv', season: 'S7', tier: 'S', stat: 'STR', author: 'Daimonios / Pocket Gamer', source: 'https://www.pocketgamer.com/undecember/builds/', stages: ['start', 'end'],
+    name: { pt: 'Lightning Vortex (Origin)', en: 'Lightning Vortex (Origin)' },
+    desc: { pt: 'Melee de área com Lightning Vortex awakening Origin (+1 golpe de vórtice). Links citados pelo guia: Iron Will, Focus, Fighting Spirit, Warrior\'s Shadow, Extract Energy e Smash. Muitos selos + Veil, por isso Improved Technique nos buffs.', en: 'AoE melee with Lightning Vortex awakened to Origin (+1 vortex strike). Links named by the guide: Iron Will, Focus, Fighting Spirit, Warrior\'s Shadow, Extract Energy and Smash. Many seals + Veil, hence Improved Technique on the buffs.' },
+    priority: ['LightningVortex', 'WarriorsShadow', 'ExtractLightningEnergy', 'FightingSpirit', 'Smash', 'Focus', 'IronWill'],
+    notes: { pt: 'Fonte: Pocket Gamer – The best Undecember builds (S7), build do jogador Daimonios. Gear: DMG, Lightning DMG, Attack Speed, Hit Rate / Armor, Barrier, HP; autoridades Casthor, Acuben, Sephdar, Boreal. Skills extras do guia: Illusion Hook, Siphon Life, Weaken Totem, Shout of Justice, Seal of Persistence/Striking/Dodge/Elemental Domain, Fighter\'s Wrath, Illusion Axe. Slots: 4🔴 1🟢 1🔵.', en: 'Source: Pocket Gamer – The best Undecember builds (S7), build by player Daimonios. Gear: DMG, Lightning DMG, Attack Speed, Hit Rate / Armor, Barrier, HP; authorities Casthor, Acuben, Sephdar, Boreal. Extra skills from the guide: Illusion Hook, Siphon Life, Weaken Totem, Shout of Justice, Seal of Persistence/Striking/Dodge/Elemental Domain, Fighter\'s Wrath, Illusion Axe. Slots: 4🔴 1🟢 1🔵.' },
+    make: (stage) => { const b = base('Lightning Vortex (S7)', 'STR', 'Daimonios', [95, 330, 100, 90]);
+      place(b.board, [0, 0], 'LightningVortex', [['WarriorsShadow', 'R'], ['ExtractLightningEnergy', 'B'], ['FightingSpirit', 'R'], ['Smash', 'B'], ['Focus', 'G'], ['IronWill', 'R']]);
+      place(b.board, C.NE, 'FightersWrath', [['IncreaseDuration', 'G'], ['ImprovedTechnique', 'R']]); place(b.board, C.E, 'ShoutOfJustice', [['IncreaseDuration', 'G']]);
+      place(b.board, C.SE, 'SealOfStriking', [['ImprovedTechnique', 'R']]); place(b.board, C.SW, 'IllusionHook', [['Slaughter', 'G']]); place(b.board, C.W, 'SiphonLife', []); place(b.board, C.NW, 'SealOfElementalDomain', []);
+      endgame(b, '0,0', 'Origin'); if (stage === 'start') { starter(b, 45); for (const [k, c] of Object.entries(b.board)) if (c.rune === 'ExtractLightningEnergy') { c.rune = 'Hunger'; const d = DIRS.findIndex((_, i) => step('0,0', i) === k); if (d >= 0 && b.board['0,0'].slots) b.board['0,0'].slots[d] = 'R'; } }
+      return b; } },
+
+  { id: 's7-wwb', season: 'S7', tier: 'A', stat: 'STR', author: 'Ya55 / Pocket Gamer', source: 'https://www.pocketgamer.com/undecember/builds/', stages: ['start', 'end'],
+    name: { pt: 'Whirlwind + Blizzard (Spin to Win)', en: 'Whirlwind + Blizzard (Spin to Win)' },
+    desc: { pt: 'Espada de 2 mãos: Whirlwind canalizado dispara Blizzard via Spell Activation while Channeling. Foco em DMG, crítico, velocidade; defesa em armadura e esquiva.', en: 'Two-handed sword: channelled Whirlwind procs Blizzard through Spell Activation while Channeling. Focus on DMG, crit and speed; armour and dodge for defence.' },
+    priority: ['Whirlwind', 'Blizzard', 'SpellActivationWhileChanneling', 'MeleeDMGAmplification', 'ChannelingEnhancement', 'ConcentratedAreaDMG'],
+    notes: { pt: 'Fonte: Pocket Gamer – The best Undecember builds (S7), build do jogador Ya55. Gear: DMG, Critical, Critical Bonus, Speed / Armor, Dodge, Resist; autoridades Leo, Casthor, Spica, Boreal. Zodíaco: Área de Efeito, DMG Amplification, DMG upon Attack, Projectile DMG, HP, Armor, Dodge. Links inferidos das tags (o guia mostra só imagem). Slots: 4🔴 1🟢 no Whirlwind; 4🔵 1🔴 na Blizzard.', en: 'Source: Pocket Gamer – The best Undecember builds (S7), build by player Ya55. Gear: DMG, Critical, Critical Bonus, Speed / Armor, Dodge, Resist; authorities Leo, Casthor, Spica, Boreal. Zodiac: Area of Effect, DMG Amplification, DMG upon Attack, Projectile DMG, HP, Armor, Dodge. Links inferred from tags (the guide only shows an image). Slots: 4🔴 1🟢 on Whirlwind; 4🔵 1🔴 on Blizzard.' },
+    make: (stage) => { const b = base('Whirlwind Blizzard (S7)', 'STR', 'Ya55', [92, 300, 140, 90]);
+      b.board['0,0'] = { rune: 'SpellActivationWhileChanneling', dir: 0 };
+      place(b.board, [-1, 0], 'Whirlwind', [['MeleeDMGAmplification', 'R'], ['ChannelingEnhancement', 'B'], ['AdditionalPhysicalDMG', 'R'], ['Savagery', 'R'], ['QuickAttack', 'G']]);
+      place(b.board, [1, 0], 'Blizzard', [['ConcentratedAreaDMG', 'R'], ['AdditionalColdDMG', 'B'], ['ColdPenetration', 'B'], ['ElementDMGAmplification', 'B'], ['QuickCast', 'B']]);
+      place(b.board, C.NE, 'FightersWrath', [['IncreaseDuration', 'G'], ['TimeAcceleration', 'B']]); place(b.board, C.SE, 'BulwarkOfProtection', [['IncreaseDuration', 'G']]); place(b.board, C.SW, 'LeapAttack', [['Disarm', 'R']]); place(b.board, C.NW, 'SealOfCriticalChance', []);
+      endgame(b, '-1,0', 'Source'); b.board['1,0'].grade = 3; b.board['1,0'].awaken = 'Origin';
+      if (stage === 'start') starter(b, 45); return b; } },
+
+  { id: 's7-ica', season: 'S7', tier: 'A', stat: 'DEX', author: 'Zismoo / Pocket Gamer', source: 'https://www.pocketgamer.com/undecember/builds/', stages: ['start', 'end'],
+    name: { pt: 'Ice Crystal Arrow + Illusion Arrow', en: 'Ice Crystal Arrow + Illusion Arrow' },
+    desc: { pt: 'Arco com Ice Crystal Arrow (chain) e Illusion Arrow para limpar hordas; vários toggles de defesa/dano. Gear: DMG, Element/Cold DMG, crítico, hit rate; barreira e resistências.', en: 'Bow with Ice Crystal Arrow (chain) and Illusion Arrow for hordes; several defensive/offensive toggles. Gear: DMG, Element/Cold DMG, crit, hit rate; barrier and resistances.' },
+    priority: ['IceCrystalArrow', 'Chain', 'AdditionalColdDMG', 'ColdPenetration', 'FindWeakness', 'IllusionArrow'],
+    notes: { pt: 'Fonte: Pocket Gamer – The best Undecember builds (S7), build do jogador Zismoo (top do ladder global). Autoridades Aquilla, Sephdar, Miraseti, Casthor. Zodíaco: DMG, Element DMG, Cold DMG, Critical/Critical Bonus, Barrier, INT. Links inferidos das tags. Slots: 3🟢 3🔵.', en: 'Source: Pocket Gamer – The best Undecember builds (S7), build by player Zismoo (top of the global ladder). Authorities Aquilla, Sephdar, Miraseti, Casthor. Zodiac: DMG, Element DMG, Cold DMG, Critical/Critical Bonus, Barrier, INT. Links inferred from tags. Slots: 3🟢 3🔵.' },
+    make: (stage) => { const b = base('Ice Crystal Arrow (S7)', 'DEX', 'Zismoo', [92, 90, 300, 130]);
+      place(b.board, [0, 0], 'IceCrystalArrow', [['Chain', 'B'], ['AdditionalColdDMG', 'B'], ['ColdPenetration', 'B'], ['FindWeakness', 'G'], ['Slaughter', 'G'], ['Precision', 'G']]);
+      place(b.board, C.SE, 'IllusionArrow', [['Multishot', 'G']]); bowUtility(b, 'SealOfCriticalChance', 'Roll');
+      endgame(b, '0,0', 'Source'); if (stage === 'start') starter(b, 45); return b; } },
 
   // ------------------------------------------------------------------ Generic starters
   { id: 'ww', season: 'GEN', stat: 'STR', stages: ['start'], name: { pt: 'Redemoinho (Whirlwind)', en: 'Whirlwind Spinner' }, desc: { pt: 'Corpo a corpo de canalização: Whirlwind com amplificação melee, roubo de vida e alcance de arma. Fighter\'s Wrath e Selo de Destruição como buffs.', en: 'Channeling melee: Whirlwind with melee amplification, life on hit and weapon range. Fighter\'s Wrath and Seal of Destruction as buffs.' },
