@@ -69,7 +69,7 @@ export default function App() {
         {tab === 'equip' && <Equipment build={build} set={setBuild} />}
         {tab === 'rm' && <RuneMaster build={build} set={setBuild} />}
         {tab === 'zodiac' && <Zodiac build={build} set={setBuild} />}
-        {tab === 'dps' && <Dps build={build} />}
+        {tab === 'dps' && <Dps build={build} set={setBuild} />}
         {tab === 'items' && <Items />}
         {tab === 'compare' && <Compare build={build} />}
         {tab === 'gallery' && <Gallery build={build} open={b => { setBuild(b); setTab('board'); }} />}

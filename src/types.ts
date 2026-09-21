@@ -25,6 +25,8 @@ export interface Build {
   runeLevel?: number; // 1..50 (45 base + up to 5 from Rune Candor)
   runeLevelBonus?: number; // +X skill rune level from gear
   char?: { level: number; str: number; dex: number; int: number }; // for requirement checks
+  dualWield?: boolean; // two one-handed weapons (zodiac 'when Dual Wielding', Axe Throw behaviour)
+  dpsInput?: { weaponAvg: number; weaponSpeed: number; critChancePct: number; critDmgPct: number; charIncPct: number; targetResistPct: number; targetArmorPct: number }; // saved DPS assumptions
 }
 
 
