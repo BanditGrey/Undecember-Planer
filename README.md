@@ -72,6 +72,14 @@ Estado atual do banco: **365 runas** (stats Lv1/45, grades, awakenings, regras d
 **144 autoridades** (opções unique/prefix/suffix), **168 nós** do Mestre de Runas, **124 essências, 55 poções, 12 moedas, 94 materiais**,
 e ~22 MB de ícones espelhados. Para forçar uma recarga: `date > .db-refresh && git push` ou rode o workflow manualmente.
 
+## Documentação
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) – estrutura do código, fluxo de estado, tabuleiro hexagonal, pipeline de dados.
+- [docs/DPS.md](docs/DPS.md) – como o DPS é estimado (classificação de linhas, fórmula, limitações).
+- [docs/BUILD_FORMAT.md](docs/BUILD_FORMAT.md) – formato da build e dos links (`#b=`, `#c=`, `&view=1`).
+- [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) – como atualizar dados, presets, traduções e ícones.
+- [docs/CHANGELOG.md](docs/CHANGELOG.md) – histórico.
+- [supabase/schema.sql](supabase/schema.sql) – backend opcional da galeria.
+
 ## Desenvolvimento
 ```bash
 npm install
