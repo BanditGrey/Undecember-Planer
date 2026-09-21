@@ -1,0 +1,18 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: node scripts/build-data.mjs
+      - run: git diff --exit-code --stat src/data || (echo "src/data is out of date: run npm run data:build" && exit 1)
+      - run: npx tsc -b
+      - run: npm test
+      - run: npx vite build

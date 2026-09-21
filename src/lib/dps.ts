@@ -1,0 +1,98 @@
+import { zodiacNodeById, runeBySlug, nodeById, uniqueBySlug } from '../data';
+import { statsAtLevel } from './level';
+import { analyzeBoard, awakenLines, gradeLines, type SkillGroup } from './rules';
+import type { Build, Rune } from '../types';
+
+export interface DpsInput { weaponAvg: number; charIncPct: number;
+  /** Optional realism knobs (defaults keep the old damage-per-hit behaviour). */
+  weaponSpeed?: number; critChancePct?: number; critDmgPct?: number; targetResistPct?: number; targetArmorPct?: number; dualWield?: boolean }
+export interface Extra { source: string; line: string; kind: 'crit' | 'critDmg' | 'speed' | 'pen'; value: number }
+export interface Mod { source: string; line: string; kind: 'inc' | 'more' | 'amp' | 'flat' | 'less'; value: number }
+export interface DpsResult { skill: Rune; stats: string[]; estimated: boolean; basePct: number; flat: number; manaCost: number | null; cooldown: number | null; mods: Mod[]; incTotal: number; ampTotal: number; moreProduct: number; damage: number; isSpell: boolean; extras: Extra[]; critChance: number; critDmg: number; speedPct: number; penPct: number; mitigation: number; avgHit: number; hitsPerSec: number; dps: number }
+
+const num = (s: string) => { const m = s.match(/-?\d+(?:\.\d+)?/); return m ? parseFloat(m[0]) : 0; };
+const avgRange = (s: string) => { const m = s.match(/(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)/); return m ? (parseFloat(m[1]) + parseFloat(m[2])) / 2 : num(s); };
+
+/** Classifies a stat line the way UNDECEMBER stacks modifiers: "+X% DMG" (increase, additive), "X% DMG Amplification" (multiplicative), "Dampening" (less). */
+export function classify(line: string, source: string, ctx?: { tags: string[] }): Mod | null {
+  const L = line.trim();
+  // Skip conditional / non-damage lines
+  if (/against|when |if |per |Taken|Reflect|Cooldown|Recovery|Resource|Mana|Range|Speed|Duration|Chance|Count|Rate|Penetration|Range/i.test(L) && !/Amplification/i.test(L)) return null;
+  if (!/DMG|Damage/i.test(L)) return null;
+  // Tag-specific lines (Melee DMG, Projectile DMG, Fire DMG…) only apply when the skill has the tag
+  const tagWord = L.match(/(Melee|Projectile|Area|Fire|Cold|Lightning|Poison|Physical|Spell|Attack|Element|Strike|DoT|Minion|Sentry|Totem|Trap|Shout|Bow|Channeling)\s+DMG/i)?.[1];
+  const TAGMAP: Record<string, string> = { Area: 'Area of Effect', Element: '*', Channeling: 'Channel' };
+  if (tagWord && ctx) { const need = TAGMAP[tagWord] ?? tagWord; if (need !== '*' && !ctx.tags.includes(need)) return null; if (need === '*' && !ctx.tags.some(t => ['Fire', 'Cold', 'Lightning', 'Poison'].includes(t))) return null; }
+  const v = Math.abs(avgRange(L.replace(/\[|\]/g, '')));
+  if (!v) return null;
+  if (/Amplif/i.test(L)) return { source, line: L, kind: 'amp', value: v };
+  if (/Dampen/i.test(L)) return { source, line: L, kind: 'less', value: v };
+  if (/Multiplier/i.test(L)) return { source, line: L, kind: 'more', value: v };
+  if (/%/.test(L)) return { source, line: L, kind: 'inc', value: v };
+  if (/^\+/.test(L)) return { source, line: L, kind: 'flat', value: v };
+  return null;
+}
+
+/** Secondary stats that turn damage-per-hit into DPS: crit chance/dmg, attack/cast speed, penetration. */
+export function classifyExtra(line: string, source: string, isSpell: boolean): Extra | null {
+  const L = line.trim(); if (/against|when |if |per |for \d+ s|on hit|Taken|Duration|Cooldown/i.test(L)) return null;
+  const v = Math.abs(avgRange(L.replace(/\[|\]/g, ''))); if (!v) return null;
+  if (/Critical (Rate|Chance)/i.test(L) && !/Gear Critical/i.test(L)) { if (/Spell Critical/i.test(L) && !isSpell) return null; if (/Attack Critical/i.test(L) && isSpell) return null; return { source, line: L, kind: 'crit', value: v }; }
+  if (/Critical (DMG|Damage|Bonus)/i.test(L)) return { source, line: L, kind: 'critDmg', value: v };
+  if (/(Attack|Cast) Speed/i.test(L) && /%/.test(L)) { if (/Cast Speed/i.test(L) !== isSpell && !/Attack Speed.*Cast Speed|Cast Speed.*Attack Speed/i.test(L)) return null; return { source, line: L, kind: 'speed', value: v }; }
+  if (/Penetration/i.test(L) && /%/.test(L)) return { source, line: L, kind: 'pen', value: v };
+  return null;
+}
+
+export function estimate(build: Build, g: SkillGroup, input: DpsInput): DpsResult {
+  const level = (build.runeLevel ?? 45) + (build.runeLevelBonus ?? 0);
+  const { lines: stats, estimated } = statsAtLevel(g.skill.level1, g.skill.level45, level);
+  const isSpell = g.skill.tags.includes('Spell');
+  const pctLine = stats.find(l => /DMG \d+(\.\d+)?%$/.test(l) && !/Dampening|Amplification/.test(l));
+  const flatLine = stats.find(l => /DMG \+\d/.test(l) || /^\+\d+(-\d+)? [A-Za-z ]*DMG$/.test(l));
+  const basePct = pctLine ? num(pctLine.match(/(\d+(?:\.\d+)?)%$/)?.[1] ?? '0') : 100;
+  const flat = flatLine ? avgRange(flatLine.replace(/^.*DMG \+/, '').replace(/^\+/, '')) : 0;
+  const manaLine = stats.find(l => /Mana Cost/.test(l)); const cdLine = stats.find(l => /^Cooldown/.test(l));
+  const mods: Mod[] = []; const extras: Extra[] = [];
+  const push = (line: string, src: string) => { const m = classify(line, src, { tags: g.skill.tags }); if (m) mods.push(m); else { const x = classifyExtra(line, src, isSpell); if (x) extras.push(x); } };
+  for (const line of stats) { const x = classifyExtra(line, g.skill.name, isSpell); if (x) extras.push(x); }
+  for (const line of gradeLines(g.skill, g.grade)) push(line, `${g.skill.name} (grade)`);
+  for (const line of awakenLines(g.skill, g.awaken)) push(line, `${g.skill.name} (${g.awaken})`);
+  for (const l of g.links) { if (!l.check.ok) continue; const ls = [...statsAtLevel(l.rune.level1, l.rune.level45, level).lines, ...gradeLines(l.rune, l.grade), ...awakenLines(l.rune, l.awaken)]; for (const line of ls) push(line, l.rune.name); }
+  for (const [id, pts] of Object.entries(build.runemaster)) { const n = nodeById.get(id); if (!n || !pts) continue; const eff = n.effect.replace(/\b0(?=%)/, String(pts)).replace(/(?<=by )0\b/, String(pts)); if (/upon Attack|attacking/i.test(eff) && !g.skill.tags.includes('Attack')) continue; if (/Spell/i.test(eff) && !g.skill.tags.includes('Spell')) continue; const m = classify(eff.replace(/ upon.*$|by /i, ' '), `Rune Master: ${n.category} T${n.tier}`, { tags: g.skill.tags }); if (m) mods.push(m); }
+  // Zodiac specialization nodes: unconditional damage lines; named effects ([Sharpness] (+50% Critical Rate, ...)) expose their bracketed stats.
+  const wType = uniqueBySlug.get(build.equipment.Weapons?.unique ?? '')?.type ?? ''; const twoH = /Two-Handed|Bow$|Staff|Bowgun|Magic Bow/.test(wType); const dual = !!input.dualWield;
+  const weaponOk = (l: string) => /2-handed/i.test(l) ? twoH : /1-handed/i.test(l) ? (!!wType && !twoH) : /Dual Wield/i.test(l) ? dual : true;
+  for (const id of build.zodiac ?? []) { const z = zodiacNodeById.get(id); if (!z) continue;
+    for (const e of z.node.effects) { const named = e.match(/^\[(.+?)\]\s*(.*)$/); const body = named ? named[2] : e; const src = `Zodiac: ${z.spec.name}${named ? ` [${named[1]}]` : ''}`;
+      const parts = body.match(/\(([^)]*)\)/) ? body.match(/\(([^)]*)\)/)![1].split(/,|;/) : (named ? [] : body.split(/;/));
+      for (const raw of parts) { const l = raw.trim().replace(/^DMG upon Attack \+(\d+%)$/, '+$1 DMG upon Attack').replace(/^DMG upon Spell \+(\d+%)$/, '+$1 DMG upon Spell').replace(/^Amplifies DMG by (\d+%)/, '$1 DMG Amplification');
+        if (/upon Attack|attacking/i.test(l) && !g.skill.tags.includes('Attack')) continue; if (/upon Spell/i.test(l) && !g.skill.tags.includes('Spell')) continue; if (!weaponOk(l)) continue;
+        const clean = l.replace(/ upon (Attack|Spell)$/i, '').replace(/ Increase$/i, '').replace(/ when (2-handed|1-handed) weapon is equipped$| when Dual Wielding$/i, ''); const m = classify(clean, src, { tags: g.skill.tags }); if (m) mods.push(m); else { const x = classifyExtra(clean, src, isSpell); if (x) extras.push(x); } } } }
+  // Gear affixes (free text, one per line), charms, relics, jewels and Lacrima (scaled by absorb rate).
+  const gearLine = (line: string, src: string, scale = 1) => { const m = classify(line, src, { tags: g.skill.tags }); if (m) { mods.push(scale === 1 ? m : { ...m, value: +(m.value * scale).toFixed(1), line: `${m.line} × ${Math.round(scale * 100)}%` }); return; } const x = classifyExtra(line, src, isSpell); if (x) extras.push(scale === 1 ? x : { ...x, value: +(x.value * scale).toFixed(1) }); };
+  for (const [slot, e] of Object.entries(build.equipment)) for (const l of e?.affixes ?? []) gearLine(l, `Gear: ${slot}`);
+  const ex = build.extras; if (ex) { for (const c of ex.charms) for (const l of c.lines) gearLine(l, `Charm: ${c.name || '?'}`); for (const c of ex.relics) for (const l of c.lines) gearLine(l, `Relic: ${c.name || '?'}`); for (const c of ex.jewels) for (const l of c.lines) gearLine(l, `Jewel: ${c.name || '?'}`);
+    ex.lacrima.forEach((c, i) => { for (const l of c.lines) gearLine(l, `Lacrima ${i + 1}: ${c.type}`, (c.absorb || 100) / 100); }); }
+  const incTotal = mods.filter(m => m.kind === 'inc').reduce((a, m) => a + m.value, 0) + input.charIncPct;
+  const ampTotal = mods.filter(m => m.kind === 'amp').reduce((a, m) => a + m.value, 0);
+  const moreProduct = mods.filter(m => m.kind === 'more').reduce((a, m) => a * (1 + m.value / 100), 1) * mods.filter(m => m.kind === 'less').reduce((a, m) => a * (1 - m.value / 100), 1);
+  const flatLinks = mods.filter(m => m.kind === 'flat').reduce((a, m) => a + m.value, 0);
+  // Attack skills: weapon DMG × skill % + flat. Spell skills: the rune's own flat DMG (its % is the spell's internal scaling and is already reflected in the flat value).
+  const base = isSpell ? flat + flatLinks : (input.weaponAvg * basePct / 100) + flat + flatLinks;
+  const damage = base * (1 + incTotal / 100) * (1 + ampTotal / 100) * moreProduct;
+  // --- DPS layer: crit, speed, target mitigation. Crit rate lines are % increases of the base crit chance from the weapon (input.critChancePct).
+  const sum = (k: Extra['kind']) => extras.filter(x => x.kind === k).reduce((a, x) => a + x.value, 0);
+  const critChance = Math.min(100, (input.critChancePct ?? 0) * (1 + sum('crit') / 100));
+  const critDmg = (input.critDmgPct ?? 150) + sum('critDmg');
+  const speedPct = sum('speed'); const penPct = sum('pen');
+  const resist = Math.max(0, (isSpell || g.skill.tags.some(t => ['Fire', 'Cold', 'Lightning', 'Poison'].includes(t)) ? (input.targetResistPct ?? 0) : (input.targetArmorPct ?? 0)) - penPct);
+  const mitigation = 1 - resist / 100;
+  const avgHit = damage * mitigation * (1 + critChance / 100 * (critDmg / 100 - 1));
+  const hitsPerSec = (input.weaponSpeed ?? 1) * (1 + speedPct / 100);
+  const dps = cdLine && num(cdLine) > 0 ? avgHit / num(cdLine) : avgHit * hitsPerSec;
+  return { skill: g.skill, stats, estimated, basePct, flat, manaCost: manaLine ? num(manaLine) : null, cooldown: cdLine ? num(cdLine) : null, mods, incTotal, ampTotal, moreProduct, damage, isSpell, extras, critChance, critDmg, speedPct, penPct, mitigation, avgHit, hitsPerSec, dps };
+}
+
+export function estimateAll(build: Build, input: DpsInput) { return analyzeBoard(build).groups.map(g => estimate(build, g, input)); }
+export { runeBySlug };

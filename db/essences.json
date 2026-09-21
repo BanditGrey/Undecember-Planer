@@ -1,0 +1,3600 @@
+{
+ "MagicUpgradeEssence": {
+  "slug": "MagicUpgradeEssence",
+  "order": 0,
+  "name": "Magic Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_GradeFixedChangeNormal.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Magic Item"
+  ],
+  "description": "Changes a Normal, Magic item into a Magic item and resets the maximum option count.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/MagicUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_GradeFixedChangeNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/MagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RareUpgradeEssence": {
+  "slug": "RareUpgradeEssence",
+  "order": 1,
+  "name": "Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_GradeFixedChangeMagic.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Changes a Magic item into Rare item.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_GradeFixedChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LegendaryUpgradeEssence": {
+  "slug": "LegendaryUpgradeEssence",
+  "order": 2,
+  "name": "Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_GradeFixedChangeRareToLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Changes a Rare item into a Legendary item",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/LegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_GradeFixedChangeRareToLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/LegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "HolyUpgradeEssence": {
+  "slug": "HolyUpgradeEssence",
+  "order": 3,
+  "name": "Holy Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_EquipGradeFixedChangeUniquetoDivine.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Unique Item"
+  ],
+  "description": "Changes a Unique item into a Holy item.※ Set effects are not applied to weapons and off-hand gear.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/HolyUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "AncientUpgradeEssence": {
+  "slug": "AncientUpgradeEssence",
+  "order": 4,
+  "name": "Ancient Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_EquipGradeFixedChangeLegendtoAncient.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Legendary Item"
+  ],
+  "description": "Changes a Legendary item into a Ancient item.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/AncientUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "ReversionEssence": {
+  "slug": "ReversionEssence",
+  "order": 5,
+  "name": "Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_GradeFixedchangeMagicRareToNormal.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item",
+   "Legendary Item"
+  ],
+  "description": "Changes a Magic, Rare, Legendary or Ancient item into Normal item.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/ReversionEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_GradeFixedchangeMagicRareToNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/ReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LegendaryReversionEssence": {
+  "slug": "LegendaryReversionEssence",
+  "order": 6,
+  "name": "Legendary Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_EquipGradeFixedChangeLegendtoRare.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Legendary Item"
+  ],
+  "description": "Changes a Legendary item into a Rare item.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/LegendaryReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "HolyReversionEssence": {
+  "slug": "HolyReversionEssence",
+  "order": 7,
+  "name": "Holy Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_EquipGradeFixedChangeDivinetoUnique.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Holy Item"
+  ],
+  "description": "Changes a Holy item into a Unique item.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/HolyReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "AncientReversionEssence": {
+  "slug": "AncientReversionEssence",
+  "order": 8,
+  "name": "Ancient Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_EquipGradeFixedChangeAncienttoLegend.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Ancient Item"
+  ],
+  "description": "Changes a Ancient item into a Legendary item.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/AncientReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "MagicBirthEssence": {
+  "slug": "MagicBirthEssence",
+  "order": 9,
+  "name": "Magic Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionAllChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Re-imbues the options of a Magic item by chance.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/MagicBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionAllChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/MagicBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RareBirthEssence": {
+  "slug": "RareBirthEssence",
+  "order": 10,
+  "name": "Rare Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionAllChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Re-imbues the options of a Rare item by chance.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RareBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionAllChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RareBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "MagicChangeEssence": {
+  "slug": "MagicChangeEssence",
+  "order": 11,
+  "name": "Magic Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionValueChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Re-imbues the option values of a Magic item.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/MagicChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionValueChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/MagicChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RareChangeEssence": {
+  "slug": "RareChangeEssence",
+  "order": 12,
+  "name": "Rare Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionValueChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Re-imbues the option values of a Rare item.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RareChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionValueChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RareChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "UniqueChangeEssence": {
+  "slug": "UniqueChangeEssence",
+  "order": 13,
+  "name": "Unique Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomoptionValuechangeUnique.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Disassemble",
+   "Mission",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Unique Item"
+  ],
+  "description": "Re-imbues the option values of a Unique item.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/UniqueChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomoptionValuechangeUnique.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/UniqueChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "PrefixOptionBirthEssence": {
+  "slug": "PrefixOptionBirthEssence",
+  "order": 14,
+  "name": "Prefix Option Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_PrefixoptionAllchangeMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Re-imbues a Prefix option of a Magic or Rare item by chance",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/PrefixOptionBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_PrefixoptionAllchangeMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/PrefixOptionBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "PrefixOptionRemovalEssence": {
+  "slug": "PrefixOptionRemovalEssence",
+  "order": 15,
+  "name": "Prefix Option Removal Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_PrefixoptionDeleteMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Removes 1 Prefix option from a Magic, Rare item by chance",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/PrefixOptionRemovalEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_PrefixoptionDeleteMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/PrefixOptionRemovalEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SuffixOptionBirthEssence": {
+  "slug": "SuffixOptionBirthEssence",
+  "order": 16,
+  "name": "Suffix Option Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_SuffixoptionAllchangeMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Re-imbues a Suffix option of a Magic or Rare item by chance",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SuffixOptionBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_SuffixoptionAllchangeMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/SuffixOptionBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SuffixOptionRemovalEssence": {
+  "slug": "SuffixOptionRemovalEssence",
+  "order": 17,
+  "name": "Suffix Option Removal Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_SuffixoptionDeleteMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Removes 1 Suffix option from a Magic, Rare item by chance",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SuffixOptionRemovalEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_SuffixoptionDeleteMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/SuffixOptionRemovalEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "MagicInbueEssence": {
+  "slug": "MagicInbueEssence",
+  "order": 18,
+  "name": "Magic Inbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionAddMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Imbues 1 additional option to a Magic item by chance.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/MagicInbueEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionAddMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/MagicInbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RareImbueEssence": {
+  "slug": "RareImbueEssence",
+  "order": 19,
+  "name": "Rare Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionAddRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Imbues 1 additional option to a Rare item by chance.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RareInbueEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionAddRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RareImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LegendaryImbueEssence": {
+  "slug": "LegendaryImbueEssence",
+  "order": 20,
+  "name": "Legendary Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomoptionAddLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Legendary Item"
+  ],
+  "description": "Imbues 1 additional option to a Legendary item.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/LegendaryInbueEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomoptionAddLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/LegendaryImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "HolyImbueEssence": {
+  "slug": "HolyImbueEssence",
+  "order": 21,
+  "name": "Holy Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionAddDivine.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Holy Item"
+  ],
+  "description": "Imbues 1 additional option to a Holy item.※ Holy set effect options cannot be imbued.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/HolyImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "AncientImbueEssence": {
+  "slug": "AncientImbueEssence",
+  "order": 22,
+  "name": "Ancient Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionAddAncient.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Ancient Item"
+  ],
+  "description": "Imbues 1 additional option to a Ancient item.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/AncientImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LegendaryUniqueChangeEssence": {
+  "slug": "LegendaryUniqueChangeEssence",
+  "order": 23,
+  "name": "Legendary Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_LegendaryUniqueEquipRandomOptionValueChange.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Legendary Unique Item"
+  ],
+  "description": "Re-imbues the option values of a Legendary grade Unique gear item.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/LegendaryUniqueChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LegendaryUniqueReversionEssence": {
+  "slug": "LegendaryUniqueReversionEssence",
+  "order": 24,
+  "name": "Legendary Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_LegendaryUniqueEquipGradeFixedChangeLegendToUnique.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Legendary Unique Item"
+  ],
+  "description": "Changes a Legendary grade Unique Gear item into a Unique Gear.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/LegendaryUniqueReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "DisintegrationEssence": {
+  "slug": "DisintegrationEssence",
+  "order": 25,
+  "name": "Disintegration Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomoptionDeleteMagicRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Removes 1 option from a Magic or a Rare item by chance.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/DisintegrationEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomoptionDeleteMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/DisintegrationEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "QualityBirthEssence": {
+  "slug": "QualityBirthEssence",
+  "order": 26,
+  "name": "Quality Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_QualityAllchangeNormal.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Unidentified Magic Item",
+   "Unidentified Rare Item"
+  ],
+  "description": "Deletes and re-imbues the existing quality of a Normal, unidentified Magic, Rare item that hasn't been imbued with Authority or Quality Modification",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/QualityBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_QualityAllchangeNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/QualityBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "QualityModificationEssence": {
+  "slug": "QualityModificationEssence",
+  "order": 27,
+  "name": "Quality Modification Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_QualityAlterationNormal.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Magic Item",
+   "Rare Item",
+   "Legendary Item"
+  ],
+  "description": "Modifies the quality of a Normal, Magic, Rare, Legendary item by -5 to +10Modifies the quality of a Unique item by +1 to +10Can only be used once per item.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/QualityModificationEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_QualityAlterationNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/QualityModificationEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "ArtifactMagicUpgradeEssence": {
+  "slug": "ArtifactMagicUpgradeEssence",
+  "order": 28,
+  "name": "Artifact Magic Upgrade essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_ArtifactGradeFixedChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Normal Artifact"
+  ],
+  "description": "Changes a Normal Artifact into a Magic Artifact",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/ArtifactMagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "ArtifactRareUpgradeEssence": {
+  "slug": "ArtifactRareUpgradeEssence",
+  "order": 29,
+  "name": "Artifact Rare Upgrade essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_ArtifactGradeFixedChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Magic Artifact"
+  ],
+  "description": "Changes a Magic Artifact into a Rare Artifact",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/ArtifactRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "ArtifactLegendaryUpgradeEssence": {
+  "slug": "ArtifactLegendaryUpgradeEssence",
+  "order": 30,
+  "name": "Artifact Legendary Upgrade essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_ArtifactGradeFixedChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Rare Artifact"
+  ],
+  "description": "Changes a Rare Artifact into a Legendary Artifact",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/ArtifactLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "AlyssaEssence": {
+  "slug": "AlyssaEssence",
+  "order": 31,
+  "name": "Alyssa Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_HightierAddMagicRare.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Mission",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Select and fix 1 option of a Rare item above Lv. 88 and apply all other options by chance.The max number of options is imbued, with a high chance to imbue a hugh tier.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/AlyssaEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_HightierAddMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/AlyssaEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "VesperEssence": {
+  "slug": "VesperEssence",
+  "order": 32,
+  "name": "Vesper Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_LowtierDeleteMagicRare.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Mission",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Re-imbues Tier to a Rare gear above Lv 88. while maintaining the imbued optionsAt last 1 option will be imbued with the highest Tier, including options where the highest Tier is fixed",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/VesperEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_LowtierDeleteMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/VesperEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SerpensEssence": {
+  "slug": "SerpensEssence",
+  "order": 33,
+  "name": "Serpens Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_SerpensEssence.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Hardcore Mode",
+   "Trade"
+  ],
+  "useOn": [],
+  "description": "Switches the <Prefix/Suffix> to opposites and re-imbues the optionsfrom the selected option in Rare and Legendary item options※ Cannot be used if there are 4 options in the item's prefix or suffix",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SerpensEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_Enchant_SerpensEssencePiece.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/SerpensEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "AuthorityEssence": {
+  "slug": "AuthorityEssence",
+  "order": 34,
+  "name": "Authority Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_EquipInfluenceChangeSelect.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Magic Item",
+   "Rare Item",
+   "Legendary Item",
+   "Ancient Item"
+  ],
+  "description": "Imbues the desired Authority amoung the 12 Gods to a Normal, Magic, Rare, Legendary or Ancient itemRandomly re-imbues unique Authority options and Prefix/Suffix options",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/AuthorityEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SkillRuneMagicUpgradeEssence": {
+  "slug": "SkillRuneMagicUpgradeEssence",
+  "order": 35,
+  "name": "Skill Rune Magic Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RuneChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Skill Rune"
+  ],
+  "description": "Changes a Normal Skill Rune to Magic Skill Rune.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SkillRuneMagicUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RuneChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/SkillRuneMagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SkillRuneRareUpgradeEssence": {
+  "slug": "SkillRuneRareUpgradeEssence",
+  "order": 36,
+  "name": "Skill Rune Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RuneChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Skill Rune"
+  ],
+  "description": "Changes a Magic Skill Rune to Rare Skill Rune.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SkillRuneRareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RuneChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/SkillRuneRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SkillRuneLegendaryUpgradeEssence": {
+  "slug": "SkillRuneLegendaryUpgradeEssence",
+  "order": 37,
+  "name": "Skill Rune Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RuneChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade"
+  ],
+  "useOn": [
+   "Rare Skill Rune"
+  ],
+  "description": "Changes a Rare Skill Rune to a Legendary Skill Rune.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SkillRuneLegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RuneChangeLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/SkillRuneLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LinkRuneMagicUpgradeEssence": {
+  "slug": "LinkRuneMagicUpgradeEssence",
+  "order": 38,
+  "name": "Link Rune Magic Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_LinkRuneChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Link Rune"
+  ],
+  "description": "Changes a Normal Link Rune to a Magic Link Rune.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/LinkRuneMagicUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_LinkRuneChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/LinkRuneMagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LinkRuneRareUpgradeEssence": {
+  "slug": "LinkRuneRareUpgradeEssence",
+  "order": 39,
+  "name": "Link Rune Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_LinkRuneChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Link Rune"
+  ],
+  "description": "Changes a Magic Link Rune to a Rare Link Rune.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/LinkRuneRareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_LinkRuneChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/LinkRuneRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LinkRuneLegendaryUpgradeEssence": {
+  "slug": "LinkRuneLegendaryUpgradeEssence",
+  "order": 40,
+  "name": "Link Rune Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_LinkRuneChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade"
+  ],
+  "useOn": [
+   "Rare Link Rune"
+  ],
+  "description": "Changes a Rare Link Rune to a Legendary Link Rune.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/LinkRuneLegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_LinkRuneChangeLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/LinkRuneLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RuneColorEssence": {
+  "slug": "RuneColorEssence",
+  "order": 41,
+  "name": "Rune Color Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_ChangeSlotColor.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Shop",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Changes a linked Slot's color by chanceCan be combined into a Rune Candor Revitalization Essence at the Alchemy Desk",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RuneColorEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_ChangeSlotColor.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RuneColorEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RuneLinkEssence": {
+  "slug": "RuneLinkEssence",
+  "order": 42,
+  "name": "Rune Link Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_ChangeSlotPosition.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Shop",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Changes a linked Slot's location by chanceCan be combined into a Trigger Rune Change Essence at the Alchemy Desk",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RuneLinkEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_ChangeSlotPosition.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RuneLinkEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RuneBirthEssence": {
+  "slug": "RuneBirthEssence",
+  "order": 43,
+  "name": "Rune Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_ChangeSlotCount.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Shop",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Re-imbues the number of linked Slots by chanceCan be combined into a Rune Candor Essence at the Alchemy Desk",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RuneBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_ChangeSlotCount.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RuneBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RuneCandorRevitalizationEssence": {
+  "slug": "RuneCandorRevitalizationEssence",
+  "order": 44,
+  "name": "Rune Candor Revitalization Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RuneSlotcolorRestorationWhite.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "If Rune Candor Eddence fails? saves the Link Slot info with the highest number of successes and restore it with the existing Link Slot info",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RuneCandorRevitalizationEssencePierce/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RuneSlotColorRestorationWhitePiece.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RuneCandorRevitalizationEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "TriggerRuneChangeEssence": {
+  "slug": "TriggerRuneChangeEssence",
+  "order": 45,
+  "name": "Trigger Rune Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RuneTriggerDirectionChange.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Trade",
+   "Alchemy"
+  ],
+  "useOn": [
+   "Trigger Link Rune"
+  ],
+  "description": "Randomly reassigns the direction of a Trigger Rune's Skill Rune Link.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/TriggerRuneChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RuneTriggerDirectionChange.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/TriggerRuneChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "PentaRuneEssence": {
+  "slug": "PentaRuneEssence",
+  "order": 46,
+  "name": "Penta Rune Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_SlotcountChangeFive.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Pass"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Adds Rune Slots to a Skill Rune to change into 5-6 Slots by chance",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/PentaRuneEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "HexaRuneEssence": {
+  "slug": "HexaRuneEssence",
+  "order": 47,
+  "name": "Hexa Rune Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_SlotcountChangeSix.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Adds Rune Slots to a Skill Rune to change into 6 Slots.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/HexaRuneEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RuneCandorEssence": {
+  "slug": "RuneCandorEssence",
+  "order": 48,
+  "name": "Rune Candor Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_SlotcolorChangeWhite.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Changes the color of 1 Rune Slot to White and increases the connected Link Rune by +1 Level by chance if successfulSuccess effect is stackable and can stack on an already affected Rune Slot. Effect is maintained by chance upon failure, and success rate is increased if maintained multiple times in a row. Cannot be used additionally upon failure",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RuneCandorEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_SlotcolorChangeWhite.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RuneCandorEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "SkillRuneEngravingStone": {
+  "slug": "SkillRuneEngravingStone",
+  "order": 49,
+  "name": "Skill Rune Engraving Stone",
+  "icons": [
+   "icons/items/RuneGrant/Icon_Item_RuneGrant_SkillRuneCarve_01.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Alchemy"
+  ],
+  "useOn": [
+   "Legendary Skill Rune"
+  ],
+  "description": "A material used for awakening a Legendary Skill Rune",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SkillRuneEngravingStonePiece/",
+      "icon": "/image/items/RuneGrant/Icon_Item_RuneGrant_SkillRuneCarvePiece_01.png",
+      "count": "5"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/SkillRuneEngravingStone/",
+  "scrapedAt": "2026-09-20"
+ },
+ "LinkRuneEngravingStone": {
+  "slug": "LinkRuneEngravingStone",
+  "order": 50,
+  "name": "Link Rune Engraving Stone",
+  "icons": [
+   "icons/items/RuneGrant/Icon_Item_RuneGrant_LinkRuneCarve_01.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Alchemy"
+  ],
+  "useOn": [
+   "Legendary Link Rune"
+  ],
+  "description": "A material used for awakening a Legendary Link Rune",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/LinkRuneEngravingStonePiece/",
+      "icon": "/image/items/RuneGrant/Icon_Item_RuneGrant_LinkRuneCarvePiece_01.png",
+      "count": "5"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/LinkRuneEngravingStone/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RunestoneMagicLinkEssence": {
+  "slug": "RunestoneMagicLinkEssence",
+  "order": 51,
+  "name": "Runestone Magic Link Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RunestoneSlotpositionChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Magic Rune Stone"
+  ],
+  "description": "Reassigns the slot position of a Magic Runestone",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RunestoneMagicLinkEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RunestoneSlotpositionChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RunestoneMagicLinkEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "RunestoneRareLinkEssence": {
+  "slug": "RunestoneRareLinkEssence",
+  "order": 52,
+  "name": "Runestone Rare Link Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RunestoneSlotpositionChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Rare Rune Stone"
+  ],
+  "description": "Reassigns the slot position of a Rare Runestone",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/RunestoneRareLinkEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RunestoneSlotpositionChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/RunestoneRareLinkEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "JewelPolishingStone": {
+  "slug": "JewelPolishingStone",
+  "order": 53,
+  "name": "Jewel Polishing Stone",
+  "icons": [
+   "icons/items/Gem/Icon_Item_Gem_SmeltingMoonstone.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Disassemble"
+  ],
+  "useOn": [],
+  "description": "Material needed to utilize jewels.",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/JewelPolishingStone/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmRareUpgradeEssence": {
+  "slug": "CharmRareUpgradeEssence",
+  "order": 54,
+  "name": "Charm Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_CharmChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "useOn": [
+   "Magic Rune Stone"
+  ],
+  "description": "Changes a Magic Charm into a Rare Charm.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/CharmRareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_CharmChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/CharmRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmLegendaryUpgradeEssence": {
+  "slug": "CharmLegendaryUpgradeEssence",
+  "order": 55,
+  "name": "Charm Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_CharmChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Rare Rune Stone"
+  ],
+  "description": "Changes a Rare Charm into a Legendary Charm.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/CharmLegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_CharmChangeLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/CharmLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmMagicChangeEssence": {
+  "slug": "CharmMagicChangeEssence",
+  "order": 56,
+  "name": "Charm Magic Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionValueChange_CharmMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "useOn": [
+   "Magic Charm"
+  ],
+  "description": "Re-imbues the option values of a Magic Charm.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/CharmMagicChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionValueChange_CharmMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/CharmMagicChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmRareChangeEssence": {
+  "slug": "CharmRareChangeEssence",
+  "order": 57,
+  "name": "Charm Rare Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionValueChange_CharmRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "useOn": [
+   "Rare Charm"
+  ],
+  "description": "Re-imbues the option values of a Rare Charm.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/CharmRareChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionValueChange_CharmRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/CharmRareChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmLegendaryChangeEssence": {
+  "slug": "CharmLegendaryChangeEssence",
+  "order": 58,
+  "name": "Charm Legendary Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_RandomOptionValueChange_CharmLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Legendary Charm"
+  ],
+  "description": "Re-imbues the Legendary option values of a Legendary Charm.",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/CharmLegendaryChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_RandomOptionValueChange_CharmLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/CharmLegendaryChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmTierMagicChangeEssence": {
+  "slug": "CharmTierMagicChangeEssence",
+  "order": 59,
+  "name": "Charm Tier Magic Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_CharmRandomoptionTierchangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Magic Charm"
+  ],
+  "description": "Reassigns the Tier of a Magic Charm and Charm option※ Tier of Charm option is reassigned※ Charm Tier is not reassigned if is already Max Tier",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/CharmTierMagicChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_CharmRandomoptionTierchangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/CharmTierMagicChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmTierRareChangeEssence": {
+  "slug": "CharmTierRareChangeEssence",
+  "order": 60,
+  "name": "Charm Tier Rare Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_CharmRandomoptionTierchangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Rare Charm"
+  ],
+  "description": "Reassigns the Tier of a Rare Charm and Charm option※ Tier of Charm option is reassigned※ Charm Tier is not reassigned if is already Max Tier",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/CharmTierRareChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_CharmRandomoptionTierchangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/CharmTierRareChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "CharmLegendaryReversionEssence": {
+  "slug": "CharmLegendaryReversionEssence",
+  "order": 61,
+  "name": "Charm Legendary Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_CharmLegendtoRareEssence.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [],
+  "useOn": [],
+  "description": "Changes Legendary Charm into a Rare Charm",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/CharmLegendaryReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]MagicUpgradeEssence": {
+  "slug": "[Exctusive]MagicUpgradeEssence",
+  "order": 62,
+  "name": "[Exctusive] Magic Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_GradeFixedChangeNormal.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Magic Item"
+  ],
+  "description": "Changes a Normal, Magic item into a Magic item and resets the maximum option count.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]MagicUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_GradeFixedChangeNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RareUpgradeEssence": {
+  "slug": "[Exctusive]RareUpgradeEssence",
+  "order": 63,
+  "name": "[Exctusive] Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_GradeFixedChangeMagic.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Changes a Magic item into Rare item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]RareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_GradeFixedChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LegendaryUpgradeEssence": {
+  "slug": "[Exctusive]LegendaryUpgradeEssence",
+  "order": 64,
+  "name": "[Exctusive] Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_GradeFixedChangeRareToLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Changes a Rare item into a Legendary item※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]LegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_GradeFixedChangeRareToLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]HolyUpgradeEssence": {
+  "slug": "[Exctusive]HolyUpgradeEssence",
+  "order": 65,
+  "name": "[Exctusive] Holy Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_EquipGradeFixedChangeUniquetoDivine.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Unique Item"
+  ],
+  "description": "Changes a Unique item into a Holy item.※ Set effects are not applied to weapons and off-hand gear.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]HolyUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]AncientUpgradeEssence": {
+  "slug": "[Exctusive]AncientUpgradeEssence",
+  "order": 66,
+  "name": "[Exctusive] Ancient Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_EquipGradeFixedChangeLegendtoAncient.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Legendary Item"
+  ],
+  "description": "Changes a Legendary item into a Ancient item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]AncientUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]ReversionEssence": {
+  "slug": "[Exctusive]ReversionEssence",
+  "order": 67,
+  "name": "[Exctusive] Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_GradeFixedchangeMagicRareToNormal.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item",
+   "Legendary Item"
+  ],
+  "description": "Changes a Magic, Rare, Legendary item into Normal item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]ReversionEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_GradeFixedchangeMagicRareToNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]ReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LegendaryReversionEssence": {
+  "slug": "[Exctusive]LegendaryReversionEssence",
+  "order": 68,
+  "name": "[Exctusive] Legendary Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_EquipGradeFixedChangeLegendtoRare.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Legendary Item"
+  ],
+  "description": "Changes a Legendary item into a Rare item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]HolyReversionEssence": {
+  "slug": "[Exctusive]HolyReversionEssence",
+  "order": 69,
+  "name": "[Exctusive] Holy Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_EquipGradeFixedChangeDivinetoUnique.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Holy Item"
+  ],
+  "description": "Changes a Holy item into a Holy item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]HolyReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]AncientReversionEssence": {
+  "slug": "[Exctusive]AncientReversionEssence",
+  "order": 70,
+  "name": "[Exctusive] Ancient Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_EquipGradeFixedChangeAncienttoLegend.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Ancient Item"
+  ],
+  "description": "Changes a Ancient item into a Legendary item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]AncientReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]MagicBirthEssence": {
+  "slug": "[Exctusive]MagicBirthEssence",
+  "order": 71,
+  "name": "[Exctusive] Magic Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionAllChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Re-imbues the options of a Magic item by chance.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]MagicBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionAllChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RareBirthEssence": {
+  "slug": "[Exctusive]RareBirthEssence",
+  "order": 72,
+  "name": "[Exctusive] Rare Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionAllChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Re-imbues the options of a Rare item by chance.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]RareBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionAllChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]MagicChangeEssence": {
+  "slug": "[Exctusive]MagicChangeEssence",
+  "order": 73,
+  "name": "[Exctusive] Magic Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionValueChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Re-imbues the option values of a Magic item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]MagicChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionValueChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RareChangeEssence": {
+  "slug": "[Exctusive]RareChangeEssence",
+  "order": 74,
+  "name": "[Exctusive] Rare Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionValueChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Re-imbues the option values of a Rare item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]RareChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionValueChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]UniqueChangeEssence": {
+  "slug": "[Exctusive]UniqueChangeEssence",
+  "order": 75,
+  "name": "[Exctusive] Unique Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionValueChangeUnique.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Disassemble",
+   "Mission",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Unique Item"
+  ],
+  "description": "Re-imbues the option values of a Unique item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]UniqueChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionValueChangeUnique.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]UniqueChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]PrefixOptionBirthEssence": {
+  "slug": "[Exctusive]PrefixOptionBirthEssence",
+  "order": 76,
+  "name": "[Exctusive] Prefix Option Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_PrefixoptionAllchangeMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Re-imbues a Prefix option of a Magic or Rare item by chance※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]PrefixOptionBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_PrefixoptionAllchangeMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]PrefixOptionBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]PrefixOptionRemovalEssence": {
+  "slug": "[Exctusive]PrefixOptionRemovalEssence",
+  "order": 77,
+  "name": "[Exctusive] Prefix Option Removal Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_PrefixoptionDeleteMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Removes 1 Prefix option from a Magic, Rare item by chance※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]PrefixOptionRemovalEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_PrefixoptionDeleteMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]PrefixOptionRemovalEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]SuffixOptionBirthEssence": {
+  "slug": "[Exctusive]SuffixOptionBirthEssence",
+  "order": 78,
+  "name": "[Exctusive] Suffix Option Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_SuffixoptionAllchangeMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Re-imbues a Suffix option of a Magic or Rare item by chance※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SuffixOptionBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_SuffixoptionAllchangeMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]SuffixOptionBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]SuffixOptionRemovalEssence": {
+  "slug": "[Exctusive]SuffixOptionRemovalEssence",
+  "order": 79,
+  "name": "[Exctusive] Suffix Option Removal Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_SuffixoptionDeleteMagicRare.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Removes 1 Suffix option from a Magic, Rare item by chance※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SuffixOptionRemovalEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_SuffixoptionDeleteMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]SuffixOptionRemovalEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]MagicInbueEssence": {
+  "slug": "[Exctusive]MagicInbueEssence",
+  "order": 80,
+  "name": "[Exctusive] Magic Inbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionAddMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item"
+  ],
+  "description": "Imbues 1 additional option to a Magic item by chance.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]MagicInbueEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionAddMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicInbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RareImbueEssence": {
+  "slug": "[Exctusive]RareImbueEssence",
+  "order": 81,
+  "name": "[Exctusive] Rare Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionAddRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Imbues 1 additional option to a Rare item by chance.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]RareInbueEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionAddRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LegendaryImbueEssence": {
+  "slug": "[Exctusive]LegendaryImbueEssence",
+  "order": 82,
+  "name": "[Exctusive] Legendary Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomoptionAddLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Legendary Item"
+  ],
+  "description": "Imbues 1 additional option to a Legendary item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]LegendaryInbueEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomoptionAddLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]HolyImbueEssence": {
+  "slug": "[Exctusive]HolyImbueEssence",
+  "order": 83,
+  "name": "[Exctusive] Holy Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionAddDivine.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Holy Item"
+  ],
+  "description": "Imbues 1 additional option to a Holy item.※ Holy set effect options cannot be imbued.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]HolyImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]AncientImbueEssence": {
+  "slug": "[Exctusive]AncientImbueEssence",
+  "order": 84,
+  "name": "[Exctusive] Ancient Imbue Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionAddAncient.png"
+  ],
+  "rarity": "Holy",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Ancient Item"
+  ],
+  "description": "Imbues 1 additional option to a Ancient item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]AncientImbueEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LegendaryUniqueChangeEssence": {
+  "slug": "[Exctusive]LegendaryUniqueChangeEssence",
+  "order": 85,
+  "name": "[Exctusive] Legendary Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_LegendaryUniqueEquipRandomOptionValueChange.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Legendary Unique Item"
+  ],
+  "description": "Re-imbues the option values of a Legendary grade Unique gear item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryUniqueChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LegendaryUniqueReversionEssence": {
+  "slug": "[Exctusive]LegendaryUniqueReversionEssence",
+  "order": 86,
+  "name": "[Exctusive] Legendary Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_LegendaryUniqueEquipGradeFixedChangeLegendToUnique.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Legendary Unique Item"
+  ],
+  "description": "Changes a Legendary grade Unique Gear item into a Unique Gear.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryUniqueReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]DisintegrationEssence": {
+  "slug": "[Exctusive]DisintegrationEssence",
+  "order": 87,
+  "name": "[Exctusive] Disintegration Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomoptionDeleteMagicRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Item",
+   "Rare Item"
+  ],
+  "description": "Removes 1 option from a Magic or a Rare item by chance.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]DisintegrationEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]QualityModificationEssence": {
+  "slug": "[Exctusive]QualityModificationEssence",
+  "order": 88,
+  "name": "[Exctusive] Quality Modification Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_QualityAllchangeNormal.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Unidentified Magic Item",
+   "Unidentified Rare Item"
+  ],
+  "description": "Deletes and re-imbues the existing quality of a Normal, unidentified Magic, Rare item that hasn't been imbued with Authority or Quality Modification※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]QualityModificationEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_QualityAllchangeNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]QualityModificationEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]QualityBirthEssence": {
+  "slug": "[Exctusive]QualityBirthEssence",
+  "order": 89,
+  "name": "[Exctusive] Quality Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_QualityAlterationNormal.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Magic Item",
+   "Rare Item",
+   "Legendary Item"
+  ],
+  "description": "Modifies the quality of a Normal, Magic, Rare, Legendary item by -5 to +10Modifies the quality of a Unique item by +1 to +10Can only be used once per item.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]QualityBirthEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_QualityAlterationNormal.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]QualityBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]ArtifactMagicUpgradeEssence": {
+  "slug": "[Exctusive]ArtifactMagicUpgradeEssence",
+  "order": 90,
+  "name": "[Exctusive] Artifact Magic Upgrade essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_ArtifactGradeFixedChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Normal Artifact"
+  ],
+  "description": "Changes a Normal Artifact into a Magic Artifact※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]ArtifactMagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]ArtifactRareUpgradeEssence": {
+  "slug": "[Exctusive]ArtifactRareUpgradeEssence",
+  "order": 91,
+  "name": "[Exctusive] Artifact Rare Upgrade essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_ArtifactGradeFixedChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Magic Artifact"
+  ],
+  "description": "Changes a Magic Artifact into a Rare Artifact※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]ArtifactRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]ArtifactLegendaryUpgradeEssence": {
+  "slug": "[Exctusive]ArtifactLegendaryUpgradeEssence",
+  "order": 92,
+  "name": "[Exctusive] Artifact Legendary Upgrade essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_ArtifactGradeFixedChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Rare Artifact"
+  ],
+  "description": "Changes a Rare Artifact into a Legendary Artifact※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]ArtifactLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]AlyssaEssence": {
+  "slug": "[Exctusive]AlyssaEssence",
+  "order": 93,
+  "name": "[Exctusive] Alyssa Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_HightierAddMagicRare.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Mission",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Select and fix 1 option of a Rare item above Lv. 88 and apply all other options by chance.The max number of options is imbued, with a high chance to imbue a hugh tier.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]AlyssaEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_HightierAddMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]AlyssaEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]VesperEssence": {
+  "slug": "[Exctusive]VesperEssence",
+  "order": 94,
+  "name": "[Exctusive] Vesper Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_LowtierDeleteMagicRare.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Mission",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Rare Item"
+  ],
+  "description": "Re-imbues Tier to a Rare gear above Lv 88. while maintaining the imbued optionsAt last 1 option will be imbued with the highest Tier, including options where the highest Tier is fixed※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]VesperEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_LowtierDeleteMagicRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]VesperEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]SerpensEssence": {
+  "slug": "[Exctusive]SerpensEssence",
+  "order": 95,
+  "name": "[Exctusive] Serpens Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_SerpensEssencee.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Hardcore Mode",
+   "Trade"
+  ],
+  "useOn": [],
+  "description": "Switches the <Prefix/Suffix> to opposites and re-imbues the optionsfrom the selected option in Rare and Legendary item options※ Cannot be used if there are 4 options in the item's prefix or suffix※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SerpensEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_Enchant_Exclusive_SerpensEssencePiece.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]SerpensEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]AuthorityEssence": {
+  "slug": "[Exctusive]AuthorityEssence",
+  "order": 96,
+  "name": "[Exctusive] Authority Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_EquipInfluenceChangeSelect.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Normal Item",
+   "Magic Item",
+   "Rare Item",
+   "Legendary Item",
+   "Ancient Item"
+  ],
+  "description": "Imbues the desired Authority amoung the 12 Gods to a Normal, Magic, Rare, Legendary or Ancient itemRandomly re-imbues unique Authority options and Prefix/Suffix options※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]AuthorityEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]SkillRuneMagicUpgradeEssence": {
+  "slug": "[Exctusive]SkillRuneMagicUpgradeEssence",
+  "order": 97,
+  "name": "[Exctusive] Skill Rune Magic Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RuneChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Skill Rune"
+  ],
+  "description": "Changes a Normal Skill Rune to Magic Skill Rune.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SkillRuneMagicUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RuneChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneMagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]SkillRuneRareUpgradeEssence": {
+  "slug": "[Exctusive]SkillRuneRareUpgradeEssence",
+  "order": 98,
+  "name": "[Exctusive] Skill Rune Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RuneChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Skill Rune"
+  ],
+  "description": "Changes a Magic Skill Rune to Rare Skill Rune.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SkillRuneRareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RuneChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]SkillRuneLegendaryUpgradeEssence": {
+  "slug": "[Exctusive]SkillRuneLegendaryUpgradeEssence",
+  "order": 99,
+  "name": "[Exctusive] Skill Rune Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RuneChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade"
+  ],
+  "useOn": [
+   "Rare Skill Rune"
+  ],
+  "description": "Changes a Rare Skill Rune to a Legendary Skill Rune.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SkillRuneLegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RuneChangeLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LinkRuneMagicUpgradeEssence": {
+  "slug": "[Exctusive]LinkRuneMagicUpgradeEssence",
+  "order": 100,
+  "name": "[Exctusive] Link Rune Magic Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_LinkRuneChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Normal Link Rune"
+  ],
+  "description": "Changes a Normal Link Rune to a Magic Link Rune.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]LinkRuneMagicUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_LinkRuneChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneMagicUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LinkRuneRareUpgradeEssence": {
+  "slug": "[Exctusive]LinkRuneRareUpgradeEssence",
+  "order": 101,
+  "name": "[Exctusive] Link Rune Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_LinkRuneChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Ore"
+  ],
+  "useOn": [
+   "Magic Link Rune"
+  ],
+  "description": "Changes a Magic Link Rune to a Rare Link Rune.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]LinkRuneRareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_LinkRuneChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LinkRuneLegendaryUpgradeEssence": {
+  "slug": "[Exctusive]LinkRuneLegendaryUpgradeEssence",
+  "order": 102,
+  "name": "[Exctusive] Link Rune Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_LinkRuneChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Trade"
+  ],
+  "useOn": [
+   "Rare Link Rune"
+  ],
+  "description": "Changes a Rare Link Rune to a Legendary Link Rune.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]LinkRuneLegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_LinkRuneChangeLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RuneBirthEssence": {
+  "slug": "[Exctusive]RuneBirthEssence",
+  "order": 103,
+  "name": "[Exctusive] Rune Birth Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_Exclusive_ChangeSlotCount.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Shop",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Re-imbues the number of linked Slots by chanceCan be combined into a Rune Candor Essence at the Alchemy Desk※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneBirthEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RuneColorEssence": {
+  "slug": "[Exctusive]RuneColorEssence",
+  "order": 104,
+  "name": "[Exctusive] Rune Color Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_Exclusive_ChangeSlotColor.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Shop",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Changes a linked Slot's color by chanceCan be combined into a Rune Candor Revitalization Essence at the Alchemy Desk※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneColorEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RuneLinkEssence": {
+  "slug": "[Exctusive]RuneLinkEssence",
+  "order": 105,
+  "name": "[Exctusive] Rune Link Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_ChangeSlotPosition.png"
+  ],
+  "rarity": "Normal",
+  "howToGet": [
+   "Drop",
+   "Disassemble",
+   "Shop",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Changes a linked Slot's location by chanceCan be combined into a Trigger Rune Change Essence at the Alchemy Desk※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneLinkEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RuneCandorRevitalizationEssence": {
+  "slug": "[Exctusive]RuneCandorRevitalizationEssence",
+  "order": 106,
+  "name": "[Exctusive] Rune Candor Revitalization Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RuneSlotcolorRestorationWhite.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Alchemy"
+  ],
+  "useOn": [],
+  "description": "If Rune Candor Eddence fails? saves the Link Slot info with the highest number of successes and restore it with the existing Link Slot info※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneCandorRevitalizationEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]TriggerRuneChangeEssence": {
+  "slug": "[Exctusive]TriggerRuneChangeEssence",
+  "order": 107,
+  "name": "[Exctusive] Trigger Rune Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RuneTriggerDirectionChange.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Trade",
+   "Alchemy"
+  ],
+  "useOn": [
+   "Trigger Link Rune"
+  ],
+  "description": "Randomly reassigns the direction of a Trigger Rune's Skill Rune Link.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]TriggerRuneChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]PentaRuneEssence": {
+  "slug": "[Exctusive]PentaRuneEssence",
+  "order": 108,
+  "name": "[Exctusive] Penta Rune Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_SlotcountChangeFive.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Pass"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Adds Rune Slots to a Skill Rune to change into 5-6 Slots by chance※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]PentaRuneEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]HexaRuneEssence": {
+  "slug": "[Exctusive]HexaRuneEssence",
+  "order": 109,
+  "name": "[Exctusive] Hexa Rune Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_SlotcountChangeSix.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Adds Rune Slots to a Skill Rune to change into 6 Slots.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]HexaRuneEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RuneCandorEssence": {
+  "slug": "[Exctusive]RuneCandorEssence",
+  "order": 110,
+  "name": "[Exctusive] Rune Candor Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_SlotcolorChangeWhite.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Disassemble",
+   "Trade",
+   "Ore"
+  ],
+  "useOn": [
+   "Skill Rune"
+  ],
+  "description": "Changes the color of 1 Rune Slot to White and increases the connected Link Rune by +1 Level by chance if successfulSuccess effect is stackable and can stack on an already affected Rune Slot. Effect is maintained by chance upon failure, and success rate is increased if maintained multiple times in a row. Cannot be used additionally upon failure※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SerpensEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_Enchant_Exclusive_SerpensEssencePiece.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneCandorEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]SkillRuneEngravingStone": {
+  "slug": "[Exctusive]SkillRuneEngravingStone",
+  "order": 111,
+  "name": "[Exctusive] Skill Rune Engraving Stone",
+  "icons": [
+   "icons/items/RuneGrant/Icon_Item_RuneGrant_Exclusive_SkillRuneCarve_01.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Alchemy"
+  ],
+  "useOn": [
+   "Legendary Skill Rune"
+  ],
+  "description": "A material used for awakening a Legendary Skill Rune※ [Exclusive] Awakening Stones will be used before other Awakening Stones when performing Rune Awakening",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]SkillRuneEngravingStonePiece/",
+      "icon": "/image/items/RuneGrant/Icon_Item_RuneGrant_Exclusive_SkillRuneCarvePiece_01.png",
+      "count": "5"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneEngravingStone/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]LinkRuneEngravingStone": {
+  "slug": "[Exctusive]LinkRuneEngravingStone",
+  "order": 112,
+  "name": "[Exctusive] Link Rune Engraving Stone",
+  "icons": [
+   "icons/items/RuneGrant/Icon_Item_RuneGrant_Exclusive_LinkRuneCarve_01.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Alchemy"
+  ],
+  "useOn": [
+   "Legendary Link Rune"
+  ],
+  "description": "A material used for awakening a Legendary Link Rune※ [Exclusive] Awakening Stones will be used before other Awakening Stones when performing Rune Awakening",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]LinkRuneEngravingStonePiece/",
+      "icon": "/image/items/RuneGrant/Icon_Item_RuneGrant_Exclusive_LinkRuneCarvePiece_01.png",
+      "count": "5"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneEngravingStone/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RunestoneMagicLinkEssence": {
+  "slug": "[Exctusive]RunestoneMagicLinkEssence",
+  "order": 113,
+  "name": "[Exctusive] Runestone Magic Link Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RunestoneSlotpositionChangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Magic Rune Stone"
+  ],
+  "description": "Reassigns the slot position of a Magic Runestone※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]RunestoneMagicLinkEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RunestoneSlotpositionChangeMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RunestoneMagicLinkEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]RunestoneRareLinkEssence": {
+  "slug": "[Exctusive]RunestoneRareLinkEssence",
+  "order": 114,
+  "name": "[Exctusive] Runestone Rare Link Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RunestoneSlotpositionChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Descent Raid"
+  ],
+  "useOn": [
+   "Rare Rune Stone"
+  ],
+  "description": "Reassigns the slot position of a Rare Runestone※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]RunestoneRareLinkEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RunestoneSlotpositionChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]RunestoneRareLinkEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]JewelPolishingStone": {
+  "slug": "[Exctusive]JewelPolishingStone",
+  "order": 115,
+  "name": "[Exctusive] Jewel Polishing Stone",
+  "icons": [
+   "icons/items/Gem/Icon_Item_Gem_Exclusive_SmeltingMoonstone.png"
+  ],
+  "rarity": "Unique",
+  "howToGet": [
+   "Disassemble"
+  ],
+  "useOn": [],
+  "description": "Material needed to utilize jewels.※ [Exclusive] Polishing Stones will be used before other Polishing Stones",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]JewelPolishingStone/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmRareUpgradeEssence": {
+  "slug": "[Exctusive]CharmRareUpgradeEssence",
+  "order": 116,
+  "name": "[Exctusive] Charm Rare Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_CharmChangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "useOn": [
+   "Magic Charm"
+  ],
+  "description": "Changes a Magic Charm into a Rare Charm.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]CharmRareUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_CharmChangeRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmRareUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmLegendaryUpgradeEssence": {
+  "slug": "[Exctusive]CharmLegendaryUpgradeEssence",
+  "order": 117,
+  "name": "[Exctusive] Charm Legendary Upgrade Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_CharmChangeLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Rare Charm"
+  ],
+  "description": "Changes a Rare Charm into a Legendary Charm.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]CharmLegendaryUpgradeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_CharmChangeLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmLegendaryUpgradeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmMagicChangeEssence": {
+  "slug": "[Exctusive]CharmMagicChangeEssence",
+  "order": 118,
+  "name": "[Exctusive] Charm Magic Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionValueChange_CharmMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "useOn": [
+   "Magic Charm"
+  ],
+  "description": "Re-imbues the option values of a Magic Charm.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]CharmMagicChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionValueChange_CharmMagic.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmMagicChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmRareChangeEssence": {
+  "slug": "[Exctusive]CharmRareChangeEssence",
+  "order": 119,
+  "name": "[Exctusive] Charm Rare Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionValueChange_CharmRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop",
+   "Shop"
+  ],
+  "useOn": [
+   "Rare Charm"
+  ],
+  "description": "Re-imbues the option values of a Rare Charm.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]CharmRareChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionValueChange_CharmRare.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmRareChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmLegendaryChangeEssence": {
+  "slug": "[Exctusive]CharmLegendaryChangeEssence",
+  "order": 120,
+  "name": "[Exctusive] Charm Legendary Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_RandomOptionValueChange_CharmLegend.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [
+   "Drop",
+   "Trade"
+  ],
+  "useOn": [
+   "Legendary Charm"
+  ],
+  "description": "Re-imbues the Legendary option values of a Legendary Charm.※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]CharmLegendaryChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionValueChange_CharmLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmLegendaryChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmTierMagicChangeEssence": {
+  "slug": "[Exctusive]CharmTierMagicChangeEssence",
+  "order": 121,
+  "name": "[Exctusive] Charm Tier Magic Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_CharmRandomoptionTierchangeMagic.png"
+  ],
+  "rarity": "Magic",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Magic Charm"
+  ],
+  "description": "Reassigns the Tier of a Magic Charm and Charm option※ Tier of Charm option is reassigned※ Charm Tier is not reassigned if is already Max Tier※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/[Exctusive]CharmLegendaryChangeEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_EnchantPiece_Exclusive_RandomOptionValueChange_CharmLegend.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmTierMagicChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmTierRareChangeEssence": {
+  "slug": "[Exctusive]CharmTierRareChangeEssence",
+  "order": 122,
+  "name": "[Exctusive] Charm Tier Rare Change Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_CharmRandomoptionTierchangeRare.png"
+  ],
+  "rarity": "Rare",
+  "howToGet": [
+   "Drop"
+  ],
+  "useOn": [
+   "Rare Charm"
+  ],
+  "description": "Reassigns the Tier of a Rare Charm and Charm option※ Tier of Charm option is reassigned※ Charm Tier is not reassigned if is already Max Tier※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [
+   {
+    "title": "Combine",
+    "ingredients": [
+     {
+      "href": "/en/essences/SerpensEssencePiece/",
+      "icon": "/image/items/EnchantPiece/Icon_Item_Enchant_SerpensEssencePiece.png",
+      "count": "10"
+     }
+    ]
+   }
+  ],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmTierRareChangeEssence/",
+  "scrapedAt": "2026-09-20"
+ },
+ "[Exctusive]CharmLegendaryReversionEssence": {
+  "slug": "[Exctusive]CharmLegendaryReversionEssence",
+  "order": 123,
+  "name": "[Exctusive] Charm Legendary Reversion Essence",
+  "icons": [
+   "icons/items/Enchant/Icon_Item_Enchant_Exclusive_CharmLegendtoRareEssence.png"
+  ],
+  "rarity": "Legendary",
+  "howToGet": [],
+  "useOn": [],
+  "description": "Changes Legendary Charm into a Rare Charm※ [Exclusive] Essences will be used before other Essences when using Essences",
+  "props": [],
+  "recipes": [],
+  "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmLegendaryReversionEssence/",
+  "scrapedAt": "2026-09-20"
+ }
+}

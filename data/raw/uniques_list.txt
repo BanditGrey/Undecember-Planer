@@ -1,0 +1,708 @@
+# tier|slug|name|icon (source: https://undecember.thein.ru/en/uniques/) ; type inferred later from icon prefix
+10|StarChasersArmor|Star Chaser's Armor|Icon_Equipment_BodyArmorU037
+10|StarChasersBoots|Star Chaser's Boots|Icon_Equipment_BootsU026
+10|StarChasersNecklace|Star Chaser's Necklace|Icon_Equipment_NecklaceU032
+10|StarChasersRing|Star Chaser's Ring|Icon_Equipment_RingU034
+10|StarChasersSpaulders|Star Chaser's Spaulders|Icon_Equipment_ShoulderU028
+10|StarChasersGauntlets|Star Chaser's Gauntlets|Icon_Equipment_GlovesU028
+10|StarChasersHelmet|Star Chaser's Helmet|Icon_Equipment_HelmetU026
+10|StarChasersTwo-HandedAxe|Star Chaser's Two-Handed Axe|Icon_Equipment_TwoHand_AxeU012
+10|StarChasersBow|Star Chaser's Bow|Icon_Equipment_BowU020
+10|StarChasersStaff|Star Chaser's Staff|Icon_Equipment_StaffU015
+10|StarChasersBelt|Star Chaser's Belt|Icon_Equipment_BeltT001
+10|StarChasersPromise|Star Chaser's Promise|Icon_Equipment_RingT006_02
+10|FallenStarlightDagger|Fallen Starlight Dagger|Icon_Equipment_DaggerDummy
+10|FallenStarlight1handedSword|Fallen Starlight 1-handed Sword|Icon_Equipment_SwordDummy
+10|FallenStarlight1handedAxe|Fallen Starlight 1-handed Axe|Icon_Equipment_AxeDummy
+10|FallenStarlight1handedBlunt|Fallen Starlight 1-handed Blunt|Icon_Equipment_MaceDummy
+10|FallenStarlightScepter|Fallen Starlight Scepter|Icon_Equipment_SceptreDummy
+10|FallenStarlightWand|Fallen Starlight Wand|Icon_Equipment_WandDummy
+10|FallenStarlightMinionWand|Fallen Starlight Minion Wand|Icon_Equipment_WandDummy
+10|FallenStarlightStaff|Fallen Starlight Staff|Icon_Equipment_StaffDummy
+10|FallenStarlight2handedSword|Fallen Starlight 2-handed Sword|Icon_Equipment_TwoHand_SwordDummy
+10|FallenStarlight2handedAxe|Fallen Starlight 2-handed Axe|Icon_Equipment_TwoHand_AxeDummy
+10|FallenStarlight2handedBlunt|Fallen Starlight 2-handed Blunt|Icon_Equipment_TwoHand_MaceDummy
+10|FallenStarlightBow|Fallen Starlight Bow|Icon_Equipment_BowDummy
+10|FallenStarlightLongBow|Fallen Starlight Long Bow|Icon_Equipment_BowDummy
+10|FallenStarlightSteelBow|Fallen Starlight Steel Bow|Icon_Equipment_MagicBowDummy
+3|SilverSunset|Silver Sunset|Icon_Equipment_DaggerU009
+9|LuckyFishingHook|Lucky Fishing Hook|Icon_Equipment_DaggerU001
+16|PurifiersFang|Purifier's Fang|Icon_Equipment_DaggerU002
+19|BenevolentTouch|Benevolent Touch|Icon_Equipment_DaggerU003
+22|AcubensHeavyRain|Acuben's Heavy Rain|Icon_Equipment_DaggerU004
+25|CasthorsLight|Casthor's Light|Icon_Equipment_DaggerU005
+25|MoonHalo|Moon Halo|Icon_Equipment_DaggerU019
+27|VespersVenomFang|Vesper's Venom Fang|Icon_Equipment_DaggerU006
+28|LastChance|Last Chance|Icon_Equipment_DaggerU010
+28|FiveColorSpark|Five Color Spark|Icon_Equipment_DaggerU012
+30|LeftHandOfHatred|Left Hand of Hatred|Icon_Equipment_DaggerU007
+30|IncreaseDisorderPurifiersFang|Increase Disorder Purifier's Fang|Icon_Equipment_DaggerU002
+31|RightHandOfLove|Right Hand of Love|Icon_Equipment_DaggerU008
+31|AbsoluteElementAcubensHeavyRain|Absolute Element Acuben's Heavy Rain|Icon_Equipment_DaggerU004
+32|ConcentratedSenses|Concentrated Senses|Icon_Equipment_DaggerU017
+32|CourierSilverSunset|Courier Silver Sunset|Icon_Equipment_DaggerU009
+32|WeakenCasthorsLight|Weaken Casthor's Light|Icon_Equipment_DaggerU005
+33|GoldenFrame|Golden Frame|Icon_Equipment_DaggerU015
+33|AncientCatalystLuckyFishingHook|Ancient Catalyst Lucky Fishing Hook|Icon_Equipment_DaggerU001
+33|TwistedFingertips|Twisted Fingertips|Icon_Equipment_DaggerU011
+33|CauseConfusionVespersVenomFang|Cause Confusion Vesper's Venom Fang|Icon_Equipment_DaggerU006
+34|RidgeOfDeath|Ridge of Death|Icon_Equipment_DaggerU012
+34|TranscendentMoonHalo|Transcendent Moon Halo|Icon_Equipment_DaggerU019
+34|TranscendentVespersVenomFang|Transcendent Vesper's Venom Fang|Icon_Equipment_DaggerU006
+5|GuidingBranch|Guiding Branch|Icon_Equipment_SwordU001
+9|DawnStartail|Dawn Startail|Icon_Equipment_SwordU002
+12|PathToSurvival|Path to Survival|Icon_Equipment_swordU011
+15|CaprisRetort|Capri's Retort|Icon_Equipment_SwordU003
+18|CraftsmansIron|Craftsman's Iron|Icon_Equipment_SwordU004
+21|LeosJudgment|Leo's Judgment|Icon_Equipment_SwordU005
+24|Caspols1-handedSword|Caspol's 1-handed Sword|Icon_Equipment_SwordU006
+27|SephdarsSuccess|Sephdar's Success|Icon_Equipment_SwordU007
+28|ScorchedIce|Scorched Ice|Icon_Equipment_swordU009
+30|VerityOfThreeRings|Verity of Three Rings|Icon_Equipment_swordU008
+30|FlamingMeteorDawnStartail|Flaming Meteor Dawn Startail|Icon_Equipment_SwordU002
+31|BladeOfLife|Blade of Life|Icon_Equipment_swordU010
+31|LifeLustGuidingBranch|Life Lust Guiding Branch|Icon_Equipment_SwordU001
+32|ComposedBravery|Composed Bravery|Icon_Equipment_SwordU016
+32|FieryHandsCaprisRetort|Fiery Hands Capri's Retort|Icon_Equipment_SwordU003
+32|WheelOfFateCraftsmansIron|Wheel of Fate Craftsman's Iron|Icon_Equipment_SwordU004
+33|LifeLustPathToSurvival|Life Lust Path to Survival|Icon_Equipment_swordU011
+33|ScreamingTongue|Screaming Tongue|Icon_Equipment_SwordU012
+33|SacrosanctLeosJudgment|Sacrosanct Leo's Judgment|Icon_Equipment_SwordU005
+34|WesternGrave|Western Grave|Icon_Equipment_SwordU013
+35|TeneosCursed1handedSword|Teneo's Cursed 1-handed Sword|Icon_Equipment_SwordU017
+7|AzureProvidence|Azure Providence|Icon_Equipment_AxeU001
+13|RuddyFountain|Ruddy Fountain|Icon_Equipment_AxeU002
+15|FriendOfTheResistance|Friend of the Resistance|Icon_Equipment_AxeU009
+17|GanidasAxe|Ganida's Axe|Icon_Equipment_AxeU003
+20|LeadJudge|Lead Judge|Icon_Equipment_AxeU004
+23|MessengersToken|Messenger's Token|Icon_Equipment_AxeU005
+25|BorealsBrilliance|Boreal's Brilliance|Icon_Equipment_AxeU006
+27|MirasetisTsunami|Miraseti's Tsunami|Icon_Equipment_AxeU007
+28|PredatorsBrand|Predator's Brand|Icon_Equipment_AxeU011
+28|ChargersBenefit|Charger's Benefit|Icon_Equipment_AxeU010
+30|NightSlaughterhouse|Night Slaughterhouse|Icon_Equipment_AxeU012
+30|ContradictionBreakerRuddyFountain|Contradiction Breaker Ruddy Fountain|Icon_Equipment_AxeU002
+31|CreepySmile|Creepy Smile|Icon_Equipment_AxeU013
+31|FrostWindAzureProvidence|Frost Wind Azure Providence|Icon_Equipment_AxeU001
+32|MouthOfIndulgence|Mouth of Indulgence|Icon_Equipment_AxeU017
+32|RiverOfLifeGanidasAxe|River of Life Ganida's Axe|Icon_Equipment_AxeU003
+32|HorizonCrescent|Horizon Crescent|Icon_Equipment_AxeU014
+32|ExponentialStrengthLeadJudge|Exponential Strength Lead Judge|Icon_Equipment_AxeU004
+33|EternalIron|Eternal Iron|Icon_Equipment_AxeU008
+33|ExponentialStrengthFriendOfTheResistance|Exponential Strength Friend of the Resistance|Icon_Equipment_AxeU009
+33|EchoingSongMessengersToken|Echoing Song Messenger's Token|Icon_Equipment_AxeU005
+34|PriceOfBlood|Price of Blood|Icon_Equipment_AxeU015
+3|IronOfFate|Iron of Fate|Icon_Equipment_MaceU008
+11|FaithfulStriker|Faithful Striker|Icon_Equipment_MaceU001
+17|HeadwindBone|Headwind Bone|Icon_Equipment_MaceU002
+19|PendulumOfTruth|Pendulum of Truth|Icon_Equipment_MaceU003
+22|IronCladRoot|Iron Clad Root|Icon_Equipment_MaceU004
+25|AlyssasExpansion|Alyssa's Expansion|Icon_Equipment_MaceU005
+25|MountainRoot|Mountain Root|Icon_Equipment_MaceU019
+27|CasthorsDarkness|Casthor's Darkness|Icon_Equipment_MaceU006
+28|CaprisLegacy|Capri's Legacy|Icon_Equipment_MaceU009
+30|DisruptPeaceFaithfulStriker|Disrupt Peace Faithful Striker|Icon_Equipment_MaceU001
+31|SeedOfADormantLand|Seed of a Dormant Land|Icon_Equipment_MaceU010
+31|StarFlower|Star Flower|Icon_Equipment_MaceU011
+31|KarmaHeadwindBone|Karma Headwind Bone|Icon_Equipment_MaceU002
+32|PulseOfSeverance|Pulse of Severance|Icon_Equipment_MaceU007
+32|SurvivalInstinctsIronOfFate|Survival Instincts Iron of Fate|Icon_Equipment_MaceU008
+32|DaydreamsEnd|Daydream's End|Icon_Equipment_MaceU013
+32|AncientCatalystIronCladRoot|Ancient Catalyst Iron Clad Root|Icon_Equipment_MaceU004
+33|ExpandingWord|Expanding Word|Icon_Equipment_MaceU012
+33|StrengthReverencePendulumOfTruth|Strength Reverence Pendulum of Truth|Icon_Equipment_MaceU003
+33|InfiniteStrengthAlyssasExpansion|Infinite Strength Alyssa's Expansion|Icon_Equipment_MaceU005
+34|FrameOfLoneliness|Frame of Loneliness|Icon_Equipment_MaceU014
+34|TranscendentMountainRoot|Transcendent Mountain Root|Icon_Equipment_MaceU019
+4|JoyfulSunset|Joyful Sunset|Icon_Equipment_SceptreU008
+13|EternalEmber|Eternal Ember|Icon_Equipment_SceptreU001
+18|FateGatherer|Fate Gatherer|Icon_Equipment_SceptreU002
+20|CaprisPrison|Capri's Prison|Icon_Equipment_SceptreU003
+23|SpicasTenacity|Spica's Tenacity|Icon_Equipment_SceptreU004
+25|HamalsHarvest|Hamal's Harvest|Icon_Equipment_SceptreU005
+27|AlyssasResolution|Alyssa's Resolution|Icon_Equipment_SceptreU006
+28|EchoingSkull|Echoing Skull|Icon_Equipment_SceptreU007
+30|DesperateWillFateGatherer|Desperate Will Fate Gatherer|Icon_Equipment_SceptreU002
+31|StaffOfAmbition|Staff of Ambition|Icon_Equipment_SceptreU009
+31|DreamOfWave|Dream of Wave|Icon_Equipment_SceptreU010
+31|BlazingSunEternalEmber|Blazing Sun Eternal Ember|Icon_Equipment_SceptreU001
+32|CrimsonUnity|Crimson Unity|Icon_Equipment_SceptreU012
+32|ExponentialStrengthJoyfulSunset|Exponential Strength Joyful Sunset|Icon_Equipment_SceptreU008
+32|DisruptPeaceSpicasTenacity|Disrupt Peace Spica's Tenacity|Icon_Equipment_SceptreU004
+33|AsteroidOfRuin|Asteroid of Ruin|Icon_Equipment_SceptreU014
+33|DesperateWillCaprisPrison|Desperate Will Capri's Prison|Icon_Equipment_SceptreU003
+33|VespersProof|Vesper's Proof|Icon_Equipment_SceptreU011
+33|CauseConfusionHamalsHarvest|Cause Confusion Hamal's Harvest|Icon_Equipment_SceptreU005
+34|BeaconOfSupport|Beacon of Support|Icon_Equipment_SceptreU012
+34|AcubensPunishment|Acuben's Punishment|Icon_Equipment_SceptreU002
+5|UnwitheringRose|Unwithering Rose|Icon_Equipment_WandU001
+9|AcubensAcidRain|Acuben's Acid Rain|Icon_Equipment_WandU002
+13|GoldenFlash|Golden Flash|Icon_Equipment_WandU003
+16|HamalsGrowth|Hamal's Growth|Icon_Equipment_WandU004
+18|TrueWindFlute|True Wind Flute|Icon_Equipment_WandU005
+20|SephdarsPassion|Sephdar's Passion|Icon_Equipment_WandU006
+22|RedJadeBud|Red Jade Bud|Icon_Equipment_WandU007
+24|SproutOfPenance|Sprout of Penance|Icon_Equipment_WandU008
+26|HarvestersPeg|Harvester's Peg|Icon_Equipment_WandU009
+27|CaprisFlame|Capri's Flame|Icon_Equipment_WandU010
+28|EnticingTuningFork|Enticing Tuning Fork|Icon_Equipment_WandU012
+28|ReignOfConsecration|Reign of Consecration|Icon_Equipment_WandU011
+30|LimpidCritic|Limpid Critic|Icon_Equipment_WandU013
+30|DesperateWillAcubensAcidRain|Desperate Will Acuben's Acid Rain|Icon_Equipment_WandU002
+31|IcicleThundercloud|Icicle Thundercloud|Icon_Equipment_WandU014
+31|ElementalExplosionUnwitheringRose|Elemental Explosion Unwithering Rose|Icon_Equipment_WandU001
+32|HornOfEnhancement|Horn of Enhancement|Icon_Equipment_WandU016
+32|BoltOfJudgmentGoldenFlash|Bolt of Judgment Golden Flash|Icon_Equipment_WandU003
+32|AcubensThorn|Acuben's Thorn|Icon_Equipment_WandU017
+32|PiercingEyeTrueWindFlute|Piercing Eye True Wind Flute|Icon_Equipment_WandU005
+33|TowerOfTranscendence|Tower of Transcendence|Icon_Equipment_WandU015
+33|DesperateWillHamalsGrowth|Desperate Will Hamal's Growth|Icon_Equipment_WandU004
+33|OathOfKnowledgeSephdarsPassion|Oath of Knowledge Sephdar's Passion|Icon_Equipment_WandU006
+34|WickOfMortal|Wick of Mortal|Icon_Equipment_WandU018
+34|ParadoxOfTheAbyss|Paradox of the Abyss|Icon_Equipment_WandU019
+34|TranscendentCaprisFlame|Transcendent Capri's Flame|Icon_Equipment_WandU010
+34|AquillasResonance|Aquilla's Resonance|Icon_Equipment_WandU020
+34|TranscendentReignOfConsecration|Transcendent Reign of Consecration|Icon_Equipment_WandU011
+35|AlyssasBlessing|Alyssa's Blessing|Icon_Equipment_WandU022
+7|CloudPalpus|Cloud Palpus|Icon_Equipment_StaffU001
+11|PortraitOfLightAndDarkness|Portrait of Light and Darkness|Icon_Equipment_StaffU008
+11|VanishingNight|Vanishing Night|Icon_Equipment_StaffU019
+15|DispersionIndex|Dispersion Index|Icon_Equipment_StaffU002
+17|GlachisSecret|Glachi's Secret|Icon_Equipment_StaffU003
+21|SpicasVirtue|Spica's Virtue|Icon_Equipment_StaffU004
+24|SephdarsCoexistence|Sephdar's Coexistence|Icon_Equipment_StaffU005
+27|SpicasWrath|Spica's Wrath|Icon_Equipment_StaffU006
+28|TwitchingPrisoner|Twitching Prisoner|Icon_Equipment_StaffU009
+28|DistortedTracker|Distorted Tracker|Icon_Equipment_StaffU010
+30|WatchersStick|Watcher's Stick|Icon_Equipment_StaffU011
+30|AbsoluteElementDispersionIndex|Absolute Element Dispersion Index|Icon_Equipment_StaffU002
+31|MoonsOrbit|Moon's Orbit|Icon_Equipment_StaffU012
+31|BoltOfJudgmentCloudPalpus|Bolt of Judgment Cloud Palpus|Icon_Equipment_StaffU001
+32|ImageOfBrilliance|Image of Brilliance|Icon_Equipment_StaffU014
+32|FrostWindGlachisSecret|Frost Wind Glachi's Secret|Icon_Equipment_StaffU003
+32|InstructionsOfCreation|Instructions of Creation|Icon_Equipment_StaffU007
+32|BlueGrailSpicasVirtue|Blue Grail Spica's Virtue|Icon_Equipment_StaffU004
+33|SephdarsCompass|Sephdar's Compass|Icon_Equipment_StaffU013
+33|AbsoluteElementPortraitOfLightAndDarkness|Absolute Element Portrait of Light and Darkness|Icon_Equipment_StaffU008
+33|GoldenLawOfPerfection|Golden Law of Perfection|Icon_Equipment_StaffU014
+33|NobleDestroyerSephdarsCoexistence|Noble Destroyer Sephdar's Coexistence|Icon_Equipment_StaffU005
+34|CrescentMoonCandlestick|Crescent Moon Candlestick|Icon_Equipment_StaffU015
+34|FocusOfTheAbyss|Focus of the Abyss|Icon_Equipment_StaffU016
+34|AlissasAurora|Alissa's Aurora|Icon_Equipment_StaffU017
+34|TranscendentSephdarsCoexistence|Transcendent Sephdar's Coexistence|Icon_Equipment_StaffU005
+34|TranscendentPortraitOfLightAndDarkness|Transcendent Portrait of Light and Darkness|Icon_Equipment_StaffT008
+34|TranscendentVanishingNight|Transcendent Vanishing Night|Icon_Equipment_StaffU019
+5|GloriousGreatsword|Glorious Greatsword|Icon_Equipment_TwoHand_SwordU001
+8|BrilliantCrescent|Brilliant Crescent|Icon_Equipment_Twohand_SwordU008
+11|LordBloodBlade|Lord Blood Blade|Icon_Equipment_TwoHand_SwordU002
+15|Battlebringer|Battlebringer|Icon_Equipment_TwoHand_SwordU003
+19|LeosGale|Leo's Gale|Icon_Equipment_TwoHand_SwordU004
+21|BorealsWill|Boreal's Will|Icon_Equipment_TwoHand_SwordU005
+24|SpicasEnlightenment|Spica's Enlightenment|Icon_Equipment_TwoHand_SwordU006
+27|Stras2-handedSword|Stra's 2-handed Sword|Icon_Equipment_TwoHand_SwordU007
+28|RighteousTraitor|Righteous Traitor|Icon_Equipment_Twohand_SwordU010
+28|BladeOfUnrequitedLove|Blade of Unrequited Love|Icon_Equipment_Twohand_SwordU009
+30|LightDestroyer|Light Destroyer|Icon_Equipment_Twohand_SwordU011
+30|BloodStrikeLordBloodBlade|Blood Strike Lord Blood Blade|Icon_Equipment_TwoHand_SwordU002
+31|CasthorsDarkness2h|Casthor's Darkness|Icon_Equipment_TwoHand_SwordU012
+31|ExponentialStrengthGloriousGreatsword|Exponential Strength Glorious Greatsword|Icon_Equipment_TwoHand_SwordU001
+32|BreakerOfTheCycle|Breaker of the Cycle|Icon_Equipment_TwoHand_SwordU014
+32|PiercingEyeBrilliantCrescent|Piercing Eye Brilliant Crescent|Icon_Equipment_Twohand_SwordU008
+32|GlimmeringPoint|Glimmering Point|Icon_Equipment_TwoHand_SwordU013
+32|InfiniteStrengthLeosGale|Infinite Strength Leo's Gale|Icon_Equipment_TwoHand_SwordU004
+33|WillOfFire|Will of Fire|Icon_Equipment_TwoHand_SwordU015
+33|DesperateWillBattlebringer|Desperate Will Battlebringer|Icon_Equipment_TwoHand_SwordU003
+33|AncientCatalystBorealsWill|Ancient Catalyst Boreal's Will|Icon_Equipment_TwoHand_SwordU005
+34|TheQueen|The Queen|Icon_Equipment_TwoHand_SwordU014
+34|TranscendentRighteousTraitor|Transcendent Righteous Traitor|Icon_Equipment_Twohand_SwordU010
+35|TeneosCursed2handedSword|Teneo's Cursed 2-handed Sword|Icon_Equipment_Twohand_SwordU019
+3|MarrowExtractor|Marrow Extractor|Icon_Equipment_TwoHand_AxeU008
+9|ExecutorsEmbrace|Executor's Embrace|Icon_Equipment_TwoHand_AxeU001
+13|SwoopingWings|Swooping Wings|Icon_Equipment_TwoHand_AxeU002
+16|MirasetisThirst|Miraseti's Thirst|Icon_Equipment_TwoHand_AxeU003
+20|VespersEnd|Vesper's End|Icon_Equipment_TwoHand_AxeU004
+23|BorealsEarthquake|Boreal's Earthquake|Icon_Equipment_TwoHand_AxeU005
+26|BorealsEarth|Boreal's Earth|Icon_Equipment_TwoHand_AxeU006
+28|UnbreakableObjection|Unbreakable Objection|Icon_Equipment_TwoHand_AxeU010
+30|CryOfSacrifice|Cry of Sacrifice|Icon_Equipment_TwoHand_AxeU011
+30|StrengthReverenceSwoopingWings|Strength Reverence Swooping Wings|Icon_Equipment_TwoHand_AxeU002
+31|FaceOfFlamingDestruction|Face of Flaming Destruction|Icon_Equipment_TwoHand_AxeU012
+31|DesperateWillExecutorsEmbrace|Desperate Will Executor's Embrace|Icon_Equipment_TwoHand_AxeU001
+32|CrescentAndDusk|Crescent and Dusk|Icon_Equipment_Twohand_AxeU007
+32|StrengthReverenceMirasetisThirst|Strength Reverence Miraseti's Thirst|Icon_Equipment_TwoHand_AxeU003
+32|DesperateWillVespersEnd|Desperate Will Vesper's End|Icon_Equipment_TwoHand_AxeU004
+33|StrengthReverenceMarrowExtractor|Strength Reverence Marrow Extractor|Icon_Equipment_TwoHand_AxeU008
+33|BloodOfTheGuillotine|Blood of the Guillotine|Icon_Equipment_TwoHand_AxeU009
+33|BloodStrikeBorealsEarthquake|Blood Strike Boreal's Earthquake|Icon_Equipment_TwoHand_AxeU005
+34|DancingPatagium|Dancing Patagium|Icon_Equipment_TwoHand_AxeU010
+34|CasthorsVision|Casthor's Vision|Icon_Equipment_TwoHand_AxeU013
+7|ProphetsBatteringRam|Prophet's Battering Ram|Icon_Equipment_TwoHand_MaceU001
+11|DisobedientMolar|Disobedient Molar|Icon_Equipment_TwoHand_MaceU002
+14|MaceOfConfession|Mace of Confession|Icon_Equipment_TwoHand_MaceU008
+17|StoneAnvil|Stone Anvil|Icon_Equipment_TwoHand_MaceU003
+21|ArbitersWedge|Arbiter's Wedge|Icon_Equipment_TwoHand_MaceU004
+24|SephdarsMaturity|Sephdar's Maturity|Icon_Equipment_TwoHand_MaceU005
+27|AquillasExtermination|Aquilla's Extermination|Icon_Equipment_TwoHand_MaceU006
+28|GiantsGoldPendulum|Giant's Gold Pendulum|Icon_Equipment_TwoHand_MaceU010
+30|GoldenSunset|Golden Sunset|Icon_Equipment_TwoHand_MaceU007
+30|RiverOfLifeDisobedientMolar|River of Life Disobedient Molar|Icon_Equipment_TwoHand_MaceU002
+31|ForsakenGlacier|Forsaken Glacier|Icon_Equipment_TwoHand_MaceU009
+31|BloodStrikeProphetsBatteringRam|Blood Strike Prophet's Battering Ram|Icon_Equipment_TwoHand_MaceU001
+32|OrbOfRestraint|Orb of Restraint|Icon_Equipment_TwoHand_MaceU012
+32|RiverOfLifeStoneAnvil|River of Life Stone Anvil|Icon_Equipment_TwoHand_MaceU003
+32|CenterOfRedEarth|Center of Red Earth|Icon_Equipment_TwoHand_MaceU011
+32|CriticalBlowArbitersWedge|Critical Blow Arbiter's Wedge|Icon_Equipment_TwoHand_MaceU004
+33|SternTempering|Stern Tempering|Icon_Equipment_TwoHand_MaceU018
+33|RiverOfLifeMaceOfConfession|River of Life Mace of Confession|Icon_Equipment_TwoHand_MaceU008
+33|AncientCatalystSephdarsMaturity|Ancient Catalyst Sephdar's Maturity|Icon_Equipment_TwoHand_MaceU005
+34|SpikeOfEvilAbolishment|Spike of Evil Abolishment|Icon_Equipment_TwoHand_MaceU012
+5|SeaBreezeRuler|Sea Breeze Ruler|Icon_Equipment_BowU001
+9|ZephyrFang|Zephyr Fang|Icon_Equipment_BowU002
+11|DirectRay|Direct Ray|Icon_Equipment_BowU012
+13|ProblemSolversBowstring|Problem Solver's Bowstring|Icon_Equipment_BowU003
+16|ThirstyWillow|Thirsty Willow|Icon_Equipment_BowU004
+18|ArbalistsStrength|Arbalist's Strength|Icon_Equipment_BowU005
+20|FirmRevelation|Firm Revelation|Icon_Equipment_BowU006
+22|SunsetBrush|Sunset Brush|Icon_Equipment_BowU007
+24|TipansLongBow|Tipan's Long Bow|Icon_Equipment_BowU008
+26|SephdarsProsperity|Sephdar's Prosperity|Icon_Equipment_BowU009
+27|LeosCycle|Leo's Cycle|Icon_Equipment_BowU010
+28|ThunderboltString|Thunderbolt String|Icon_Equipment_BowU013
+28|BandOfSuffocation|Band of Suffocation|Icon_Equipment_BowU011
+30|ChasingTrajectory|Chasing Trajectory|Icon_Equipment_BowU014
+30|BloodStrikeZephyrFang|Blood Strike Zephyr Fang|Icon_Equipment_BowU002
+31|BlizzardOfLight|Blizzard of Light|Icon_Equipment_BowU015
+31|StrengthReverenceSeaBreezeRuler|Strength Reverence Sea Breeze Ruler|Icon_Equipment_BowU001
+32|SkysClarity|Sky's Clarity|Icon_Equipment_BowU017
+32|DesperateWillProblemSolversBowstring|Desperate Will Problem Solver's Bowstring|Icon_Equipment_BowU003
+32|FlickeringHeat|Flickering Heat|Icon_Equipment_BowU018
+32|StrengthReverenceThirstyWillow|Strength Reverence Thirsty Willow|Icon_Equipment_BowU004
+33|CornelianBranch|Cornelian Branch|Icon_Equipment_BowU016
+33|CriticalBlowDirectRay|Critical Blow Direct Ray|Icon_Equipment_BowU012
+33|CriticalBlowFirmRevelation|Critical Blow Firm Revelation|Icon_Equipment_BowU006
+34|SeepingRayOfLight|Seeping Ray of Light|Icon_Equipment_BowU019
+34|TranscendentTipansLongBow|Transcendent Tipan's Long Bow|Icon_Equipment_BowU008
+3|VibrantCommandment|Vibrant Commandment|Icon_Equipment_MagicbowU007
+7|NightHeavenGuide|Night Heaven Guide|Icon_Equipment_MagicBowU001
+11|HeartlessNorthWind|Heartless North Wind|Icon_Equipment_MagicBowU002
+15|NivissBreath|Nivis's Breath|Icon_Equipment_MagicBowU003
+19|MirasetisCrimsonWave|Miraseti's Crimson Wave|Icon_Equipment_MagicBowU004
+23|AcubensDarkCloud|Acuben's Dark Cloud|Icon_Equipment_MagicBowU005
+26|HamalsSunlight|Hamal's Sunlight|Icon_Equipment_MagicBowU006
+28|BowOfSplendor|Bow of Splendor|Icon_Equipment_MagicBowU009
+30|EmbracingFang|Embracing Fang|Icon_Equipment_MagicBowU010
+30|MindReaperHeartlessNorthWind|Mind Reaper Heartless North Wind|Icon_Equipment_MagicBowU002
+31|ImmortalScapular|Immortal Scapular|Icon_Equipment_MagicBowU011
+31|FlamingMeteorNightHeavenGuide|Flaming Meteor Night Heaven Guide|Icon_Equipment_MagicBowU001
+32|TideHorizon|Tide Horizon|Icon_Equipment_MagicBowU008
+32|WheelOfFateVibrantCommandment|Wheel of Fate Vibrant Commandment|Icon_Equipment_MagicbowU007
+33|LyreOfMotherNature|Lyre of Mother Nature|Icon_Equipment_MagicBowU012
+33|CommandersUnityMirasetisCrimsonWave|Commander's Unity Miraseti's Crimson Wave|Icon_Equipment_MagicBowU004
+34|EmeraldGreenBow|Emerald Green Bow|Icon_Equipment_MagicBowU013
+34|TranscendentNivissBreath|Transcendent Nivis's Breath|Icon_Equipment_MagicBowU003
+34|TranscendentBowOfSplendor|Transcendent Bow of Splendor|Icon_Equipment_MagicBowU009
+7|HolyGrailOfVictory|Holy Grail of Victory|Icon_Equipment_QuiverU001
+11|CallOfRedemption|Call of Redemption|Icon_Equipment_QuiverU002
+15|SunsetsEye|Sunset's Eye|Icon_Equipment_QuiverU003
+17|HorizonOfCreation|Horizon of Creation|Icon_Equipment_QuiverU004
+20|AquillasSnowstorm|Aquilla's Snowstorm|Icon_Equipment_QuiverU005
+22|CasthorsBeam|Casthor's Beam|Icon_Equipment_QuiverU006
+22|PrimevalSynchronization|Primeval Synchronization|Icon_Equipment_QuiverU016
+24|CaprisBrazier|Capri's Brazier|Icon_Equipment_QuiverU007
+27|MirasetisRipCurrent|Miraseti's Rip Current|Icon_Equipment_QuiverU008
+28|PredatorsTongue|Predator's Tongue|Icon_Equipment_QuiverU009
+30|PlateOfAddendum|Plate of Addendum|Icon_Equipment_QuiverU010
+30|LifeLustHolyGrailOfVictory|Life Lust Holy Grail of Victory|Icon_Equipment_QuiverU001
+31|TwilightLuster|Twilight Luster|Icon_Equipment_QuiverU011
+31|HeartReaperCallOfRedemption|Heart Reaper Call of Redemption|Icon_Equipment_QuiverU002
+32|TriangularPromise|Triangular Promise|Icon_Equipment_QuiverU012
+32|CauseConfusionSunsetsEye|Cause Confusion Sunset's Eye|Icon_Equipment_QuiverU003
+32|FrostWindAquillasSnowstorm|Frost Wind Aquilla's Snowstorm|Icon_Equipment_QuiverU005
+33|BreathOfTheMountain|Breath of the Mountain|Icon_Equipment_QuiverU013
+33|RootedPunishmentHorizonOfCreation|Rooted Punishment Horizon of Creation|Icon_Equipment_QuiverU004
+33|ColdFront|Cold Front|Icon_Equipment_QuiverU014
+33|PiercingThornCasthorsBeam|Piercing Thorn Casthor's Beam|Icon_Equipment_QuiverU006
+34|TomorrowsRay|Tomorrow's Ray|Icon_Equipment_QuiverU015
+34|TranscendentPredatorsTongue|Transcendent Predator's Tongue|Icon_Equipment_QuiverU009
+34|TranscendentPlateOfAddendum|Transcendent Plate of Addendum|Icon_Equipment_QuiverU010
+34|AquillasFlutters|Aquilla's Flutters|Icon_Equipment_QuiverU006
+34|LeosEnd|Leo's End|Icon_Equipment_QuiverU017
+23|VerdantGaze|Verdant Gaze|Icon_Equipment_BowgunU001
+23|UnchangingLight|Unchanging Light|Icon_Equipment_BowgunU009
+27|RighteousDuty|Righteous Duty|Icon_Equipment_BowgunU002
+31|ArcOfPursuit|Arc of Pursuit|Icon_Equipment_BowgunU003
+32|TipansBowgun|Tipan's Bowgun|Icon_Equipment_BowgunU005
+32|InfiniteStrengthVerdantGaze|Infinite Strength Verdant Gaze|Icon_Equipment_BowgunU001
+33|SenseOfSympathy|Sense of Sympathy|Icon_Equipment_BowgunU004
+34|ViolentDeath|Violent Death|Icon_Equipment_BowgunU006
+34|TranscendentUnchangingLight|Transcendent Unchanging Light|Icon_Equipment_BowgunU009
+34|AcubensCurse|Acuben's Curse|Icon_Equipment_BowgunU010
+27|InnerChill|Inner Chill|Icon_Equipment_MagazineU004
+31|ExplorersBackpack|Explorer's Backpack|Icon_Equipment_MagazineU002
+31|HouseOfComposure|House of Composure|Icon_Equipment_MagazineU003
+32|FeverPouch|Fever Pouch|Icon_Equipment_MagazineU005
+33|OrtemisRejuvenation|Ortemis' Rejuvenation|Icon_Equipment_MagazineU001
+33|AncientCatalystInnerChill|Ancient Catalyst Inner Chill|Icon_Equipment_MagazineU004
+34|BurntPassion|Burnt Passion|Icon_Equipment_MagazineU007
+5|MirrorWall|Mirror Wall|Icon_Equipment_ShieldU001
+9|EyeOfInstinct|Eye of Instinct|Icon_Equipment_ShieldU002
+13|ShieldOfTrust|Shield of Trust|Icon_Equipment_ShieldU003
+17|MistWing|Mist Wing|Icon_Equipment_ShieldU004
+20|AbyssMirror|Abyss Mirror|Icon_Equipment_ShieldU005
+23|TriahsShield|Triah's Shield|Icon_Equipment_ShieldU006
+24|ArkOfShadows|Ark of Shadows|Icon_Equipment_ShieldU011
+26|EunossShield|Eunos's Shield|Icon_Equipment_ShieldU007
+27|SephdarsLonging|Sephdar's Longing|Icon_Equipment_ShieldU023
+28|BlueFortress|Blue Fortress|Icon_Equipment_ShieldU008
+29|FossilizedFlower|Fossilized Flower|Icon_Equipment_ShieldU009
+30|FirmHeart|Firm Heart|Icon_Equipment_ShieldU010
+30|KarmaMirrorWall|Karma Mirror Wall|Icon_Equipment_ShieldU001
+31|SpikeSparkBulwark|Spike Spark Bulwark|Icon_Equipment_ShieldU012
+31|AncientBeingsNest|Ancient Being's Nest|Icon_Equipment_ShieldU013
+31|LunarBlessingShieldOfTrust|Lunar Blessing Shield of Trust|Icon_Equipment_ShieldU003
+32|CaspolsWall|Caspol's Wall|Icon_Equipment_ShieldU015
+32|DrapeOfTheAncestors|Drape of the Ancestors|Icon_Equipment_ShieldU016
+32|OpportunistMistWing|Opportunist Mist Wing|Icon_Equipment_ShieldU004
+32|SternResponsibility|Stern Responsibility|Icon_Equipment_ShieldU014
+32|GoodLuckCharmAbyssMirror|Good Luck Charm Abyss Mirror|Icon_Equipment_ShieldU005
+33|PagansShield|Pagan's Shield|Icon_Equipment_ShieldU017
+33|ImpregnableFortressEyeOfInstinct|Impregnable Fortress Eye of Instinct|Icon_Equipment_ShieldU002
+33|ImpregnableFortressTriahsShield|Impregnable Fortress Triah's Shield|Icon_Equipment_ShieldU006
+34|ReversalFoothold|Reversal Foothold|Icon_Equipment_ShieldU015
+34|MirasetisSailboat|Miraseti's Sailboat|Icon_Equipment_ShieldU021
+34|BorealsHeart|Boreal's Heart|Icon_Equipment_ShieldU014
+34|TranscendentSephdarsLonging|Transcendent Sephdar's Longing|Icon_Equipment_ShieldU023
+34|TranscendentMirrorWall|Transcendent Mirror Wall|Icon_Equipment_ShieldU001
+5|AncientBeingsHelmet|Ancient Being's Helmet|Icon_Equipment_HelmetU001
+9|FarewellShadow|Farewell Shadow|Icon_Equipment_HelmetU002
+13|SeaKingsBrim|Sea King's Brim|Icon_Equipment_HelmetU003
+16|SunriseCrown|Sunrise Crown|Icon_Equipment_HelmetU004
+19|RoaringCirclet|Roaring Circlet|Icon_Equipment_HelmetU005
+20|CoffinOfInnovation|Coffin of Innovation|Icon_Equipment_HelmetU012
+21|ConfidentSmile|Confident Smile|Icon_Equipment_HelmetU006
+22|SunlightsKiss|Sunlight's Kiss|Icon_Equipment_HelmetU017
+23|HamalsGlory|Hamal's Glory|Icon_Equipment_HelmetU007
+24|VanguardsGaze|Vanguard's Gaze|Icon_Equipment_HelmetU011
+25|BorealsHorn|Boreal's Horn|Icon_Equipment_HelmetU008
+25|SpicasRegret|Spica's Regret|Icon_Equipment_HelmetU039
+27|AphrossVeil|Aphros's Veil|Icon_Equipment_HelmetU009
+28|DesertWind|Desert Wind|Icon_Equipment_HelmetU015
+29|RitualMask|Ritual Mask|Icon_Equipment_HelmetU010
+30|BlindfoldCemetery|Blindfold Cemetery|Icon_Equipment_HelmetU013
+30|FaceOfWilderness|Face of Wilderness|Icon_Equipment_HelmetU016
+30|KarmaAncientBeingsHelmet|Karma Ancient Being's Helmet|Icon_Equipment_HelmetU001
+31|VeilOfWaterfall|Veil of Waterfall|Icon_Equipment_HelmetU014
+31|ShadowScale|Shadow Scale|Icon_Equipment_HelmetU019
+31|TriumphFarewellShadow|Triumph Farewell Shadow|Icon_Equipment_HelmetU002
+32|Sandglass|Sandglass|Icon_Equipment_HelmetU018
+32|MaskOfReversion|Mask of Reversion|Icon_Equipment_HelmetU021
+32|RiverOfLifeSeaKingsBrim|River of Life Sea King's Brim|Icon_Equipment_HelmetU003
+32|WailingRequiemRoaringCirclet|Wailing Requiem Roaring Circlet|Icon_Equipment_HelmetU005
+33|ScreenOfTheFirstStrike|Screen of the First Strike|Icon_Equipment_HelmetU026
+33|GutsySunriseCrown|Gutsy Sunrise Crown|Icon_Equipment_HelmetU004
+33|VeilOfReason|Veil of Reason|Icon_Equipment_HelmetU020
+33|LunarBlessingConfidentSmile|Lunar Blessing Confident Smile|Icon_Equipment_HelmetU006
+34|PriestsMask|Priest's Mask|Icon_Equipment_HelmetU021
+34|TranscendentVanguardsGaze|Transcendent Vanguard's Gaze|Icon_Equipment_HelmetU011
+34|PreservationOfReason|Preservation of Reason|Icon_Equipment_HelmetU032
+34|TranscendentAphrossVeil|Transcendent Aphros's Veil|Icon_Equipment_HelmetU009
+34|SpicasWisdom|Spica's Wisdom|Icon_Equipment_HelmetU012
+35|TeneosAbyssMask|Teneo's Abyss Mask|Icon_Equipment_HelmetU038
+3|OverlappingShadow|Overlapping Shadow|Icon_Equipment_ShoulderU010
+7|DutyOfFlame|Duty of Flame|Icon_Equipment_ShoulderU001
+9|CasthorsGaze|Casthor's Gaze|Icon_Equipment_ShoulderU015
+11|YokeOfMadness|Yoke of Madness|Icon_Equipment_ShoulderU002
+15|BoneAltar|Bone Altar|Icon_Equipment_ShoulderU003
+17|SeekersBurden|Seeker's Burden|Icon_Equipment_ShoulderU012
+18|ShadowsPortrait|Shadow's Portrait|Icon_Equipment_ShoulderU004
+20|NemerasSpaulders|Nemera's Spaulders|Icon_Equipment_ShoulderU005
+22|AcubensThunderbolt|Acuben's Thunderbolt|Icon_Equipment_ShoulderU006
+23|DecomposersContradiction|Decomposer's Contradiction|Icon_Equipment_ShoulderU018
+24|AquillasWings|Aquilla's Wings|Icon_Equipment_ShoulderU007
+25|RestlessLining|Restless Lining|Icon_Equipment_ShoulderU014
+25|Cold-bloodedBurden|Cold-blooded Burden|Icon_Equipment_ShoulderU025
+26|VespersSilence|Vesper's Silence|Icon_Equipment_ShoulderU008
+28|ColdComfort|Cold Comfort|Icon_Equipment_ShoulderU009
+29|LightsPortrait|Light's Portrait|Icon_Equipment_ShoulderU011
+30|NemesisMirror|Nemesis Mirror|Icon_Equipment_ShoulderU013
+30|SephdarsInstinct|Sephdar's Instinct|Icon_Equipment_ShoulderU016
+30|BlazingSunDutyOfFlame|Blazing Sun Duty of Flame|Icon_Equipment_ShoulderU001
+31|ProtrudingBranch|Protruding Branch|Icon_Equipment_ShoulderU017
+31|HighVoltageYokeOfMadness|High Voltage Yoke of Madness|Icon_Equipment_ShoulderU002
+32|EpauletsOfEternity|Epaulets of Eternity|Icon_Equipment_ShoulderU020
+32|MirasetisRhyme|Miraseti's Rhyme|Icon_Equipment_ShoulderU021
+32|SurvivalInstinctsOverlappingShadow|Survival Instincts Overlapping Shadow|Icon_Equipment_ShoulderU010
+32|VanguardsSpaulders|Vanguard's Spaulders|Icon_Equipment_ShoulderU023
+32|AbsoluteElementBoneAltar|Absolute Element Bone Altar|Icon_Equipment_ShoulderU003
+33|SpicasRejection|Spica's Rejection|Icon_Equipment_ShoulderU022
+33|ConfrontingFang|Confronting Fang|Icon_Equipment_ShoulderU019
+33|EndlessInspirationCasthorsGaze|Endless Inspiration Casthor's Gaze|Icon_Equipment_ShoulderU015
+33|NobleDestroyerShadowsPortrait|Noble Destroyer Shadow's Portrait|Icon_Equipment_ShoulderU004
+34|GanidasSpaulders|Ganida's Spaulders|Icon_Equipment_ShoulderU024
+34|TranscendentColdBloodedBurden|Transcendent Cold-blooded Burden|Icon_Equipment_ShoulderU025
+34|OrtemisSpaulders|Ortemis' Spaulders|Icon_Equipment_ShoulderU026
+34|CometsPerch|Comet's Perch|Icon_Equipment_ShoulderU027
+34|TranscendentAcubensThunderbolt|Transcendent Acuben's Thunderbolt|Icon_Equipment_ShoulderU006
+34|TranscendentDecomposersContradiction|Transcendent Decomposer's Contradiction|Icon_Equipment_ShoulderU018
+34|TranscendentColdComfort|Transcendent Cold Comfort|Icon_Equipment_ShoulderU009
+35|AphrossStory|Aphros's Story|Icon_Equipment_ShoulderU033
+5|TwilightVeil|Twilight Veil|Icon_Equipment_BodyArmorU001
+9|HirasBreastplate|Hira's Breastplate|Icon_Equipment_BodyArmorU002
+11|ThoughtlessConviction|Thoughtless Conviction|Icon_Equipment_BodyArmorU012
+13|ScaleOfInspiration|Scale of Inspiration|Icon_Equipment_BodyArmorU003
+15|PaleGhost|Pale Ghost|Icon_Equipment_BodyArmorU014
+16|MountainPersistence|Mountain Persistence|Icon_Equipment_BodyArmorU004
+17|TheFirstReturnee|The First Returnee|Icon_Equipment_BodyArmorU011
+19|TravelersTunic|Traveler's Tunic|Icon_Equipment_BodyArmorU005
+21|GreatMovementTailcoat|Great Movement Tailcoat|Icon_Equipment_BodyArmorU006
+22|AwakenedsSkin|Awakened's Skin|Icon_Equipment_BodyArmorU013
+23|TipansScaleArmor|Tipan's Scale Armor|Icon_Equipment_BodyArmorU007
+25|SpicasProtection|Spica's Protection|Icon_Equipment_BodyArmorU008
+26|BlackDuelist|Black Duelist|Icon_Equipment_BodyArmorU016
+27|MirasetisStorm|Miraseti's Storm|Icon_Equipment_BodyArmorU009
+27|AquillasEternity|Aquilla's Eternity|Icon_Equipment_BodyArmorU040
+28|BrassPuppetMaster|Brass Puppet Master|Icon_Equipment_BodyArmorU017
+29|FrostMossChest|Frost Moss Chest|Icon_Equipment_BodyArmorU015
+29|FulcrumOfCertainty|Fulcrum of Certainty|Icon_Equipment_BodyArmorU010
+30|PathfindersGuardianOutfit|Pathfinder's Guardian Outfit|Icon_Equipment_BodyArmorU019
+30|LatecomersBlessingOutfit|Latecomer's Blessing Outfit|Icon_Equipment_BodyArmorU020
+30|PriestsScales|Priest's Scales|Icon_Equipment_BodyArmorU021
+30|PokeweedShell|Pokeweed Shell|Icon_Equipment_BodyArmorU022
+30|ChastityOfRejection|Chastity of Rejection|Icon_Equipment_BodyArmorU023
+30|PuppeteersKnot|Puppeteer's Knot|Icon_Equipment_BodyArmorU024
+30|EndlessFavorTwilightVeil|Endless Favor Twilight Veil|Icon_Equipment_BodyArmorU001
+31|VespersStance|Vesper's Stance|Icon_Equipment_BodyArmorU025
+31|HuntersVest|Hunter's Vest|Icon_Equipment_BodyArmorU026
+31|MoonlightsChest|Moonlight's Chest|Icon_Equipment_BodyArmorU027
+31|WinterHeart|Winter Heart|Icon_Equipment_BodyArmorU028
+31|DewdropHem|Dewdrop Hem|Icon_Equipment_BodyArmorU029
+31|LandkeepersBadge|Landkeeper's Badge|Icon_Equipment_BodyArmorU030
+31|StarsGuidanceHirasBreastplate|Star's Guidance Hira's Breastplate|Icon_Equipment_BodyArmorU002
+32|ConcentratedBone|Concentrated Bone|Icon_Equipment_BodyArmorU035
+32|HeraldOfTheNorthWind|Herald of the North Wind|Icon_Equipment_BodyArmorU032
+32|UnfallingFort|Unfalling Fort|Icon_Equipment_BodyArmorU031
+32|LunarBlessingThoughtlessConviction|Lunar Blessing Thoughtless Conviction|Icon_Equipment_BodyArmorU012
+32|KarmaMountainPersistence|Karma Mountain Persistence|Icon_Equipment_BodyArmorU004
+33|StarlightSpine|Starlight Spine|Icon_Equipment_BodyArmorU018
+33|OverflowingTemperature|Overflowing Temperature|Icon_Equipment_BodyArmorU036
+33|GutsyScaleOfInspiration|Gutsy Scale of Inspiration|Icon_Equipment_BodyArmorU003
+33|HirasSpine|Hira's Spine|Icon_Equipment_BodyArmorU033
+33|WandererTravelersTunic|Wanderer Traveler's Tunic|Icon_Equipment_BodyArmorU005
+34|CrimsonMaster|Crimson Master|Icon_Equipment_BodyArmorU034
+34|NumbingArmor|Numbing Armor|Icon_Equipment_BodyArmorU038
+34|TranscendentTheFirstReturnee|Transcendent The First Returnee|Icon_Equipment_BodyArmorU011
+34|VeilOfImmortality|Veil of Immortality|Icon_Equipment_BodyArmorU039
+34|TranscendentTwilightVeil|Transcendent Twilight Veil|Icon_Equipment_BodyArmorU001
+27|TranscendentAquillasEternity|Transcendent Aquilla's Eternity|Icon_Equipment_BodyArmorU040
+34|SephdarsDetermination|Sephdar's Determination|Icon_Equipment_BodyArmorU041
+4|IronThumb|Iron Thumb|Icon_Equipment_GlovesU010
+7|MortalGrasp|Mortal Grasp|Icon_Equipment_GlovesU001
+11|OrtemissGrip|Ortemis's Grip|Icon_Equipment_GlovesU002
+13|ThousandHands|Thousand Hands|Icon_Equipment_GlovesU011
+15|CataclysmicFist|Cataclysmic Fist|Icon_Equipment_GlovesU003
+18|Starprint|Starprint|Icon_Equipment_GlovesU004
+20|FirebirdChill|Firebird Chill|Icon_Equipment_GlovesU005
+21|SpicasLight|Spica's Light|Icon_Equipment_GlovesU031
+22|CasthorsFighter|Casthor's Fighter|Icon_Equipment_GlovesU006
+24|PrelesGauntlets|Prele's Gauntlets|Icon_Equipment_GlovesU007
+25|Aftershock|Aftershock|Icon_Equipment_GlovesU017
+25|AquillasClaw|Aquilla's Claw|Icon_Equipment_GlovesU018
+26|VespersDestruction|Vesper's Destruction|Icon_Equipment_GlovesU008
+29|TendrilOfEvergreen|Tendril of Evergreen|Icon_Equipment_GlovesU009
+29|EpigramShackles|Epigram Shackles|Icon_Equipment_GlovesU011
+30|FingersOfLifeAndDeath|Fingers of Life and Death|Icon_Equipment_GlovesU012
+30|HeartReaperMortalGrasp|Heart Reaper Mortal Grasp|Icon_Equipment_GlovesU001
+31|SpitefulOrtemissGrip|Spiteful Ortemis's Grip|Icon_Equipment_GlovesU002
+32|TouchOfIngestion|Touch of Ingestion|Icon_Equipment_GlovesU013
+32|BloodstainedGrip|Bloodstained Grip|Icon_Equipment_GlovesU016
+32|PiercingEyeThousandHands|Piercing Eye Thousand Hands|Icon_Equipment_GlovesU011
+32|NobleDestroyerCataclysmicFist|Noble Destroyer Cataclysmic Fist|Icon_Equipment_GlovesU003
+33|GoldenShell|Golden Shell|Icon_Equipment_GlovesU014
+33|SurvivalInstinctsIronThumb|Survival Instincts Iron Thumb|Icon_Equipment_GlovesU010
+33|HandOfRiposte|Hand of Riposte|Icon_Equipment_GlovesU015
+33|RootedPunishmentStarprint|Rooted Punishment Starprint|Icon_Equipment_GlovesU004
+34|HandOfMonarch|Hand of Monarch|Icon_Equipment_GlovesU016
+34|TranscendentAftershock|Transcendent Aftershock|Icon_Equipment_GlovesU017
+34|TranscendentAquillasClaw|Transcendent Aquilla's Claw|Icon_Equipment_GlovesU018
+34|TranscendentPrelesGauntlets|Transcendent Prele's Gauntlets|Icon_Equipment_GlovesU007
+34|HamalsVerdancy|Hamal's Verdancy|Icon_Equipment_GlovesU019
+34|TranscendentSpicasLight|Transcendent Spica's Light|Icon_Equipment_GlovesU031
+34|TranscendentVespersDestruction|Transcendent Vesper's Destruction|Icon_Equipment_GlovesU008
+1|PureFirstSteps|Pure First Steps|Icon_Equipment_BootsU025
+5|GaleClaw|Gale Claw|Icon_Equipment_BootsU001
+9|DesertPilgrimSlippers|Desert Pilgrim Slippers|Icon_Equipment_BootsU002
+11|LingeringSummer|Lingering Summer|Icon_Equipment_BootsU031
+13|BrilliantStep|Brilliant Step|Icon_Equipment_BootsU003
+14|AlyssasLanding|Alyssa's Landing|Icon_Equipment_BootsU022
+15|RagingFlash|Raging Flash|Icon_Equipment_BootsU012
+16|AncientPilgrim|Ancient Pilgrim|Icon_Equipment_BootsU027
+17|MyrrhTreesRoot|Myrrh Tree's Root|Icon_Equipment_BootsU004
+20|DanceOfDesperation|Dance of Desperation|Icon_Equipment_BootsU005
+23|AquillasClearSky|Aquilla's Clear Sky|Icon_Equipment_BootsU006
+25|VespersStatic|Vesper's Static|Icon_Equipment_BootsU007
+25|DarkMoonsFootsteps|Dark Moon's Footsteps|Icon_Equipment_BootsU010
+26|StormsPath|Storm's Path|Icon_Equipment_BootsU009
+27|LeosRoar|Leo's Roar|Icon_Equipment_BootsU008
+28|AquillasFlight|Aquilla's Flight|Icon_Equipment_BootsU013
+29|SkyShoes|Sky Shoes|Icon_Equipment_BootsU011
+30|ChasersFoot|Chaser's Foot|Icon_Equipment_BootsU015
+30|LaidBackTravelersBoots|Laid Back Traveler's Boots|Icon_Equipment_BootsU017
+30|RevolutionarySpiritGaleClaw|Revolutionary Spirit Gale Claw|Icon_Equipment_BootsU001
+31|StrategistsJade|Strategist's Jade|Icon_Equipment_BootsU014
+31|UnwaveringSteps|Unwavering Steps|Icon_Equipment_BootsU016
+31|CourierDesertPilgrimSlippers|Courier Desert Pilgrim Slippers|Icon_Equipment_BootsU002
+31|FoggySteps|Foggy Steps|Icon_Equipment_BootsU024
+32|LegBoneOfTheWind|Leg Bone of the Wind|Icon_Equipment_BootsU021
+32|CourierBrilliantStep|Courier Brilliant Step|Icon_Equipment_BootsU003
+32|NemerasCrust|Nemera's Crust|Icon_Equipment_BootsU020
+32|IronHeartMyrrhTreesRoot|Iron Heart Myrrh Tree's Root|Icon_Equipment_BootsU004
+33|LahainaEye|Lahaina Eye|Icon_Equipment_BootsU018
+33|CanineKnee|Canine Knee|Icon_Equipment_BootsU019
+33|CourierRagingFlash|Courier Raging Flash|Icon_Equipment_BootsU012
+33|MyrrhTreesWisdomAquillasClearSky|Myrrh Tree's Wisdom Aquilla's Clear Sky|Icon_Equipment_BootsU006
+34|EunossGaiters|Eunos's Gaiters|Icon_Equipment_BootsU021
+34|TranscendentAlyssasLanding|Transcendent Alyssa's Landing|Icon_Equipment_BootsU022
+34|StrasBoots|Stra's Boots|Icon_Equipment_BootsU023
+34|TranscendentLeosRoar|Transcendent Leo's Roar|Icon_Equipment_BootsU008
+34|LeosFootsteps|Leo's Footsteps|Icon_Equipment_BootsU013
+34|TranscendentLingeringSummer|Transcendent Lingering Summer|Icon_Equipment_BootsU031
+34|TranscendentLegBoneOfTheWind|Transcendent Leg Bone of the Wind|Icon_Equipment_BootsU021
+6|CanyonWaistband|Canyon Waistband|Icon_Equipment_BeltU008
+7|TerrasProcession|Terra's Procession|Icon_Equipment_BeltU001
+8|EscapeBelt|Escape Belt|Icon_Equipment_BeltU009
+10|HoundsProtection|Hound's Protection|Icon_Equipment_BeltU010
+11|MessengersEcho|Messenger's Echo|Icon_Equipment_BeltU002
+12|BorderBulwark|Border Bulwark|Icon_Equipment_BeltU011
+14|GlacialSong|Glacial Song|Icon_Equipment_BeltU012
+15|WastelandsDream|Wasteland's Dream|Icon_Equipment_BeltU003
+17|SymmesCivilization|Symmes Civilization|Icon_Equipment_BeltU013
+18|HamalsVine|Hamal's Vine|Icon_Equipment_BeltU004
+20|PatriarchKnot|Patriarch Knot|Icon_Equipment_BeltU014
+21|SephdarsHarmony|Sephdar's Harmony|Icon_Equipment_BeltU005
+23|ConquerorsPride|Conqueror's Pride|Icon_Equipment_BeltU016
+24|AcubensClarity|Acuben's Clarity|Icon_Equipment_BeltU006
+26|GraveRobberKingsBelt|Grave Robber King's Belt|Icon_Equipment_BeltU015
+27|AcubensMist|Acuben's Mist|Icon_Equipment_BeltU007
+30|LeechTail|Leech Tail|Icon_Equipment_BeltU017
+30|BorealsHorizon|Boreal's Horizon|Icon_Equipment_BeltU018
+30|KarmaCanyonWaistband|Karma Canyon Waistband|Icon_Equipment_BeltU008
+31|LandOfBlessing|Land of Blessing|Icon_Equipment_BeltU019
+31|AbsoluteElementHoundsProtection|Absolute Element Hound's Protection|Icon_Equipment_BeltU010
+31|GanidasBelt|Ganida's Belt|Icon_Equipment_BeltU029
+32|EmbraceOfEnlightenment|Embrace of Enlightenment|Icon_Equipment_BeltU020
+32|RiverOfLifeMessengersEcho|River of Life Messenger's Echo|Icon_Equipment_BeltU002
+32|SeekersWrappings|Seeker's Wrappings|Icon_Equipment_BeltU022
+32|HiltOfLifeAndDeath|Hilt of Life and Death|Icon_Equipment_BeltU023
+32|BreathOfLifeBorderBulwark|Breath of Life Border Bulwark|Icon_Equipment_BeltU011
+33|GoldenBandOfOpportunity|Golden Band of Opportunity|Icon_Equipment_BeltU021
+33|CourierTerrasProcession|Courier Terra's Procession|Icon_Equipment_BeltU001
+33|PyroxeneAdornedWaistband|Pyroxene Adorned Waistband|Icon_Equipment_BeltU024
+33|UnbendingMindGlacialSong|Unbending Mind Glacial Song|Icon_Equipment_BeltU012
+33|CircleOfExpansion|Circle of Expansion|Icon_Equipment_BeltU027
+33|LeosBreath|Leo's Breath|Icon_Equipment_BeltU031
+34|KnightsBelt|Knight's Belt|Icon_Equipment_BeltU025
+34|Near-deathConstrictor|Near-death Constrictor|Icon_Equipment_BeltU026
+34|GirthOfHarmony|Girth of Harmony|Icon_Equipment_BeltU028
+34|PeddlersPotionBelt|Peddler's Potion Belt|Icon_Equipment_BeltU009
+34|TranscendentHamalsVine|Transcendent Hamal's Vine|Icon_Equipment_BeltU004
+34|TranscendentAcubensMist|Transcendent Acuben's Mist|Icon_Equipment_BeltU007
+34|TranscendentConquerorsPride|Transcendent Conqueror's Pride|Icon_Equipment_BeltU016
+34|VespersBlessing|Vesper's Blessing|Icon_Equipment_BeltU027
+35|OvertureOfGrace|Overture of Grace|Icon_Equipment_BeltU030
+1|RingOfTheBeginningAndTheEnd|Ring of the Beginning and the End|Icon_Equipment_RingU027
+5|BloodCovenant|Blood Covenant|Icon_Equipment_RingU001
+6|TrisRing|Tri's Ring|Icon_Equipment_RingU010
+8|BlacksmithsRing|Blacksmith's Ring|Icon_Equipment_RingU011
+9|BlazingOrbit|Blazing Orbit|Icon_Equipment_RingU002
+10|LaiasRing|Laia's Ring|Icon_Equipment_RingU012
+12|TraumsWeddingRing|Traum's Wedding Ring|Icon_Equipment_RingU013
+13|LightningNail|Lightning Nail|Icon_Equipment_RingU003
+14|GoldCollectorsLoop|Gold Collector's Loop|Icon_Equipment_RingU014
+16|FrozenValleyKnot|Frozen Valley Knot|Icon_Equipment_RingU004
+17|HarmonyCircle|Harmony Circle|Icon_Equipment_RingU015
+19|PrimalCall|Primal Call|Icon_Equipment_RingU005
+20|SettlementRing|Settlement Ring|Icon_Equipment_RingU016
+20|GearsOfCycle|Gears of Cycle|Icon_Equipment_RingU036
+21|FingerOfBirth|Finger of Birth|Icon_Equipment_RingU006
+22|FlamingHalo|Flaming Halo|Icon_Equipment_RingU017
+23|CasthorsRefraction|Casthor's Refraction|Icon_Equipment_RingU007
+25|LeosFlow|Leo's Flow|Icon_Equipment_RingU008
+25|BandOfCertainty|Band of Certainty|Icon_Equipment_RingU018
+27|SephdarsGlory|Sephdar's Glory|Icon_Equipment_RingU009
+28|YearningGreenMoon|Yearning Green Moon|Icon_Equipment_RingU019
+30|CompanionsRing|Companion's Ring|Icon_Equipment_RingU020
+30|LifeLustBloodCovenant|Life Lust Blood Covenant|Icon_Equipment_RingU001
+31|PurusRing|Puru's Ring|Icon_Equipment_RingU021
+31|ImmutableTrisRing|Immutable Tri's Ring|Icon_Equipment_RingU010
+31|PerpetualOrbit|Perpetual Orbit|Icon_Equipment_RingU037
+32|VespersHalo|Vesper's Halo|Icon_Equipment_RingU023
+32|CoilOfPenance|Coil of Penance|Icon_Equipment_RingU022
+32|BlazingSunBlazingOrbit|Blazing Sun Blazing Orbit|Icon_Equipment_RingU002
+32|LinkOfExpiration|Link of Expiration|Icon_Equipment_RingU024
+32|ThreeHundredStars|Three Hundred Stars|Icon_Equipment_RingU026
+32|HeartReaperLaiasRing|Heart Reaper Laia's Ring|Icon_Equipment_RingU012
+33|IllusoryNail|Illusory Nail|Icon_Equipment_RingU024
+33|FingerOfCommand|Finger of Command|Icon_Equipment_RingU025
+33|JointOfTheUniverse|Joint of the Universe|Icon_Equipment_RingU025
+33|StarsGuidanceTraumsWeddingRing|Star's Guidance Traum's Wedding Ring|Icon_Equipment_RingU013
+33|GoldenDoorknob|Golden Doorknob|Icon_Equipment_RingU030
+33|Insight|Insight|Icon_Equipment_RingU031
+34|GoldStringOfPossibility|Gold String of Possibility|Icon_Equipment_RingU028
+34|Esophagus|Esophagus|Icon_Equipment_RingU029
+34|ThreeHoops|Three Hoops|Icon_Equipment_RingU032
+34|MiraculousHalo|Miraculous Halo|Icon_Equipment_RingU033
+34|TranscendentCasthorsRefraction|Transcendent Casthor's Refraction|Icon_Equipment_RingU007
+34|TranscendentBandOfCertainty|Transcendent Band of Certainty|Icon_Equipment_RingU018
+34|GraveRobberKingsGoldenRing|Grave Robber King's Golden Ring|Icon_Equipment_RingU035
+34|TranscendentLeosFlow|Transcendent Leo's Flow|Icon_Equipment_RingU008
+34|TranscendentBlacksmithsRing|Transcendent Blacksmith's Ring|Icon_Equipment_RingU011
+34|CasthorsIlluminant|Casthor's Illuminant|Icon_Equipment_RingU039
+35|BorealsGold|Boreal's Gold|Icon_Equipment_RingU038
+5|SilverCoinOfTheBeginning|Silver Coin of the Beginning|Icon_Equipment_NecklaceU001
+7|SublimationStone|Sublimation Stone|Icon_Equipment_NecklaceU010
+9|ThirdEye|Third Eye|Icon_Equipment_NecklaceU002
+11|AuraOfAdventurer|Aura of Adventurer|Icon_Equipment_NecklaceU011
+13|LongTailOfComet|Long Tail of Comet|Icon_Equipment_NecklaceU003
+15|SubliminalEssence|Subliminal Essence|Icon_Equipment_NecklaceU012
+15|FadingEmotions|Fading Emotions|Icon_Equipment_NecklaceU036
+16|UnityToken|Unity Token|Icon_Equipment_NecklaceU004
+17|VoiceOfTheMarch|Voice of the March|Icon_Equipment_NecklaceU017
+18|SpiralOfCirculationAndHeredity|Spiral of Circulation and Heredity|Icon_Equipment_NecklaceU013
+19|ValorTalisman|Valor Talisman|Icon_Equipment_NecklaceU005
+21|VespersNeutralization|Vesper's Neutralization|Icon_Equipment_NecklaceU006
+22|WhirlwindWisdom|Whirlwind Wisdom|Icon_Equipment_NecklaceU014
+23|TriahsNecklace|Triah's Necklace|Icon_Equipment_NecklaceU007
+24|TrumpetersHeart|Trumpeter's Heart|Icon_Equipment_NecklaceU016
+25|AquillasSpirit|Aquilla's Spirit|Icon_Equipment_NecklaceU008
+25|VespersTear|Vesper's Tear|Icon_Equipment_NecklaceU029
+25|HirasCharm|Hira's Charm|Icon_Equipment_NecklaceU030
+26|SupernovaCore|Supernova Core|Icon_Equipment_NecklaceU015
+27|AlyssasTranscendence|Alyssa's Transcendence|Icon_Equipment_NecklaceU009
+28|WheelOfSuccession|Wheel of Succession|Icon_Equipment_NecklaceU018
+28|SurgingKnowledge|Surging Knowledge|Icon_Equipment_NecklaceU035
+30|StovekeepersPrayer|Stovekeeper's Prayer|Icon_Equipment_NecklaceU019
+30|BloodStrikeSublimationStone|Blood Strike Sublimation Stone|Icon_Equipment_NecklaceU010
+31|SparkFirePendant|Spark Fire Pendant|Icon_Equipment_NecklaceU020
+31|ElementalExplosionThirdEye|Elemental Explosion Third Eye|Icon_Equipment_NecklaceU002
+31|MedalOfPenance|Medal of Penance|Icon_Equipment_NecklaceU031
+32|TwilightDestination|Twilight Destination|Icon_Equipment_NecklaceU021
+32|WheelOfFateAuraOfAdventurer|Wheel of Fate Aura of Adventurer|Icon_Equipment_NecklaceU011
+32|LegacyOfProgress|Legacy of Progress|Icon_Equipment_NecklaceU024
+32|CharmOfThreeLights|Charm of Three Lights|Icon_Equipment_NecklaceU025
+32|ShatterLongTailOfComet|Shatter Long Tail of Comet|Icon_Equipment_NecklaceU003
+33|RotatingSpiral|Rotating Spiral|Icon_Equipment_NecklaceU022
+33|BlueGrailUnityToken|Blue Grail Unity Token|Icon_Equipment_NecklaceU004
+33|AquillasTarget|Aquilla's Target|Icon_Equipment_NecklaceU023
+33|TremblingSpiritSubliminalEssence|Trembling Spirit Subliminal Essence|Icon_Equipment_NecklaceU012
+33|CelestialOrb|Celestial Orb|Icon_Equipment_NecklaceU028
+34|StarLimit|Star Limit|Icon_Equipment_NecklaceU026
+34|DauntlessSeal|Dauntless Seal|Icon_Equipment_NecklaceU027
+34|TranscendentVespersTear|Transcendent Vesper's Tear|Icon_Equipment_NecklaceU029
+34|TranscendentHirasCharm|Transcendent Hira's Charm|Icon_Equipment_NecklaceU030
+34|CaprisHeart|Capri's Heart|Icon_Equipment_NecklaceU017
+34|TranscendentTriahsNecklace|Transcendent Triah's Necklace|Icon_Equipment_NecklaceU007
+34|SephdarsHalter|Sephdar's Halter|Icon_Equipment_NecklaceU015
+34|TranscendentSurgingKnowledge|Transcendent Surging Knowledge|Icon_Equipment_NecklaceU035
+34|TranscendentFadingEmotions|Transcendent Fading Emotions|Icon_Equipment_NecklaceU036
+35|GoldCoinOfTheBeginning|Gold Coin of the Beginning|Icon_Equipment_NecklaceU033
+35|TeneosNecklaceOfPunishment|Teneo's Necklace of Punishment|Icon_Equipment_NecklaceU034

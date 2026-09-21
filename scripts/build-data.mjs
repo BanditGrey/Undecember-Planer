@@ -1,0 +1,79 @@
+// Builds src/data/*.json (app bundle) from the project's own database.
+// Priority: db/{section}.json (full scraped DB) > data/raw/*.txt (bootstrap index captured by hand).
+import fs from 'node:fs'; import path from 'node:path';
+const root = path.resolve(new URL('..', import.meta.url).pathname);
+const raw = (f) => fs.readFileSync(path.join(root, 'data/raw', f), 'utf8').split('\n').filter(l => l.trim() && !l.startsWith('#'));
+const db = (f) => { const p = path.join(root, 'db', f); return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : null; };
+const out = (f, d) => fs.writeFileSync(path.join(root, 'src/data', f), JSON.stringify(d));
+const hasLocalIcon = (rel) => fs.existsSync(path.join(root, 'public', rel));
+const SITE = 'https://undecember.thein.ru';
+// Icon path: local mirror if present, else remote fallback (until `npm run data:scrape` has been run).
+const icon = (rel) => hasLocalIcon(rel) ? rel : `${SITE}/image/${rel.replace(/^icons\//, '')}`;
+fs.mkdirSync(path.join(root, 'src/data'), { recursive: true });
+
+const tagMembers = {}; for (const l of raw('tags_members.txt')) { const [tag, rest] = l.split(':'); tagMembers[tag.trim()] = (rest || '').trim().split(/\s+/).filter(Boolean); }
+const tagsOf = {}; for (const [t, slugs] of Object.entries(tagMembers)) for (const s of slugs) (tagsOf[s] ||= []).push(t);
+
+// ---- runes
+const runesDb = db('runes.json') || {};
+const runeColors = db('rune_colors.json') || {};
+const rawRunes = raw('runes_list.txt').map(l => { const [type, slug, name, ic] = l.split('|'); return { type, slug, name, ic }; });
+const runeRows = Object.keys(runesDb).length ? Object.values(runesDb).sort((a, b) => a.order - b.order).map(d => { const r = rawRunes.find(x => x.slug === d.slug); return { type: r?.type ?? (d.icons[0]?.includes('/LinkSkill/') ? 'Link' : 'Skill'), slug: d.slug, name: d.name, ic: r?.ic ?? '' }; }) : rawRunes;
+const runes = runeRows.map(({ type, slug, name, ic }) => { const d = runesDb[slug] || {};
+  return { slug, name, type, color: runeColors[slug] ?? null, icons: (d.icons?.length ? d.icons : ic.split(',').map(i => `icons/runes/${type}/${i}.png`)).map(icon), tags: d.tags?.length ? d.tags : (tagsOf[slug] || []),
+    rarity: d.rarity ?? null, howToGet: d.howToGet ?? [], acts: d.acts ?? [], weapons: d.weapons ?? [], description: d.description ?? '', linkRules: (d.linkRules ?? []).map(x => x.replace(/Удар/g, 'Strike')) /* source site leaks the Russian word for Strike */,
+    level1: d.level1 ?? [], level45: d.level45 ?? [], gradeBonuses: d.gradeBonuses ?? [], awakening: d.awakening ?? {} }; });
+
+// ---- runes added after the source site stopped updating (hand-maintained overlay, see db/runes-extra.json)
+const extra = db('runes-extra.json') || { runes: [], tagPatches: {} };
+// Placeholder icons for runes whose art is not in the mirror (closest existing in-game icon).
+const PLACEHOLDER_ICON = { FrostStorm: 'Skill/Icon_Skill_FrostArrow_01.png', AxeThrow: 'Skill/Icon_Skill_RotateAxe_01.png', ChargedShot: 'Skill/Icon_Skill_LightningBulletShot_01.png', DivinePunishment: 'Skill/Icon_Skill_Judgmentoflight.png',
+  WrathfulBlow: 'Skill/Icon_Skill_LightningHit_01.png', ToxicMist: 'Skill/Icon_Skill_PoisonBurst_01.png', LightningSlash: 'Skill/Icon_Skill_FlickerSlash_01.png', Flash: 'Skill/Icon_Skill_VelocitySlash_01.png',
+  IaiJutsu: 'LinkSkill/Icon_LinkSkill_MeleeDmg_01.png', ChainOfPain: 'LinkSkill/Icon_LinkSkill_PersistentPain_01.png', TranscendentManaStorm: 'LinkSkill/Icon_LinkSkill_ManaBerserk_01.png', TranscendentHarmony: 'LinkSkill/Icon_LinkSkill_Harmony.png',
+  TranscendentEnhanceEffect: 'LinkSkill/Icon_LinkSkill_BuffAcceleration_01.png', TranscendentImprovedTechnique: 'LinkSkill/Icon_LinkSkill_RuneLevelUp_01.png', SpellActivationUponTranscendentSpellHit: 'LinkSkill/Icon_LinkSkill_OnCriHitSpell_01.png' };
+for (const e of extra.runes) { if (runes.some(r => r.slug === e.slug)) continue;
+  const ic = `icons/runes/${PLACEHOLDER_ICON[e.slug] || `${e.type}/Icon_${e.type === 'Link' ? 'LinkSkill' : 'Skill'}_${e.icon}_01.png`}`;
+  runes.push({ slug: e.slug, name: e.name, type: e.type, color: e.color, icons: [icon(ic)], tags: e.tags, rarity: e.rarity, howToGet: e.howToGet, acts: e.acts, weapons: e.weapons, description: e.description, linkRules: e.linkRules ?? [],
+    level1: e.level1, level45: e.level45, gradeBonuses: e.gradeBonuses, awakening: e.awakening, unofficial: !!e.unofficial, maxLevel: e.maxLevel, source: e.source, sourceUrl: e.sourceUrl, placeholderIcon: !!PLACEHOLDER_ICON[e.slug] }); }
+for (const slug of extra.tagPatches?.addSpellToMelee ?? []) { const r = runes.find(x => x.slug === slug); if (!r) continue; if (!r.tags.includes('Spell')) r.tags = [...r.tags, 'Spell'];
+  // "Melee, Attack, Strike (must include all)" -> "Melee, Strike, Attack/Spell (must include all)" (either Attack or Spell satisfies that slot)
+  r.linkRules = r.linkRules.map(x => /^Can be linked/.test(x) && /\bAttack\b/.test(x) && !/Spell/.test(x) ? x.replace(/\bAttack\b/, 'Attack/Spell') : x); }
+
+// ---- runestones
+const rsDb = db('runestones.json') || {};
+const rawRs = raw('runestones.txt').map(l => { const [rarity, slug, name, ic] = l.split('|'); return { rarity, slug, name, ic }; });
+const rsRows = Object.keys(rsDb).length ? Object.values(rsDb).sort((a, b) => a.order - b.order).map(d => ({ rarity: d.rarity ?? rawRs.find(x => x.slug === d.slug)?.rarity ?? 'Magic', slug: d.slug, name: d.name, ic: '' })) : rawRs;
+const runestones = rsRows.map(({ rarity, slug, name, ic }) => { const d = rsDb[slug] || {};
+  return { slug, name, rarity, icon: icon(d.icons?.[0] || `icons/items/RuneCast/${ic}.png`), effect: (d.effect ?? []).flatMap(e => e.split(/(?<=[a-z\)])(?=Rune level|[+-]?\[|\+\d)/)).map(x => x.trim()).filter(Boolean) }; });
+
+// ---- uniques
+const TYPE_NAMES = { dagger:'Dagger', sword:'One-Handed Sword', axe:'One-Handed Axe', mace:'One-Handed Blunt', staff:'Staff', bow:'Bow', wand:'Wand', sceptre:'Scepter', magicbow:'Magic Bow', quiver:'Quiver', bowgun:'Bowgun', magazine:'Magazine', shield:'Shield', helmet:'Helmet', shoulder:'Pauldrons', bodyarmor:'Armor', gloves:'Gloves', boots:'Shoes', belt:'Belt', ring:'Ring', necklace:'Necklace', twohand_sword:'Two-Handed Sword', twohand_axe:'Two-Handed Axe', twohand_mace:'Two-Handed Blunt' };
+const uqDb = db('uniques.json') || {};
+const rawUq = raw('uniques_list.txt').map(l => { const [tier, slug, name, ic] = l.split('|'); return { tier, slug, name, ic }; });
+const uqRows = Object.keys(uqDb).length ? Object.values(uqDb).sort((a, b) => a.order - b.order).map(d => ({ tier: d.tier, slug: d.slug, name: d.name, ic: (d.icons[0] || '').split('/').pop().replace(/\.png$/, '') })) : rawUq;
+const uniques = uqRows.map(({ tier, slug, name, ic }) => { const d = uqDb[slug] || {};
+  const key = ic.replace(/^Icon_Equipment_/, '').replace(/(Dummy|[UT]\d+.*)$/, '').toLowerCase(); const type = TYPE_NAMES[key]; if (!type) throw new Error('unknown type ' + ic);
+  return { slug, name, tier: +tier, typeKey: key, type: d.type || type, icon: icon(d.icons?.[0] || `icons/items/Equipment/${ic}.png`), requires: d.requires ?? [], baseStats: d.baseStats ?? [], affixes: d.affixes ?? [] }; });
+
+// ---- rune master
+const runemaster = raw('runemaster.txt').map((l, i) => { const [category, tier, unlockLevel, maxPoints, prereq, effect] = l.split('|');
+  return { id: `rm${i}`, category, tier: +tier, unlockLevel: +unlockLevel, maxPoints: +maxPoints, prereqPointsPrevTier: +prereq, effect }; });
+
+// ---- authority
+const SLOTS = ['Weapons','Shield','Quiver','Magazine','Helmet','Pauldrons','Armor','Gloves','Shoes','Necklace','Ring','Belt'];
+const GODS = ['Alyssa','Hamal','Boreal','Casthor','Acuben','Leo','Spica','Aquilla','Vesper','Sephdar','Capri','Miraseti'];
+const auDb = db('authority.json') || {};
+const authority = SLOTS.flatMap(slot => GODS.map(god => { const slug = `${slot}${god}`; const d = auDb[slug] || {};
+  return { slug, slot, god, name: `${god}'s Authority (${slot})`, unique: d.unique ?? [], prefix: d.prefix ?? [], suffix: d.suffix ?? [] }; }));
+
+// ---- misc sections (only from db)
+const misc = {}; for (const s of ['essences', 'coins', 'potions', 'materials']) { const d = db(`${s}.json`); misc[s] = d ? Object.values(d).sort((a, b) => a.order - b.order).map(x => ({ slug: x.slug, name: x.name, icon: x.icons?.[0] ? icon(x.icons[0]) : null, rarity: x.rarity ?? null, howToGet: x.howToGet ?? [], useOn: x.useOn ?? [], description: x.description ?? '', props: x.props ?? [], recipes: x.recipes ?? [] })) : []; }
+
+// ---- zodiac specializations (hand-transcribed from official patch notes)
+const zodiacDb = db('zodiac.json');
+const zodiac = zodiacDb ? { sourceUrl: zodiacDb.sourceUrl, maxPoints: zodiacDb.maxPoints, routes: zodiacDb.routes.map(r => ({ id: r.id, name: r.name, focus: r.focus, tags: r.tags,
+  specs: r.specs.map(sp => ({ id: sp.id, tier: sp.tier, name: sp.name, nodes: sp.nodes.map(([kind, ...effects], i) => ({ id: `${sp.id}.${i}`, kind, effects })) })) })) } : { sourceUrl: '', maxPoints: {}, routes: [] };
+out('zodiac.json', zodiac);
+out('runes.json', runes); out('runestones.json', runestones); out('uniques.json', uniques); out('runemaster.json', runemaster); out('authority.json', authority); out('tags.json', Object.keys(tagMembers).sort()); out('misc.json', misc);
+const filled = (arr, k) => arr.filter(x => (Array.isArray(x[k]) ? x[k].length : x[k])).length;
+console.log({ zodiacNodes: zodiac.routes.flatMap(r => r.specs.flatMap(s => s.nodes)).length, runes: runes.length, runesWithDetails: filled(runes, 'level1'), runestones: runestones.length, uniques: uniques.length, uniquesWithAffixes: filled(uniques, 'affixes'), runemaster: runemaster.length, authority: authority.length, authorityWithOptions: filled(authority, 'unique'), runestonesWithEffect: filled(runestones, 'effect'), misc: Object.fromEntries(Object.entries(misc).map(([k, v]) => [k, v.length])) });
