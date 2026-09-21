@@ -79,9 +79,24 @@ npm run dev        # http://localhost:5173
 npm run build      # gera dist/
 npm run data:build # regenera JSON a partir de data/raw
 npm run data:scrape # (requer acesso ao site) enriquece com páginas de detalhe
+npm test           # vitest: presets válidos, camadas de DPS, regras de link, árvore zodiacal
 ```
+CI (`.github/workflows/ci.yml`) roda em cada PR: `data:build` (falha se `src/data` estiver desatualizado), `tsc`, testes e build.
 
-## Roadmap
+### Galeria hospedada (opcional)
+Por padrão o site é 100 % estático e a galeria usa issues do GitHub. Para links curtos (`#c=abc123`), votos e busca por skill
+sem exigir conta GitHub, crie um projeto gratuito no [Supabase](https://supabase.com), execute `supabase/schema.sql` no SQL editor e
+defina os secrets `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` no repositório (o `deploy.yml` já os repassa ao build).
+Sem os secrets a seção simplesmente não aparece.
+
+### Mobile
+Layout responsivo: o Rune Cast hexagonal é escalado para caber na tela, as grades viram coluna única e os tooltips abrem com
+toque longo (350 ms) em dispositivos sem hover.
+
+## Roadmap / precisa de dados da comunidade
 - Refinar glossário PT (nomes de itens únicos e autoridades).
+- **Zodiaco normal (constelações I–IX):** só os nós Awakening estão modelados; faltam os valores dos nós comuns (screenshots ou tabela).
+- **Ícones oficiais das 15 runas provisórias** (marcadas com `provisional: true` em `src/data/runes.json`) — PNGs 64×64 em `public/icons/runes/`.
+- **Revisão dos 17 presets** por jogadores da temporada atual (`src/lib/presets.ts`): valores de DPS são estimativas do modelo, não do jogo.
 
 Projeto de fãs, não afiliado à LINE Games / Needs Games.

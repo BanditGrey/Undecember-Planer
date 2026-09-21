@@ -3,3 +3,5 @@ dist
 .vite
 data/cache/
 data/samples/
+.env
+.env.local

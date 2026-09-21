@@ -14,6 +14,7 @@ import { Search } from './components/Search';
 import { runes, runestones, uniques, runemaster, authority, zodiacSpecs } from './data';
 import { Zodiac } from './components/Zodiac';
 import { buildFromLocation, deleteBuild, saveBuild, savedBuilds, shareUrl } from './lib/share';
+import { cloudEnabled, cloudIdFromLocation, fetchCloudBuild } from './lib/cloud';
 import { emptyBuild, type Build } from './types';
 import { useT } from './lib/i18n';
 import { Dps } from './components/Dps';
@@ -38,6 +39,8 @@ export default function App() {
   const { t, lang, setLang, showOriginal, setShowOriginal } = useT();
   useEffect(() => { history.replaceState(null, '', shareUrl(build)); }, [build]);
   useEffect(() => { const h = () => { const b = buildFromLocation(); if (b) setBuild(b); }; addEventListener('hashchange', h); return () => removeEventListener('hashchange', h); }, []);
+  // Short links (#c=<id>) resolve through the optional cloud backend.
+  useEffect(() => { const id = cloudIdFromLocation(); if (id && cloudEnabled) fetchCloudBuild(id).then(b => { if (b) setBuild(b); }).catch(() => {}); }, []);
   const flash = (m: string) => { setMsg(m); setTimeout(() => setMsg(''), 2500); };
   const share = async () => { await navigator.clipboard.writeText(shareUrl(build)); flash(t('copied')); };
   const shareView = async () => { await navigator.clipboard.writeText(shareUrl(build) + '&view=1'); flash(t('copied')); };
