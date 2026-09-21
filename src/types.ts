@@ -18,7 +18,8 @@ export interface Build {
   stat: 'STR' | 'DEX' | 'INT' | 'HYBRID';
   notes: string;
   board: Record<string, Cell>; // key "q,r" (axial hex coordinates)
-  equipment: Partial<Record<EquipSlot, { unique?: string; authority?: string }>>;
+  equipment: Partial<Record<EquipSlot, { unique?: string; authority?: string; affixes?: string[] }>>; // affixes: free-text lines of rare/crafted gear (one per line)
+  extras?: Extras; // charms, relics, lacrima, jewels (free text – no public structured database exists)
   runemaster: Record<string, number>; // node id -> points
   zodiac?: string[]; // activated specialization node ids ("Spec.index")
   runeLevel?: number; // 1..50 (45 base + up to 5 from Rune Candor)
@@ -27,6 +28,10 @@ export interface Build {
 }
 
 
+export interface ExtraItem { name: string; lines: string[] }
+export interface Lacrima { type: string; grade: 'Magic' | 'Rare' | 'Unique'; absorb: number; lines: string[] }
+export interface Extras { charms: ExtraItem[]; relics: ExtraItem[]; lacrima: Lacrima[]; jewels: ExtraItem[]; notes?: string }
+export const emptyExtras = (): Extras => ({ charms: [], relics: [], lacrima: [], jewels: [] });
 export const emptyBuild = (): Build => ({ v: 1, name: 'Nova build', author: '', stat: 'HYBRID', notes: '', board: {}, equipment: {}, runemaster: {} });
 
 export type ZodiacKind = 'Moon' | 'Star' | 'Sun' | 'Cosmos';

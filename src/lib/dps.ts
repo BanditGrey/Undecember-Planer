@@ -53,6 +53,11 @@ export function estimate(build: Build, g: SkillGroup, input: DpsInput): DpsResul
       for (const raw of parts) { const l = raw.trim().replace(/^DMG upon Attack \+(\d+%)$/, '+$1 DMG upon Attack').replace(/^DMG upon Spell \+(\d+%)$/, '+$1 DMG upon Spell').replace(/^Amplifies DMG by (\d+%)/, '$1 DMG Amplification');
         if (/upon Attack|attacking/i.test(l) && !g.skill.tags.includes('Attack')) continue; if (/upon Spell/i.test(l) && !g.skill.tags.includes('Spell')) continue; if (!weaponOk(l)) continue;
         const m = classify(l.replace(/ upon (Attack|Spell)$/i, '').replace(/ Increase$/i, '').replace(/ when (2-handed|1-handed) weapon is equipped$| when Dual Wielding$/i, ''), src, { tags: g.skill.tags }); if (m) mods.push(m); } } }
+  // Gear affixes (free text, one per line), charms, relics, jewels and Lacrima (scaled by absorb rate).
+  const gearLine = (line: string, src: string, scale = 1) => { const m = classify(line, src, { tags: g.skill.tags }); if (m) mods.push(scale === 1 ? m : { ...m, value: +(m.value * scale).toFixed(1), line: `${m.line} × ${Math.round(scale * 100)}%` }); };
+  for (const [slot, e] of Object.entries(build.equipment)) for (const l of e?.affixes ?? []) gearLine(l, `Gear: ${slot}`);
+  const ex = build.extras; if (ex) { for (const c of ex.charms) for (const l of c.lines) gearLine(l, `Charm: ${c.name || '?'}`); for (const c of ex.relics) for (const l of c.lines) gearLine(l, `Relic: ${c.name || '?'}`); for (const c of ex.jewels) for (const l of c.lines) gearLine(l, `Jewel: ${c.name || '?'}`);
+    ex.lacrima.forEach((c, i) => { for (const l of c.lines) gearLine(l, `Lacrima ${i + 1}: ${c.type}`, (c.absorb || 100) / 100); }); }
   const incTotal = mods.filter(m => m.kind === 'inc').reduce((a, m) => a + m.value, 0) + input.charIncPct;
   const ampTotal = mods.filter(m => m.kind === 'amp').reduce((a, m) => a + m.value, 0);
   const moreProduct = mods.filter(m => m.kind === 'more').reduce((a, m) => a * (1 + m.value / 100), 1) * mods.filter(m => m.kind === 'less').reduce((a, m) => a * (1 - m.value / 100), 1);

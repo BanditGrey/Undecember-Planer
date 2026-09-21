@@ -145,3 +145,8 @@ img.mini{width:22px;height:22px;vertical-align:middle;border-radius:50%;backgrou
 .zod-named{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 10px}.zod-named .chip{font-size:11px;border:1px solid #c76bff88;color:#d9b8ff;border-radius:10px;padding:1px 8px}
 .small{font-size:12px}
 .roll{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:2px 0 6px}.roll-todo{color:var(--warn)}.roll-ok{color:var(--link)}
+.affix-edit{width:100%;font-size:12px;margin:6px 0}.row.wrap{flex-wrap:wrap;gap:4px}button.mini{padding:2px 8px;font-size:11px}
+.extras{margin-top:16px;border-top:1px solid var(--line);padding-top:10px}.extras h3{margin:0 0 8px;color:var(--gold)}.extras h3 small{font-weight:400;font-family:inherit;letter-spacing:0}
+.extras-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-bottom:8px}.extra-box{border:1px solid var(--line);background:#0e0c0a;border-radius:3px;padding:8px}.extra-box>p{margin:4px 0 6px}
+.extra-item{border-top:1px dashed var(--line);padding-top:6px;margin-top:6px}.extra-item input[type=text],.extra-item input:not([type]){flex:1}
+.app.view .affix-edit,.app.view .extras textarea,.app.view button.mini{display:none!important}
