@@ -151,3 +151,16 @@ img.mini{width:22px;height:22px;vertical-align:middle;border-radius:50%;backgrou
 .extra-item{border-top:1px dashed var(--line);padding-top:6px;margin-top:6px}.extra-item input[type=text],.extra-item input:not([type]){flex:1}
 .app.view .affix-edit,.app.view .extras textarea,.app.view button.mini{display:none!important}
 .dps-inputs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}.dps-inputs fieldset{border:1px solid var(--line);border-radius:3px;display:flex;flex-wrap:wrap;gap:8px;padding:6px 10px}.dps-inputs legend{color:var(--gold);font-size:12px;padding:0 4px}.dps-inputs label{font-size:12px}
+/* ---- small screens */
+.hexwrap{overflow:hidden}
+@media(max-width:720px){
+  body{font-size:13px}.app{padding:8px}
+  nav{overflow-x:auto;white-space:nowrap;scrollbar-width:thin}nav button{padding:6px 8px;font-size:12px}
+  header h1{font-size:18px}header .row{flex-wrap:wrap}
+  .groups,.zod-grid,.extras-grid,.gallery{grid-template-columns:1fr}
+  .doll{grid-template-rows:repeat(6,64px);gap:4px;padding:6px}.doll-wrap{grid-template-columns:1fr}
+  .ud-tip{max-width:92vw}
+  .zod-const svg{min-height:220px}
+  button,select,input{min-height:32px}
+}
+@media(hover:none){.ud-tip{position:fixed;left:4vw!important;right:4vw;bottom:8px;top:auto!important;max-height:50vh;overflow:auto}}

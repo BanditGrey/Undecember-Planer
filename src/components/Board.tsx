@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { runes, runestones, runeBySlug, runestoneBySlug, tags } from '../data';
 import { analyzeBoard, AWAKEN_HEX, AWAKEN_KEYS, cells, CENTER, COLOR_HEX, COLOR_NAME, GRADE_HEX, GRADE_NAMES, dirAngle, hexPos, runeColor, triggerSpec, DIRS, step } from '../lib/rules';
 import type { SlotColor } from '../types';
@@ -41,6 +41,9 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
     set({ ...build, board });
   };
   const W = HEX * Math.sqrt(3) * 7 + 8, H = HEX * 1.5 * 6 + HEX * 2 + 8;
+  // Fit the fixed-size board into narrow screens (phones) by scaling the whole hex grid.
+  const wrapRef = useRef<HTMLDivElement>(null); const [scale, setScale] = useState(1);
+  useEffect(() => { const el = wrapRef.current; if (!el) return; const fit = () => setScale(Math.min(1, (el.clientWidth - 4) / W)); fit(); const ro = new ResizeObserver(fit); ro.observe(el); return () => ro.disconnect(); }, [W]);
 
   return (
     <section className="panel">
@@ -52,7 +55,7 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
         <ul>{(['help1', 'help2', 'help3', 'help4', 'help5', 'help6'] as const).map(k => <li key={k}>{t(k)}</li>)}</ul>
         <small className="muted">{t('helpSrc')} <a href="https://guide.floor.line.games/UD/en_US/detail/1166916580580800893" target="_blank" rel="noreferrer">guide.floor.line.games</a></small>
       </div>}
-      <div className="hexwrap"><div className="hexboard" style={{ width: W, height: H }}>
+      <div className="hexwrap" ref={wrapRef} style={{ height: H * scale }}><div className="hexboard" style={{ width: W, height: H, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
         <svg className="hexlinks" width={W} height={H}>
           {groups.flatMap(g => g.links.map(l => { const a = hexPos(g.cell), b = hexPos(l.cell); return <line key={g.cell + l.cell} x1={a.x * HEX + W / 2} y1={a.y * HEX + H / 2} x2={b.x * HEX + W / 2} y2={b.y * HEX + H / 2} stroke={l.check.ok ? '#c9a24a' : '#e05252'} strokeWidth={3} opacity={.8} />; }))}
           {triggers.flatMap(x => { const a = hexPos(x.cell); const ends = [x.target && { ...x.target, k: 't' }, x.activation && { ...x.activation, k: 'a' }].filter(Boolean) as { cell: string; ok: boolean; k: string }[];

@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import type { Rune, Runestone, Unique, Authority } from '../types';
 import { COLOR_HEX, COLOR_NAME, ELEMENT_COLORS, runeColor } from '../lib/rules';
 import { BASE_MAX_LEVEL, statsAtLevel } from '../lib/level';
@@ -11,7 +11,11 @@ export function Tip({ content, children, className }: { content: ReactNode; chil
   useLayoutEffect(() => { if (!pos || !ref.current) return; const el = ref.current; const r = el.getBoundingClientRect();
     let x = pos.x, y = pos.y; if (x + r.width > innerWidth - 8) x = pos.x - r.width - 24; if (y + r.height > innerHeight - 8) y = Math.max(8, innerHeight - r.height - 8);
     el.style.left = x + 'px'; el.style.top = y + 'px'; el.style.visibility = 'visible'; });
-  return <div className={className} style={{ display: 'contents' }} onMouseEnter={e => setPos({ x: e.clientX + 16, y: e.clientY + 12 })} onMouseMove={e => setPos({ x: e.clientX + 16, y: e.clientY + 12 })} onMouseLeave={() => setPos(null)}>
+  // Touch devices have no hover: a long-press (350 ms) opens the tooltip, tapping anywhere closes it.
+  const timer = useRef<number | null>(null);
+  useEffect(() => { if (!pos) return; const close = () => setPos(null); addEventListener('touchstart', close, { passive: true }); return () => removeEventListener('touchstart', close); }, [pos]);
+  return <div className={className} style={{ display: 'contents' }} onMouseEnter={e => setPos({ x: e.clientX + 16, y: e.clientY + 12 })} onMouseMove={e => setPos({ x: e.clientX + 16, y: e.clientY + 12 })} onMouseLeave={() => setPos(null)}
+    onTouchStart={e => { const t = e.touches[0]; timer.current = window.setTimeout(() => setPos({ x: t.clientX, y: t.clientY }), 350); }} onTouchEnd={() => { if (timer.current) clearTimeout(timer.current); }} onTouchMove={() => { if (timer.current) clearTimeout(timer.current); }}>
     {children}
     {pos && <div ref={ref} className="ud-tip" style={{ visibility: 'hidden' }}>{content}</div>}
   </div>;
