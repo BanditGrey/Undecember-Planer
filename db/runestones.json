@@ -11,7 +11,7 @@
    "Increases the Level of the Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/RuneGrowthMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ResourceCostMagicRunestone": {
   "slug": "ResourceCostMagicRunestone",
@@ -25,7 +25,7 @@
    "Decreases Resource Cost when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ResourceCostMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AreaOfEffectMagicRunestone": {
   "slug": "AreaOfEffectMagicRunestone",
@@ -39,7 +39,7 @@
    "Increases the Area of Effect of the Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AreaOfEffectMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionAttackSpeedMagicRunestone": {
   "slug": "MinionAttackSpeedMagicRunestone",
@@ -53,7 +53,7 @@
    "Increases Minion Attack Speed against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionAttackSpeedMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryCriticalRateMagicRunestone": {
   "slug": "SentryCriticalRateMagicRunestone",
@@ -67,7 +67,7 @@
    "Increases Sentry Critical Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryCriticalRateMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HPRecoveryMagicRunestone": {
   "slug": "HPRecoveryMagicRunestone",
@@ -81,7 +81,7 @@
    "Recovery HP on Kill when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HPRecoveryMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGAmplificationMagicRunestone": {
   "slug": "DMGAmplificationMagicRunestone",
@@ -95,7 +95,7 @@
    "Amplifies DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAmplificationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CriticalDMGMagicRunestone": {
   "slug": "CriticalDMGMagicRunestone",
@@ -109,7 +109,7 @@
    "Increases Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalDMGMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionHitRateMagicRunestone": {
   "slug": "MinionHitRateMagicRunestone",
@@ -123,7 +123,7 @@
    "Increases Minion Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionHitRateMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryHitRateMagicRunestone": {
   "slug": "SentryHitRateMagicRunestone",
@@ -137,7 +137,7 @@
    "Increases Sentry Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryHitRateMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AttackSpeedMagicRunestone": {
   "slug": "AttackSpeedMagicRunestone",
@@ -151,7 +151,7 @@
    "Increases Attack Speed upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackSpeedMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CastSpeedMagicRunestone": {
   "slug": "CastSpeedMagicRunestone",
@@ -165,7 +165,7 @@
    "Increases Cast Speed upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CastSpeedMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "EliteDMGMagicRunestone": {
   "slug": "EliteDMGMagicRunestone",
@@ -179,7 +179,7 @@
    "Increases DMG against Elites upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/EliteDMGMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ArmorPenetrationMagicRunestone": {
   "slug": "ArmorPenetrationMagicRunestone",
@@ -193,7 +193,7 @@
    "Increases Armor Penetration upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ArmorPenetrationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ElementPenetrationMagicRunestone": {
   "slug": "ElementPenetrationMagicRunestone",
@@ -207,7 +207,7 @@
    "Increases Element Penetration upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ElementPenetrationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryAttackSpeedMagicRunestone": {
   "slug": "SentryAttackSpeedMagicRunestone",
@@ -221,7 +221,7 @@
    "Increases Sentry Attack Speed when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryAttackSpeedMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionCriticalRateMagicRunestone": {
   "slug": "MinionCriticalRateMagicRunestone",
@@ -235,7 +235,7 @@
    "Increases Minion Critical Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionCriticalRateMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGPenetrationMagicRunestone": {
   "slug": "MinionDMGPenetrationMagicRunestone",
@@ -249,7 +249,7 @@
    "Increases Minion DMG Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGPenetrationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGPenetrationMagicRunestone": {
   "slug": "SentryDMGPenetrationMagicRunestone",
@@ -263,7 +263,7 @@
    "Increases Sentry DMG Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGPenetrationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AttackSealEffectMagicRunestone": {
   "slug": "AttackSealEffectMagicRunestone",
@@ -277,7 +277,7 @@
    "Increases the Attack Seal Effect equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackSealEffectMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DefenseSealEffectMagicRunestone": {
   "slug": "DefenseSealEffectMagicRunestone",
@@ -291,7 +291,7 @@
    "Increases the Defense Seal Effect equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenseSealEffectMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "EnchanceSkillRuneCooldownRecoverySpeedMagicRunestone": {
   "slug": "EnchanceSkillRuneCooldownRecoverySpeedMagicRunestone",
@@ -305,7 +305,7 @@
    "Decreases Enhance Skill Rune Cooldown Recovery Speed when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/EnchanceSkillRuneCooldownRecoverySpeedMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGAgainstElitesMagicRunestone": {
   "slug": "MinionDMGAgainstElitesMagicRunestone",
@@ -319,7 +319,7 @@
    "Increases Minion DMG against Elites when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGAgainstElitesMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGAgainstElitesMagicRunestone": {
   "slug": "SentryDMGAgainstElitesMagicRunestone",
@@ -333,7 +333,7 @@
    "Increases Sentry DMG against Elites when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGAgainstElitesMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AttackEnhanceSkillDurationMagicRunestone": {
   "slug": "AttackEnhanceSkillDurationMagicRunestone",
@@ -347,7 +347,7 @@
    "Increases Attack Enhance Skill Rune Duration upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackEnhanceSkillDurationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DefenceEnhanceSkillDurationMagicRunestone": {
   "slug": "DefenceEnhanceSkillDurationMagicRunestone",
@@ -361,7 +361,7 @@
    "Increases Defense Enhance Skill Rune Duration upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenceEnhanceSkillDurationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGStatusEffectChanceMagicRunestone": {
   "slug": "DMGStatusEffectChanceMagicRunestone",
@@ -375,7 +375,7 @@
    "Increases DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGStatusEffectChanceMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGStatusEffectChanceMagicRunestone": {
   "slug": "MinionDMGStatusEffectChanceMagicRunestone",
@@ -389,7 +389,7 @@
    "Increases Minion DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGStatusEffectChanceMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGStatusEffectChanceMagicRunestone": {
   "slug": "SentryDMGStatusEffectChanceMagicRunestone",
@@ -403,7 +403,7 @@
    "Increases Sentry DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGStatusEffectChanceMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "StatusEffectDMGAmplificationMagicRunestone": {
   "slug": "StatusEffectDMGAmplificationMagicRunestone",
@@ -417,7 +417,7 @@
    "Amplifies Status Effect DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/StatusEffectDMGAmplificationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionStatusEffectDMGAmplificationMagicRunestone": {
   "slug": "MinionStatusEffectDMGAmplificationMagicRunestone",
@@ -431,7 +431,7 @@
    "Amplifies Minion Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionStatusEffectDMGAmplificationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryStatusEffectDMGAmplificationMagicRunestone": {
   "slug": "SentryStatusEffectDMGAmplificationMagicRunestone",
@@ -445,7 +445,7 @@
    "Amplifies Sentry Status Effect DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryStatusEffectDMGAmplificationMagicRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HitRateRareRunestone": {
   "slug": "HitRateRareRunestone",
@@ -459,7 +459,7 @@
    "Increases Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HitRateRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CriticalRateRareRunestone": {
   "slug": "CriticalRateRareRunestone",
@@ -473,7 +473,7 @@
    "Increases Critical Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalRateRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGRareRunestone": {
   "slug": "DMGRareRunestone",
@@ -487,7 +487,7 @@
    "Increases DMG dealt to enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGRareRunestone": {
   "slug": "MinionDMGRareRunestone",
@@ -501,7 +501,7 @@
    "Increases Minion DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGRareRunestone": {
   "slug": "SentryDMGRareRunestone",
@@ -515,7 +515,7 @@
    "Increases Sentry DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ManaRecoveryRareRunestone": {
   "slug": "ManaRecoveryRareRunestone",
@@ -529,7 +529,7 @@
    "Increases Mana on Kill when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ManaRecoveryRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "BossDMGRareRunestone": {
   "slug": "BossDMGRareRunestone",
@@ -543,7 +543,7 @@
    "Increases DMG dealt to Bosses when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/BossDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CriticalDMGRareRunestone": {
   "slug": "CriticalDMGRareRunestone",
@@ -557,7 +557,7 @@
    "Increases Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionCriticalDMGRareRunestone": {
   "slug": "MinionCriticalDMGRareRunestone",
@@ -571,7 +571,7 @@
    "Increases Minion Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionCriticalDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryCriticalDMGRareRunestone": {
   "slug": "SentryCriticalDMGRareRunestone",
@@ -585,7 +585,7 @@
    "Increases Sentry Critical DMG when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryCriticalDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AttackEnhanceEffectRareRunestone": {
   "slug": "AttackEnhanceEffectRareRunestone",
@@ -599,7 +599,7 @@
    "Increases Attack Enchance Skill Rune effect upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackEnhanceEffectRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DefenseEnhanceEffectRareRunestone": {
   "slug": "DefenseEnhanceEffectRareRunestone",
@@ -613,7 +613,7 @@
    "Increases Defense Enhance Skill Rune effect upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenseEnhanceEffectRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGAgainstNearEnemiesRareRunestone": {
   "slug": "DMGAgainstNearEnemiesRareRunestone",
@@ -627,7 +627,7 @@
    "Increases DMG against near enemies upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAgainstNearEnemiesRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGAgainstFarEnemiesRareRunestone": {
   "slug": "DMGAgainstFarEnemiesRareRunestone",
@@ -641,7 +641,7 @@
    "Increases DMG against far enemies upon using a Skill Rune equipped in the highlighted area"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAgainstFarEnemiesRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionHitRateRareRunestone": {
   "slug": "MinionHitRateRareRunestone",
@@ -655,7 +655,7 @@
    "Increases Minion Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionHitRateRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryHitRateRareRunestone": {
   "slug": "SentryHitRateRareRunestone",
@@ -669,7 +669,7 @@
    "Increases Sentry Hit Rate when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryHitRateRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGOnHitAgainstFarEnemiesRareRunestone": {
   "slug": "MinionDMGOnHitAgainstFarEnemiesRareRunestone",
@@ -683,7 +683,7 @@
    "Increases Minion DMG on hit against far enemies (400 or more) when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGOnHitAgainstFarEnemiesRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGOnHitAgainstFarEnemiesRareRunestone": {
   "slug": "SentryDMGOnHitAgainstFarEnemiesRareRunestone",
@@ -697,7 +697,7 @@
    "Increases Sentry DMG on hit against far enemies (400 or more) when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGOnHitAgainstFarEnemiesRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DoubleMaximizedDMGChanceRareRunestone": {
   "slug": "DoubleMaximizedDMGChanceRareRunestone",
@@ -711,7 +711,7 @@
    "Deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DoubleMaximizedDMGChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDoubleMaximizedDMGChanceRareRunestone": {
   "slug": "MinionDoubleMaximizedDMGChanceRareRunestone",
@@ -725,7 +725,7 @@
    "Minion deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDoubleMaximizedDMGChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDoubleMaximizedDMGChanceRareRunestone": {
   "slug": "SentryDoubleMaximizedDMGChanceRareRunestone",
@@ -739,7 +739,7 @@
    "Sentry deals double maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDoubleMaximizedDMGChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "TripleMaximizedDMGChanceRareRunestone": {
   "slug": "TripleMaximizedDMGChanceRareRunestone",
@@ -753,7 +753,7 @@
    "Deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/TripleMaximizedDMGChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionTripleMaximizedDMGChanceRareRunestone": {
   "slug": "MinionTripleMaximizedDMGChanceRareRunestone",
@@ -767,7 +767,7 @@
    "Minion deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionTripleMaximizedDMGChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryTripleMaximizedDMGChanceRareRunestone": {
   "slug": "SentryTripleMaximizedDMGChanceRareRunestone",
@@ -781,7 +781,7 @@
    "Sentry deals triple maximized DMG by chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryTripleMaximizedDMGChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ElementPenetrationRareRunestone": {
   "slug": "ElementPenetrationRareRunestone",
@@ -795,7 +795,7 @@
    "Increases Element Penetration upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ElementPenetrationRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryElementPenetrationRareRunestone": {
   "slug": "SentryElementPenetrationRareRunestone",
@@ -809,7 +809,7 @@
    "Increases Sentry Element Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryElementPenetrationRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionElementPenetrationRareRunestone": {
   "slug": "MinionElementPenetrationRareRunestone",
@@ -823,7 +823,7 @@
    "Increases Minion Element Penetration when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionElementPenetrationRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGStatusEffectChanceRareRunestone": {
   "slug": "DMGStatusEffectChanceRareRunestone",
@@ -837,7 +837,7 @@
    "Increases DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGStatusEffectChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGStatusEffectChanceRareRunestone": {
   "slug": "SentryDMGStatusEffectChanceRareRunestone",
@@ -851,7 +851,7 @@
    "Increases Sentry DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGStatusEffectChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MiinionDMGStatusEffectChanceRareRunestone": {
   "slug": "MiinionDMGStatusEffectChanceRareRunestone",
@@ -865,7 +865,7 @@
    "Increases Minion DMG Status Effect Chance when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MiinionDMGStatusEffectChanceRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DoubleMaximizedDMGRareRunestone": {
   "slug": "DoubleMaximizedDMGRareRunestone",
@@ -879,7 +879,7 @@
    "Increases Double Maximized DMG upon using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DoubleMaximizedDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDoubleMaximizedDMGRareRunestone": {
   "slug": "MinionDoubleMaximizedDMGRareRunestone",
@@ -893,7 +893,7 @@
    "Increases Minion Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDoubleMaximizedDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDoubleMaximizedDMGRareRunestone": {
   "slug": "SentryDoubleMaximizedDMGRareRunestone",
@@ -907,7 +907,7 @@
    "Increases Sentry Double Maximized DMG against enemies when using a Skill Rune equipped in the activated slot"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDoubleMaximizedDMGRareRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RuneGrowthUniqueRunestone": {
   "slug": "RuneGrowthUniqueRunestone",
@@ -922,7 +922,7 @@
    "Rune level +[2-4]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/RuneGrowthUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ResourceCostUniqueRunestone": {
   "slug": "ResourceCostUniqueRunestone",
@@ -937,7 +937,7 @@
    "Resource Cost of Skill that cost resources +[-2--4]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/ResourceCostUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HitRateUniqueRunestone": {
   "slug": "HitRateUniqueRunestone",
@@ -952,7 +952,7 @@
    "Hit Rate +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HitRateUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "BossDMGUniqueRunestone": {
   "slug": "BossDMGUniqueRunestone",
@@ -967,7 +967,7 @@
    "DMG against Bosses +% [65-130]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/BossDMGUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGUniqueRunestone": {
   "slug": "DMGUniqueRunestone",
@@ -982,7 +982,7 @@
    "DMG +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGAmplificationUniqueRunestone": {
   "slug": "DMGAmplificationUniqueRunestone",
@@ -997,7 +997,7 @@
    "DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAmplificationUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CriticalRateUniqueRunestone": {
   "slug": "CriticalRateUniqueRunestone",
@@ -1012,7 +1012,7 @@
    "Critical Rate +% [50-100]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalRateUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CriticalDMGUniqueRunestone": {
   "slug": "CriticalDMGUniqueRunestone",
@@ -1027,7 +1027,7 @@
    "Critical DMG +% [25-50]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/CriticalDMGUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HPRecoveryUniqueRunestone": {
   "slug": "HPRecoveryUniqueRunestone",
@@ -1042,7 +1042,7 @@
    "HP on Kill +[30-60]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/HPRecoveryUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGUniqueRunestone": {
   "slug": "MinionDMGUniqueRunestone",
@@ -1057,7 +1057,7 @@
    "Minion DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGUniqueRunestone": {
   "slug": "SentryDMGUniqueRunestone",
@@ -1072,7 +1072,7 @@
    "Sentry DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGAtFullMinionHPUniqueRunestone": {
   "slug": "MinionDMGAtFullMinionHPUniqueRunestone",
@@ -1087,7 +1087,7 @@
    "Minion DMG at Full Minion HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGAtFullMinionHPUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGAtFullSentryHPUniqueRunestone": {
   "slug": "SentryDMGAtFullSentryHPUniqueRunestone",
@@ -1102,7 +1102,7 @@
    "Sentry DMG at Full Minion HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGAtFullSentryHPUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGAtFullHPUniqueRunestone": {
   "slug": "DMGAtFullHPUniqueRunestone",
@@ -1117,7 +1117,7 @@
    "DMG at Full HP +% [70-140]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGAtFullHPUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DMGPenetrationUniqueRunestone": {
   "slug": "DMGPenetrationUniqueRunestone",
@@ -1132,7 +1132,7 @@
    "DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DMGPenetrationUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDMGPenetrationUniqueRunestone": {
   "slug": "MinionDMGPenetrationUniqueRunestone",
@@ -1147,7 +1147,7 @@
    "Minion DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDMGPenetrationUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDMGPenetrationUniqueRunestone": {
   "slug": "SentryDMGPenetrationUniqueRunestone",
@@ -1162,7 +1162,7 @@
    "Sentry DMG Penetration +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDMGPenetrationUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AttackSealEffectUniqueRunestone": {
   "slug": "AttackSealEffectUniqueRunestone",
@@ -1177,7 +1177,7 @@
    "Attack Aura and Seal Effect +% [13-25]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/AttackSealEffectUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DefenseSealEffectUniqueRunestone": {
   "slug": "DefenseSealEffectUniqueRunestone",
@@ -1192,7 +1192,7 @@
    "Defense Aura and Seal Effect +% [13-25]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DefenseSealEffectUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DoubleMaximizedDMGUniqueRunestone": {
   "slug": "DoubleMaximizedDMGUniqueRunestone",
@@ -1207,7 +1207,7 @@
    "Double Maximized DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/DoubleMaximizedDMGUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionDoubleMaximizedUniqueRunestone": {
   "slug": "MinionDoubleMaximizedUniqueRunestone",
@@ -1222,7 +1222,7 @@
    "Double Maximized Minion DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionDoubleMaximizedUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryDoubleMaximizedUniqueRunestone": {
   "slug": "SentryDoubleMaximizedUniqueRunestone",
@@ -1237,7 +1237,7 @@
    "Double Maximized Sentry DMG +% [15-30]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryDoubleMaximizedUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "StatusEffectDMGAmplificationUniqueRunestone": {
   "slug": "StatusEffectDMGAmplificationUniqueRunestone",
@@ -1252,7 +1252,7 @@
    "Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/StatusEffectDMGAmplificationUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinionStatusEffectDMGAmplificationUniqueRunestone": {
   "slug": "MinionStatusEffectDMGAmplificationUniqueRunestone",
@@ -1267,7 +1267,7 @@
    "Minion Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/MinionStatusEffectDMGAmplificationUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SentryStatusEffectDMGAmplificationUniqueRunestone": {
   "slug": "SentryStatusEffectDMGAmplificationUniqueRunestone",
@@ -1282,6 +1282,6 @@
    "Sentry Status Effect DMG % Amplification [3-6]"
   ],
   "source": "https://undecember.thein.ru/en/runecast/SentryStatusEffectDMGAmplificationUniqueRunestone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  }
 }

@@ -19,7 +19,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/Gold/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "Diamond": {
   "slug": "Diamond",
@@ -41,7 +41,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/Diamond/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "Ruby": {
   "slug": "Ruby",
@@ -64,7 +64,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/Ruby/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GemstoneOfMerit": {
   "slug": "GemstoneOfMerit",
@@ -84,7 +84,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/GemstoneOfMerit/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GemstoneOfCourage": {
   "slug": "GemstoneOfCourage",
@@ -106,7 +106,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/GemstoneOfCourage/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "StenellaCoin": {
   "slug": "StenellaCoin",
@@ -127,7 +127,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/StenellaCoin/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RibjawCoin": {
   "slug": "RibjawCoin",
@@ -148,7 +148,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/RibjawCoin/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RankingCoin": {
   "slug": "RankingCoin",
@@ -168,7 +168,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/RankingCoin/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GuildCoin": {
   "slug": "GuildCoin",
@@ -184,7 +184,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/GuildCoin/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GuildSeal": {
   "slug": "GuildSeal",
@@ -200,7 +200,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/GuildSeal/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SkillSkinChallengeTicket": {
   "slug": "SkillSkinChallengeTicket",
@@ -216,7 +216,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/SkillSkinChallengeTicket/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MileageTicket": {
   "slug": "MileageTicket",
@@ -232,6 +232,6 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/coins/MileageTicket/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  }
 }

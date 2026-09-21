@@ -15,7 +15,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorHPPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LesserHPPotion": {
   "slug": "LesserHPPotion",
@@ -33,7 +33,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserHPPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "StandartHPPotion": {
   "slug": "StandartHPPotion",
@@ -51,7 +51,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartHPPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GreaterHPPotion": {
   "slug": "GreaterHPPotion",
@@ -69,7 +69,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterHPPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MajorHPPotion": {
   "slug": "MajorHPPotion",
@@ -87,7 +87,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorHPPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighHPPotion": {
   "slug": "HighHPPotion",
@@ -105,7 +105,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighHPPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinorHealingPotion": {
   "slug": "MinorHealingPotion",
@@ -123,7 +123,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorHealingPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LesserHealingPotion": {
   "slug": "LesserHealingPotion",
@@ -141,7 +141,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserHealingPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "StandartHealingPotion": {
   "slug": "StandartHealingPotion",
@@ -159,7 +159,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartHealingPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GreaterHealingPotion": {
   "slug": "GreaterHealingPotion",
@@ -177,7 +177,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterHealingPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MajorHealingPotion": {
   "slug": "MajorHealingPotion",
@@ -195,7 +195,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorHealingPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighHealingPotion": {
   "slug": "HighHealingPotion",
@@ -213,7 +213,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighHealingPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinorManaPotion": {
   "slug": "MinorManaPotion",
@@ -231,7 +231,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorManaPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LesserManaPotion": {
   "slug": "LesserManaPotion",
@@ -249,7 +249,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserManaPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "StandartManaPotion": {
   "slug": "StandartManaPotion",
@@ -267,7 +267,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartManaPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GreaterManaPotion": {
   "slug": "GreaterManaPotion",
@@ -285,7 +285,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterManaPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MajorManaPotion": {
   "slug": "MajorManaPotion",
@@ -303,7 +303,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorManaPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighManaPotion": {
   "slug": "HighManaPotion",
@@ -321,7 +321,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighManaPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MinorConcentrationPotion": {
   "slug": "MinorConcentrationPotion",
@@ -339,7 +339,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MinorConcentrationPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LesserConcentrationPotion": {
   "slug": "LesserConcentrationPotion",
@@ -357,7 +357,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/LesserConcentrationPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "StandartConcentrationPotion": {
   "slug": "StandartConcentrationPotion",
@@ -375,7 +375,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/StandartConcentrationPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "GreaterConcentrationPotion": {
   "slug": "GreaterConcentrationPotion",
@@ -393,7 +393,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/GreaterConcentrationPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MajorConcentrationPotion": {
   "slug": "MajorConcentrationPotion",
@@ -411,7 +411,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/MajorConcentrationPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighConcentrationPotion": {
   "slug": "HighConcentrationPotion",
@@ -429,7 +429,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/HighConcentrationPotion/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MaxHPElixir": {
   "slug": "MaxHPElixir",
@@ -463,7 +463,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/MaxHPElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ArmorElixir": {
   "slug": "ArmorElixir",
@@ -497,7 +497,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/ArmorElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DodgeRateElixir": {
   "slug": "DodgeRateElixir",
@@ -531,7 +531,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/DodgeRateElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "BarrierElixir": {
   "slug": "BarrierElixir",
@@ -565,7 +565,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/BarrierElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ElementResistElixir": {
   "slug": "ElementResistElixir",
@@ -599,7 +599,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/ElementResistElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DamageElixir": {
   "slug": "DamageElixir",
@@ -633,7 +633,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/DamageElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AttackSpeedAndCastSpeedElixir": {
   "slug": "AttackSpeedAndCastSpeedElixir",
@@ -667,7 +667,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/AttackSpeedAndCastSpeedElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MovementSpeedElixir": {
   "slug": "MovementSpeedElixir",
@@ -701,7 +701,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/MovementSpeedElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ChaosResistElixir": {
   "slug": "ChaosResistElixir",
@@ -735,7 +735,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/ChaosResistElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "PhysicalStatusEffectImmunityElixir": {
   "slug": "PhysicalStatusEffectImmunityElixir",
@@ -769,7 +769,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/PhysicalStatusEffectImmunityElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "FireStatusEffectImmunityElixir": {
   "slug": "FireStatusEffectImmunityElixir",
@@ -803,7 +803,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/FireStatusEffectImmunityElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ColdStatusEffectImmunityElixir": {
   "slug": "ColdStatusEffectImmunityElixir",
@@ -837,7 +837,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/ColdStatusEffectImmunityElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LightningStatusEffectImmunityElixir": {
   "slug": "LightningStatusEffectImmunityElixir",
@@ -871,7 +871,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/LightningStatusEffectImmunityElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "PoisonStatusEffectImmunityElixir": {
   "slug": "PoisonStatusEffectImmunityElixir",
@@ -905,7 +905,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/PoisonStatusEffectImmunityElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "IncreaseItemDropRartyElixir": {
   "slug": "IncreaseItemDropRartyElixir",
@@ -939,7 +939,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseItemDropRartyElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "IncreaseElementDropChanceElixir": {
   "slug": "IncreaseElementDropChanceElixir",
@@ -973,7 +973,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseElementDropChanceElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "IncreaseEssenceDropChanceElixir": {
   "slug": "IncreaseEssenceDropChanceElixir",
@@ -1007,7 +1007,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseEssenceDropChanceElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "IncreaseGoldGainChanceElixir": {
   "slug": "IncreaseGoldGainChanceElixir",
@@ -1041,7 +1041,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseGoldGainChanceElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "IncreaseCharmDropChanceElixir": {
   "slug": "IncreaseCharmDropChanceElixir",
@@ -1075,7 +1075,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/IncreaseCharmDropChanceElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighMaxHPElixir": {
   "slug": "HighMaxHPElixir",
@@ -1109,7 +1109,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighMaxHPElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighArmorElixir": {
   "slug": "HighArmorElixir",
@@ -1143,7 +1143,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighArmorElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighDodgeRateElixir": {
   "slug": "HighDodgeRateElixir",
@@ -1177,7 +1177,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighDodgeRateElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighBarrierElixir": {
   "slug": "HighBarrierElixir",
@@ -1211,7 +1211,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighBarrierElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighElementResistElixir": {
   "slug": "HighElementResistElixir",
@@ -1245,7 +1245,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighElementResistElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighDamageElixir": {
   "slug": "HighDamageElixir",
@@ -1279,7 +1279,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighDamageElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighAttackSpeedAndCastSpeedElixir": {
   "slug": "HighAttackSpeedAndCastSpeedElixir",
@@ -1313,7 +1313,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighAttackSpeedAndCastSpeedElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HighChaosResistElixir": {
   "slug": "HighChaosResistElixir",
@@ -1347,7 +1347,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/HighChaosResistElixir/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "BeastsBreath": {
   "slug": "BeastsBreath",
@@ -1386,7 +1386,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/BeastsBreath/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ExcavatorsSoul": {
   "slug": "ExcavatorsSoul",
@@ -1425,7 +1425,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/ExcavatorsSoul/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "FountainOfWisdom": {
   "slug": "FountainOfWisdom",
@@ -1459,7 +1459,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/potions/FountainOfWisdom/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "FountainOfClearWisdom": {
   "slug": "FountainOfClearWisdom",
@@ -1477,6 +1477,6 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/potions/FountainOfClearWisdom/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  }
 }

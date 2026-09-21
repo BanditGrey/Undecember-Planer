@@ -31,7 +31,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/MagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RareUpgradeEssence": {
   "slug": "RareUpgradeEssence",
@@ -64,7 +64,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LegendaryUpgradeEssence": {
   "slug": "LegendaryUpgradeEssence",
@@ -96,7 +96,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/LegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HolyUpgradeEssence": {
   "slug": "HolyUpgradeEssence",
@@ -117,7 +117,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/HolyUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AncientUpgradeEssence": {
   "slug": "AncientUpgradeEssence",
@@ -138,7 +138,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/AncientUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ReversionEssence": {
   "slug": "ReversionEssence",
@@ -173,7 +173,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/ReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LegendaryReversionEssence": {
   "slug": "LegendaryReversionEssence",
@@ -194,7 +194,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/LegendaryReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HolyReversionEssence": {
   "slug": "HolyReversionEssence",
@@ -215,7 +215,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/HolyReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AncientReversionEssence": {
   "slug": "AncientReversionEssence",
@@ -236,7 +236,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/AncientReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MagicBirthEssence": {
   "slug": "MagicBirthEssence",
@@ -269,7 +269,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/MagicBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RareBirthEssence": {
   "slug": "RareBirthEssence",
@@ -302,7 +302,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RareBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MagicChangeEssence": {
   "slug": "MagicChangeEssence",
@@ -335,7 +335,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/MagicChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RareChangeEssence": {
   "slug": "RareChangeEssence",
@@ -368,7 +368,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RareChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "UniqueChangeEssence": {
   "slug": "UniqueChangeEssence",
@@ -402,7 +402,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/UniqueChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "PrefixOptionBirthEssence": {
   "slug": "PrefixOptionBirthEssence",
@@ -437,7 +437,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/PrefixOptionBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "PrefixOptionRemovalEssence": {
   "slug": "PrefixOptionRemovalEssence",
@@ -472,7 +472,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/PrefixOptionRemovalEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SuffixOptionBirthEssence": {
   "slug": "SuffixOptionBirthEssence",
@@ -507,7 +507,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/SuffixOptionBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SuffixOptionRemovalEssence": {
   "slug": "SuffixOptionRemovalEssence",
@@ -542,7 +542,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/SuffixOptionRemovalEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "MagicInbueEssence": {
   "slug": "MagicInbueEssence",
@@ -575,7 +575,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/MagicInbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RareImbueEssence": {
   "slug": "RareImbueEssence",
@@ -608,7 +608,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RareImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LegendaryImbueEssence": {
   "slug": "LegendaryImbueEssence",
@@ -642,7 +642,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/LegendaryImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HolyImbueEssence": {
   "slug": "HolyImbueEssence",
@@ -663,7 +663,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/HolyImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AncientImbueEssence": {
   "slug": "AncientImbueEssence",
@@ -684,7 +684,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/AncientImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LegendaryUniqueChangeEssence": {
   "slug": "LegendaryUniqueChangeEssence",
@@ -704,7 +704,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/LegendaryUniqueChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LegendaryUniqueReversionEssence": {
   "slug": "LegendaryUniqueReversionEssence",
@@ -724,7 +724,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/LegendaryUniqueReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "DisintegrationEssence": {
   "slug": "DisintegrationEssence",
@@ -757,7 +757,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/DisintegrationEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "QualityBirthEssence": {
   "slug": "QualityBirthEssence",
@@ -792,7 +792,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/QualityBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "QualityModificationEssence": {
   "slug": "QualityModificationEssence",
@@ -829,7 +829,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/QualityModificationEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ArtifactMagicUpgradeEssence": {
   "slug": "ArtifactMagicUpgradeEssence",
@@ -849,7 +849,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/ArtifactMagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ArtifactRareUpgradeEssence": {
   "slug": "ArtifactRareUpgradeEssence",
@@ -869,7 +869,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/ArtifactRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "ArtifactLegendaryUpgradeEssence": {
   "slug": "ArtifactLegendaryUpgradeEssence",
@@ -889,7 +889,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/ArtifactLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AlyssaEssence": {
   "slug": "AlyssaEssence",
@@ -923,7 +923,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/AlyssaEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "VesperEssence": {
   "slug": "VesperEssence",
@@ -957,7 +957,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/VesperEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SerpensEssence": {
   "slug": "SerpensEssence",
@@ -987,7 +987,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/SerpensEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "AuthorityEssence": {
   "slug": "AuthorityEssence",
@@ -1012,7 +1012,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/AuthorityEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SkillRuneMagicUpgradeEssence": {
   "slug": "SkillRuneMagicUpgradeEssence",
@@ -1045,7 +1045,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/SkillRuneMagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SkillRuneRareUpgradeEssence": {
   "slug": "SkillRuneRareUpgradeEssence",
@@ -1078,7 +1078,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/SkillRuneRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SkillRuneLegendaryUpgradeEssence": {
   "slug": "SkillRuneLegendaryUpgradeEssence",
@@ -1111,7 +1111,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/SkillRuneLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LinkRuneMagicUpgradeEssence": {
   "slug": "LinkRuneMagicUpgradeEssence",
@@ -1144,7 +1144,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/LinkRuneMagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LinkRuneRareUpgradeEssence": {
   "slug": "LinkRuneRareUpgradeEssence",
@@ -1177,7 +1177,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/LinkRuneRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LinkRuneLegendaryUpgradeEssence": {
   "slug": "LinkRuneLegendaryUpgradeEssence",
@@ -1210,7 +1210,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/LinkRuneLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RuneColorEssence": {
   "slug": "RuneColorEssence",
@@ -1244,7 +1244,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RuneColorEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RuneLinkEssence": {
   "slug": "RuneLinkEssence",
@@ -1278,7 +1278,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RuneLinkEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RuneBirthEssence": {
   "slug": "RuneBirthEssence",
@@ -1312,7 +1312,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RuneBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RuneCandorRevitalizationEssence": {
   "slug": "RuneCandorRevitalizationEssence",
@@ -1341,7 +1341,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RuneCandorRevitalizationEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "TriggerRuneChangeEssence": {
   "slug": "TriggerRuneChangeEssence",
@@ -1373,7 +1373,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/TriggerRuneChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "PentaRuneEssence": {
   "slug": "PentaRuneEssence",
@@ -1393,7 +1393,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/PentaRuneEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "HexaRuneEssence": {
   "slug": "HexaRuneEssence",
@@ -1414,7 +1414,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/HexaRuneEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RuneCandorEssence": {
   "slug": "RuneCandorEssence",
@@ -1447,7 +1447,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RuneCandorEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "SkillRuneEngravingStone": {
   "slug": "SkillRuneEngravingStone",
@@ -1479,7 +1479,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/SkillRuneEngravingStone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "LinkRuneEngravingStone": {
   "slug": "LinkRuneEngravingStone",
@@ -1511,7 +1511,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/LinkRuneEngravingStone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RunestoneMagicLinkEssence": {
   "slug": "RunestoneMagicLinkEssence",
@@ -1542,7 +1542,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RunestoneMagicLinkEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "RunestoneRareLinkEssence": {
   "slug": "RunestoneRareLinkEssence",
@@ -1573,7 +1573,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/RunestoneRareLinkEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "JewelPolishingStone": {
   "slug": "JewelPolishingStone",
@@ -1591,7 +1591,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/JewelPolishingStone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmRareUpgradeEssence": {
   "slug": "CharmRareUpgradeEssence",
@@ -1623,7 +1623,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/CharmRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmLegendaryUpgradeEssence": {
   "slug": "CharmLegendaryUpgradeEssence",
@@ -1655,7 +1655,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/CharmLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmMagicChangeEssence": {
   "slug": "CharmMagicChangeEssence",
@@ -1687,7 +1687,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/CharmMagicChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmRareChangeEssence": {
   "slug": "CharmRareChangeEssence",
@@ -1719,7 +1719,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/CharmRareChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmLegendaryChangeEssence": {
   "slug": "CharmLegendaryChangeEssence",
@@ -1751,7 +1751,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/CharmLegendaryChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmTierMagicChangeEssence": {
   "slug": "CharmTierMagicChangeEssence",
@@ -1782,7 +1782,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/CharmTierMagicChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmTierRareChangeEssence": {
   "slug": "CharmTierRareChangeEssence",
@@ -1813,7 +1813,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/CharmTierRareChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "CharmLegendaryReversionEssence": {
   "slug": "CharmLegendaryReversionEssence",
@@ -1829,7 +1829,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/CharmLegendaryReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]MagicUpgradeEssence": {
   "slug": "[Exctusive]MagicUpgradeEssence",
@@ -1863,7 +1863,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RareUpgradeEssence": {
   "slug": "[Exctusive]RareUpgradeEssence",
@@ -1896,7 +1896,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LegendaryUpgradeEssence": {
   "slug": "[Exctusive]LegendaryUpgradeEssence",
@@ -1928,7 +1928,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]HolyUpgradeEssence": {
   "slug": "[Exctusive]HolyUpgradeEssence",
@@ -1949,7 +1949,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]HolyUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]AncientUpgradeEssence": {
   "slug": "[Exctusive]AncientUpgradeEssence",
@@ -1970,7 +1970,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]AncientUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]ReversionEssence": {
   "slug": "[Exctusive]ReversionEssence",
@@ -2005,7 +2005,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]ReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LegendaryReversionEssence": {
   "slug": "[Exctusive]LegendaryReversionEssence",
@@ -2026,7 +2026,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]HolyReversionEssence": {
   "slug": "[Exctusive]HolyReversionEssence",
@@ -2047,7 +2047,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]HolyReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]AncientReversionEssence": {
   "slug": "[Exctusive]AncientReversionEssence",
@@ -2068,7 +2068,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]AncientReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]MagicBirthEssence": {
   "slug": "[Exctusive]MagicBirthEssence",
@@ -2101,7 +2101,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RareBirthEssence": {
   "slug": "[Exctusive]RareBirthEssence",
@@ -2134,7 +2134,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]MagicChangeEssence": {
   "slug": "[Exctusive]MagicChangeEssence",
@@ -2167,7 +2167,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RareChangeEssence": {
   "slug": "[Exctusive]RareChangeEssence",
@@ -2200,7 +2200,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]UniqueChangeEssence": {
   "slug": "[Exctusive]UniqueChangeEssence",
@@ -2234,7 +2234,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]UniqueChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]PrefixOptionBirthEssence": {
   "slug": "[Exctusive]PrefixOptionBirthEssence",
@@ -2269,7 +2269,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]PrefixOptionBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]PrefixOptionRemovalEssence": {
   "slug": "[Exctusive]PrefixOptionRemovalEssence",
@@ -2304,7 +2304,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]PrefixOptionRemovalEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]SuffixOptionBirthEssence": {
   "slug": "[Exctusive]SuffixOptionBirthEssence",
@@ -2339,7 +2339,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]SuffixOptionBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]SuffixOptionRemovalEssence": {
   "slug": "[Exctusive]SuffixOptionRemovalEssence",
@@ -2374,7 +2374,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]SuffixOptionRemovalEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]MagicInbueEssence": {
   "slug": "[Exctusive]MagicInbueEssence",
@@ -2407,7 +2407,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]MagicInbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RareImbueEssence": {
   "slug": "[Exctusive]RareImbueEssence",
@@ -2440,7 +2440,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RareImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LegendaryImbueEssence": {
   "slug": "[Exctusive]LegendaryImbueEssence",
@@ -2474,7 +2474,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]HolyImbueEssence": {
   "slug": "[Exctusive]HolyImbueEssence",
@@ -2495,7 +2495,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]HolyImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]AncientImbueEssence": {
   "slug": "[Exctusive]AncientImbueEssence",
@@ -2516,7 +2516,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]AncientImbueEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LegendaryUniqueChangeEssence": {
   "slug": "[Exctusive]LegendaryUniqueChangeEssence",
@@ -2536,7 +2536,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryUniqueChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LegendaryUniqueReversionEssence": {
   "slug": "[Exctusive]LegendaryUniqueReversionEssence",
@@ -2556,7 +2556,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LegendaryUniqueReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]DisintegrationEssence": {
   "slug": "[Exctusive]DisintegrationEssence",
@@ -2578,7 +2578,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]DisintegrationEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]QualityModificationEssence": {
   "slug": "[Exctusive]QualityModificationEssence",
@@ -2613,7 +2613,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]QualityModificationEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]QualityBirthEssence": {
   "slug": "[Exctusive]QualityBirthEssence",
@@ -2650,7 +2650,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]QualityBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]ArtifactMagicUpgradeEssence": {
   "slug": "[Exctusive]ArtifactMagicUpgradeEssence",
@@ -2670,7 +2670,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]ArtifactMagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]ArtifactRareUpgradeEssence": {
   "slug": "[Exctusive]ArtifactRareUpgradeEssence",
@@ -2690,7 +2690,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]ArtifactRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]ArtifactLegendaryUpgradeEssence": {
   "slug": "[Exctusive]ArtifactLegendaryUpgradeEssence",
@@ -2710,7 +2710,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]ArtifactLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]AlyssaEssence": {
   "slug": "[Exctusive]AlyssaEssence",
@@ -2744,7 +2744,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]AlyssaEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]VesperEssence": {
   "slug": "[Exctusive]VesperEssence",
@@ -2778,7 +2778,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]VesperEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]SerpensEssence": {
   "slug": "[Exctusive]SerpensEssence",
@@ -2808,7 +2808,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]SerpensEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]AuthorityEssence": {
   "slug": "[Exctusive]AuthorityEssence",
@@ -2833,7 +2833,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]AuthorityEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]SkillRuneMagicUpgradeEssence": {
   "slug": "[Exctusive]SkillRuneMagicUpgradeEssence",
@@ -2866,7 +2866,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneMagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]SkillRuneRareUpgradeEssence": {
   "slug": "[Exctusive]SkillRuneRareUpgradeEssence",
@@ -2899,7 +2899,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]SkillRuneLegendaryUpgradeEssence": {
   "slug": "[Exctusive]SkillRuneLegendaryUpgradeEssence",
@@ -2932,7 +2932,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LinkRuneMagicUpgradeEssence": {
   "slug": "[Exctusive]LinkRuneMagicUpgradeEssence",
@@ -2965,7 +2965,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneMagicUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LinkRuneRareUpgradeEssence": {
   "slug": "[Exctusive]LinkRuneRareUpgradeEssence",
@@ -2998,7 +2998,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LinkRuneLegendaryUpgradeEssence": {
   "slug": "[Exctusive]LinkRuneLegendaryUpgradeEssence",
@@ -3031,7 +3031,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RuneBirthEssence": {
   "slug": "[Exctusive]RuneBirthEssence",
@@ -3054,7 +3054,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneBirthEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RuneColorEssence": {
   "slug": "[Exctusive]RuneColorEssence",
@@ -3077,7 +3077,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneColorEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RuneLinkEssence": {
   "slug": "[Exctusive]RuneLinkEssence",
@@ -3100,7 +3100,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneLinkEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RuneCandorRevitalizationEssence": {
   "slug": "[Exctusive]RuneCandorRevitalizationEssence",
@@ -3118,7 +3118,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneCandorRevitalizationEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]TriggerRuneChangeEssence": {
   "slug": "[Exctusive]TriggerRuneChangeEssence",
@@ -3139,7 +3139,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]TriggerRuneChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]PentaRuneEssence": {
   "slug": "[Exctusive]PentaRuneEssence",
@@ -3159,7 +3159,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]PentaRuneEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]HexaRuneEssence": {
   "slug": "[Exctusive]HexaRuneEssence",
@@ -3180,7 +3180,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]HexaRuneEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RuneCandorEssence": {
   "slug": "[Exctusive]RuneCandorEssence",
@@ -3213,7 +3213,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RuneCandorEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]SkillRuneEngravingStone": {
   "slug": "[Exctusive]SkillRuneEngravingStone",
@@ -3245,7 +3245,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]SkillRuneEngravingStone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]LinkRuneEngravingStone": {
   "slug": "[Exctusive]LinkRuneEngravingStone",
@@ -3277,7 +3277,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]LinkRuneEngravingStone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RunestoneMagicLinkEssence": {
   "slug": "[Exctusive]RunestoneMagicLinkEssence",
@@ -3308,7 +3308,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RunestoneMagicLinkEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]RunestoneRareLinkEssence": {
   "slug": "[Exctusive]RunestoneRareLinkEssence",
@@ -3339,7 +3339,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]RunestoneRareLinkEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]JewelPolishingStone": {
   "slug": "[Exctusive]JewelPolishingStone",
@@ -3357,7 +3357,7 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]JewelPolishingStone/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmRareUpgradeEssence": {
   "slug": "[Exctusive]CharmRareUpgradeEssence",
@@ -3389,7 +3389,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmRareUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmLegendaryUpgradeEssence": {
   "slug": "[Exctusive]CharmLegendaryUpgradeEssence",
@@ -3421,7 +3421,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmLegendaryUpgradeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmMagicChangeEssence": {
   "slug": "[Exctusive]CharmMagicChangeEssence",
@@ -3453,7 +3453,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmMagicChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmRareChangeEssence": {
   "slug": "[Exctusive]CharmRareChangeEssence",
@@ -3485,7 +3485,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmRareChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmLegendaryChangeEssence": {
   "slug": "[Exctusive]CharmLegendaryChangeEssence",
@@ -3517,7 +3517,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmLegendaryChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmTierMagicChangeEssence": {
   "slug": "[Exctusive]CharmTierMagicChangeEssence",
@@ -3548,7 +3548,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmTierMagicChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmTierRareChangeEssence": {
   "slug": "[Exctusive]CharmTierRareChangeEssence",
@@ -3579,7 +3579,7 @@
    }
   ],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmTierRareChangeEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  },
  "[Exctusive]CharmLegendaryReversionEssence": {
   "slug": "[Exctusive]CharmLegendaryReversionEssence",
@@ -3595,6 +3595,6 @@
   "props": [],
   "recipes": [],
   "source": "https://undecember.thein.ru/en/essences/[Exctusive]CharmLegendaryReversionEssence/",
-  "scrapedAt": "2026-09-20"
+  "scrapedAt": "2026-09-21"
  }
 }
