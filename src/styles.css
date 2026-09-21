@@ -144,3 +144,4 @@ img.mini{width:22px;height:22px;vertical-align:middle;border-radius:50%;backgrou
 .zn.cap,.zn.prereq{opacity:.45;cursor:not-allowed}.zn.ok .core{stroke-dasharray:none}
 .zod-named{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 10px}.zod-named .chip{font-size:11px;border:1px solid #c76bff88;color:#d9b8ff;border-radius:10px;padding:1px 8px}
 .small{font-size:12px}
+.roll{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:2px 0 6px}.roll-todo{color:var(--warn)}.roll-ok{color:var(--link)}

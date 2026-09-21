@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { runes, runestones, runeBySlug, runestoneBySlug, tags } from '../data';
-import { analyzeBoard, AWAKEN_HEX, AWAKEN_KEYS, cells, CENTER, COLOR_HEX, GRADE_HEX, GRADE_NAMES, dirAngle, hexPos, runeColor, triggerSpec, DIRS, step } from '../lib/rules';
+import { analyzeBoard, AWAKEN_HEX, AWAKEN_KEYS, cells, CENTER, COLOR_HEX, COLOR_NAME, GRADE_HEX, GRADE_NAMES, dirAngle, hexPos, runeColor, triggerSpec, DIRS, step } from '../lib/rules';
 import type { SlotColor } from '../types';
 const SLOT_CYCLE: (SlotColor | null | undefined)[] = [undefined, 'R', 'G', 'B', 'W', null];
 import type { Build } from '../types';
@@ -81,6 +81,10 @@ export function Board({ build, set }: { build: Build; set: (b: Build) => void })
           <div className="gh"><Tip content={<RuneTip r={g.skill} level={level} bonus={bonus} grade={g.grade} awaken={g.awaken} />}><img src={g.skill.icons[0]} alt="" /></Tip><b style={{ color: runeColor(g.skill) }}>{g.skill.name}</b>{!!g.grade && <span className="pill" style={{ borderColor: GRADE_HEX[g.grade], color: GRADE_HEX[g.grade] }}>{GRADE_NAMES[g.grade]}</span>}{g.awaken && <span className="pill" style={{ borderColor: AWAKEN_HEX[g.awaken], color: AWAKEN_HEX[g.awaken] }}>{g.awaken}</span>} <span className="tags">{g.skill.tags.map(x => <i key={x}>#{tr(x)}</i>)}</span>
             {g.runestone && <em className="muted"> · {runestoneBySlug.get(g.runestone)?.name}</em>}</div>
           {g.skill.description && <p className="muted desc">{gd(g.skill.slug, g.skill.description)}</p>}
+          {g.links.length > 0 && (() => { const need: Record<string, number> = { R: 0, G: 0, B: 0 }; const todo: string[] = [];
+            for (const l of g.links) { if (!l.rune.color) continue; need[l.rune.color]++; const sc = build.board[g.cell]?.slots?.[l.dir]; if (sc === null) todo.push(t('rollOpen', { n: l.dir + 1 })); else if (sc && sc !== 'W' && sc !== l.rune.color) todo.push(t('rollColor', { n: l.dir + 1, c: tr(COLOR_NAME[l.rune.color]) })); else if (!sc) todo.push(t('rollUnset', { n: l.dir + 1, c: tr(COLOR_NAME[l.rune.color]) })); }
+            return <div className="roll"><span className="slots-req" title={t('slotsReq')}>{(['R', 'G', 'B'] as const).filter(c => need[c]).map(c => <span key={c} className={`dot ${c}`}>{need[c]}</span>)}</span>
+              {todo.length ? <small className="roll-todo">{t('rollTodo')}: {todo.join(' · ')}</small> : <small className="roll-ok">✓ {t('rollDone')}</small>}</div>; })()}
           {g.links.length === 0 && <p className="muted">{t('noLinks')}</p>}
           {g.links.map(l => <div key={l.cell} className={l.check.ok ? 'ok' : 'bad'}><Tip content={<RuneTip r={l.rune} level={level} bonus={bonus} grade={l.grade} awaken={l.awaken} />}><img src={l.rune.icons[0]} alt="" /></Tip> {l.rune.color && <i className="dot" style={{ background: COLOR_HEX[l.rune.color] }} />}{l.rune.name} — <small>{l.check.key ? t(l.check.key, { tags: l.check.tags ?? '' }) : tr(l.check.reason)}</small></div>)}
         </div>)}
